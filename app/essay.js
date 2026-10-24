@@ -46,7 +46,7 @@ function endCopy(D) {
     <p class="es-dek">If the ${esc(s.name)} at ${esc(String(s.address).split(',')[0])} closes,
       <b class="es-num">${fmt(s.people)}</b><button class="info" data-prov="store" aria-label="How we got this">i</button>
       ${esc(D.place.name)} residents lose walkable access. Pick any store and watch.</p>
-    <button class="es-go" id="es-go">Open the map</button>
+    <button class="es-go" id="es-go">Open RxGap</button>
     <p class="es-fine">Statistics link to their sources. Our own numbers have an “i” button that shows how we got them.
       Photos are credited where they appear; the closed stores shown are outside Massachusetts.</p>`;
 }
