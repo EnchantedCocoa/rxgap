@@ -72,6 +72,7 @@ def main():
                           'total': total, 'desert_pct': round(n['desert'] / total * 100)}
 
     low = sum(1 for f in bg if f['properties']['low_access'])
+    acs = json.loads((DATA / 'raw' / 'acs_bg.json').read_text())
     hpc = {r['GEOID']: r for r in csv.DictReader(open(DATA / 'raw' / 'hpc' / 'hpc_bg_with_town.csv'))}
     hmap = {'Pharmacy deserts': 'desert', 'Near deserts': 'near-desert', 'Non-deserts': 'covered'}
     agree = sum(f['properties']['pop'] for f in bg
@@ -88,6 +89,9 @@ def main():
                        'hpc_report': 'DataPoints 31, October 2025', 'area_pct': '15%',
                        'hpc_pop': hpc_desert, 'hpc_date': 'June 2025', 'added_stores': added,
                        'hpc_agree': f'{round(agree / total * 100)}%',
+                       'one_in': round(total / (headline['state']['desert'] + headline['state']['near'])),
+                       'at_risk_age65': sum(f['properties']['age65'] or 0 for f in bg if f['properties']['s_state'] != 'covered'),
+                       'at_risk_nocar_hh': sum(acs.get(f['properties']['GEOID'], {}).get('nocar', 0) for f in bg if f['properties']['s_state'] != 'covered'),
                        'at_risk_pct': round((headline['state']['desert'] + headline['state']['near']) / total * 100),
                        'low_access_share': f'{round(low / len(bg) * 100)}%'},
         'stores': [{**r, 'sites': sites[str(r['rank'])]} for r in store_rows(rank['stores'], raw_bg, officials())],

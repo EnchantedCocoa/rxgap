@@ -48,12 +48,15 @@ function renderHeadline() {
   const h = D.headline[state.rule];
   countTo($('[data-num="desert"]'), h.desert);
   countTo($('[data-num="near"]'), h.near);
-  countTo($('[data-num="covered"]'), h.covered);
+  countTo($('[data-num="atrisk"]'), h.desert + h.near);
   $('[data-num="globe"]').textContent = fmt(D.validation.globe_pop);
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
-    $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`;
-  $('#hl-title').textContent = 'Boston residents in a pharmacy desert';
-  $('#at-risk').innerHTML = `<b>${fmt(D.validation.at_risk_pct)}%</b> of Boston residents live in a desert or one closure away from one.`;
+    $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`; // gray remainder = everyone else
+  $('#hl-title').textContent = 'Boston residents in a pharmacy desert or one closure away';
+  const v = D.validation;
+  $('#at-risk').innerHTML = state.rule === 'state'
+    ? `<b>1 in ${fmt(v.one_in)}</b> Boston residents. Among them, <b>${fmt(v.at_risk_age65)}</b> are 65 or older and <b>${fmt(v.at_risk_nocar_hh)}</b> homes have no car.`
+    : `<b>1 in ${fmt(Math.round(h.total / (h.desert + h.near)))}</b> Boston residents at this walk limit.`;
   $('#fallback-banner').hidden = D.rule === 'state';
   const manual = D.pharmacies.filter((p) => p.source && p.source !== 'OpenStreetMap').length;
   if (manual) $('#source-note').textContent = `Stores: OpenStreetMap (a floor, not the full list), plus ${fmt(manual)} added by hand with a source.`;
@@ -206,11 +209,11 @@ async function setTown(slug) {
 }
 
 function renderTownHeadline(t) {
-  $('#at-risk').innerHTML = `<b>${fmt(Math.round((t.desert + t.near) / t.total * 100))}%</b> of ${esc(t.name)} residents live in a desert or one closure away from one.`;
-  $('#hl-title').textContent = `${t.name} residents in a pharmacy desert`;
+  $('#at-risk').innerHTML = `<b>1 in ${fmt(Math.round(t.total / (t.desert + t.near)))}</b> ${esc(t.name)} residents.`;
+  $('#hl-title').textContent = `${t.name} residents in a pharmacy desert or one closure away`;
   countTo($('[data-num="desert"]'), t.desert);
   countTo($('[data-num="near"]'), t.near);
-  countTo($('[data-num="covered"]'), t.covered);
+  countTo($('[data-num="atrisk"]'), t.desert + t.near);
   for (const [k, v] of [['desert', t.desert], ['near', t.near], ['covered', t.covered]])
     $(`#seg-${k}`).style.width = `${(v / t.total) * 100}%`;
   $('#town-note').innerHTML = `${esc(t.why)}. <button class="info" data-prov="town" aria-label="How we got this number">i</button>`;

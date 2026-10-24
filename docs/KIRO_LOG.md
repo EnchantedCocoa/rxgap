@@ -107,3 +107,7 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   Boston residents live in a desert or one closure away". Blocks under 50 residents
   (parks, harbor islands) are gray. Method page now shows the state's 31,291 and our
   86% agreement. A replacement site next to the closed store is labeled as such.
+- 14:20 Headline reframed after user feedback that "543,341 covered" made deserts look
+  trivial. The big number is now people in a desert or one closure away (132,306, "1 in 5",
+  19,996 age 65+, 14,258 homes with no car); the covered count is gone from the headline
+  and the bar's remainder is neutral gray. All figures still come from app_data.json.

@@ -76,13 +76,14 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
 .seg { height: 100%; transition: width var(--t-slow) var(--ease); }
 .seg-desert { background: var(--desert); }
 .seg-near { background: var(--near); }
-.seg-covered { background: var(--covered); opacity: 0.55; }
+.seg-rest { background: var(--line); }
 .stats { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); margin: var(--s4) 0 var(--s3); }
 .stats div { margin: 0; }
 .stats dt { color: var(--muted); font-size: var(--fs-sm); display: flex; align-items: center; gap: 6px; }
 .stats dd { margin: 2px 0 0; font-size: var(--fs-xl); font-weight: 650; letter-spacing: -0.02em; }
 .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 .dot-near { background: var(--near); }
+.dot-desert { background: var(--desert); }
 .dot-covered { background: var(--covered); }
 .compare { margin: 0; color: var(--ink-2); font-size: var(--fs-sm); }
 .link { border: 0; background: none; padding: 0; color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
