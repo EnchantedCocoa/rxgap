@@ -41,7 +41,7 @@ def main():
             })
         rows.append({
             'name': p['name'] or 'Pharmacy', 'address': p.get('address') or 'address not in OSM',
-            'osm_id': p.get('osm_id'), 'lat': p['lat'], 'lon': p['lon'],
+            'osm_id': p.get('osm_id'), 'source': p.get('source'), 'lat': p['lat'], 'lon': p['lon'],
             'people': int(L.TOTAL_POP.fillna(0).sum()),
             'age65': int(L.age65.fillna(0).sum()) if rule == 'state' else None,
             'nocar_hh': int(L.nocar.fillna(0).sum()) if rule == 'state' else None,

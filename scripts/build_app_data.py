@@ -8,8 +8,8 @@ RULES = {'state': 's_state', 'half': 's_0.5', 'one': 's_1'}
 
 # Each on-screen number names the function that made it and the raw sources behind it.
 PROV = {
-    'headline': ('scripts/analyze_bg.py:main', ['block_groups', 'acs', 'pharmacies', 'closures']),
-    'store': ('scripts/rank.py:main', ['block_groups', 'acs', 'pharmacies', 'closures']),
+    'headline': ('scripts/analyze_bg.py:main', ['block_groups', 'acs', 'pharmacies', 'closures', 'openings']),
+    'store': ('scripts/rank.py:main', ['block_groups', 'acs', 'pharmacies', 'closures', 'openings']),
     'lim_eng_hh': ('scripts/build_app_data.py:store_rows', ['block_groups']),
     'walk': ('scripts/walk.py:nearest3', ['walk', 'pharmacies']),
     'siting': ('scripts/siting.py:score + best_set (PuLP max-coverage)', ['sites', 'pharmacies', 'block_groups', 'acs']),
@@ -81,7 +81,7 @@ def main():
                        'hpc_report': 'DataPoints 31, October 2025', 'area_pct': '15%',
                        'low_access_share': f'{round(low / len(bg) * 100)}%'},
         'stores': [{**r, 'sites': sites[str(r['rank'])]} for r in store_rows(rank['stores'], raw_bg, officials())],
-        'pharmacies': [{'id': i, 'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'],
+        'pharmacies': [{'id': i, 'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'], 'source': p.get('source'),
                         'rank': ranked.get((p['lat'], p['lon']))}
                        for i, p in enumerate(meta['pharmacies'])],
         'closed': [{'name': c['name'], 'address': c['address'], 'date': c['date'],

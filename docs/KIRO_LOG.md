@@ -66,3 +66,9 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   `rxgap.serve` now keeps letter counts in DuckDB (district + day only). Bugs caught by
   tests: a script named `site.py` shadowed Python's stdlib `site`; NaN in JSON broke the
   page (new strict-JSON test). 25 tests pass.
+- 13:10 Asked about announced closures: none found for Boston (Walgreens named no MA
+  closures for 2026). Kiro found the opposite gap instead: two Nubian Square pharmacies
+  missing from OSM (new CVS at 32 Warren St, opened 2026-10-07; Kornfield Pharmacy).
+  Added `data/manual/openings.csv` (each row has a source URL). Desert population
+  142,943 -> 121,319; 24 block groups changed. Sullivan's (Roslindale) is now #1;
+  the Blue Hill Ave CVS drops to #2 (20,083). Kornfield itself enters the list at #12.

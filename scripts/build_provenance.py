@@ -31,6 +31,10 @@ def main():
         'dataset': 'Hand-kept closure list with a source URL per row',
         'file': 'data/manual/closures.csv', 'function': 'scripts/analyze_bg.py:load_pharmacies',
         'pulled': mtime(ROOT / 'data' / 'manual' / 'closures.csv')}
+    out['openings'] = {
+        'dataset': 'Hand-kept list of pharmacies OpenStreetMap is missing, with a source URL per row',
+        'file': 'data/manual/openings.csv', 'function': 'scripts/analyze_bg.py:load_pharmacies',
+        'pulled': mtime(ROOT / 'data' / 'manual' / 'openings.csv')}
     (ROOT / 'data' / 'provenance.json').write_text(json.dumps(out, indent=1))
     print(f'{len(out)} sources -> data/provenance.json')
 

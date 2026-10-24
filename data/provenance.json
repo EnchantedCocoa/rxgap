@@ -92,6 +92,12 @@
   "dataset": "Hand-kept closure list with a source URL per row",
   "file": "data/manual/closures.csv",
   "function": "scripts/analyze_bg.py:load_pharmacies",
-  "pulled": "2026-10-24T16:23:39+00:00"
+  "pulled": "2026-10-24T16:32:52+00:00"
+ },
+ "openings": {
+  "dataset": "Hand-kept list of pharmacies OpenStreetMap is missing, with a source URL per row",
+  "file": "data/manual/openings.csv",
+  "function": "scripts/analyze_bg.py:load_pharmacies",
+  "pulled": "2026-10-24T17:07:11+00:00"
  }
 }

@@ -1,274 +1,5 @@
 {
  "1": {
-  "lost_pop": 24080,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Whittier Street Health Center at Quincy Commons",
-    "kind": "health_center",
-    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
-    "lat": 42.314769,
-    "lon": -71.078458,
-    "gain": 14588,
-    "restored": [
-     {
-      "GEOID": "250250906001",
-      "pop": 1099,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250820001",
-      "pop": 1498,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250820002",
-      "pop": 747,
-      "share_before": 0.0,
-      "share_after": 89.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903001",
-      "pop": 1033,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903002",
-      "pop": 1681,
-      "share_before": 0.0,
-      "share_after": 96.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903003",
-      "pop": 1081,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250904002",
-      "pop": 1462,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250818002",
-      "pop": 1006,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250818003",
-      "pop": 1248,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250819002",
-      "pop": 644,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250819003",
-      "pop": 816,
-      "share_before": 7.1,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250820003",
-      "pop": 950,
-      "share_before": 0.0,
-      "share_after": 99.9,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250821001",
-      "pop": 1323,
-      "share_before": 0.0,
-      "share_after": 55.5,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
-    "kind": "health_center",
-    "address": "415 Columbia Road, Boston, MA, 02125",
-    "lat": 42.311979,
-    "lon": -71.068585,
-    "gain": 10374,
-    "restored": [
-     {
-      "GEOID": "250250906001",
-      "pop": 1099,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250902001",
-      "pop": 712,
-      "share_before": 0.0,
-      "share_after": 25.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903001",
-      "pop": 1033,
-      "share_before": 0.0,
-      "share_after": 99.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903002",
-      "pop": 1681,
-      "share_before": 0.0,
-      "share_after": 47.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903003",
-      "pop": 1081,
-      "share_before": 0.0,
-      "share_after": 64.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250904002",
-      "pop": 1462,
-      "share_before": 0.0,
-      "share_after": 62.5,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250918003",
-      "pop": 1052,
-      "share_before": 0.0,
-      "share_after": 62.9,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250818002",
-      "pop": 1006,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250818003",
-      "pop": 1248,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "Harvard Street Neighborhood Health Center",
-    "kind": "health_center",
-    "address": "632 Blue Hill Avenue, Boston, MA, 02121",
-    "lat": 42.30261,
-    "lon": -71.085068,
-    "gain": 10113,
-    "restored": [
-     {
-      "GEOID": "250250821002",
-      "pop": 1543,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901001",
-      "pop": 1610,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901002",
-      "pop": 645,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901003",
-      "pop": 856,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250902001",
-      "pop": 712,
-      "share_before": 0.0,
-      "share_after": 53.3,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250902002",
-      "pop": 716,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250818003",
-      "pop": 1248,
-      "share_before": 0.0,
-      "share_after": 34.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250819002",
-      "pop": 644,
-      "share_before": 0.0,
-      "share_after": 76.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250819003",
-      "pop": 816,
-      "share_before": 7.1,
-      "share_after": 91.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250821001",
-      "pop": 1323,
-      "share_before": 0.0,
-      "share_after": 56.1,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Whittier Street Health Center at Quincy Commons",
-    "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
-    "Harvard Street Neighborhood Health Center"
-   ],
-   "gain": 21722,
-   "solver": "PuLP CBC"
-  }
- },
- "2": {
   "lost_pop": 20952,
   "ring_mi": 1.0,
   "top": [
@@ -460,6 +191,212 @@
     "Forest Hills (Orange)"
    ],
    "gain": 20952,
+   "solver": "PuLP CBC"
+  }
+ },
+ "2": {
+  "lost_pop": 20083,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Whittier Street Health Center at Quincy Commons",
+    "kind": "health_center",
+    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
+    "lat": 42.314769,
+    "lon": -71.078458,
+    "gain": 10591,
+    "restored": [
+     {
+      "GEOID": "250250820001",
+      "pop": 1498,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250820002",
+      "pop": 747,
+      "share_before": 0.0,
+      "share_after": 89.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903001",
+      "pop": 1033,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903002",
+      "pop": 1681,
+      "share_before": 0.0,
+      "share_after": 96.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903003",
+      "pop": 1081,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250904002",
+      "pop": 1462,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250819003",
+      "pop": 816,
+      "share_before": 8.2,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250250820003",
+      "pop": 950,
+      "share_before": 0.0,
+      "share_after": 99.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250821001",
+      "pop": 1323,
+      "share_before": 0.0,
+      "share_after": 55.5,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Harvard Street Neighborhood Health Center",
+    "kind": "health_center",
+    "address": "632 Blue Hill Avenue, Boston, MA, 02121",
+    "lat": 42.30261,
+    "lon": -71.085068,
+    "gain": 8221,
+    "restored": [
+     {
+      "GEOID": "250250821002",
+      "pop": 1543,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901001",
+      "pop": 1610,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901002",
+      "pop": 645,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901003",
+      "pop": 856,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902001",
+      "pop": 712,
+      "share_before": 0.0,
+      "share_after": 53.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902002",
+      "pop": 716,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250819003",
+      "pop": 816,
+      "share_before": 8.2,
+      "share_after": 92.1,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250250821001",
+      "pop": 1323,
+      "share_before": 0.0,
+      "share_after": 56.1,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
+    "kind": "health_center",
+    "address": "415 Columbia Road, Boston, MA, 02125",
+    "lat": 42.311979,
+    "lon": -71.068585,
+    "gain": 7021,
+    "restored": [
+     {
+      "GEOID": "250250902001",
+      "pop": 712,
+      "share_before": 0.0,
+      "share_after": 25.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903001",
+      "pop": 1033,
+      "share_before": 0.0,
+      "share_after": 99.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903002",
+      "pop": 1681,
+      "share_before": 0.0,
+      "share_after": 47.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903003",
+      "pop": 1081,
+      "share_before": 0.0,
+      "share_after": 64.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250904002",
+      "pop": 1462,
+      "share_before": 0.0,
+      "share_after": 62.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250918003",
+      "pop": 1052,
+      "share_before": 0.0,
+      "share_after": 62.9,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Whittier Street Health Center at Quincy Commons",
+    "Harvard Street Neighborhood Health Center",
+    "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd"
+   ],
+   "gain": 17725,
    "solver": "PuLP CBC"
   }
  },
@@ -891,134 +828,6 @@
   }
  },
  "6": {
-  "lost_pop": 10625,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Massachusetts Ave (Orange, Silver)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.337971,
-    "lon": -71.079421,
-    "gain": 10625,
-    "restored": [
-     {
-      "GEOID": "250250806011",
-      "pop": 4013,
-      "share_before": 0.0,
-      "share_after": 63.7,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 44.9,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Symphony (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.342729,
-    "lon": -71.084941,
-    "gain": 10625,
-    "restored": [
-     {
-      "GEOID": "250250806011",
-      "pop": 4013,
-      "share_before": 0.0,
-      "share_after": 61.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 79.6,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Northeastern (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.340059,
-    "lon": -71.089653,
-    "gain": 10625,
-    "restored": [
-     {
-      "GEOID": "250250806011",
-      "pop": 4013,
-      "share_before": 0.0,
-      "share_after": 91.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 41.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Prudential (Green)",
-    "Nubian (Silver)"
-   ],
-   "gain": 10625,
-   "solver": "PuLP CBC"
-  }
- },
- "7": {
   "lost_pop": 9237,
   "ring_mi": 0.5,
   "top": [
@@ -1152,13 +961,119 @@
    "solver": "PuLP CBC"
   }
  },
- "8": {
+ "7": {
   "lost_pop": 6920,
   "ring_mi": 1.0,
   "top": [],
   "best_set": {
    "sites": [],
    "gain": 0
+  }
+ },
+ "8": {
+  "lost_pop": 6612,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Massachusetts Ave (Orange, Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.337971,
+    "lon": -71.079421,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.7,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 7.1,
+      "share_after": 44.9,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Prudential (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.345777,
+    "lon": -71.0812,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.7,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 7.1,
+      "share_after": 20.8,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Symphony (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.342729,
+    "lon": -71.084941,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.7,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 7.1,
+      "share_after": 79.6,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Northeastern (Green)"
+   ],
+   "gain": 6612,
+   "solver": "PuLP CBC"
   }
  },
  "9": {
@@ -1550,6 +1465,112 @@
   }
  },
  "12": {
+  "lost_pop": 4501,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "NeighborHealth \u2013 South End",
+    "kind": "health_center",
+    "address": "1601 Washington Street, Boston, MA, 02118",
+    "lat": 42.338295,
+    "lon": -71.074921,
+    "gain": 4501,
+    "restored": [
+     {
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 4.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.5,
+      "share_after": 27.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Boston Health Care for the Homeless Program",
+    "kind": "health_center",
+    "address": "Jean Yawkey Place, Boston, MA, 02118",
+    "lat": 42.333568,
+    "lon": -71.072704,
+    "gain": 4501,
+    "restored": [
+     {
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 4.0,
+      "share_after": 71.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.4,
+      "share_after": 78.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.5,
+      "share_after": 81.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Lenox St (Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.335057,
+    "lon": -71.078802,
+    "gain": 4501,
+    "restored": [
+     {
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 4.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.5,
+      "share_after": 26.3,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Melnea Cass Blvd (Silver)"
+   ],
+   "gain": 4501,
+   "solver": "PuLP CBC"
+  }
+ },
+ "13": {
   "lost_pop": 3434,
   "ring_mi": 1.0,
   "top": [
@@ -1648,7 +1669,7 @@
    "solver": "PuLP CBC"
   }
  },
- "13": {
+ "14": {
   "lost_pop": 3350,
   "ring_mi": 0.5,
   "top": [
@@ -1768,7 +1789,7 @@
    "solver": "PuLP CBC"
   }
  },
- "14": {
+ "15": {
   "lost_pop": 2935,
   "ring_mi": 0.5,
   "top": [
@@ -1888,7 +1909,7 @@
    "solver": "PuLP CBC"
   }
  },
- "15": {
+ "16": {
   "lost_pop": 1964,
   "ring_mi": 0.5,
   "top": [
@@ -1950,7 +1971,7 @@
    "solver": "PuLP CBC"
   }
  },
- "16": {
+ "17": {
   "lost_pop": 1769,
   "ring_mi": 0.5,
   "top": [
@@ -2016,7 +2037,37 @@
    "solver": "PuLP CBC"
   }
  },
- "17": {
+ "18": {
+  "lost_pop": 950,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Nubian (Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.329713,
+    "lon": -71.08372,
+    "gain": 950,
+    "restored": [
+     {
+      "GEOID": "250250817004",
+      "pop": 950,
+      "share_before": 0.0,
+      "share_after": 59.7,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Nubian (Silver)"
+   ],
+   "gain": 950,
+   "solver": "PuLP CBC"
+  }
+ },
+ "19": {
   "lost_pop": 934,
   "ring_mi": 1.0,
   "top": [
@@ -2064,7 +2115,7 @@
    "solver": "PuLP CBC"
   }
  },
- "18": {
+ "20": {
   "lost_pop": 569,
   "ring_mi": 1.0,
   "top": [],

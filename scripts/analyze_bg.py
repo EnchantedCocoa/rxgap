@@ -47,8 +47,21 @@ def fetch_acs(key):
 
 def load_pharmacies():
     phs = json.loads((DATA / 'raw' / 'pharmacies.json').read_text())['pharmacies']
+    for p in phs:
+        p['source'] = 'OpenStreetMap'
+    # Stores OSM is missing (new or unmapped), each with a source URL. Skipped if OSM already has one within 60 m.
+    opened = DATA / 'manual' / 'openings.csv'
+    if opened.exists():
+        with open(opened) as f:
+            for row in csv.DictReader(f):
+                o = Point(float(row['lon']), float(row['lat']))
+                # degrees -> rough meters (longitude scale at 42°N)
+                if not any(o.distance(Point(p['lon'], p['lat'])) * 82000 <= CLOSED_MATCH_M for p in phs):
+                    phs.append({'name': row['name'], 'lat': float(row['lat']), 'lon': float(row['lon']),
+                                'address': row['address'], 'source': 'manual (openings.csv)'})
+                    print(f"opening '{row['name']}': added")
     ph = gpd.GeoDataFrame(phs, geometry=[Point(p['lon'], p['lat']) for p in phs], crs=4326).to_crs(26986)
-    for c in ['name', 'address', 'osm_id', 'brand']:  # NaN -> None, so JSON stays valid
+    for c in ['name', 'address', 'osm_id', 'brand', 'source']:  # NaN -> None, so JSON stays valid
         if c in ph:
             ph[c] = ph[c].astype(object).where(ph[c].notna(), None)
     closed = []
@@ -142,7 +155,7 @@ def main():
     out = gpd.GeoDataFrame(props, geometry=bg.geometry.simplify(8), crs=26986).to_crs(4326)
     out.to_file(DATA / 'bg_out.geojson', driver='GeoJSON')
     meta = {'rule': rule, 'radii': RADII,
-            'pharmacies': [{'name': r['name'], 'lat': r['lat'], 'lon': r['lon']} for _, r in ph.iterrows()],
+            'pharmacies': [{'name': r['name'], 'lat': r['lat'], 'lon': r['lon'], 'source': r['source']} for _, r in ph.iterrows()],
             'closed': closed}
     (DATA / 'map_meta.json').write_text(json.dumps(meta))
 

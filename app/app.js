@@ -51,6 +51,8 @@ function renderHeadline() {
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
     $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`;
   $('#fallback-banner').hidden = D.rule === 'state';
+  const manual = D.pharmacies.filter((p) => p.source && p.source !== 'OpenStreetMap').length;
+  if (manual) $('#source-note').textContent = `Stores: OpenStreetMap (a floor, not the full list), plus ${fmt(manual)} added by hand with a source.`;
 }
 
 // ---------- provenance popover ----------
