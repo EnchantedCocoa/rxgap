@@ -1,0 +1,96 @@
+[
+ {
+  "id": "pickup_rides",
+  "statement": "MassHealth does not pay for rides to a pharmacy to pick up medicine.",
+  "value": null,
+  "cite": "130 CMR 407.411(B)(9)",
+  "source": "MassHealth transportation regulations",
+  "url": "https://www.mass.gov/regulations/130-CMR-407000-transportation-services",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "walk_rule",
+  "statement": "MassHealth does not pay for rides to care within this many miles of home when the member can walk.",
+  "value": 0.75,
+  "cite": "130 CMR 407.411(B)(8)",
+  "source": "MassHealth transportation regulations",
+  "url": "https://www.mass.gov/regulations/130-CMR-407000-transportation-services",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "vaccine_rides",
+  "statement": "A ride to a pharmacy for a COVID-19 vaccine can be covered when the doctor marks it on the PT-1.",
+  "value": null,
+  "cite": "Board of Hearings appeal 2310153",
+  "source": "MassHealth Board of Hearings",
+  "url": "https://www.mass.gov/doc/appeal-2310153/download",
+  "confirmed": "2023-10-23",
+  "note": "Appeal decided in late 2023; the rule it applies was confirmed on 2026-10-24."
+ },
+ {
+  "id": "pt1_days",
+  "statement": "Only a MassHealth provider can request a ride, online with a PT-1 form. Approval can take up to this many business days.",
+  "value": 3,
+  "form": "PT-1",
+  "cite": "MassHealth: Get a ride to MassHealth medical appointments",
+  "source": "MassHealth",
+  "url": "https://www.mass.gov/info-details/get-a-ride-to-masshealth-medical-appointments",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "mh_phone",
+  "statement": "MassHealth Customer Service Center phone number.",
+  "value": "(800) 841-2900",
+  "cite": "MassHealth: Get a ride to MassHealth medical appointments",
+  "source": "MassHealth",
+  "url": "https://www.mass.gov/info-details/get-a-ride-to-masshealth-medical-appointments",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "mh_office",
+  "statement": "MassHealth mailing address.",
+  "value": "MassHealth, 1 Enterprise Drive, 3rd Floor, Quincy, MA 02171",
+  "cite": "mass.gov/orgs/masshealth",
+  "source": "MassHealth",
+  "url": "https://www.mass.gov/orgs/masshealth",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "delivery_fee",
+  "statement": "MassHealth paid pharmacies up to this many dollars for each prescription delivered to a home.",
+  "value": 8,
+  "year": 2021,
+  "cite": "MassHealth Pharmacy Facts 167",
+  "source": "MassHealth",
+  "url": "https://www.mass.gov/doc/pharmacy-facts-167-june-15-2021-0/download",
+  "confirmed": "2021-06-15",
+  "note": "Not confirmed since 2021."
+ },
+ {
+  "id": "mail_months",
+  "statement": "Health plan mail order can send this many months of a daily medicine at once.",
+  "value": 3,
+  "cite": "WellSense MassHealth mail order pharmacy",
+  "source": "WellSense Health Plan",
+  "url": "https://www.wellsense.org/members/ma/masshealth/prescriptions/mail-order-pharmacy",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "closure_notice",
+  "statement": "A closing pharmacy must try to tell its recent patients this many days ahead.",
+  "value": 14,
+  "cite": "247 CMR 6.13(4)",
+  "source": "Massachusetts Board of Registration in Pharmacy",
+  "url": "https://www.law.cornell.edu/regulations/massachusetts/247-CMR-6-13",
+  "confirmed": "2026-10-24"
+ },
+ {
+  "id": "boston_petition",
+  "statement": "Boston City Council asked the Board of Pharmacy to require this many days of closure notice. The Board has not changed the rule.",
+  "value": 120,
+  "cite": "Boston City Council docket 2025-1453",
+  "source": "GBH News, December 12, 2025",
+  "url": "https://www.wgbh.org/news/politics/2025-12-12/boston-asks-state-officials-for-more-notice-when-pharmacies-close",
+  "confirmed": "2026-10-24"
+ }
+]
