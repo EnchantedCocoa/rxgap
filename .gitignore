@@ -6,3 +6,7 @@ data/raw/walk.graphml
 data/raw/walk.gpickle
 data/last_status.json
 data/letters.duckdb*
+.kiro/settings/cli.json
+.kiro/settings/.kirocrew-cli-settings.lock
+.DS_Store
+.venv/
