@@ -1,0 +1,8 @@
+{
+  "dataset": "OpenStreetMap walk network, Boston + 1 mi",
+  "source": "Overpass via osmnx",
+  "function": "scripts/fetch_walk_graph.py:main",
+  "pulled": "2026-10-24T16:22:11.117233+00:00",
+  "nodes": 96000,
+  "edges": 272256
+}

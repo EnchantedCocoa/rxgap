@@ -1,0 +1,16 @@
+{
+  "health_center": {
+    "dataset": "MassGIS Community Health Centers (Hosted Feature Layer)",
+    "url": "https://services1.arcgis.com/hGdibHYSPO59RG1h/arcgis/rest/services/Community_Health_Centers/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "pulled": "2026-10-24T16:21:28.039307+00:00"
+  },
+  "mbta_station": {
+    "dataset": "MassGIS AGOL MBTA Rapid Transit stations",
+    "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/MBTA_Rapid_Transit/MapServer/0/query?where=1%3D1&outFields=STATION,LINE&returnGeometry=true&outSR=4326&f=geojson",
+    "pulled": "2026-10-24T16:21:28.039307+00:00"
+  },
+  "storefront": {
+    "dataset": "manual"
+  },
+  "function": "scripts/fetch_sites.py:main"
+}

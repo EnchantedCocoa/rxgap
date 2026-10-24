@@ -1,0 +1,1588 @@
+{
+"sites": [
+{
+"name": "CHA Broadway Health Center",
+"kind": "health_center",
+"lat": 42.392106,
+"lon": -71.092984,
+"address": "300 Broadway, Somerville, MA, 02145",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA East Cambridge Health Center",
+"kind": "health_center",
+"lat": 42.373062,
+"lon": -71.085392,
+"address": "163 Gore Street, Cambridge, MA, 02141",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA Cambridge Family Health North",
+"kind": "health_center",
+"lat": 42.391575,
+"lon": -71.122963,
+"address": "2067 Mass Avenue, Cambridge, MA, 02140",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA Cambridge Family Health",
+"kind": "health_center",
+"lat": 42.373998,
+"lon": -71.100854,
+"address": "237 Hampshire Street, Cambridge, MA, 02139",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Cambridge Health Alliance Health Centers",
+"kind": "health_center",
+"lat": 42.374736,
+"lon": -71.104324,
+"address": "1493 Cambridge Street, Cambridge, MA, 02139",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA Malden Family Medicine Center",
+"kind": "health_center",
+"lat": 42.419844,
+"lon": -71.072797,
+"address": "195 Canal Street, Malden, MA, 02148",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Dimock Community Health Center",
+"kind": "health_center",
+"lat": 42.319791,
+"lon": -71.097655,
+"address": "55 Dimock Street, Boston, MA, 02119",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "DotHouse Health",
+"kind": "health_center",
+"lat": 42.304437,
+"lon": -71.05945,
+"address": "1353 Dorchester Avenue, Boston, MA, 02122",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NeighborHealth \u2013 East Boston \u2013 Gove St",
+"kind": "health_center",
+"lat": 42.372279,
+"lon": -71.038178,
+"address": "10 Gove Street, East Boston, MA, 02128",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Boston Community Health Center \u2013 409 W Broadway",
+"kind": "health_center",
+"lat": 42.336864,
+"lon": -71.048218,
+"address": "409 West Broadway, Boston, MA, 02127",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Boston Community Health Center \u2013 386 W Broadway",
+"kind": "health_center",
+"lat": 42.337611,
+"lon": -71.048519,
+"address": "386 West Broadway, Boston, MA, 02127",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Cove Community Health Center \u2013 Washington St",
+"kind": "health_center",
+"lat": 42.347979,
+"lon": -71.064922,
+"address": "885 Washington Street, Boston, MA, 02111",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Cove Community Health Center \u2013 South St",
+"kind": "health_center",
+"lat": 42.350967,
+"lon": -71.057641,
+"address": "145 South Street, Boston, MA, 02111",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Fenway: South End",
+"kind": "health_center",
+"lat": 42.348834,
+"lon": -71.072099,
+"address": "142 Berkeley Street, Boston, MA, 02116",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NeighborHealth \u2013 South End",
+"kind": "health_center",
+"lat": 42.338295,
+"lon": -71.074921,
+"address": "1601 Washington Street, Boston, MA, 02118",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Cove Community Health Center \u2013 Hancock St",
+"kind": "health_center",
+"lat": 42.272271,
+"lon": -71.024512,
+"address": "435 Hancock Street, Quincy, MA, 02171",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Upham\u2019s Corner Health Center \u2013 500 Columbia Rd",
+"kind": "health_center",
+"lat": 42.314778,
+"lon": -71.067581,
+"address": "500 Columbia Road, Boston, MA, 02125",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Upham\u2019s Corner Health Center \u2013 636 Columbia Rd",
+"kind": "health_center",
+"lat": 42.318468,
+"lon": -71.064089,
+"address": "636 Columbia Road, Boston, MA, 02125",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
+"kind": "health_center",
+"lat": 42.311979,
+"lon": -71.068585,
+"address": "415 Columbia Road, Boston, MA, 02125",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA Union Square Family Health",
+"kind": "health_center",
+"lat": 42.384942,
+"lon": -71.106052,
+"address": "26 Central Street, Somerville, MA, 02143",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Whittier Street Health Center",
+"kind": "health_center",
+"lat": 42.332373,
+"lon": -71.091998,
+"address": "1290 Tremont Street, Boston, MA, 02120",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Cove Community Health Center \u2013 Holmes St",
+"kind": "health_center",
+"lat": 42.272433,
+"lon": -71.025479,
+"address": "88 Holmes Street, Quincy, MA, 02171",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NEW Health \u2013 Charlestown",
+"kind": "health_center",
+"lat": 42.377877,
+"lon": -71.056808,
+"address": "15 Tufts Street, Boston, MA, 02129",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Charles River Community Health \u2013 Brighton",
+"kind": "health_center",
+"lat": 42.362028,
+"lon": -71.144,
+"address": "495 Western Avenue, Brighton, MA, 02135",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NeighorHealth \u2013 Winthrop",
+"kind": "health_center",
+"lat": 42.382224,
+"lon": -70.993255,
+"address": "17 Main Street, Winthrop, MA, 02152",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Boston Health/Seaport",
+"kind": "health_center",
+"lat": 42.347952,
+"lon": -71.041054,
+"address": "505 Congress Street, Boston, MA, 02210",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Greater Roslindale Medical & Dental Center",
+"kind": "health_center",
+"lat": 42.287148,
+"lon": -71.127751,
+"address": "4199 Washington Street, Roslindale, MA, 02131",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Codman Square Health Center",
+"kind": "health_center",
+"lat": 42.289371,
+"lon": -71.072014,
+"address": "637 Washington Street, Boston, MA, 02124",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Massachusetts League of Community Health Centers",
+"kind": "health_center",
+"lat": 42.359076,
+"lon": -71.059328,
+"address": "40 Court Street, Boston, MA, 02108",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Harvard Street Neighborhood Health Center",
+"kind": "health_center",
+"lat": 42.30261,
+"lon": -71.085068,
+"address": "632 Blue Hill Avenue, Boston, MA, 02121",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Harbor Health: Geiger Gibson Community Health Center",
+"kind": "health_center",
+"lat": 42.319449,
+"lon": -71.046112,
+"address": "250 Mount Vernon Street, Boston, MA, 02125",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Manet Community Health Center",
+"kind": "health_center",
+"lat": 42.272541,
+"lon": -71.030807,
+"address": "110 West Squantum Street, Quincy, MA, 02171",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "MGH Chelsea HealthCare Center \u2013 151 Everett Ave",
+"kind": "health_center",
+"lat": 42.39612,
+"lon": -71.039204,
+"address": "151 Everett Avenue, Chelsea, MA, 02150",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "MGH Chelsea HealthCare Center \u2013 100 Everett Ave",
+"kind": "health_center",
+"lat": 42.394374,
+"lon": -71.040158,
+"address": "100 Everett Avenue, Chelsea, MA, 02150",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "MGH Revere HealthCare Center \u2013 Ocean Ave",
+"kind": "health_center",
+"lat": 42.408171,
+"lon": -70.992233,
+"address": "300 Ocean Avenue, Revere, MA, 02151",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Harbor Health: Daniel Driscoll \u2013 Neponset Health Center",
+"kind": "health_center",
+"lat": 42.286716,
+"lon": -71.044091,
+"address": "398 Neponset Avenue, Boston, MA, 02122",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "MGH Revere HealthCare Center \u2013 Broadway",
+"kind": "health_center",
+"lat": 42.408657,
+"lon": -71.013716,
+"address": "300 Broadway, Revere, MA, 02151",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NEW Health \u2013 North End",
+"kind": "health_center",
+"lat": 42.364728,
+"lon": -71.053712,
+"address": "332 Hanover Street, Boston, MA, 02113",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Sidney Borum Jr. Health Center",
+"kind": "health_center",
+"lat": 42.348834,
+"lon": -71.072099,
+"address": "142 Berkeley Street, Boston, MA, 02116",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "MGH Charlestown HealthCare Center",
+"kind": "health_center",
+"lat": 42.377166,
+"lon": -71.064251,
+"address": "73 High Street, Charlestown, MA, 02129",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Mattapan Community Health Center",
+"kind": "health_center",
+"lat": 42.269805,
+"lon": -71.094028,
+"address": "1575 Blue Hill Avenue, Mattapan, MA, 02126",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Southern Jamaica Plain Health Center",
+"kind": "health_center",
+"lat": 42.313266,
+"lon": -71.113346,
+"address": "640 Centre Street, Jamaica Plain, MA, 02130",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Brookside Community Health Center",
+"kind": "health_center",
+"lat": 42.310818,
+"lon": -71.103662,
+"address": "3297 Washington Street, Jamaica Plain, MA, 02130",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Harvard Street Adolescent Child Life Center",
+"kind": "health_center",
+"lat": 42.294123,
+"lon": -71.088569,
+"address": "895 Blue Hill Avenue, Boston, MA, 02121",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Whittier Street Health Center at Quincy Commons",
+"kind": "health_center",
+"lat": 42.314769,
+"lon": -71.078458,
+"address": "278 Blue Hill Avenue, Boston, MA, 02119",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Harbor Health Services Inc",
+"kind": "health_center",
+"lat": 42.275781,
+"lon": -71.074889,
+"address": "1135 Morton Street, Mattapan, MA, 02126",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Bowdoin Street Health Center",
+"kind": "health_center",
+"lat": 42.305886,
+"lon": -71.067761,
+"address": "230 Bowdoin Street, Boston, MA, 02122",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "South Cove Community Health Center \u2013 Malden",
+"kind": "health_center",
+"lat": 42.417994,
+"lon": -71.076167,
+"address": "227 Commercial Street, Malden, MA, 02148",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Boston Health Care for the Homeless Program",
+"kind": "health_center",
+"lat": 42.333568,
+"lon": -71.072704,
+"address": "Jean Yawkey Place, Boston, MA, 02118",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "CHA Windsor Street Health Center",
+"kind": "health_center",
+"lat": 42.364692,
+"lon": -71.0968,
+"address": "119 Windsor Street, Cambridge, MA, 02139",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "NeighborHealth \u2013 East Boston \u2013 Maverick Square",
+"kind": "health_center",
+"lat": 42.369606,
+"lon": -71.03964,
+"address": "20 Maverick Square, Boston, MA, 02128",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Fenway Health",
+"kind": "health_center",
+"lat": 42.344047,
+"lon": -71.098681,
+"address": "1340 Boylston Street, Boston, MA, 02115",
+"source": "MassGIS Community Health Centers (Hosted Feature Layer)"
+},
+{
+"name": "Hynes Convention Center (Green)",
+"kind": "mbta_station",
+"lat": 42.347991,
+"lon": -71.087315,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Blandford Street (Green)",
+"kind": "mbta_station",
+"lat": 42.349207,
+"lon": -71.100056,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Boston University East (Green)",
+"kind": "mbta_station",
+"lat": 42.34973,
+"lon": -71.104429,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Magoun Square (Green)",
+"kind": "mbta_station",
+"lat": 42.393861,
+"lon": -71.106437,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Ball Square (Green)",
+"kind": "mbta_station",
+"lat": 42.399527,
+"lon": -71.110652,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Union Square (Green)",
+"kind": "mbta_station",
+"lat": 42.377473,
+"lon": -71.095077,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "East Somerville (Green)",
+"kind": "mbta_station",
+"lat": 42.379456,
+"lon": -71.086544,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Lechmere (Green)",
+"kind": "mbta_station",
+"lat": 42.371631,
+"lon": -71.07651,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Gilman Square (Green)",
+"kind": "mbta_station",
+"lat": 42.387757,
+"lon": -71.09628,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Tufts Medical Center (Orange, Silver)",
+"kind": "mbta_station",
+"lat": 42.349705,
+"lon": -71.063806,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Black Falcon Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.34418,
+"lon": -71.027216,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Assembly (Orange)",
+"kind": "mbta_station",
+"lat": 42.392165,
+"lon": -71.077126,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Ashmont (Red)",
+"kind": "mbta_station",
+"lat": 42.283892,
+"lon": -71.063431,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Harvard (Red)",
+"kind": "mbta_station",
+"lat": 42.374038,
+"lon": -71.118907,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Kendall/MIT (Red)",
+"kind": "mbta_station",
+"lat": 42.362424,
+"lon": -71.086192,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Capen Street (Red)",
+"kind": "mbta_station",
+"lat": 42.267562,
+"lon": -71.087205,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Kenmore (Green)",
+"kind": "mbta_station",
+"lat": 42.348823,
+"lon": -71.095349,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Arlington (Green)",
+"kind": "mbta_station",
+"lat": 42.351777,
+"lon": -71.07099,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Copley (Green)",
+"kind": "mbta_station",
+"lat": 42.349916,
+"lon": -71.077976,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Boylston (Green)",
+"kind": "mbta_station",
+"lat": 42.35303,
+"lon": -71.064603,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chinatown (Orange)",
+"kind": "mbta_station",
+"lat": 42.352483,
+"lon": -71.062581,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Haymarket (Green/Orange)",
+"kind": "mbta_station",
+"lat": 42.362481,
+"lon": -71.057852,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "North Station (Green/Orange)",
+"kind": "mbta_station",
+"lat": 42.365152,
+"lon": -71.059984,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Davis (Red)",
+"kind": "mbta_station",
+"lat": 42.396761,
+"lon": -71.122235,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "South Station (Red, Silver)",
+"kind": "mbta_station",
+"lat": 42.352613,
+"lon": -71.055225,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Wellington (Orange)",
+"kind": "mbta_station",
+"lat": 42.401749,
+"lon": -71.077118,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Sullivan Square (Orange)",
+"kind": "mbta_station",
+"lat": 42.384306,
+"lon": -71.076932,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Community College (Orange)",
+"kind": "mbta_station",
+"lat": 42.373917,
+"lon": -71.070339,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Science Park/West End (Green)",
+"kind": "mbta_station",
+"lat": 42.366751,
+"lon": -71.067745,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Bowdoin (Blue)",
+"kind": "mbta_station",
+"lat": 42.361169,
+"lon": -71.061838,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Government Center (Blue/Green)",
+"kind": "mbta_station",
+"lat": 42.359305,
+"lon": -71.059459,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Aquarium (Blue)",
+"kind": "mbta_station",
+"lat": 42.359526,
+"lon": -71.051939,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Maverick (Blue)",
+"kind": "mbta_station",
+"lat": 42.369002,
+"lon": -71.03958,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport (Blue, Silver)",
+"kind": "mbta_station",
+"lat": 42.374266,
+"lon": -71.030016,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Eastern Avenue (Silver)",
+"kind": "mbta_station",
+"lat": 42.388467,
+"lon": -71.023934,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Box District (Silver)",
+"kind": "mbta_station",
+"lat": 42.394125,
+"lon": -71.028467,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Bellingham Square (Silver)",
+"kind": "mbta_station",
+"lat": 42.395411,
+"lon": -71.033468,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chelsea (Silver)",
+"kind": "mbta_station",
+"lat": 42.396811,
+"lon": -71.040394,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Fenwood Road (Green)",
+"kind": "mbta_station",
+"lat": 42.333754,
+"lon": -71.105646,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Mission Park (Green)",
+"kind": "mbta_station",
+"lat": 42.333188,
+"lon": -71.109586,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Riverway (Green)",
+"kind": "mbta_station",
+"lat": 42.331987,
+"lon": -71.111951,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Back Of The Hill (Green)",
+"kind": "mbta_station",
+"lat": 42.329647,
+"lon": -71.111071,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Heath Street (Green)",
+"kind": "mbta_station",
+"lat": 42.32832,
+"lon": -71.110282,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Boston University Central (Green)",
+"kind": "mbta_station",
+"lat": 42.350049,
+"lon": -71.107037,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Amory Street (Green)",
+"kind": "mbta_station",
+"lat": 42.350975,
+"lon": -71.114708,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Babcock Street (Green)",
+"kind": "mbta_station",
+"lat": 42.351602,
+"lon": -71.119921,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Packards Corner (Green)",
+"kind": "mbta_station",
+"lat": 42.351794,
+"lon": -71.125226,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Harvard Avenue (Green)",
+"kind": "mbta_station",
+"lat": 42.35042,
+"lon": -71.131008,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Griggs Street (Green)",
+"kind": "mbta_station",
+"lat": 42.348828,
+"lon": -71.134365,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Allston Street (Green)",
+"kind": "mbta_station",
+"lat": 42.348585,
+"lon": -71.137637,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Warren Street (Green)",
+"kind": "mbta_station",
+"lat": 42.348632,
+"lon": -71.140241,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Washington Street (Green)",
+"kind": "mbta_station",
+"lat": 42.344132,
+"lon": -71.142549,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Sutherland Road (Green)",
+"kind": "mbta_station",
+"lat": 42.34157,
+"lon": -71.146331,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chiswick Road (Green)",
+"kind": "mbta_station",
+"lat": 42.340627,
+"lon": -71.150952,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chestnut Hill Avenue (Green)",
+"kind": "mbta_station",
+"lat": 42.338586,
+"lon": -71.152656,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "South Street (Green)",
+"kind": "mbta_station",
+"lat": 42.339463,
+"lon": -71.157262,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Boston College (Green)",
+"kind": "mbta_station",
+"lat": 42.340164,
+"lon": -71.167026,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Cleveland Circle (Green)",
+"kind": "mbta_station",
+"lat": 42.336145,
+"lon": -71.149287,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Englewood Avenue (Green)",
+"kind": "mbta_station",
+"lat": 42.336993,
+"lon": -71.145499,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Dean Road (Green)",
+"kind": "mbta_station",
+"lat": 42.337723,
+"lon": -71.141956,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Tappan Street (Green)",
+"kind": "mbta_station",
+"lat": 42.338527,
+"lon": -71.138442,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Washington Square (Green)",
+"kind": "mbta_station",
+"lat": 42.339336,
+"lon": -71.135368,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Fairbanks Street (Green)",
+"kind": "mbta_station",
+"lat": 42.339649,
+"lon": -71.131298,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Brandon Hall (Green)",
+"kind": "mbta_station",
+"lat": 42.340062,
+"lon": -71.128658,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Summit Avenue (Green)",
+"kind": "mbta_station",
+"lat": 42.341037,
+"lon": -71.125788,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Coolidge Corner (Green)",
+"kind": "mbta_station",
+"lat": 42.342159,
+"lon": -71.121296,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Saint Paul Street (Green)",
+"kind": "mbta_station",
+"lat": 42.343219,
+"lon": -71.11719,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Kent Street (Green)",
+"kind": "mbta_station",
+"lat": 42.344019,
+"lon": -71.114292,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Hawes Street (Green)",
+"kind": "mbta_station",
+"lat": 42.344869,
+"lon": -71.111175,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Saint Marys Street (Green)",
+"kind": "mbta_station",
+"lat": 42.345996,
+"lon": -71.10724,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Fenway (Green)",
+"kind": "mbta_station",
+"lat": 42.345167,
+"lon": -71.104605,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Longwood (Green)",
+"kind": "mbta_station",
+"lat": 42.341678,
+"lon": -71.109935,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Brookline Village (Green)",
+"kind": "mbta_station",
+"lat": 42.332603,
+"lon": -71.116829,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Brookline Hills (Green)",
+"kind": "mbta_station",
+"lat": 42.331303,
+"lon": -71.126728,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Beaconsfield (Green)",
+"kind": "mbta_station",
+"lat": 42.335701,
+"lon": -71.14026,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Reservoir (Green)",
+"kind": "mbta_station",
+"lat": 42.335149,
+"lon": -71.14838,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chestnut Hill (Green)",
+"kind": "mbta_station",
+"lat": 42.32675,
+"lon": -71.164609,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Newton Centre (Green)",
+"kind": "mbta_station",
+"lat": 42.329424,
+"lon": -71.19237,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Downtown Crossing (Orange/Red)",
+"kind": "mbta_station",
+"lat": 42.355459,
+"lon": -71.060494,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Wood Island (Blue)",
+"kind": "mbta_station",
+"lat": 42.379656,
+"lon": -71.022913,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Orient Heights (Blue)",
+"kind": "mbta_station",
+"lat": 42.38685,
+"lon": -71.004797,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Suffolk Downs (Blue)",
+"kind": "mbta_station",
+"lat": 42.390505,
+"lon": -70.99715,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Beachmont (Blue)",
+"kind": "mbta_station",
+"lat": 42.39726,
+"lon": -70.992533,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Revere Beach (Blue)",
+"kind": "mbta_station",
+"lat": 42.407851,
+"lon": -70.992504,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Wonderland (Blue)",
+"kind": "mbta_station",
+"lat": 42.413728,
+"lon": -70.991545,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Alewife (Red)",
+"kind": "mbta_station",
+"lat": 42.39613,
+"lon": -71.142078,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Porter (Red)",
+"kind": "mbta_station",
+"lat": 42.388329,
+"lon": -71.119115,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Central (Red)",
+"kind": "mbta_station",
+"lat": 42.365449,
+"lon": -71.103826,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Charles/MGH (Red)",
+"kind": "mbta_station",
+"lat": 42.361176,
+"lon": -71.071081,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Broadway (Red)",
+"kind": "mbta_station",
+"lat": 42.34259,
+"lon": -71.057171,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Andrew (Red)",
+"kind": "mbta_station",
+"lat": 42.330122,
+"lon": -71.056978,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Savin Hill (Red)",
+"kind": "mbta_station",
+"lat": 42.310756,
+"lon": -71.053641,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Fields Corner (Red)",
+"kind": "mbta_station",
+"lat": 42.30001,
+"lon": -71.061925,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Shawmut (Red)",
+"kind": "mbta_station",
+"lat": 42.293116,
+"lon": -71.065829,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Cedar Grove (Red)",
+"kind": "mbta_station",
+"lat": 42.279548,
+"lon": -71.060318,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Butler (Red)",
+"kind": "mbta_station",
+"lat": 42.272425,
+"lon": -71.062471,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Milton (Red)",
+"kind": "mbta_station",
+"lat": 42.270336,
+"lon": -71.067242,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Central Avenue (Red)",
+"kind": "mbta_station",
+"lat": 42.269994,
+"lon": -71.07361,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Valley Road (Red)",
+"kind": "mbta_station",
+"lat": 42.268335,
+"lon": -71.081504,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Mattapan (Red)",
+"kind": "mbta_station",
+"lat": 42.267521,
+"lon": -71.092513,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "North Quincy (Red)",
+"kind": "mbta_station",
+"lat": 42.275985,
+"lon": -71.030443,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Wollaston (Red)",
+"kind": "mbta_station",
+"lat": 42.266718,
+"lon": -71.020543,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Forest Hills (Orange)",
+"kind": "mbta_station",
+"lat": 42.30078,
+"lon": -71.114192,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Green Street (Orange)",
+"kind": "mbta_station",
+"lat": 42.309907,
+"lon": -71.10806,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Stony Brook (Orange)",
+"kind": "mbta_station",
+"lat": 42.317255,
+"lon": -71.104358,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Jackson Square (Orange)",
+"kind": "mbta_station",
+"lat": 42.32318,
+"lon": -71.099933,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Ruggles (Orange)",
+"kind": "mbta_station",
+"lat": 42.336461,
+"lon": -71.089771,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Massachusetts Ave (Orange, Silver)",
+"kind": "mbta_station",
+"lat": 42.337971,
+"lon": -71.079421,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Back Bay (Orange)",
+"kind": "mbta_station",
+"lat": 42.347568,
+"lon": -71.075107,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Prudential (Green)",
+"kind": "mbta_station",
+"lat": 42.345777,
+"lon": -71.0812,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Symphony (Green)",
+"kind": "mbta_station",
+"lat": 42.342729,
+"lon": -71.084941,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Northeastern (Green)",
+"kind": "mbta_station",
+"lat": 42.340059,
+"lon": -71.089653,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Museum Of Fine Arts (Green)",
+"kind": "mbta_station",
+"lat": 42.337934,
+"lon": -71.094977,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Longwood Medical Area (Green)",
+"kind": "mbta_station",
+"lat": 42.33615,
+"lon": -71.099562,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Brigham Circle (Green)",
+"kind": "mbta_station",
+"lat": 42.33458,
+"lon": -71.103725,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Park Street (Green/Red)",
+"kind": "mbta_station",
+"lat": 42.356314,
+"lon": -71.062246,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "JFK/UMass (Red)",
+"kind": "mbta_station",
+"lat": 42.320645,
+"lon": -71.052361,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "State (Blue/Orange)",
+"kind": "mbta_station",
+"lat": 42.358808,
+"lon": -71.05782,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Roxbury Crossing (Orange)",
+"kind": "mbta_station",
+"lat": 42.331218,
+"lon": -71.095729,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport Terminal B2 (Silver)",
+"kind": "mbta_station",
+"lat": 42.363084,
+"lon": -71.018368,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Design Center (Silver)",
+"kind": "mbta_station",
+"lat": 42.344591,
+"lon": -71.034608,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Lenox St (Silver)",
+"kind": "mbta_station",
+"lat": 42.335057,
+"lon": -71.078802,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "West Newton Street (Silver)",
+"kind": "mbta_station",
+"lat": 42.338734,
+"lon": -71.073821,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Union Park Street (Silver)",
+"kind": "mbta_station",
+"lat": 42.340936,
+"lon": -71.070293,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "East Berkeley Street (Silver)",
+"kind": "mbta_station",
+"lat": 42.343963,
+"lon": -71.065996,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Herald Street (Silver)",
+"kind": "mbta_station",
+"lat": 42.346027,
+"lon": -71.064808,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Worcester Street (Silver)",
+"kind": "mbta_station",
+"lat": 42.337472,
+"lon": -71.075639,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Melnea Cass Blvd (Silver)",
+"kind": "mbta_station",
+"lat": 42.332912,
+"lon": -71.081001,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Tide St (Silver)",
+"kind": "mbta_station",
+"lat": 42.345226,
+"lon": -71.032051,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Harbor St (Silver)",
+"kind": "mbta_station",
+"lat": 42.346569,
+"lon": -71.034978,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport Terminal B1 (Silver)",
+"kind": "mbta_station",
+"lat": 42.361348,
+"lon": -71.018544,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport Terminal A (Silver)",
+"kind": "mbta_station",
+"lat": 42.364734,
+"lon": -71.021155,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport Terminal C (Silver)",
+"kind": "mbta_station",
+"lat": 42.367245,
+"lon": -71.017833,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Airport Terminal E (Silver)",
+"kind": "mbta_station",
+"lat": 42.369647,
+"lon": -71.02103,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Silver Line Way (Silver)",
+"kind": "mbta_station",
+"lat": 42.346979,
+"lon": -71.038038,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "World Trade Center (Silver)",
+"kind": "mbta_station",
+"lat": 42.34835,
+"lon": -71.04263,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Courthouse (Silver)",
+"kind": "mbta_station",
+"lat": 42.352394,
+"lon": -71.046889,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "88 Black Falcon Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.34367,
+"lon": -71.026326,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "23 Dry Dock Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.344695,
+"lon": -71.030396,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "27 Dry Dock Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.344738,
+"lon": -71.028061,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Tremont St @ Boylston Station (Silver)",
+"kind": "mbta_station",
+"lat": 42.353379,
+"lon": -71.064199,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Temple Pl @ Washington St (Silver)",
+"kind": "mbta_station",
+"lat": 42.354817,
+"lon": -71.061163,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Chinatown Gate (Silver)",
+"kind": "mbta_station",
+"lat": 42.35038,
+"lon": -71.0597,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Nubian (Silver)",
+"kind": "mbta_station",
+"lat": 42.329713,
+"lon": -71.08372,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Essex St @ Atlantic Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.351907,
+"lon": -71.056128,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+},
+{
+"name": "Northern Ave (Silver)",
+"kind": "mbta_station",
+"lat": 42.347609,
+"lon": -71.036354,
+"address": null,
+"source": "MassGIS AGOL MBTA Rapid Transit stations"
+}
+]
+}

@@ -1,0 +1,7 @@
+{
+  "dataset": "OpenStreetMap amenity=pharmacy|healthcare=pharmacy, 5 counties (Suffolk, Middlesex, Norfolk, Essex, Plymouth)",
+  "source": "Overpass API via osmnx",
+  "function": "scripts/fetch_pharmacies.py:main",
+  "pulled": "2026-10-24T16:19:19.770454+00:00",
+  "count": 271
+}

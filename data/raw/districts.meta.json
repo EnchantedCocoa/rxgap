@@ -1,0 +1,18 @@
+{
+  "council": {
+    "dataset": "City Council Districts - 2023-2032 (Analyze Boston / data.boston.gov)",
+    "url": "https://data.boston.gov/dataset/3e632d04-d7fe-4acd-bab7-75be4bdcfa96/resource/2d9092dd-5175-49ab-9b18-0c0efcef4153/download/city_council_districts___2023_2032.geojson",
+    "pulled": "2026-10-24T16:22:12.862546+00:00"
+  },
+  "house": {
+    "dataset": "MassGIS Massachusetts House Legislative Districts (2021) polygons layer",
+    "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/House2021/FeatureServer/1/query",
+    "pulled": "2026-10-24T16:22:18.424308+00:00"
+  },
+  "senate": {
+    "dataset": "MassGIS Massachusetts Senate Legislative Districts (2021) polygons layer",
+    "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/Senate2021/FeatureServer/1/query",
+    "pulled": "2026-10-24T16:22:20.608553+00:00"
+  },
+  "function": "scripts/fetch_districts.py:main"
+}

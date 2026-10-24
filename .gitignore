@@ -2,3 +2,5 @@
 cache/
 __pycache__/
 .pytest_cache/
+data/raw/walk.graphml
+data/raw/walk.gpickle

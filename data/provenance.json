@@ -1,0 +1,97 @@
+{
+ "districts": {
+  "council": {
+   "dataset": "City Council Districts - 2023-2032 (Analyze Boston / data.boston.gov)",
+   "url": "https://data.boston.gov/dataset/3e632d04-d7fe-4acd-bab7-75be4bdcfa96/resource/2d9092dd-5175-49ab-9b18-0c0efcef4153/download/city_council_districts___2023_2032.geojson",
+   "pulled": "2026-10-24T16:22:12.862546+00:00"
+  },
+  "house": {
+   "dataset": "MassGIS Massachusetts House Legislative Districts (2021) polygons layer",
+   "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/House2021/FeatureServer/1/query",
+   "pulled": "2026-10-24T16:22:18.424308+00:00"
+  },
+  "senate": {
+   "dataset": "MassGIS Massachusetts Senate Legislative Districts (2021) polygons layer",
+   "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/Senate2021/FeatureServer/1/query",
+   "pulled": "2026-10-24T16:22:20.608553+00:00"
+  },
+  "function": "scripts/fetch_districts.py:main"
+ },
+ "npi": {
+  "dataset": "NPI Registry NPI-2 Community/Retail Pharmacy (Boston, MA)",
+  "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&enumeration_type=NPI-2&taxonomy_description=Community%2FRetail+Pharmacy&state=MA&limit=200&city=BOSTON",
+  "pulled": "2026-10-24T16:19:41.247637+00:00",
+  "function": "scripts/fetch_npi.py:main",
+  "count": 1296,
+  "cities_queried": [
+   "BOSTON",
+   "DORCHESTER",
+   "ROXBURY",
+   "MATTAPAN",
+   "HYDE PARK",
+   "ROSLINDALE",
+   "WEST ROXBURY",
+   "JAMAICA PLAIN",
+   "EAST BOSTON",
+   "CHARLESTOWN",
+   "SOUTH BOSTON",
+   "BRIGHTON",
+   "ALLSTON",
+   "DORCHESTER CENTER"
+  ]
+ },
+ "pharmacies": {
+  "dataset": "OpenStreetMap amenity=pharmacy|healthcare=pharmacy, 5 counties (Suffolk, Middlesex, Norfolk, Essex, Plymouth)",
+  "source": "Overpass API via osmnx",
+  "function": "scripts/fetch_pharmacies.py:main",
+  "pulled": "2026-10-24T16:19:19.770454+00:00",
+  "count": 271
+ },
+ "sites": {
+  "health_center": {
+   "dataset": "MassGIS Community Health Centers (Hosted Feature Layer)",
+   "url": "https://services1.arcgis.com/hGdibHYSPO59RG1h/arcgis/rest/services/Community_Health_Centers/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+   "pulled": "2026-10-24T16:21:28.039307+00:00"
+  },
+  "mbta_station": {
+   "dataset": "MassGIS AGOL MBTA Rapid Transit stations",
+   "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/MBTA_Rapid_Transit/MapServer/0/query?where=1%3D1&outFields=STATION,LINE&returnGeometry=true&outSR=4326&f=geojson",
+   "pulled": "2026-10-24T16:21:28.039307+00:00"
+  },
+  "storefront": {
+   "dataset": "manual"
+  },
+  "function": "scripts/fetch_sites.py:main"
+ },
+ "walk": {
+  "dataset": "OpenStreetMap walk network, Boston + 1 mi",
+  "source": "Overpass via osmnx",
+  "function": "scripts/fetch_walk_graph.py:main",
+  "pulled": "2026-10-24T16:22:11.117233+00:00",
+  "nodes": 96000,
+  "edges": 272256
+ },
+ "block_groups": {
+  "dataset": "MassGIS EJ2020 block groups, MUNICIPALITY=Boston (2020 GEOIDs)",
+  "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/EJ2020/MapServer/0",
+  "function": "scripts/analyze_bg.py:prepare",
+  "pulled": "2026-10-24T15:42:32+00:00"
+ },
+ "acs": {
+  "dataset": "ACS 2022 5-year, block group: B25044 (vehicles), B01001 (age 65+), B17017 (poverty)",
+  "url": "https://api.census.gov/data/2022/acs/acs5",
+  "function": "scripts/analyze_bg.py:fetch_acs",
+  "pulled": "2026-10-24T16:04:22+00:00"
+ },
+ "neighborhoods": {
+  "dataset": "Boston neighborhood boundaries (Analyze Boston)",
+  "function": "scripts/analyze_bg.py:prepare",
+  "pulled": "2026-10-24T15:43:11+00:00"
+ },
+ "closures": {
+  "dataset": "Hand-kept closure list with a source URL per row",
+  "file": "data/manual/closures.csv",
+  "function": "scripts/analyze_bg.py:load_pharmacies",
+  "pulled": "2026-10-24T16:23:39+00:00"
+ }
+}

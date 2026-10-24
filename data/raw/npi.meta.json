@@ -1,0 +1,23 @@
+{
+  "dataset": "NPI Registry NPI-2 Community/Retail Pharmacy (Boston, MA)",
+  "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&enumeration_type=NPI-2&taxonomy_description=Community%2FRetail+Pharmacy&state=MA&limit=200&city=BOSTON",
+  "pulled": "2026-10-24T16:19:41.247637+00:00",
+  "function": "scripts/fetch_npi.py:main",
+  "count": 1296,
+  "cities_queried": [
+    "BOSTON",
+    "DORCHESTER",
+    "ROXBURY",
+    "MATTAPAN",
+    "HYDE PARK",
+    "ROSLINDALE",
+    "WEST ROXBURY",
+    "JAMAICA PLAIN",
+    "EAST BOSTON",
+    "CHARLESTOWN",
+    "SOUTH BOSTON",
+    "BRIGHTON",
+    "ALLSTON",
+    "DORCHESTER CENTER"
+  ]
+}

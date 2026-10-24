@@ -1,0 +1,39 @@
+district_type,district_id,name,email,office_address,source_url
+council,1,Gabriela Coletta Zapata,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/gabriela-coletta
+council,2,Edward M. Flynn,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/ed-flynn
+council,3,John FitzGerald,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/john-fitzgerald
+council,4,Brian Worrell,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/brian-worrell
+council,5,Enrique J. Pepén,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/enrique-pepen
+council,6,Benjamin J. Weber,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/benjamin-weber
+council,7,Miniard Culpepper,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/miniard-culpepper
+council,8,Sharon Durkan,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/sharon-durkan
+council,9,Liz Breadon,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/liz-breadon
+council_at_large,at-large,Ruthzee Louijeune,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/ruthzee-louijeune
+council_at_large,at-large,Julia M. Mejia,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/julia-mejia
+council_at_large,at-large,Erin J. Murphy,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/erin-murphy
+council_at_large,at-large,Henry Santana,,"1 City Hall Square, Room 550, Boston, MA 02201",https://www.boston.gov/departments/city-council/henry-santana
+house,10th Suffolk,William McGregor,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/WFM1
+house,12th Suffolk,Brandy Fluker Oakley,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/BFO1
+house,13th Suffolk,Daniel J. Hunt,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/DJH1
+house,14th Suffolk,Rob Consalvo,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/R_C1
+house,15th Norfolk,Tommy Vitolo,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/T_V1
+house,15th Suffolk,Samantha Montano,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/S_M1
+house,17th Suffolk,Kevin G. Honan,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/KGH1
+house,18th Suffolk,Michael J. Moran,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/MJM1
+house,1st Suffolk,Adrian C. Madaro,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/ACM1
+house,2nd Suffolk,Daniel Joseph Ryan,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/DJR1
+house,3rd Suffolk,Aaron M. Michlewitz,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/AMM1
+house,4th Suffolk,David Biele,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/D_B1
+house,5th Suffolk,Christopher J. Worrell,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/CJW1
+house,6th Suffolk,Russell E. Holmes,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/REH1
+house,7th Suffolk,Chynah Tyler,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/C_T1
+house,8th Suffolk,Jay D. Livingstone,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/J_L1
+house,9th Suffolk,John Francis Moran,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/JFM1
+senate,First Suffolk,Nicholas P. Collins,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/N_C0
+senate,Middlesex and Suffolk,Sal N. DiDomenico,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/SND0
+senate,Norfolk and Middlesex,Cynthia Stone Creem,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/CSC0
+senate,Norfolk and Suffolk,Michael F. Rush,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/MFR0
+senate,"Norfolk, Plymouth and Bristol",William J. Driscoll,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/WJD0
+senate,Second Suffolk,Liz Miranda,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/L%20M0
+senate,Suffolk and Middlesex,William N. Brownsberger,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/WNB0
+senate,Third Suffolk,Lydia Marie Edwards,,"Massachusetts State House, 24 Beacon St., Boston, MA 02133",https://malegislature.gov/Legislators/Profile/LME0
