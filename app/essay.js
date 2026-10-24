@@ -51,7 +51,7 @@ function endCopy(D) {
       Photos are credited where they appear; the closed stores shown are outside Massachusetts.</p>`;
 }
 
-export async function openEssay(D, { reduced = false } = {}) {
+export async function openEssay(D, { reduced = false, onLeave = null } = {}) {
   const [ev, photos] = await Promise.all([
     fetch('../data/manual/evidence.json').then((r) => r.json()),
     fetch('../data/manual/photos.json').then((r) => r.json()),
@@ -142,21 +142,27 @@ export async function openEssay(D, { reduced = false } = {}) {
   const KEYS = { ArrowDown: 1, PageDown: 1, ArrowUp: -1, PageUp: -1 };
 
   return new Promise((done) => {
-    const close = () => {
+    // Leaving opens a widening hole from the button that was pressed, so the map rises out of the story.
+    const close = (from) => {
+      if (root.classList.contains('is-leaving')) return;
       stop();
       root.removeEventListener('scroll', onScroll);
       removeEventListener('resize', onScroll);
       document.removeEventListener('keydown', onKey);
+      const r = from?.getBoundingClientRect();
+      root.style.setProperty('--rx', `${r ? r.left + r.width / 2 : innerWidth / 2}px`);
+      root.style.setProperty('--ry', `${r ? r.top + r.height / 2 : innerHeight / 2}px`);
+      from?.classList.add('is-pressed');
       document.body.classList.remove('essay-open');
       root.classList.add('is-leaving');
-      setTimeout(() => { root.remove(); done(); }, reduced ? 0 : 700);
+      onLeave?.();
+      setTimeout(() => { root.remove(); done(); }, reduced ? 0 : 1300);
     };
     const onKey = (e) => {
       if (e.key === 'Escape') close();
       else if (KEYS[e.key]) { e.preventDefault(); step(KEYS[e.key]); }
     };
     document.addEventListener('keydown', onKey);
-    root.querySelector('#es-skip').addEventListener('click', close);
-    root.querySelector('#es-go').addEventListener('click', close);
+    for (const id of ['#es-skip', '#es-go']) root.querySelector(id).addEventListener('click', (e) => close(e.currentTarget));
   });
 }

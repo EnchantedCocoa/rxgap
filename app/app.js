@@ -91,7 +91,7 @@ document.addEventListener('click', (e) => {
 function renderRanking() {
   const max = D.stores[0].people;
   $('#rank-list').innerHTML = D.stores.map((s) => `
-    <li><button class="rank-row" data-rank="${s.rank}" aria-label="${esc(s.name)}, ${esc(s.address)}: ${fmt(s.people)} residents">
+    <li><button class="rank-row" style="--i:${s.rank - 1}" data-rank="${s.rank}" aria-label="${esc(s.name)}, ${esc(s.address)}: ${fmt(s.people)} residents">
       <span class="rank-n">${s.rank}</span>
       <span><span class="rank-name">${esc(s.name)}</span><br><span class="rank-where">${esc(s.hoods.join(' · ') || s.address)}</span>
         <span class="bar"><i style="width:${(s.people / max) * 100}%"></i></span></span>
@@ -533,6 +533,21 @@ async function renderMethod() {
     .map(([d, p]) => `<tr><td>${esc(d)}</td><td>${esc((p || '').slice(0, 10))}</td></tr>`).join('');
 }
 
+// ---------- arrival from the story ----------
+// The map rises out of the essay: the camera settles in, blocks and stores fade up, panels slide in, numbers count.
+function arrive() {
+  if (reduced) return;
+  const first = !state.arrived;
+  state.arrived = true;
+  document.body.classList.remove('arriving');
+  void document.body.offsetWidth;  // restart the CSS animations on a second visit
+  document.body.classList.add('arriving');
+  if (first) map.flyTo(D.place.view.slice(0, 2), D.place.view[2], { duration: 1.9, easeLinearity: 0.12 });
+  document.querySelectorAll('[data-num]').forEach((el) => { el.dataset.v = 0; });
+  setTimeout(renderHeadline, 450);
+  setTimeout(() => document.body.classList.remove('arriving'), 2600);
+}
+
 // ---------- boot ----------
 async function boot() {
   await load();
@@ -553,11 +568,14 @@ async function boot() {
     else if (!$('#store-card').hidden && !state.closed) $('#store-card').hidden = true;
   });
   const q = new URLSearchParams(location.search);
-  const story = () => { tourEnd(); return openEssay(D, { reduced }); };
+  const story = () => { tourEnd(); return openEssay(D, { reduced, onLeave: arrive }); };
   $('#open-story').addEventListener('click', story);
   $('#tab-officials').addEventListener('click', () => { tourEnd(); openOfficials(F); });
   $('#tab-letter').addEventListener('click', () => { tourEnd(); openLetter(F); });
-  if (q.get('splash') !== '0') await story(); // photo essay first, then the map
+  if (q.get('splash') !== '0') {  // photo essay first; the camera waits a little higher up, then settles in
+    if (!reduced) map.setView(D.place.view.slice(0, 2), D.place.view[2] - 2, { animate: false });
+    await story();
+  }
   if (!reduced && q.get('tour') !== '0') setTimeout(tourStart, 900);
   window.rxgap = { state, simulate: (rank) => simulate(D.stores[rank - 1]), undo, sheet: openSheet }; // for the smoke test
 }

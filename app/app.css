@@ -424,3 +424,15 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
   #print-root .brief footer { margin-top: 8pt; }
 }
 
+
+/* arrival from the story: everything rises in a soft, staggered order */
+@keyframes arrive-fade { from { opacity: 0; } }
+@keyframes arrive-left { from { opacity: 0; transform: translateX(-32px); } }
+@keyframes arrive-down { from { opacity: 0; transform: translateY(-14px); } }
+@keyframes arrive-up { from { opacity: 0; transform: translateY(14px); } }
+body.arriving .topbar { animation: arrive-down 0.7s var(--ease) 0.25s both; }
+body.arriving .panel { animation: arrive-left 0.9s var(--ease) 0.35s both; }
+body.arriving .rank-row { animation: arrive-up 0.55s var(--ease) both; animation-delay: calc(0.7s + min(var(--i, 0), 10) * 55ms); }
+body.arriving .leaflet-overlay-pane { animation: arrive-fade 1.4s ease 0.5s both; }
+body.arriving .leaflet-marker-pane { animation: arrive-fade 0.9s ease 1.3s both; }
+body.arriving .legend, body.arriving .leaflet-control-zoom { animation: arrive-up 0.7s var(--ease) 1.2s both; }

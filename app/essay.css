@@ -6,7 +6,19 @@
   background: #0B0D10; color: #F4F2EC; font-family: var(--font);
   transition: opacity var(--t-slow) var(--ease), transform var(--t-slow) var(--ease);
 }
-#essay.is-leaving { opacity: 0; transform: translateY(-24px); pointer-events: none; }
+/* leaving: a soft hole widens from the pressed button and reveals the live map underneath */
+@property --hole { syntax: '<length>'; inherits: false; initial-value: 0px; }
+#essay.is-leaving {
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at var(--rx, 50%) var(--ry, 50%), transparent var(--hole), #000 calc(var(--hole) + 120px));
+  mask-image: radial-gradient(circle at var(--rx, 50%) var(--ry, 50%), transparent var(--hole), #000 calc(var(--hole) + 120px));
+  animation: es-reveal 1.25s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+@keyframes es-reveal { 0% { --hole: 0px; } 80% { opacity: 1; } 100% { --hole: 150vmax; opacity: 0; } }
+#essay.is-leaving .es-copy { opacity: 0; transform: translateY(-18px) scale(0.985); transition: opacity 0.35s ease, transform 0.6s var(--ease); }
+#essay.is-leaving .es-bar, #essay.is-leaving .es-credit { opacity: 0; transition: opacity 0.3s ease; }
+#essay.is-leaving .es-photo { transform: scale(1.16); filter: blur(4px) brightness(0.75); transition: transform 1.25s cubic-bezier(0.7, 0, 0.2, 1), filter 1.25s ease; }
+#essay.is-still.is-leaving { animation: none; -webkit-mask-image: none; mask-image: none; opacity: 0; }
 body.essay-open { overflow: hidden; }
 
 .es-bar {
@@ -88,6 +100,7 @@ body.essay-open { overflow: hidden; }
   box-shadow: 0 10px 30px rgba(255, 107, 94, 0.35); transition: transform var(--t-fast);
 }
 .es-go:hover { transform: translateY(-2px); }
+.es-go.is-pressed { transform: scale(0.94); box-shadow: 0 0 0 16px rgba(255, 107, 94, 0.2); transition: transform var(--t-fast), box-shadow var(--t-med); }
 .es-fine { margin: 28px auto 0; max-width: 540px; font-size: var(--fs-xs); line-height: 1.5; color: #9EA6AE; }
 
 #essay :focus-visible { outline: 2px solid #FFD27A; outline-offset: 3px; }
