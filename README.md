@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/img/rxgap-closure.jpg" width="720" alt="RxGap: closing the CVS on Blue Hill Ave turns Mattapan blocks red, shows the 35-minute walk to the next pharmacy, and lists who lost access and their officials"></p>
+
 # RxGap
 
 **When a neighborhood's pharmacy closes, people stop taking their heart medicine.**
