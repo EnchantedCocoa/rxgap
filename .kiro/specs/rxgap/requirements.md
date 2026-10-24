@@ -9,7 +9,7 @@ affected official can do. Residents can draft a letter to their own representati
 Scope: Boston only, urban distances only. Method: Massachusetts Health Policy Commission,
 DataPoints 31 (Oct 2025). Distances and areas in EPSG:26986.
 
-Status: DRAFT — awaiting approval. Requirements 1–2 already have working code
+Status: APPROVED 2026-10-24. Requirements 1–2 already have working code
 (`scripts/analyze_bg.py`, `scripts/rank.py`).
 
 ## Glossary

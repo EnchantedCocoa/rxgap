@@ -20,3 +20,7 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   the near-desert total exactly.
 - 12:10 Phase 0: steering (product, tech, structure), Boston OpenData MCP config, two
   hooks (recompute on closure, number check on save), draft requirements spec.
+- 12:15 Spec approved. Kiro wrote `design.md`: precomputed per-store impact powers both
+  the ranking and the closure simulation (one source of truth, instant redraw); text from
+  digit-free templates, numbers from a facts dict; letter counts in DuckDB on a
+  localhost-only server.
