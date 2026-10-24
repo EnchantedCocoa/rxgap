@@ -7,7 +7,6 @@ import duckdb
 
 ROOT = Path(__file__).resolve().parent.parent
 ALLOWED = ('/app/', '/data/')
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
 DB_PATH = Path(os.environ.get('RXGAP_DB', ROOT / 'data' / 'letters.duckdb'))  # tests point this elsewhere
 MAX_BODY = 1024
 GEOCODER = 'https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress'
@@ -109,10 +108,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 def main():
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
     Handler.counts = Counts(DB_PATH)
     handler = partial(Handler, directory=str(ROOT))
-    with http.server.ThreadingHTTPServer(('127.0.0.1', PORT), handler) as srv:
-        print(f'RxGap on http://127.0.0.1:{PORT}/app/  (local only, no login)')
+    with http.server.ThreadingHTTPServer(('127.0.0.1', port), handler) as srv:
+        print(f'RxGap on http://127.0.0.1:{port}/app/  (local only, no login)')
         srv.serve_forever()
 
 
