@@ -152,6 +152,7 @@ function initMap() {
 }
 
 function drawPlace() {
+  clearTimers(); // pending wave steps point at the old layers
   bostonLayer?.remove(); pinLayer?.remove(); clearRoute(); clearSiting();
   layers.clear(); markers.clear();
   pinLayer = L.layerGroup().addTo(map);

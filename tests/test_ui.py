@@ -114,6 +114,18 @@ def test_place_picker_loads_full_places(page):
     assert page.locator('path.bg').count() == 580
 
 
+def test_switch_place_during_closure_has_no_errors(page):
+    page.errors.clear()
+    page.click('.rank-row[data-rank="1"]')
+    page.click('#simulate')
+    page.wait_for_timeout(1500)
+    page.select_option('#town', 'springfield')  # undo's wave must not touch the new map
+    page.wait_for_timeout(2000)
+    assert [e for e in page.errors if 'arcgisonline' not in e] == []
+    page.select_option('#town', 'boston')
+    page.wait_for_timeout(1500)
+
+
 def test_closure_draws_walking_route(page):
     top = json.loads((ROOT / 'data' / 'app_data.json').read_text())['stores'][0]
     page.select_option('#town', 'boston')
