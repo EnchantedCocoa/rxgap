@@ -50,7 +50,7 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
   overflow-y: auto; display: flex; flex-direction: column;
 }
 .mapwrap { position: relative; min-height: 0; }
-#map { position: absolute; inset: 0; background: var(--map-blank); }
+#map { position: absolute; inset: 0; background: var(--map-blank); z-index: 0; }
 
 /* headline */
 .headline { padding: var(--s5); border-bottom: 1px solid var(--line); }
@@ -220,8 +220,36 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
 .sources td, .sources th { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .sources th { color: var(--muted); font-weight: 500; }
 
-/* MapLibre controls */
-.maplibregl-ctrl-group { border-radius: var(--radius-sm) !important; box-shadow: var(--shadow) !important; }
+/* map: block groups (SVG paths; colors only from tokens) */
+.leaflet-container { background: var(--map-blank); font: inherit; }
+.bg {
+  fill: var(--covered); fill-opacity: 0.16;
+  stroke: var(--block-line); stroke-opacity: 0.8;
+  transition: fill-opacity var(--t-slow) var(--ease), stroke var(--t-fast);
+}
+.bg.st-desert { fill: var(--desert); fill-opacity: 0.62; }
+.bg.st-near-desert { fill: url(#hatch); fill-opacity: 0.66; }
+.bg.is-sim { fill: var(--desert); fill-opacity: 0.82; animation: flip var(--t-slow) var(--ease); }
+.bg.is-hl { stroke: var(--ink); stroke-width: 2.2px; stroke-opacity: 1; }
+@keyframes flip { from { fill-opacity: 0.1; } to { fill-opacity: 0.82; } }
+.hatch-bg { fill: var(--near); }
+.hatch-line { stroke: var(--near-hatch); stroke-width: 1.6; }
+
+/* map: pharmacies */
+.pin { border-radius: 50%; transition: transform var(--t-med) var(--ease), background var(--t-med); }
+.pin-minor { background: var(--store-minor); border: 1.5px solid var(--surface); }
+.pin-rank {
+  background: var(--store); color: var(--brand-ink); border: 2px solid var(--surface);
+  box-shadow: 0 1px 3px var(--scrim); display: grid; place-items: center;
+  font-size: 10px; font-weight: 700; line-height: 1;
+}
+.pin-rank.is-hl { transform: scale(1.25); }
+.pin-rank.is-closed { background: var(--closed); transform: scale(0.6); }
+.pin-rank.is-closed span { opacity: 0; }
+.pin-closed { border: 2px solid var(--closed); background: var(--surface); }
+.leaflet-control-zoom a { color: var(--ink) !important; }
+.leaflet-bar { border: 1px solid var(--line) !important; box-shadow: var(--shadow) !important; border-radius: var(--radius-sm) !important; }
+.leaflet-control-attribution { font-size: 10px; }
 
 /* phone */
 @media (max-width: 860px) {

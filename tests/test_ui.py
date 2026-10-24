@@ -21,7 +21,10 @@ def page():
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(0.8)
     with pw.sync_playwright() as p:
-        b = p.chromium.launch(args=['--use-angle=swiftshader', '--enable-unsafe-swiftshader'])
+        try:  # real Chrome, like the demo laptop; headless it has no WebGL, which the app must not need
+            b = p.chromium.launch(channel='chrome')
+        except Exception:
+            b = p.chromium.launch()
         pg = b.new_page(viewport={'width': 1440, 'height': 900})
         errors = []
         pg.on('pageerror', lambda e: errors.append(str(e)))
@@ -48,7 +51,12 @@ def test_close_top_store_matches_analysis(page):
     page.screenshot(path=str(SHOTS / 'ui_after.png'))
     assert page.inner_text('#r-people') == f"{top['people']:,}"
     assert page.inner_text('#r-65') == f"{top['age65']:,}"
-    assert [e for e in page.errors if 'tiles.openfreemap' not in e] == []
+    assert [e for e in page.errors if 'arcgisonline' not in e] == []
+
+
+def test_map_draws_every_block_group(page):
+    assert page.locator('path.bg').count() == 462
+    assert page.locator('.pin-rank').count() == 18
 
 
 def test_undo_restores(page):

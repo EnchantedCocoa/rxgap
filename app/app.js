@@ -1,6 +1,5 @@
 // RxGap 지도 앱 로직: 데이터 로드, 지도 레이어, 순위 목록, 폐점 시뮬레이션.
 const $ = (s, el = document) => el.querySelector(s);
-const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString('en-US'));
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -98,110 +97,66 @@ function rowFor(s) { return $(`.rank-row[data-rank="${s?.rank}"]`); }
 function pharmacyFor(s) { return D.pharmacies.find((p) => p.lat === s.lat && p.lon === s.lon); }
 
 function highlight(s, on) {
-  if (!map?.loaded()) return;
-  for (const g of s.block_groups) map.setFeatureState({ source: 'bg', id: g }, { hl: on });
+  if (!map) return;
+  for (const g of s.block_groups) layers.get(g)?.getElement()?.classList.toggle('is-hl', on);
+  if (on) for (const g of s.block_groups) layers.get(g)?.bringToFront();
   const p = pharmacyFor(s);
-  if (p) map.setFeatureState({ source: 'stores', id: p.id }, { hl: on });
+  if (p) markers.get(p.id)?.getElement()?.classList.toggle('is-hl', on);
   rowFor(s)?.classList.toggle('is-hl', on);
 }
 
-// ---------- map ----------
-async function pickStyle() {
-  const style = await fetch('vendor/basemap-style.json').then((r) => r.json());
-  const blank = { version: 8, sources: {}, layers: [{ id: 'blank', type: 'background', paint: { 'background-color': css('--map-blank') } }] };
-  try {
-    const src = Object.values(style.sources).find((s) => s.url);
-    const ctl = new AbortController();
-    setTimeout(() => ctl.abort(), 2500);
-    await fetch(src.url, { signal: ctl.signal });
-    return style;
-  } catch { return blank; } // offline: data layers still draw on a plain background
-}
-
-function hatch() {
-  const n = 8, c = document.createElement('canvas');
-  c.width = c.height = n;
-  const x = c.getContext('2d');
-  x.fillStyle = css('--near'); x.fillRect(0, 0, n, n);
-  x.strokeStyle = css('--near-hatch'); x.lineWidth = 1.2;
-  x.beginPath(); x.moveTo(0, n); x.lineTo(n, 0); x.moveTo(-2, 2); x.lineTo(2, -2); x.moveTo(n - 2, n + 2); x.lineTo(n + 2, n - 2); x.stroke();
-  return { width: n, height: n, data: x.getImageData(0, 0, n, n).data };
-}
-
+// ---------- map (Leaflet + SVG: no WebGL needed) ----------
 const statusProp = () => D.rules[state.rule];
-const isSimDesert = ['==', ['feature-state', 'sim'], 'desert'];
+const layers = new Map();   // GEOID -> Leaflet path
+const markers = new Map();  // pharmacy id -> Leaflet marker
+const STATUS_CLASSES = ['st-desert', 'st-near-desert', 'st-covered'];
 
-function bgPaint() {
-  const p = ['get', statusProp()];
-  return {
-    color: ['case', isSimDesert, css('--desert'),
-      ['match', p, 'desert', css('--desert'), 'near-desert', css('--near'), css('--covered')]],
-    opacity: ['case', isSimDesert, 0.78,
-      ['match', p, 'desert', 0.66, 'near-desert', 0, 0.16]],
-    hatchFilter: ['==', p, 'near-desert'],
-  };
+function restyle() {
+  const prop = statusProp();
+  for (const [g, l] of layers) {
+    const el = l.getElement();
+    el.classList.remove(...STATUS_CLASSES);
+    el.classList.add(`st-${bgIndex.get(g).properties[prop]}`);
+  }
 }
 
-async function initMap() {
-  const style = await pickStyle();
-  const hasGlyphs = !!style.glyphs;
-  map = new maplibregl.Map({
-    container: 'map', style, center: [-71.075, 42.315], zoom: 11.3, minZoom: 9.5, maxZoom: 17,
-    attributionControl: { compact: true },
+function initMap() {
+  map = L.map('map', { zoomSnap: 1, zoomControl: false, attributionControl: false })
+    .setView([42.315, -71.075], 12);
+  L.control.zoom({ position: 'topright' }).addTo(map);
+  L.control.attribution({ prefix: false }).addTo(map);
+  map.createPane('labels').style.zIndex = 450;
+  map.getPane('labels').style.pointerEvents = 'none';
+  const esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_';
+  const tiles = (kind, pane) => L.tileLayer(`${esri}${kind}/MapServer/tile/{z}/{y}/{x}`, {
+    maxZoom: 16, pane, attribution: 'Base map © Esri, HERE, Garmin, © OpenStreetMap contributors',
   });
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-  await new Promise((r) => map.on('load', r));
-  map.addImage('hatch', hatch());
+  tiles('Base', 'tilePane').addTo(map);
+  tiles('Reference', 'labels').addTo(map); // labels stay readable above the colored blocks
 
-  const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
-  const P = bgPaint();
-  map.addSource('bg', { type: 'geojson', data: BG, promoteId: 'GEOID' });
-  map.addLayer({ id: 'bg-fill', type: 'fill', source: 'bg', paint: {
-    'fill-color': P.color, 'fill-opacity': P.opacity,
-    'fill-color-transition': { duration: 600 }, 'fill-opacity-transition': { duration: 600 } } }, firstLabel);
-  map.addLayer({ id: 'bg-hatch', type: 'fill', source: 'bg', filter: P.hatchFilter, paint: {
-    'fill-pattern': 'hatch', 'fill-opacity': ['case', isSimDesert, 0, 0.62],
-    'fill-opacity-transition': { duration: 600 } } }, firstLabel);
-  map.addLayer({ id: 'bg-line', type: 'line', source: 'bg', paint: {
-    'line-color': css('--block-line'), 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 0.2, 14, 1], 'line-opacity': 0.8 } }, firstLabel);
-  map.addLayer({ id: 'bg-hl', type: 'line', source: 'bg', paint: {
-    'line-color': css('--ink'), 'line-width': ['case', ['boolean', ['feature-state', 'hl'], false], 2.2, 0],
-    'line-width-transition': { duration: 150 } } }, firstLabel);
+  L.geoJSON(BG, {
+    style: () => ({ className: 'bg', weight: 0.6 }),
+    onEachFeature: (f, l) => {
+      layers.set(f.properties.GEOID, l);
+      l.on('click', () => openSheet(f.properties.GEOID));
+    },
+  }).addTo(map);
+  restyle();
 
-  const pts = (rows, props) => ({ type: 'FeatureCollection', features: rows.map((r) => ({
-    type: 'Feature', id: r.id, geometry: { type: 'Point', coordinates: [r.lon, r.lat] }, properties: props(r) })) });
-  map.addSource('closed', { type: 'geojson', data: pts(D.closed.map((c, i) => ({ ...c, id: i })), (c) => ({ name: c.name })) });
-  map.addLayer({ id: 'closed', type: 'circle', source: 'closed', paint: {
-    'circle-radius': 5, 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': css('--closed'), 'circle-stroke-width': 2 } });
-
-  map.addSource('stores', { type: 'geojson', data: pts(D.pharmacies, (p) => (p.rank ? { name: p.name, rank: p.rank } : { name: p.name })) });
-  const closedS = ['boolean', ['feature-state', 'closed'], false];
-  const hlS = ['boolean', ['feature-state', 'hl'], false];
-  map.addLayer({ id: 'stores', type: 'circle', source: 'stores', paint: {
-    'circle-radius': ['case', closedS, 4,
-      ['has', 'rank'], ['+', ['interpolate', ['linear'], ['get', 'rank'], 1, 10, 18, 7], ['case', hlS, 2, 0]],
-      3.5],
-    'circle-color': ['case', closedS, css('--closed'), ['has', 'rank'], css('--store'), css('--store-minor')],
-    'circle-stroke-color': css('--surface'), 'circle-stroke-width': ['case', ['has', 'rank'], 2, 1],
-    'circle-radius-transition': { duration: 400 }, 'circle-color-transition': { duration: 400 } } });
-  if (hasGlyphs) map.addLayer({ id: 'store-n', type: 'symbol', source: 'stores', filter: ['has', 'rank'], layout: {
-    'text-field': ['to-string', ['get', 'rank']], 'text-size': 10, 'text-allow-overlap': true,
-    'text-font': [map.getStyle().layers.find((l) => l.layout?.['text-font'])?.layout['text-font'][0] || 'Noto Sans Regular'] },
-    paint: { 'text-color': css('--brand-ink'), 'text-opacity': ['case', closedS, 0, 1] } });
-
-  for (const id of ['stores', 'bg-fill']) {
-    map.on('mouseenter', id, () => { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', id, () => { map.getCanvas().style.cursor = ''; });
+  for (const c of D.closed) {
+    L.marker([c.lat, c.lon], { keyboard: false, title: `${c.name} — closed ${c.date}`,
+      icon: L.divIcon({ className: 'pin pin-closed', iconSize: [12, 12] }) }).addTo(map);
   }
-  map.on('click', (e) => {
-    const st = map.queryRenderedFeatures(e.point, { layers: ['stores'] })[0];
-    if (st) {
-      const s = D.stores.find((x) => x.rank === st.properties.rank);
-      return s ? select(s) : selectMinor(st.properties.name);
-    }
-    const b = map.queryRenderedFeatures(e.point, { layers: ['bg-fill'] })[0];
-    if (b) openSheet(b.properties.GEOID);
-  });
+  for (const p of D.pharmacies) {
+    const s = p.rank && D.stores[p.rank - 1];
+    const size = s ? Math.round(26 - p.rank * 0.4) : 8;
+    const m = L.marker([p.lat, p.lon], {
+      keyboard: false, title: p.name, zIndexOffset: s ? 1000 - p.rank : 0,
+      icon: L.divIcon({ className: s ? 'pin pin-rank' : 'pin pin-minor', iconSize: [size, size], html: s ? `<span>${p.rank}</span>` : '' }),
+    }).addTo(map);
+    m.on('click', () => (s ? select(s) : selectMinor(p.name)));
+    markers.set(p.id, m);
+  }
 }
 
 // ---------- selection + simulation ----------
@@ -210,7 +165,7 @@ function select(s) {
   document.querySelectorAll('.rank-row.is-selected').forEach((r) => r.classList.remove('is-selected'));
   rowFor(s)?.classList.add('is-selected');
   state.selected = s;
-  map.easeTo({ center: [s.lon, s.lat], zoom: Math.max(map.getZoom(), 12.6), duration: reduced ? 0 : 800 });
+  map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 13.5), { animate: !reduced, duration: 0.8 });
   const card = $('#store-card');
   const done = state.closed === s;
   card.innerHTML = `
@@ -236,10 +191,7 @@ function setRule(rule) {
   if (state.closed) undo(true);
   state.rule = rule;
   document.querySelectorAll('.rules button').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.rule === rule)));
-  const P = bgPaint();
-  map.setPaintProperty('bg-fill', 'fill-color', P.color);
-  map.setPaintProperty('bg-fill', 'fill-opacity', P.opacity);
-  map.setFilter('bg-hatch', P.hatchFilter);
+  restyle();
   renderHeadline();
 }
 
@@ -251,7 +203,7 @@ function wave(s, on) {
   const far = Math.max(...lost.map(d), 1e-6);
   for (const f of lost) {
     const delay = reduced ? 0 : (on ? d(f) / far : 1 - d(f) / far) * 700;
-    state.timers.push(setTimeout(() => map.setFeatureState({ source: 'bg', id: f.properties.GEOID }, { sim: on ? 'desert' : null }), delay));
+    state.timers.push(setTimeout(() => layers.get(f.properties.GEOID).getElement().classList.toggle('is-sim', on), delay));
   }
   return lost;
 }
@@ -262,14 +214,12 @@ function simulate(s) {
   state.closed = s;
   highlight(s, false);
   const p = pharmacyFor(s);
-  if (p) map.setFeatureState({ source: 'stores', id: p.id }, { closed: true });
+  if (p) markers.get(p.id).getElement().classList.add('is-closed');
   rowFor(s)?.classList.add('is-closed');
   const lost = wave(s, true);
-  const [minx, miny, maxx, maxy] = lost.reduce((b, f) => {
-    const c = f.properties._c;
-    return [Math.min(b[0], c[2]), Math.min(b[1], c[3]), Math.max(b[2], c[4]), Math.max(b[3], c[5])];
-  }, [s.lon, s.lat, s.lon, s.lat]);
-  map.fitBounds([[minx, miny], [maxx, maxy]], { padding: { top: 60, bottom: 60, left: 360, right: 400 }, duration: reduced ? 0 : 1100, maxZoom: 13.6 });
+  const box = L.latLngBounds([[s.lat, s.lon]]);
+  for (const f of lost) box.extend(layers.get(f.properties.GEOID).getBounds());
+  map.flyToBounds(box, { paddingTopLeft: [40, 60], paddingBottomRight: [400, 60], maxZoom: 14, animate: !reduced, duration: 1.1 });
   renderResult(s);
   $('#store-card').hidden = true; // the result card has its own Undo
   rowFor(s)?.classList.add('is-selected');
@@ -315,7 +265,7 @@ function undo(silent = false) {
   clearTimers();
   wave(s, false);
   const p = pharmacyFor(s);
-  if (p) map.setFeatureState({ source: 'stores', id: p.id }, { closed: false });
+  if (p) markers.get(p.id).getElement().classList.remove('is-closed');
   rowFor(s)?.classList.remove('is-closed');
   state.closed = null;
   $('#result-card').hidden = true;
@@ -371,7 +321,7 @@ async function boot() {
   await load();
   renderHeadline();
   renderRanking();
-  await initMap();
+  initMap();
   renderMethod();
   document.querySelectorAll('.rules button').forEach((b) => b.addEventListener('click', () => setRule(b.dataset.rule)));
   for (const id of ['open-method', 'why-differ']) $(`#${id}`).addEventListener('click', () => $('#method').showModal());

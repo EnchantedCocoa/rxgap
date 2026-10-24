@@ -6,7 +6,7 @@ RxGap is an offline batch pipeline plus one local web page.
 
 - Python scripts ingest raw data once into `data/raw/` and compute every number into
   `data/*.json`. Nothing on screen is computed from scratch in the browser.
-- The page (`app/index.html`, MapLibre GL, see "UI and visualization") reads those JSON
+- The page (`app/index.html`, Leaflet, see "UI and visualization") reads those JSON
   files. A closure click is a lookup in precomputed results, so it redraws instantly
   (Req 3.1, under 5 s).
 - A tiny local server (`python -m rxgap.serve`, 127.0.0.1 only) serves the page and keeps
@@ -177,11 +177,12 @@ moment, so that one interaction gets the most care.
 
 ### Stack
 
-- **MapLibre GL JS** (vector map, GPU drawing) instead of Leaflet: smooth zoom, color
-  changes that fade instead of snap, fly-to camera moves. Loaded from a vendored copy in
-  `app/vendor/`, so the demo does not depend on a CDN.
-- Basemap: a muted light vector style (CARTO Positron-like). Offline fallback: blank
-  background plus neighborhood outlines from `raw/neighborhoods.geojson`.
+- **Leaflet 1.9.4 with SVG paths** (vendored in `app/vendor/`). MapLibre GL was tried first
+  and dropped: it needs WebGL, and Chrome on the demo Mac could not create a WebGL
+  context, so the map stayed blank. Smooth color changes come from CSS transitions on
+  the SVG paths, so all map colors still live in `tokens.css`.
+- Base map: Esri World Light Gray raster tiles (no key), labels drawn above the data.
+  Offline, the data still draws on a plain background.
 - Plain HTML, CSS and one ES module. No build step, no framework.
 - Design tokens (colors, type, spacing, motion) in one file, `app/tokens.css`. No colors
   anywhere else.

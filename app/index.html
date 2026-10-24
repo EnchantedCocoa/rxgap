@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RxGap — Boston pharmacy access</title>
-  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/leaflet.css">
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="app.css">
 </head>
@@ -97,7 +98,16 @@
 
   <div class="pop" id="pop" popover></div>
 
-  <script src="vendor/maplibre-gl.js"></script>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="7" height="7" class="hatch-bg"></rect>
+        <line x1="0" y1="0" x2="0" y2="7" class="hatch-line"></line>
+      </pattern>
+    </defs>
+  </svg>
+
+  <script src="vendor/leaflet.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

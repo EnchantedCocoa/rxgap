@@ -52,3 +52,8 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   Kiro drove a headless Chromium (Playwright) to close the #1 CVS and check the card reads
   24,080, matching `cant_lose.json`; it also caught two layout bugs from screenshots
   (Undo scrolled out of view, card covering the legend). 14 tests pass.
+- 13:20 Bug from the user: the map stayed blank in their Chrome. Kiro reproduced it by
+  driving real Chrome with Playwright: "Could not create a WebGL context". Switched the
+  map from MapLibre GL (WebGL) to Leaflet (SVG), kept every interaction, moved map colors
+  into CSS classes. CARTO tiles now show an "API key required" watermark, so the base map
+  is Esri Light Gray. UI test now runs in real Chrome and checks all 462 blocks draw.
