@@ -85,9 +85,29 @@ def nearest_health_center(lost, cands, scored):
     return {'sites': [name], 'gain': hit['gain'] if hit else 0, 'solver': 'nearest health center'}
 
 
+def block_extras(bg, ph, cands):
+    """Per block group: three closest open pharmacies (straight line), and for deserts today the best new site."""
+    pts = bg.geometry.representative_point()
+    out = {}
+    for g, pt in zip(bg.GEOID, pts):
+        d = ph.distance(pt).nsmallest(3)
+        out[g] = {'near': [{'name': ph.at[i, 'name'] or 'Pharmacy', 'address': ph.at[i, 'address'],
+                            'mi': round(m / MILE, 1)} for i, m in d.items()]}
+    desert = bg[bg.s_state == 'desert']
+    if len(desert):
+        for s in score(desert, ph, cands):  # best gain first, so the first site that restores a block wins
+            for r in s['restored']:
+                out[r['GEOID']].setdefault('site', {'name': s['name'], 'address': s['address'], 'gain': s['gain']})
+    return out
+
+
 def main():
     bg, ph, _, _ = prepare()
     cands = candidates()
+    status = {f['properties']['GEOID']: f['properties']['s_state']
+              for f in json.loads((DATA / 'bg_out.geojson').read_text())['features']}
+    bg['s_state'] = bg.GEOID.map(status)
+    (DATA / 'block_extras.json').write_text(json.dumps(block_extras(bg, ph, cands), indent=1))
     stores = json.loads((DATA / 'cant_lose.json').read_text())['stores']
     out = {}
     for s in stores:
