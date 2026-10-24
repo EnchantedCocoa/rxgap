@@ -111,3 +111,9 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   trivial. The big number is now people in a desert or one closure away (132,306, "1 in 5",
   19,996 age 65+, 14,258 homes with no car); the covered count is gone from the headline
   and the bar's remainder is neutral gray. All figures still come from app_data.json.
+- 14:35 Two visual upgrades. (1) Closure moment now draws the real street route (cached
+  osmnx walk graph, `scripts/routes.py`) from the hardest-hit block to the next open
+  pharmacy, with a "35 min walk" tag; a test checks the tag equals the analysis minutes.
+  (2) A 5-stop opening tour (skippable, ends on any click, off under reduced motion) whose
+  captions are fixed templates filled with app_data.json numbers. Store names from NPI are
+  shown in display form ("CVS Pharmacy", not "CVS PHARMACY #05464"). 29 tests pass.

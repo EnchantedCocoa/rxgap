@@ -31,7 +31,7 @@ def page():
         errors = []
         pg.on('pageerror', lambda e: errors.append(str(e)))
         pg.on('console', lambda m: m.type == 'error' and errors.append(m.text))
-        pg.goto(f'http://127.0.0.1:{port}/app/')
+        pg.goto(f'http://127.0.0.1:{port}/app/?tour=0')
         pg.wait_for_function('window.rxgap !== undefined', timeout=30000)
         pg.errors = errors
         yield pg
@@ -105,3 +105,30 @@ def test_town_picker_shows_state_results(page):
     app = json.loads((ROOT / 'data' / 'app_data.json').read_text())
     assert page.inner_text('[data-num="desert"]') == f"{app['headline']['state']['desert']:,}"
     assert page.locator('path.bg').count() == 580
+
+
+def test_closure_draws_walking_route(page):
+    top = json.loads((ROOT / 'data' / 'app_data.json').read_text())['stores'][0]
+    page.select_option('#town', 'boston')
+    page.wait_for_timeout(800)
+    page.click('.rank-row[data-rank="1"]')
+    page.click('#simulate')
+    page.wait_for_timeout(3800)
+    page.screenshot(path=str(SHOTS / 'ui_route.png'))
+    assert page.locator('path.route').count() == 1
+    assert page.inner_text('.route-tag').startswith(f"{top['route']['minutes']} min walk")
+    page.click('#undo2')
+    assert page.locator('path.route').count() == 0
+
+
+def test_tour_uses_code_numbers(page):
+    app = json.loads((ROOT / 'data' / 'app_data.json').read_text())
+    page.click('#play-tour')
+    page.wait_for_timeout(500)
+    assert f"1 in {app['validation']['one_in']}" in page.inner_text('#tour-text')
+    page.click('#tour-next')
+    page.wait_for_timeout(2000)
+    page.screenshot(path=str(SHOTS / 'ui_tour.png'))
+    assert f"{app['stores'][0]['people']:,}" in page.inner_text('#tour-text')
+    page.click('#tour-skip')
+    assert page.is_hidden('#tour')

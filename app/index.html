@@ -30,6 +30,7 @@
       <button class="tab" disabled title="Coming next">Officials</button>
       <button class="tab" disabled title="Coming next">Write a letter</button>
     </nav>
+    <button class="ghost" id="play-tour" title="Replay the 30-second tour">▶ Tour</button>
     <button class="ghost" id="open-method">Method &amp; sources</button>
   </header>
 
@@ -71,6 +72,12 @@
     <section class="mapwrap" aria-label="Map">
       <div id="map"></div>
 
+      <div class="tour" id="tour" hidden role="status" aria-live="polite">
+        <div class="tour-step" id="tour-step"></div>
+        <p class="tour-text" id="tour-text"></p>
+        <div class="tour-actions"><button class="btn btn-quiet" id="tour-skip">Skip tour</button><button class="btn" id="tour-next">Next</button></div>
+        <div class="tour-bar"><i id="tour-progress"></i></div>
+      </div>
       <div class="card store-card" id="store-card" hidden></div>
       <div class="card result-card" id="result-card" hidden aria-live="polite"></div>
       <div class="sheet" id="sheet" hidden role="dialog" aria-labelledby="sheet-title"></div>

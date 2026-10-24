@@ -294,6 +294,7 @@ function wave(s, on) {
 }
 
 function simulate(s) {
+  tourEnd();
   if (state.rule !== 'state') setRule('state');
   clearTimers();
   state.closed = s;
@@ -306,6 +307,7 @@ function simulate(s) {
   for (const f of lost) box.extend(layers.get(f.properties.GEOID).getBounds());
   map.flyToBounds(box, { paddingTopLeft: [40, 60], paddingBottomRight: [400, 60], maxZoom: 14, animate: !reduced, duration: 1.1 });
   renderResult(s);
+  state.timers.push(setTimeout(() => drawRoute(s), reduced ? 0 : 1300)); // after the red wave and camera move
   $('#store-card').hidden = true; // the result card has its own Undo
   rowFor(s)?.classList.add('is-selected');
   state.selected = s;
@@ -350,6 +352,7 @@ function undo(silent = false) {
   if (!s) return;
   clearTimers();
   clearSiting();
+  clearRoute();
   wave(s, false);
   const p = pharmacyFor(s);
   if (p) markers.get(p.id).getElement().classList.remove('is-closed');
@@ -357,6 +360,84 @@ function undo(silent = false) {
   state.closed = null;
   $('#result-card').hidden = true;
   if (!silent) select(s);
+}
+
+// ---------- walking route to the next open pharmacy ----------
+const routeLayers = [];
+function clearRoute() { routeLayers.splice(0).forEach((l) => l.remove()); }
+
+function drawRoute(s) {
+  clearRoute();
+  const r = s.route;
+  if (!r || state.closed !== s) return;
+  const opts = { interactive: false };
+  const halo = L.polyline(r.coords, { ...opts, className: 'route-halo' }).addTo(map);
+  const line = L.polyline(r.coords, { ...opts, className: 'route' }).addTo(map);
+  const start = L.marker(r.coords[0], { ...opts, icon: L.divIcon({ className: 'route-start', iconSize: [14, 14] }) }).addTo(map);
+  routeLayers.push(halo, line, start);
+  for (const el of [halo.getElement(), line.getElement()]) {  // draw the line from home to the store
+    const len = el.getTotalLength();
+    el.style.strokeDasharray = `${len}`;
+    el.style.strokeDashoffset = `${len}`;
+    el.getBoundingClientRect();
+    el.style.transition = reduced ? 'none' : 'stroke-dashoffset 1.8s cubic-bezier(0.4, 0, 0.2, 1)';
+    el.style.strokeDashoffset = '0';
+  }
+  const tag = () => {
+    if (state.closed !== s) return;
+    const m = L.marker(r.coords[r.coords.length - 1], { ...opts, zIndexOffset: 3000, icon: L.divIcon({
+      className: 'route-tag', iconAnchor: [-8, 14],
+      html: `${fmt(r.minutes)} min walk <small>to ${esc(r.store)}</small>` }) }).addTo(map);
+    routeLayers.push(m);
+  };
+  reduced ? tag() : state.timers.push(setTimeout(tag, 1800));
+  map.flyToBounds(L.latLngBounds(r.coords).extend(layers.get(r.GEOID).getBounds()).pad(0.25),
+    { paddingTopLeft: [40, 60], paddingBottomRight: [400, 60], maxZoom: 15, animate: !reduced, duration: 0.9 });
+}
+
+// ---------- opening tour (numbers come from app_data.json) ----------
+const tour = { i: -1, timer: null, on: false };
+function tourStops() {
+  const top = D.stores.slice(0, 3);
+  const v = D.validation;
+  return [
+    { text: `<b>1 in ${fmt(v.one_in)}</b> Boston residents lives in a pharmacy desert or one closure away from one.`,
+      view: () => map.flyTo([42.295, -71.085], 13, { duration: 1.6 }) },
+    ...top.map((s) => ({
+      text: `${esc(s.hoods.join(' & '))}: if the ${esc(s.name)} at ${esc(String(s.address).split(',')[0])} closes, <b>${fmt(s.people)}</b> residents lose walkable access.`
+        + (s.route ? ` For some, the next pharmacy is a <b>${fmt(s.route.minutes)}-minute</b> walk.` : ''),
+      view: () => { map.flyTo([s.lat, s.lon], 14, { duration: 1.6 }); highlight(s, true); },
+      leave: () => highlight(s, false) })),
+    { text: 'Pick any store on the list to see who would lose access, and the best place for a replacement.',
+      view: () => map.flyTo([42.295, -71.085], 13, { duration: 1.4 }) },
+  ];
+}
+
+function tourGo(i) {
+  const stops = tourStops();
+  stops[tour.i]?.leave?.();
+  clearTimeout(tour.timer);
+  if (i >= stops.length) return tourEnd();
+  tour.i = i;
+  $('#tour-step').textContent = `${i + 1} of ${stops.length}`;
+  $('#tour-text').innerHTML = stops[i].text;
+  $('#tour-next').textContent = i === stops.length - 1 ? 'Explore' : 'Next';
+  const bar = $('#tour-progress');
+  bar.style.transition = 'none'; bar.style.width = '0';
+  bar.getBoundingClientRect();
+  bar.style.transition = 'width 5.5s linear'; bar.style.width = '100%';
+  stops[i].view();
+  tour.timer = setTimeout(() => tourGo(i + 1), 5500);
+}
+
+function tourStart() {
+  if (state.town !== 'boston' || state.closed) return;
+  tour.on = true; $('#tour').hidden = false; tourGo(0);
+}
+function tourEnd() {
+  if (!tour.on) return;
+  tourStops()[tour.i]?.leave?.();
+  clearTimeout(tour.timer); tour.on = false; tour.i = -1; $('#tour').hidden = true;
 }
 
 // ---------- replacement siting ----------
@@ -380,6 +461,7 @@ function showRestored(geoids) {
 function renderSites(s) {
   const S = s.sites, card = $('#result-card');
   clearSiting();
+  clearRoute();
   const best = S.best_set;
   const rows = S.top.map((c, i) => `
     <li><button class="site-row" data-i="${i}">
@@ -407,7 +489,7 @@ function renderSites(s) {
       <button class="btn btn-quiet" id="undo3">Undo</button>
     </div>`;
   countTo($('#r-best'), best.gain);
-  $('#back').addEventListener('click', () => { clearSiting(); renderResult(s); });
+  $('#back').addEventListener('click', () => { clearSiting(); renderResult(s); drawRoute(s); });
   $('#undo3').addEventListener('click', () => undo());
   $('#show-best')?.addEventListener('click', () => {
     siting.ring?.remove(); siting.ring = null;
@@ -497,7 +579,11 @@ async function boot() {
   renderRanking();
   initMap();
   renderMethod();
-  $('#town').addEventListener('change', (e) => setTown(e.target.value));
+  $('#town').addEventListener('change', (e) => { tourEnd(); setTown(e.target.value); });
+  $('#tour-skip').addEventListener('click', tourEnd);
+  $('#tour-next').addEventListener('click', () => tourGo(tour.i + 1));
+  $('#play-tour').addEventListener('click', () => { if (state.closed) undo(true); tourStart(); });
+  for (const el of [$('#rank-list'), $('#map')]) el.addEventListener('pointerdown', tourEnd); // any real interaction ends it
   document.querySelectorAll('.rules button').forEach((b) => b.addEventListener('click', () => setRule(b.dataset.rule)));
   for (const id of ['open-method', 'why-differ']) $(`#${id}`).addEventListener('click', () => $('#method').showModal());
   document.addEventListener('keydown', (e) => {
@@ -505,6 +591,7 @@ async function boot() {
     if (!$('#sheet').hidden) $('#sheet').hidden = true;
     else if (!$('#store-card').hidden && !state.closed) $('#store-card').hidden = true;
   });
+  if (!reduced && new URLSearchParams(location.search).get('tour') !== '0') setTimeout(tourStart, 900);
   window.rxgap = { state, simulate: (rank) => simulate(D.stores[rank - 1]), undo }; // for the smoke test
 }
 boot();

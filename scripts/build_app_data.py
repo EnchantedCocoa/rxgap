@@ -1,5 +1,5 @@
 # 화면에 나오는 모든 숫자와 출처를 data/app_data.json 하나로 묶는 스크립트.
-import csv, json
+import csv, json, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -19,6 +19,25 @@ PROV = {
     'town': ('Massachusetts Health Policy Commission, DataPoints 31 public block-group dataset (scripts/build_towns.py)', ['hpc']),
     'low_access_share': ('scripts/build_app_data.py:main', ['block_groups', 'acs']),
 }
+
+
+def tidy(s):
+    """Display form of names/addresses from NPI: 'CVS PHARMACY #05464' -> 'CVS Pharmacy'."""
+    if not isinstance(s, str):
+        return s
+    s = re.sub(r'\s*#\s*\d+', '', s).strip()
+    if s.isupper():
+        s = ' '.join(w if w in {'CVS', 'MA', 'BMC', 'BILH', 'MGH'} or any(c.isdigit() for c in w) else w.capitalize()
+                     for w in s.split())
+    return s
+
+
+def tidy_all(o):
+    if isinstance(o, dict):
+        return {k: tidy(v) if k in ('name', 'address', 'store') else tidy_all(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [tidy_all(x) for x in o]
+    return o
 
 
 def officials():
@@ -61,6 +80,7 @@ def main():
               for f in json.loads((DATA / 'raw' / 'boston_bg.geojson').read_text())['features']}
     rank = json.loads((DATA / 'cant_lose.json').read_text())
     sites = json.loads((DATA / 'sites_out.json').read_text())
+    routes = json.loads((DATA / 'routes.json').read_text())
     meta = json.loads((DATA / 'map_meta.json').read_text())
 
     total = sum(f['properties']['pop'] for f in bg)
@@ -94,7 +114,7 @@ def main():
                        'at_risk_nocar_hh': sum(acs.get(f['properties']['GEOID'], {}).get('nocar', 0) for f in bg if f['properties']['s_state'] != 'covered'),
                        'at_risk_pct': round((headline['state']['desert'] + headline['state']['near']) / total * 100),
                        'low_access_share': f'{round(low / len(bg) * 100)}%'},
-        'stores': [{**r, 'sites': sites[str(r['rank'])]} for r in store_rows(rank['stores'], raw_bg, officials())],
+        'stores': [{**r, 'sites': sites[str(r['rank'])], 'route': routes.get(str(r['rank']))} for r in store_rows(rank['stores'], raw_bg, officials())],
         'pharmacies': [{'id': i, 'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'], 'source': p.get('source'),
                         'rank': ranked.get((p['lat'], p['lon']))}
                        for i, p in enumerate(meta['pharmacies'])],
@@ -104,6 +124,8 @@ def main():
         'prov': {k: {'function': f, 'sources': s} for k, (f, s) in PROV.items()},
         'sources': json.loads((DATA / 'provenance.json').read_text()),
     }
+    for k in ('stores', 'pharmacies'):
+        out[k] = tidy_all(out[k])
     (DATA / 'app_data.json').write_text(json.dumps(out))
     print(f"app_data.json: {len(out['stores'])} stores, {len(out['pharmacies'])} pharmacies")
 
