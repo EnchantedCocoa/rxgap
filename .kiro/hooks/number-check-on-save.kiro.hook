@@ -5,7 +5,13 @@
   "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["scripts/**/*.py", "rxgap/**/*.py", "templates/**/*"]
+    "patterns": [
+      "scripts/**/*.py",
+      "rxgap/**/*.py",
+      "data/templates/**/*",
+      "data/manual/policy.json",
+      "app/text.js"
+    ]
   },
   "then": {
     "type": "askAgent",

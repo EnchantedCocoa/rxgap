@@ -1,14 +1,17 @@
 {
   "enabled": true,
   "name": "Recompute on closure",
-  "description": "When data/manual/closures.csv changes, recompute block-group status and the ranking, and report which block groups changed.",
+  "description": "When data/manual/closures.csv or openings.csv changes, rerun the whole pipeline for every place and report which block groups changed.",
   "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["data/manual/closures.csv"]
+    "patterns": [
+      "data/manual/closures.csv",
+      "data/manual/openings.csv"
+    ]
   },
   "then": {
     "type": "askAgent",
-    "prompt": "closures.csv changed. Run `../.venv/bin/python scripts/analyze_bg.py`, then `../.venv/bin/python scripts/rank.py`, then `../.venv/bin/python scripts/build_map.py`. Report how many people moved into desert or near-desert and in which neighborhoods. Then run `../.venv/bin/python -m pytest -q`. Append one line to docs/KIRO_LOG.md saying this hook fired and what it found."
+    "prompt": "The store list changed (closures.csv or openings.csv). Run `../.venv/bin/python -m rxgap.check` (it reruns scripts/run_all.py for Boston, Springfield and Plymouth, rebuilds app_data.json and facts.json, and prints every block group whose status changed). Report how many people moved into a desert or near-desert, in which neighborhoods and districts. Then run `../.venv/bin/python -m pytest -q`. Reload the app to see the map update. Append one line to docs/KIRO_LOG.md saying this hook fired and what it found."
   }
 }

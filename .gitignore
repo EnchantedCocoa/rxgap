@@ -10,3 +10,4 @@ data/letters.duckdb*
 .kiro/settings/.kirocrew-cli-settings.lock
 .DS_Store
 .venv/
+data/places/*/last_status.json
