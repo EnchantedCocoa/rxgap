@@ -27,7 +27,7 @@ def officials_for(districts, offs):
         if not did or (kind == 'council' and not PLACE['council']):
             continue
         o = offs.get((kind, did), {})
-        out.append({'kind': kind, 'title': TITLE[kind], 'name': o.get('name') or 'Name not verified',
+        out.append({'kind': kind, 'id': did, 'title': TITLE[kind], 'name': o.get('name') or 'Name not verified',
                     'district': f'District {did}' if kind == 'council' else did,
                     'address': o.get('office_address') or '', 'url': o.get('source_url') or ''})
     return out

@@ -205,3 +205,78 @@ def test_browser_renders_text_like_python(page):
         tpl = (ROOT / 'data' / 'templates' / name).read_text()
         js = page.evaluate("async ([t, f, h]) => (await import('/app/text.js')).render(t, f, h)", [tpl, facts, html])
         assert js == render(tpl, facts, html), name
+
+
+def facts():
+    return json.loads((ROOT / 'data' / 'facts.json').read_text())
+
+
+def fresh(page):
+    page.goto(page.url.split('?')[0] + '?tour=0&splash=0')
+    page.wait_for_function('window.rxgap !== undefined', timeout=30000)
+
+
+def test_brief_shows_fact_numbers(page):
+    F = facts()
+    fresh(page)
+    page.evaluate('window.rxgap.simulate(1)')
+    page.click('#brief-btn')
+    page.wait_for_selector('#act .brief')
+    r = F['briefs']['1'][0]
+    assert page.inner_text('#act .brief-lead b') == f"{r['official_people']:,}"
+    assert page.locator('#act .brief tbody tr').count() == len(r['blocks']) + len(r['sites'])
+    page.select_option('#brief-who', F['briefs']['1'][-1]['official_key'])
+    page.wait_for_function(f"document.querySelector('#act .brief-for').textContent.includes({json.dumps(F['briefs']['1'][-1]['official_name'])})")
+    page.click('#act .close')
+    page.evaluate('window.rxgap.undo()')
+
+
+def test_delivery_helper_has_no_inputs_and_sends_nothing(page):
+    F = facts()
+    fresh(page)
+    sent = []
+    spy = lambda r: sent.append((r.method, r.url))
+    page.on('request', spy)
+    g = next(g for g, b in F['blocks'].items() if b['is_near'])
+    page.evaluate(f'window.rxgap.sheet({json.dumps(g)})')
+    page.click('#sheet-help')
+    page.wait_for_selector('#act .act-src')
+    for lang in ('es', 'ht', 'en'):
+        page.click(f'#act [data-lang="{lang}"]')
+        page.wait_for_function(f"document.querySelector('#act .act-body').lang === '{lang}'")
+        assert F['blocks'][g]['near_stores'][0]['name'] in page.inner_text('#act .act-body')
+    assert page.locator('#act input, #act textarea, #act select').count() == 0
+    assert all(m == 'GET' and '?' not in u for m, u in sent), sent  # nothing about the page leaves the browser
+    page.remove_listener('request', spy)
+    page.click('#act .close')
+
+
+def test_letter_flow_needs_own_words_counts_and_never_sends(page):
+    F = facts()
+    g = next(g for g, b in F['blocks'].items() if b['is_near'])
+    b = F['blocks'][g]
+    fresh(page)
+    posts = []
+    spy = lambda r: r.method == 'POST' and posts.append(r.url)
+    page.on('request', spy)
+    page.evaluate(f'window.rxgap.sheet({json.dumps(g)})')
+    page.click('#sheet-letter')
+    page.wait_for_selector('#ok1')
+    page.click('#ok1')
+    assert page.is_disabled('#make')
+    page.click('#act [data-lang="ht"]')
+    page.fill('#own', 'Manman m pran medikaman pou kè chak jou.')
+    page.click('#make')
+    page.wait_for_selector('#act .letters.two')
+    texts = page.locator('#act .letter-text').all_inner_texts()
+    assert all(f"{b['store_people']:,}" in t and 'Manman m pran' in t for t in texts)
+    page.click('#back3')
+    page.click('#make')  # same letter again: counted once
+    page.wait_for_selector('#act .letters')
+    page.wait_for_timeout(300)
+    assert len(posts) == len(b['officials']) and all(u.endswith('/count') for u in posts)
+    assert page.locator('#act a[href^="mailto:?subject="]').count() == 1  # the resident opens their own email
+    page.click('#act .close')
+    page.remove_listener('request', spy)
+    assert [e for e in page.errors if 'arcgisonline' not in e] == []
+    assert page.evaluate("fetch('/geocode?address=ab').then(r => r.status)") == 400  # too short: never sent on

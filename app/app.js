@@ -4,19 +4,21 @@ const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString('en-US'));
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 import { openEssay } from './essay.js';
+import { openBrief, openHelp, openLetter, openOfficials } from './act.js';
 const STATUS_LABEL = { desert: 'Desert', 'near-desert': 'One closure away', covered: 'Covered' };
 
 const state = { rule: 'state', selected: null, closed: null, timers: [], town: 'boston' };
-let D, BG, map, bgIndex, bostonLayer, pinLayer;
+let D, BG, F, map, bgIndex, bostonLayer, pinLayer;
 
 // ---------- data ----------
 const placeBase = (slug) => (slug === 'boston' ? '../data/' : `../data/places/${slug}/`);
 async function load(slug = 'boston') {
-  const [d, bg] = await Promise.all([
+  const [d, bg, facts] = await Promise.all([
     fetch(placeBase(slug) + 'app_data.json').then((r) => r.json()),
     fetch(placeBase(slug) + 'bg_out.geojson').then((r) => r.json()),
+    fetch(placeBase(slug) + 'facts.json').then((r) => r.json()),  // numbers for briefs, letters and the delivery helper
   ]);
-  D = d; BG = bg;
+  D = d; BG = bg; F = facts;
   bgIndex = new Map(bg.features.map((f) => [f.properties.GEOID, f]));
   for (const f of bg.features) f.properties._c = centroid(f.geometry);
 }
@@ -286,12 +288,15 @@ function renderResult(s) {
       <ul class="offs">${offs}</ul>
     </div>
     <div class="row actions">
-        <button class="btn" disabled title="Coming in the next phase">Open brief</button>
+        <button class="btn" id="brief-btn">Open brief</button>
+        <button class="btn btn-quiet" id="help-btn">Get medicine delivered</button>
         <button class="btn btn-quiet" id="sites-btn">Best replacement site</button>
         <button class="btn btn-quiet" id="undo2">Undo</button>
     </div>`;
   card.hidden = false;
   $('#undo2').addEventListener('click', () => undo());
+  $('#brief-btn').addEventListener('click', () => openBrief(F, s.rank));
+  $('#help-btn').addEventListener('click', () => openHelp(F, [...s.lost].sort((a, b) => b.pop - a.pop)[0].GEOID));
   $('#sites-btn').addEventListener('click', () => renderSites(s));
   countTo($('#r-people'), s.people);
   countTo($('#r-65'), s.age65);
@@ -503,6 +508,10 @@ function openSheet(geoid) {
     <p style="margin:0 0 8px;font-size:var(--fs-sm);color:var(--ink-2)">${p.council ? `Council District ${esc(p.council)}${offName('council', p.council) ? ` (${esc(offName('council', p.council))})` : ''} · ` : ''}${esc(p.house)} · ${esc(p.senate)} · ${esc(p.area_type || '')} area, ${fmt(p.limit_mi)}-mile limit
       <button class="info" data-prov="block" aria-label="How we got these numbers">i</button></p>
     ${near ? `<h4 style="margin:8px 0 4px;font-size:var(--fs-sm)">Nearest open pharmacies <button class="info" data-prov="walk" aria-label="How we got this">i</button></h4><ol class="near-list">${near}</ol>` : ''}`;
+  sheet.insertAdjacentHTML('beforeend', `<div class="row sheet-acts"><button class="btn btn-quiet" id="sheet-help">Get medicine delivered</button>
+    <button class="btn btn-quiet" id="sheet-letter">Write a letter</button></div>`);
+  $('#sheet-help').addEventListener('click', () => openHelp(F, geoid));
+  $('#sheet-letter').addEventListener('click', () => openLetter(F, { geoid }));
   sheet.hidden = false;
   $('.close', sheet).addEventListener('click', () => { sheet.hidden = true; });
 }
@@ -546,8 +555,10 @@ async function boot() {
   const q = new URLSearchParams(location.search);
   const story = () => { tourEnd(); return openEssay(D, { reduced }); };
   $('#open-story').addEventListener('click', story);
+  $('#tab-officials').addEventListener('click', () => { tourEnd(); openOfficials(F); });
+  $('#tab-letter').addEventListener('click', () => { tourEnd(); openLetter(F); });
   if (q.get('splash') !== '0') await story(); // photo essay first, then the map
   if (!reduced && q.get('tour') !== '0') setTimeout(tourStart, 900);
-  window.rxgap = { state, simulate: (rank) => simulate(D.stores[rank - 1]), undo }; // for the smoke test
+  window.rxgap = { state, simulate: (rank) => simulate(D.stores[rank - 1]), undo, sheet: openSheet }; // for the smoke test
 }
 boot();
