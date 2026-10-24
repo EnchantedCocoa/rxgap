@@ -31,7 +31,7 @@ def page():
         errors = []
         pg.on('pageerror', lambda e: errors.append(str(e)))
         pg.on('console', lambda m: m.type == 'error' and errors.append(m.text))
-        pg.goto(f'http://127.0.0.1:{port}/app/?tour=0')
+        pg.goto(f'http://127.0.0.1:{port}/app/?tour=0&splash=0')
         pg.wait_for_function('window.rxgap !== undefined', timeout=30000)
         pg.errors = errors
         yield pg
@@ -151,3 +151,22 @@ def test_tour_uses_code_numbers(page):
     assert f"{app['stores'][0]['people']:,}" in page.inner_text('#tour-text')
     page.click('#tour-skip')
     assert page.is_hidden('#tour')
+
+
+def test_story_numbers_come_from_data(page):
+    app = json.loads((ROOT / 'data' / 'app_data.json').read_text())
+    ev = {f['id']: f for f in json.loads((ROOT / 'data' / 'manual' / 'evidence.json').read_text())}
+    page.goto(page.url.split('?')[0] + '?tour=0')
+    page.wait_for_selector('#essay .es-ch')
+    page.screenshot(path=str(SHOTS / 'ui_story.png'))
+    vals = [' '.join(v.split()) for v in page.locator('#essay .es-val').all_inner_texts()]
+    h = app['headline']['state']
+    assert f"{h['desert'] + h['near']:,}" in [v.rstrip('i').strip() for v in vals]
+    assert f"{app['stores'][0]['people']:,}" in [v.rstrip('i').strip() for v in vals]
+    shown = {v.rstrip('i').strip() for v in vals}
+    assert shown - {f['value'] for f in ev.values()} == {f"{h['desert'] + h['near']:,}", f"{app['stores'][0]['people']:,}"}
+    assert page.locator('#essay .es-src').count() == page.locator('#essay .es-val').count() - 2  # every outside fact links its source
+    assert page.locator('#essay .es-credit').count() == 6
+    page.click('#es-skip')
+    page.wait_for_selector('#essay', state='detached')
+    assert [e for e in page.errors if 'arcgisonline' not in e] == []

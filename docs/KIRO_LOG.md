@@ -127,3 +127,10 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   Stop & Shop next to Walgreens on Samoset St) were counted as one store; now same
   store = close AND same brand. Agreement with the HPC by residents: Boston 88%,
   Plymouth 79%, Springfield 73% (HPC excluded some provider-based pharmacies we count).
+- 15:55 Opening photo essay (`app/essay.js`, `app/essay.css`). Two parallel subagents: one found
+  free-licensed photos (Wikimedia Commons / Flickr CC, credits in `data/manual/photos.json`),
+  one verified health-impact facts against primary sources (`data/manual/evidence.json`,
+  12 facts, each with URL and verbatim quote; rejected the weakly sourced "125,000 deaths").
+  No digits in the story text: outside facts render from evidence.json with a source link,
+  our numbers from app_data.json with the "i" provenance button. No free-licensed photo of a
+  pharmacy-closure protest exists, so none is shown. Test checks every number's origin.

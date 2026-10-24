@@ -3,6 +3,7 @@ const $ = (s, el = document) => el.querySelector(s);
 const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString('en-US'));
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+import { openEssay } from './essay.js';
 const STATUS_LABEL = { desert: 'Desert', 'near-desert': 'One closure away', covered: 'Covered' };
 
 const state = { rule: 'state', selected: null, closed: null, timers: [], town: 'boston' };
@@ -542,7 +543,11 @@ async function boot() {
     if (!$('#sheet').hidden) $('#sheet').hidden = true;
     else if (!$('#store-card').hidden && !state.closed) $('#store-card').hidden = true;
   });
-  if (!reduced && new URLSearchParams(location.search).get('tour') !== '0') setTimeout(tourStart, 900);
+  const q = new URLSearchParams(location.search);
+  const story = () => { tourEnd(); return openEssay(D, { reduced }); };
+  $('#open-story').addEventListener('click', story);
+  if (q.get('splash') !== '0') await story(); // photo essay first, then the map
+  if (!reduced && q.get('tour') !== '0') setTimeout(tourStart, 900);
   window.rxgap = { state, simulate: (rank) => simulate(D.stores[rank - 1]), undo }; // for the smoke test
 }
 boot();
