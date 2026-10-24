@@ -36,15 +36,97 @@ const SAMPLES = {
       'Livrezon lakay ta pèmèt vwazen m yo jwenn medikaman yo alè, san yo pa peye taksi.'],
   },
 };
-// The "own words" box speaks the letter's language.
-const FIELD = {
-  en: { label: 'In your own words: why does this matter to you?', req: '(required)', eg: 'For example',
-    tip: 'Click the empty box, or press ↓ and ↑, to fill in a sample sentence. Then make it your own.' },
-  es: { label: 'En sus propias palabras: ¿por qué es importante para usted?', req: '(obligatorio)', eg: 'Por ejemplo',
-    tip: 'Haga clic en el cuadro vacío, o use las flechas ↓ y ↑, para ver una frase de ejemplo. Después, cámbiela con sus propias palabras.' },
-  ht: { label: 'Nan pwòp mo pa w: poukisa sa enpòtan pou ou?', req: '(obligatwa)', eg: 'Pa egzanp',
-    tip: 'Klike nan bwat vid la, oswa peze ↓ ak ↑, pou w wè yon fraz egzanp. Apre sa, chanje l ak pwòp mo pa w.' },
+// Every word of the letter steps, in the language the resident picks. Facts still come from facts.json.
+const UI = {
+  en: {
+    title: 'Write a letter', steps: ['Your officials', 'Your letter', 'Send it yourself'],
+    note: (gov) => `RxGap is an AI tool built at Hackachusetts, not ${gov}. It never sends anything for you.`,
+    addr: (place) => `Your home address in ${place}`, addrHint: 'Street, city and ZIP', find: 'Find my officials',
+    privacy: 'Your address goes to the US Census Bureau only to find your block. RxGap does not keep it.',
+    looking: 'Looking up your block…',
+    noMatch: 'We could not match that address. Check the street and ZIP, or pick your block on the map.',
+    down: 'The Census lookup is not available right now. Pick your block on the map instead.',
+    outside: (place) => `That address is outside ${place}. Choose its place at the top of the page first.`,
+    noAddr: 'No address? Close this, click your block on the map, then choose “Write a letter”.',
+    found: 'Address found:', block: 'Your block in',
+    desert: 'is a pharmacy desert today', near: (s) => `would become a pharmacy desert if the ${s} closed`,
+    covered: 'has a pharmacy within walking distance',
+    officials: 'Your officials', contact: 'Contact', ok: 'These are my officials', redo: 'Use another address',
+    ask: 'What do you want to ask for?',
+    keep: 'Keep a pharmacy near us', keepTo: 'To your officials',
+    keepOff: 'Your block still has a pharmacy within walking distance',
+    rides: 'Pay for pharmacy rides or delivery', ridesTo: 'To MassHealth, with a copy to your officials',
+    label: 'In your own words: why does this matter to you?', req: '(required)', eg: 'For example',
+    tip: 'Click the empty box, or press ↓ and ↑, to fill in a sample sentence. Then make it your own.',
+    make: 'Make my letter', back: 'Back',
+    enCopy: 'English copy',
+    aiNote: 'Translated with AI help. Please read it, or ask someone you trust to check it, before you send it.',
+    copy: 'Copy letter', email: 'Open in my email', print: 'Print', change: 'Change it',
+    copied: 'Copied. Paste it into your email or a letter.', copyFail: 'Select the letter text and copy it.',
+    youSend: 'RxGap does not send this. You do.', offEmail: 'Find each official’s email on their page:',
+    mhMail: (office) => `Mail it to ${office}, and send the copy to your officials:`,
+    subject: { officials: 'Please keep a pharmacy within walking distance', masshealth: 'Please pay for pharmacy rides or home delivery' },
+  },
+  es: {
+    title: 'Escribir una carta', steps: ['Sus funcionarios', 'Su carta', 'Usted la envía'],
+    note: (gov) => `RxGap es una herramienta de IA creada en Hackachusetts; no es ${gov}. Nunca envía nada por usted.`,
+    addr: (place) => `Su dirección en ${place}`, addrHint: 'Calle, ciudad y código postal', find: 'Buscar mis funcionarios',
+    privacy: 'Su dirección se envía a la Oficina del Censo de EE. UU. solo para encontrar su cuadra. RxGap no la guarda.',
+    looking: 'Buscando su cuadra…',
+    noMatch: 'No encontramos esa dirección. Revise la calle y el código postal, o elija su cuadra en el mapa.',
+    down: 'La búsqueda del Censo no está disponible en este momento. Elija su cuadra en el mapa.',
+    outside: (place) => `Esa dirección no está en ${place}. Primero elija ese lugar en la parte de arriba de la página.`,
+    noAddr: '¿Prefiere no dar su dirección? Cierre esta ventana, haga clic en su cuadra en el mapa y elija “Write a letter”.',
+    found: 'Dirección encontrada:', block: 'Su cuadra en',
+    desert: 'ya es un desierto de farmacias', near: (s) => `se convertiría en un desierto de farmacias si cerrara ${s}`,
+    covered: 'tiene una farmacia a la que se puede ir a pie',
+    officials: 'Sus funcionarios', contact: 'Contacto', ok: 'Sí, son mis funcionarios', redo: 'Usar otra dirección',
+    ask: '¿Qué quiere pedir?',
+    keep: 'Que haya una farmacia cerca', keepTo: 'A sus funcionarios',
+    keepOff: 'Su cuadra todavía tiene una farmacia a la que se puede ir a pie',
+    rides: 'Que paguen el transporte a la farmacia o la entrega a domicilio', ridesTo: 'A MassHealth, con copia a sus funcionarios',
+    label: 'En sus propias palabras: ¿por qué es importante para usted?', req: '(obligatorio)', eg: 'Por ejemplo',
+    tip: 'Haga clic en el cuadro vacío, o use las flechas ↓ y ↑, para ver una frase de ejemplo. Después, cámbiela con sus propias palabras.',
+    make: 'Crear mi carta', back: 'Atrás',
+    enCopy: 'Copia en inglés',
+    aiNote: 'Traducción hecha con ayuda de IA. Léala, o pídale a alguien de confianza que la revise, antes de enviarla.',
+    copy: 'Copiar la carta', email: 'Abrir en mi correo', print: 'Imprimir', change: 'Cambiarla',
+    copied: 'Copiada. Péguela en su correo o en una carta.', copyFail: 'Seleccione el texto de la carta y cópielo.',
+    youSend: 'RxGap no envía esta carta. Usted la envía.', offEmail: 'Busque el correo electrónico de cada funcionario en su página:',
+    mhMail: (office) => `Envíela por correo postal a ${office} y mande la copia a sus funcionarios:`,
+    subject: { officials: 'Por favor, mantengan una farmacia cerca de nosotros', masshealth: 'Por favor, paguen el transporte a la farmacia o la entrega a domicilio' },
+  },
+  ht: {
+    title: 'Ekri yon lèt', steps: ['Reprezantan w yo', 'Lèt ou', 'Se ou ki voye l'],
+    note: (gov) => `RxGap se yon zouti IA yo te fè nan Hackachusetts; se pa ${gov}. Li pa janm voye anyen pou ou.`,
+    addr: (place) => `Adrès lakay ou nan ${place}`, addrHint: 'Lari, vil ak kòd postal', find: 'Jwenn reprezantan m yo',
+    privacy: 'Adrès ou ale nan Biwo Resansman Etazini sèlman pou jwenn zòn ou. RxGap pa kenbe l.',
+    looking: 'N ap chèche zòn ou…',
+    noMatch: 'Nou pa jwenn adrès sa a. Verifye lari a ak kòd postal la, oswa chwazi zòn ou sou kat la.',
+    down: 'Rechèch Resansman an pa disponib kounye a. Chwazi zòn ou sou kat la.',
+    outside: (place) => `Adrès sa a pa nan ${place}. Chwazi kote sa a anlè paj la anvan.`,
+    noAddr: 'Ou pa vle bay adrès ou? Fèmen fenèt sa a, klike sou zòn ou sou kat la, epi chwazi “Write a letter”.',
+    found: 'Adrès nou jwenn:', block: 'Zòn ou nan',
+    desert: 'deja se yon dezè famasi', near: (s) => `ta tounen yon dezè famasi si ${s} fèmen`,
+    covered: 'gen yon famasi moun ka mache ale',
+    officials: 'Reprezantan w yo', contact: 'Kontak', ok: 'Wi, se reprezantan m yo', redo: 'Sèvi ak yon lòt adrès',
+    ask: 'Kisa ou vle mande?',
+    keep: 'Pou gen yon famasi toupre nou', keepTo: 'Bay reprezantan w yo',
+    keepOff: 'Zòn ou toujou gen yon famasi moun ka mache ale',
+    rides: 'Pou yo peye transpò pou famasi a oswa livrezon lakay', ridesTo: 'Bay MassHealth, ak yon kopi pou reprezantan w yo',
+    label: 'Nan pwòp mo pa w: poukisa sa enpòtan pou ou?', req: '(obligatwa)', eg: 'Pa egzanp',
+    tip: 'Klike nan bwat vid la, oswa peze ↓ ak ↑, pou w wè yon fraz egzanp. Apre sa, chanje l ak pwòp mo pa w.',
+    make: 'Fè lèt mwen', back: 'Retounen',
+    enCopy: 'Kopi an angle',
+    aiNote: 'Tradiksyon an fèt ak èd IA. Li l, oswa mande yon moun ou fè konfyans tcheke l, anvan ou voye l.',
+    copy: 'Kopye lèt la', email: 'Louvri l nan imel mwen', print: 'Enprime', change: 'Chanje l',
+    copied: 'Li kopye. Kole l nan imel ou oswa nan yon lèt.', copyFail: 'Chwazi tèks lèt la epi kopye l.',
+    youSend: 'RxGap pa voye lèt sa a. Se ou ki voye l.', offEmail: 'Chèche imel chak reprezantan sou paj yo:',
+    mhMail: (office) => `Voye l pa lapòs bay ${office}, epi voye kopi a bay reprezantan w yo:`,
+    subject: { officials: 'Tanpri kenbe yon famasi toupre nou', masshealth: 'Tanpri peye transpò pou famasi a oswa livrezon lakay' },
+  },
 };
+const GOV = { en: 'place_gov', es: 'place_gov_es', ht: 'place_gov_ht' };
 
 // Help text is markdown-lite. It is rendered with html=true first, so every fact arrives escaped.
 function md(text) {
@@ -164,101 +246,105 @@ function countLetter(b, topic) {
 }
 
 export function openLetter(F, { geoid = null } = {}) {
-  const st = { geoid, topic: null, lang: 'en', sentence: '', matched: '' };
-  const { body } = dialog('Write a letter', 'letter');
+  const st = { geoid, topic: null, lang: 'en', sentence: '', matched: '', step: null };
+  const { tools, body } = dialog(UI.en.title, 'letter');
   const $ = (s) => body.querySelector(s);
-  const steps = (n) => `<ol class="steps">${['Your officials', 'Your letter', 'Send it yourself'].map((t, i) =>
-    `<li class="${i + 1 === n ? 'is-on' : i + 1 < n ? 'is-done' : ''}"${i + 1 === n ? ' aria-current="step"' : ''}>${t}</li>`).join('')}</ol>`;
-  const note = `<p class="act-note">RxGap is an AI tool built at Hackachusetts, not ${esc(F.place.place_gov)}. It never sends anything for you.</p>`;
+  const t = () => UI[st.lang];
+  const samples = () => SAMPLES[st.topic || 'officials'][st.lang];
+  // A sample the resident has not changed follows a switch of topic or language; their own words never do.
+  const follow = (change) => {
+    const i = samples().indexOf(st.sentence);
+    change();
+    if (i >= 0) st.sentence = samples()[i];
+  };
+  const go = (step) => {
+    st.step = step;
+    document.getElementById('act-title').textContent = t().title;
+    tools.innerHTML = langBtns(st.lang);
+    tools.querySelectorAll('[data-lang]').forEach((x) => x.addEventListener('click', () => {
+      follow(() => { st.lang = x.dataset.lang; });
+      go(st.step);
+      tools.querySelector(`[data-lang="${st.lang}"]`).focus();
+    }));
+    body.lang = st.lang;
+    step();
+  };
+  const steps = (n) => `<ol class="steps">${t().steps.map((s, i) =>
+    `<li class="${i + 1 === n ? 'is-on' : i + 1 < n ? 'is-done' : ''}"${i + 1 === n ? ' aria-current="step"' : ''}>${esc(s)}</li>`).join('')}</ol>`;
+  const note = () => `<p class="act-note">${esc(t().note(F.place[GOV[st.lang]]))}</p>`;
 
   const find = () => {
     body.innerHTML = `${steps(1)}
       <form class="find" id="find">
-        <label for="addr">Your home address in ${esc(F.place.place)}</label>
-        <div class="row"><input id="addr" autocomplete="street-address" placeholder="Street, city and ZIP" required minlength="5" maxlength="200">
-          <button class="btn">Find my officials</button></div>
-        <p class="act-small">Your address goes to the US Census Bureau only to find your block. RxGap does not keep it.</p>
+        <label for="addr">${esc(t().addr(F.place.place))}</label>
+        <div class="row"><input id="addr" autocomplete="street-address" placeholder="${esc(t().addrHint)}" required minlength="5" maxlength="200">
+          <button class="btn">${esc(t().find)}</button></div>
+        <p class="act-small">${esc(t().privacy)}</p>
       </form>
       <p class="act-msg" id="find-msg" role="status"></p>
-      <p class="act-small">No address? Close this, click your block on the map, then choose “Write a letter”.</p>${note}`;
+      <p class="act-small">${esc(t().noAddr)}</p>${note()}`;
     $('#find').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const say = (t) => { $('#find-msg').textContent = t; };
-      say('Looking up your block…');
+      const say = (s) => { $('#find-msg').textContent = s; };
+      say(t().looking);
       try {
         const r = await fetch(`/geocode?address=${encodeURIComponent($('#addr').value.trim())}`);
-        if (r.status === 404) return say('We could not match that address. Check the street and ZIP, or pick your block on the map.');
-        if (!r.ok) return say('The Census lookup is not available right now. Pick your block on the map instead.');
+        if (r.status === 404) return say(t().noMatch);
+        if (!r.ok) return say(t().down);
         const hit = await r.json();
-        if (!F.blocks[hit.geoid]) return say(`That address is outside ${F.place.place}. Choose its place at the top of the page first.`);
+        if (!F.blocks[hit.geoid]) return say(t().outside(F.place.place));
         Object.assign(st, { geoid: hit.geoid, matched: hit.matched });
-        confirm();
+        go(confirm);
       } catch {
-        say('The Census lookup is not available right now. Pick your block on the map instead.');
+        say(t().down);
       }
     });
   };
 
   const confirm = () => {
     const b = F.blocks[st.geoid];
-    const status = b.is_desert ? 'is a pharmacy desert today'
-      : b.is_near ? `would become a pharmacy desert if the ${b.store_name} closed` : 'has a pharmacy within walking distance';
+    const status = b.is_desert ? t().desert : b.is_near ? t().near(b.store_name) : t().covered;
     body.innerHTML = `${steps(1)}
-      ${st.matched ? `<p class="act-small">Address found: ${esc(st.matched)}</p>` : ''}
-      <p class="act-lead">Your block in <b>${esc(b.where)}</b> ${esc(status)}.</p>
-      <h3>Your officials</h3>
-      <ul class="offs">${b.officials.map((o) => `<li><span>${esc(o.title)} ${esc(o.name)} <small>(${esc(o.district)})</small></span>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">Contact ↗</a>` : ''}</li>`).join('')}</ul>
-      <div class="row"><button class="btn" id="ok1">These are my officials</button><button class="btn btn-quiet" id="redo1">Use another address</button></div>${note}`;
-    $('#ok1').addEventListener('click', write);
-    $('#redo1').addEventListener('click', find);
+      ${st.matched ? `<p class="act-small">${esc(t().found)} ${esc(st.matched)}</p>` : ''}
+      <p class="act-lead">${esc(t().block)} <b>${esc(b.where)}</b> ${esc(status)}.</p>
+      <h3>${esc(t().officials)}</h3>
+      <ul class="offs">${b.officials.map((o) => `<li><span>${esc(o.title)} ${esc(o.name)} <small>(${esc(o.district)})</small></span>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(t().contact)} ↗</a>` : ''}</li>`).join('')}</ul>
+      <div class="row"><button class="btn" id="ok1">${esc(t().ok)}</button><button class="btn btn-quiet" id="redo1">${esc(t().redo)}</button></div>${note()}`;
+    $('#ok1').addEventListener('click', () => go(write));
+    $('#redo1').addEventListener('click', () => go(find));
   };
 
   const write = () => {
     const b = F.blocks[st.geoid];
     const canOff = b.is_near || b.is_desert;
     if (!st.topic || (!canOff && st.topic === 'officials')) st.topic = canOff ? 'officials' : 'masshealth';
-    const topic = (v, t, sub, ok = true) => `<label class="topic${ok ? '' : ' is-off'}"><input type="radio" name="topic" value="${v}"${st.topic === v ? ' checked' : ''}${ok ? '' : ' disabled'}>
-      <span><b>${t}</b><small>${sub}</small></span></label>`;
+    const topic = (v, name, sub, ok = true) => `<label class="topic${ok ? '' : ' is-off'}"><input type="radio" name="topic" value="${v}"${st.topic === v ? ' checked' : ''}${ok ? '' : ' disabled'}>
+      <span><b>${esc(name)}</b><small>${esc(sub)}</small></span></label>`;
     body.innerHTML = `${steps(2)}
-      <fieldset class="topics"><legend>What do you want to ask for?</legend>
-        ${topic('officials', 'Keep a pharmacy near us', canOff ? 'To your officials' : 'Your block still has a pharmacy within walking distance', canOff)}
-        ${topic('masshealth', 'Pay for pharmacy rides or delivery', 'To MassHealth, with a copy to your officials')}
+      <fieldset class="topics"><legend>${esc(t().ask)}</legend>
+        ${topic('officials', t().keep, canOff ? t().keepTo : t().keepOff, canOff)}
+        ${topic('masshealth', t().rides, t().ridesTo)}
       </fieldset>
-      <p class="act-label">Language</p>${langBtns(st.lang)}
-      <div lang="${st.lang}">
-        <label class="act-label" for="own" id="own-label"></label>
-        <textarea id="own" rows="3" maxlength="600" aria-describedby="own-tip"></textarea>
-        <p class="act-small" id="own-tip"></p>
-      </div>
-      <div class="row"><button class="btn" id="make" disabled>Make my letter</button><button class="btn btn-quiet" id="back2">Back</button></div>${note}`;
+      <label class="act-label" for="own" id="own-label">${esc(t().label)} <small>${esc(t().req)}</small></label>
+      <textarea id="own" rows="3" maxlength="600" aria-describedby="own-tip"></textarea>
+      <p class="act-small" id="own-tip">${esc(t().tip)}</p>
+      <div class="row"><button class="btn" id="make" disabled>${esc(t().make)}</button><button class="btn btn-quiet" id="back2">${esc(t().back)}</button></div>${note()}`;
     const own = $('#own');
-    const samples = () => SAMPLES[st.topic][st.lang];
     let k = -1;
     const sync = () => { st.sentence = own.value.trim(); k = samples().indexOf(st.sentence); $('#make').disabled = !st.sentence; };
-    const dress = () => {  // label, tip and example follow the topic and the language
-      const f = FIELD[st.lang];
-      $('#own-label').innerHTML = `${esc(f.label)} <small>${esc(f.req)}</small>`;
-      $('#own-tip').textContent = f.tip;
-      own.placeholder = `${f.eg}: ${samples()[0]}`;
-    };
-    // A sample the resident has not changed follows a switch of topic or language; their own words never do.
-    const follow = (change) => {
-      const i = samples().indexOf(st.sentence);
-      change();
-      if (i >= 0) st.sentence = samples()[i];
-    };
+    const hint = () => { own.placeholder = `${t().eg}: ${samples()[0]}`; };
     const put = (i) => {
       own.value = samples()[(i + samples().length) % samples().length];
       own.setSelectionRange(own.value.length, own.value.length);
       sync();
     };
     own.value = st.sentence;
-    dress();
+    hint();
     sync();
     own.addEventListener('input', sync);
     own.addEventListener('click', () => { if (!own.value.trim()) put(0); });
     own.addEventListener('keydown', (e) => {
-      if (!['ArrowDown', 'ArrowUp'].includes(e.key) || (own.value.trim() && k < 0)) return;
+      if (!['ArrowDown', 'ArrowUp'].includes(e.key) || (own.value.trim() && k < 0)) return;  // never replace the resident's own words
       e.preventDefault();
       const step = e.key === 'ArrowDown' ? 1 : -1;
       put(k < 0 ? (step > 0 ? 0 : samples().length - 1) : k + step);
@@ -266,44 +352,40 @@ export function openLetter(F, { geoid = null } = {}) {
     body.querySelectorAll('[name="topic"]').forEach((x) => x.addEventListener('change', () => {
       follow(() => { st.topic = x.value; });
       own.value = st.sentence;
-      dress();
+      hint();
       sync();
     }));
-    body.querySelectorAll('[data-lang]').forEach((x) => x.addEventListener('click', () => {
-      follow(() => { st.lang = x.dataset.lang; });
-      write();
-      body.querySelector(`[data-lang="${st.lang}"]`).focus();
-    }));
-    $('#make').addEventListener('click', show);
-    $('#back2').addEventListener('click', confirm);
+    $('#make').addEventListener('click', () => go(show));
+    $('#back2').addEventListener('click', () => go(confirm));
   };
 
   const show = async () => {
     const b = F.blocks[st.geoid];
     const kind = st.topic === 'officials' ? 'letter' : 'letter_masshealth';
     const facts = { ...F.place, ...b, own_sentence: st.sentence };
-    const main = render(await tpl(`${kind}.${st.lang}.md`), facts);
-    const en = st.lang === 'en' ? '' : render(await tpl(`${kind}.en.md`), facts);
+    const lang = st.lang;
+    const [main, en] = await Promise.all([render(await tpl(`${kind}.${lang}.md`), facts),
+      lang === 'en' ? '' : render(await tpl(`${kind}.en.md`), facts)]);
+    if (lang !== st.lang) return;  // the resident switched language while the text loaded
     const all = en ? `${main}\n----\nEnglish copy\n\n${en}` : main;
-    const subject = st.topic === 'officials' ? 'Please keep a pharmacy within walking distance' : 'Please pay for pharmacy rides or home delivery';
     countLetter(b, st.topic);
     const contacts = b.officials.filter((o) => o.url).map((o) => `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)} ${esc(o.name)} ↗</a>`).join(' · ');
     body.innerHTML = `${steps(3)}
       <div class="letters${en ? ' two' : ''}">
-        <section><h3>${LANGS[st.lang]}</h3><pre class="letter-text" lang="${st.lang}">${esc(main)}</pre></section>
-        ${en ? `<section><h3>English copy</h3><pre class="letter-text" lang="en">${esc(en)}</pre></section>` : ''}
+        <section><h3>${LANGS[lang]}</h3><pre class="letter-text" lang="${lang}">${esc(main)}</pre></section>
+        ${en ? `<section lang="en"><h3>${esc(t().enCopy)}</h3><pre class="letter-text" lang="en">${esc(en)}</pre></section>` : ''}
       </div>
-      ${en ? '<p class="act-small">Translated with AI help. Please read it, or ask someone you trust to check it, before you send it.</p>' : ''}
-      <div class="row"><button class="btn" id="copy">Copy letter</button>
-        <a class="btn btn-quiet" href="mailto:?subject=${encodeURIComponent(subject)}&amp;body=${encodeURIComponent(all)}">Open in my email</a>
-        ${printBtn}<button class="btn btn-quiet" id="back3">Change it</button></div>
+      ${en ? `<p class="act-small">${esc(t().aiNote)}</p>` : ''}
+      <div class="row"><button class="btn" id="copy">${esc(t().copy)}</button>
+        <a class="btn btn-quiet" href="mailto:?subject=${encodeURIComponent(t().subject[st.topic])}&amp;body=${encodeURIComponent(all)}">${esc(t().email)}</a>
+        <button class="btn btn-quiet" data-act="print">${esc(t().print)}</button><button class="btn btn-quiet" id="back3">${esc(t().change)}</button></div>
       <p class="act-msg" id="copy-msg" role="status"></p>
-      <p class="act-small"><b>RxGap does not send this. You do.</b> ${st.topic === 'officials' ? 'Find each official’s email on their page:' : `Mail it to ${esc(F.place.mh_office)}, and send the copy to your officials:`} ${contacts}</p>${note}`;
+      <p class="act-small"><b>${esc(t().youSend)}</b> ${esc(st.topic === 'officials' ? t().offEmail : t().mhMail(F.place.mh_office))} ${contacts}</p>${note()}`;
     $('#copy').addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText(all); $('#copy-msg').textContent = 'Copied. Paste it into your email or a letter.'; } catch { $('#copy-msg').textContent = 'Select the letter text and copy it.'; }
+      try { await navigator.clipboard.writeText(all); $('#copy-msg').textContent = t().copied; } catch { $('#copy-msg').textContent = t().copyFail; }
     });
-    $('#back3').addEventListener('click', write);
+    $('#back3').addEventListener('click', () => go(write));
   };
 
-  if (st.geoid) confirm(); else find();
+  go(st.geoid ? confirm : find);
 }

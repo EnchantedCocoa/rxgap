@@ -310,3 +310,31 @@ def test_own_words_box_offers_samples_but_keeps_typed_words(page):
     page.press('#own', 'ArrowDown')
     assert page.input_value('#own') == 'Mis propias palabras.'
     page.click('#act .close')
+
+
+def test_letter_steps_speak_the_chosen_language(page):
+    F = facts()
+    g = next(g for g, b in F['blocks'].items() if b['is_near'])
+    english = ['Your officials', 'These are my officials', 'What do you want', 'In your own words', 'Make my letter',
+               'Copy letter', 'Open in my email', 'does not send this']
+    fresh(page)
+    page.click('#tab-letter')
+    page.click('#act [data-lang="es"]')
+    assert page.inner_text('#act-title') == 'Escribir una carta'
+    assert page.inner_text('#find label').startswith('Su dirección en')
+    page.click('#act .close')
+    page.evaluate(f'window.rxgap.sheet({json.dumps(g)})')
+    page.click('#sheet-letter')
+    page.click('#act [data-lang="es"]')
+    assert page.inner_text('#ok1') == 'Sí, son mis funcionarios'
+    page.click('#ok1')
+    assert page.inner_text('#act legend') == '¿Qué quiere pedir?'
+    page.click('#own')
+    page.click('#make')
+    page.wait_for_selector('#act .letters.two')
+    assert page.inner_text('#copy') == 'Copiar la carta'
+    text = page.inner_text('#act .act-body').replace(page.locator('#act .letter-text').nth(1).inner_text(), '')
+    assert [w for w in english if w in text] == []  # only the English copy of the letter is in English
+    page.click('#act [data-lang="ht"]')
+    page.wait_for_function("document.querySelector('#copy')?.textContent === 'Kopye lèt la'")
+    page.click('#act .close')
