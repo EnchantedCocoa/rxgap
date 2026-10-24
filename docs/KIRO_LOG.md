@@ -134,3 +134,4 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   No digits in the story text: outside facts render from evidence.json with a source link,
   our numbers from app_data.json with the "i" provenance button. No free-licensed photo of a
   pharmacy-closure protest exists, so none is shown. Test checks every number's origin.
+- 16:45 Spec: added Req 13 (get-medicine-delivered helper, no personal data) and Req 14 (letter asking MassHealth to pay for pharmacy rides or delivery), tasks 5.6–5.8. Research found MassHealth does not pay rides to pick up medicine (130 CMR 407.411(9), appeal 2310153), so PT-1 help was dropped. Boston's 120-day closure-notice petition (Dec 2025) has no Board action yet.

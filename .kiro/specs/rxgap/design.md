@@ -128,6 +128,27 @@ One rule: **text comes from templates, numbers come from a facts dict.**
 - Footer on every brief and letter: "AI tool built at Hackachusetts. Not the City of
   Boston."
 
+**Policy facts** (Req 13, 14): `data/manual/policy.json`, hand-made, one row per fact:
+`id, statement, value, cite, url, confirmed` (date last confirmed at the source). Seed rows:
+no MassHealth rides to pick up medicine (130 CMR 407.411(9), appeal 2310153); rides to a
+pharmacy for a vaccine are covered (same appeal); PT-1 is filed only by a provider, online,
+up to 3 business days (MassHealth rides page); MassHealth delivery add-on up to $8 (Pharmacy
+Facts 167, confirmed 2021 only); store closure notice is 14 days (247 CMR 6.13). The
+MassHealth letter's recipient and address also live here, with a source URL.
+
+**Delivery helper** (Req 13): a panel opened from the block sheet and the closure card.
+No input fields. It reads the chosen block's three nearest open stores (name, address,
+phone when OSM has a `phone` tag) and renders `help.{en,es,ht}.md`: four ways (store
+delivery, plan mail order, synced 90-day fills, vaccine ride), a phone script, a doctor
+checklist, and a Print button. Policy facts render from `policy.json` with a source link and
+"last confirmed" date. Nothing leaves the browser.
+
+**MassHealth letter** (Req 14): a second topic in the letter flow. Step 1 still finds the
+resident's officials (for the copy line); step 2 picks the topic, "Replace the store" (to
+officials) or "Pay for pharmacy rides or delivery" (to MassHealth). Template
+`letter_masshealth.{en,es,ht}.md`; facts: place desert and near-desert residents, 65+ and
+no-car counts, the resident's block status, and the rule citation from `policy.json`.
+
 **Number integrity** (Req 8): `tests/test_integrity.py` renders every brief and a sample
 letter per language, pulls every number out of the output, and fails unless each one is in
 the facts dict, which in turn must match `cant_lose.json` / `sites.json`.

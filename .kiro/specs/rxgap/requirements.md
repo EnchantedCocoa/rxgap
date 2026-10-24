@@ -102,3 +102,34 @@ Status: APPROVED 2026-10-24. Requirements 1–2 already have working code
 ### Requirement 12: Provenance
 
 1. Every number on screen SHALL have a "how we got this" link (function or query, dataset, pull date).
+
+### Requirement 13: Get medicine delivered (no personal data)
+
+**User Story:** As a resident who just lost walkable access, I want simple steps to get my
+medicine brought to me, so that I do not miss doses.
+
+Added 2026-10-24. MassHealth does not pay for rides to pick up medicine (130 CMR
+407.411(9), cited in Board of Hearings appeal 2310153), so the helper brings the medicine
+to the person instead of the person to the store.
+
+#### Acceptance Criteria
+1. WHEN a resident opens a block or a closure result THE SYSTEM SHALL offer a "Get medicine delivered" helper.
+2. THE SYSTEM SHALL show four ways: ask the store to deliver, plan mail order for 90-day refills, 90-day fills synced to one pickup day, and a MassHealth ride for vaccines (a PT-1 filed by the doctor).
+3. THE SYSTEM SHALL give a phone script and a checklist to show the doctor, in English, Spanish and Haitian Creole, from digit-free templates.
+4. THE SYSTEM SHALL list the nearest remaining stores by name and address, with a phone number when the source data has one, and the source label.
+5. THE SYSTEM SHALL NOT ask for, store or send any personal data: no name, address, MassHealth ID or medicine. It works from the block chosen on the map.
+6. Every policy fact SHALL show its source link and the date it was last confirmed; a fact not confirmed in the current year SHALL say so.
+
+### Requirement 14: Letter asking MassHealth to pay for pharmacy rides or delivery
+
+**User Story:** As a resident or health center, I want to ask MassHealth to pay for pharmacy
+rides or home delivery in pharmacy deserts, so that a closed store does not mean no medicine.
+
+Added 2026-10-24.
+
+#### Acceptance Criteria
+1. THE SYSTEM SHALL draft a letter to MassHealth (EOHHS) that asks it to cover pharmacy trips under 130 CMR 407.411(9), or to pay for home delivery, for members in desert and near-desert block groups. The resident's own state representative and senator are copied.
+2. THE SYSTEM SHALL insert every number and rule citation by code, from the analysis output and `data/manual/policy.json`.
+3. THE SYSTEM SHALL offer the letter in English, Spanish and Haitian Creole with an English copy, and require one sentence written by the resident.
+4. THE SYSTEM SHALL NOT send the letter. It offers Copy, Print and a `mailto:` link the resident opens.
+5. The number-integrity test (Requirement 8) SHALL cover this letter.
