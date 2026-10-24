@@ -162,11 +162,11 @@ def test_story_numbers_come_from_data(page):
     vals = [' '.join(v.split()) for v in page.locator('#essay .es-val').all_inner_texts()]
     h = app['headline']['state']
     assert f"{h['desert'] + h['near']:,}" in [v.rstrip('i').strip() for v in vals]
-    assert f"{app['stores'][0]['people']:,}" in [v.rstrip('i').strip() for v in vals]
+    assert page.inner_text('#essay .es-num') == f"{app['stores'][0]['people']:,}"
     shown = {v.rstrip('i').strip() for v in vals}
-    assert shown - {f['value'] for f in ev.values()} == {f"{h['desert'] + h['near']:,}", f"{app['stores'][0]['people']:,}"}
-    assert page.locator('#essay .es-src').count() == page.locator('#essay .es-val').count() - 2  # every outside fact links its source
-    assert page.locator('#essay .es-credit').count() == 6
+    assert shown - {f['value'] for f in ev.values()} == {f"{h['desert'] + h['near']:,}"}
+    assert page.locator('#essay .es-src').count() == page.locator('#essay .es-val').count()  # every number names its source
+    assert page.locator('#essay .es-credit').count() == len(json.loads((ROOT / 'data' / 'manual' / 'photos.json').read_text())) == 5
     page.click('#es-skip')
     page.wait_for_selector('#essay', state='detached')
     assert [e for e in page.errors if 'arcgisonline' not in e] == []
