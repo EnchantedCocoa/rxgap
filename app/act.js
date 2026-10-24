@@ -11,19 +11,40 @@ const get = (url, kind = 'text') => {
 const tpl = (name) => get(`../data/templates/${name}`);
 const policy = () => get('../data/manual/policy.json', 'json');
 const counted = new Set();
-// Sample sentences for "in your own words". The resident can take one and change it.
+// Sample sentences for "in your own words", one set per topic and language. The resident takes one and changes it.
 const SAMPLES = {
-  en: ['My father takes heart medicine every day and does not drive.',
-    'I am a senior, and the next pharmacy is too far for me to walk.',
-    'My neighbors pick up insulin and blood pressure pills at this store.'],
-  es: ['Mi padre toma medicina para el corazón todos los días y no maneja.',
-    'Soy una persona mayor, y la próxima farmacia está demasiado lejos para ir a pie.',
-    'Mis vecinos recogen insulina y pastillas para la presión en esta farmacia.'],
-  ht: ['Papa m pran medikaman pou kè chak jou, epi li pa kondui.',
-    'Mwen se yon granmoun, epi pwochen famasi a twò lwen pou m mache ale.',
-    'Vwazen m yo pran ensilin ak grenn pou tansyon nan famasi sa a.'],
+  officials: {
+    en: ['My father takes heart medicine every day, and this is the only pharmacy he can walk to.',
+      'I am a senior without a car. If this pharmacy closes, I will not be able to get my medicine.',
+      'Our neighborhood needs a pharmacy close by, with pharmacists who know us and speak our language.'],
+    es: ['Mi padre toma medicina para el corazón todos los días, y esta es la única farmacia a la que puede ir a pie.',
+      'Soy una persona mayor y no tengo carro. Si esta farmacia cierra, no podré conseguir mis medicinas.',
+      'Nuestro barrio necesita una farmacia cerca, con farmacéuticos que nos conozcan y hablen nuestro idioma.'],
+    ht: ['Papa m pran medikaman pou kè chak jou, e se sèl famasi sa a li ka mache ale.',
+      'Mwen se yon granmoun ki pa gen machin. Si famasi sa a fèmen, m p ap ka jwenn medikaman m.',
+      'Katye nou an bezwen yon famasi toupre, ak famasyen ki konnen nou e ki pale lang nou.'],
+  },
+  masshealth: {
+    en: ['I use a wheelchair, and I have no way to get to the pharmacy to pick up my medicine.',
+      'My mother has MassHealth and has missed doses because the pharmacy is too far to walk to.',
+      'Home delivery would let my neighbors get their medicine on time, without paying for a taxi.'],
+    es: ['Uso silla de ruedas y no tengo cómo llegar a la farmacia para recoger mis medicinas.',
+      'Mi madre tiene MassHealth y ha dejado de tomar sus medicinas porque la farmacia queda demasiado lejos para ir a pie.',
+      'La entrega a domicilio permitiría que mis vecinos reciban sus medicinas a tiempo, sin tener que pagar un taxi.'],
+    ht: ['Mwen nan chèz woulant, e m pa gen okenn fason pou m ale nan famasi pou m pran medikaman m.',
+      'Manman m gen MassHealth, e li te manke pran medikaman l plizyè fwa paske famasi a twò lwen pou l mache ale.',
+      'Livrezon lakay ta pèmèt vwazen m yo jwenn medikaman yo alè, san yo pa peye taksi.'],
+  },
 };
-const FOR_EXAMPLE = { en: 'For example', es: 'Por ejemplo', ht: 'Pa egzanp' };
+// The "own words" box speaks the letter's language.
+const FIELD = {
+  en: { label: 'In your own words: why does this matter to you?', req: '(required)', eg: 'For example',
+    tip: 'Click the empty box, or press ↓ and ↑, to fill in a sample sentence. Then make it your own.' },
+  es: { label: 'En sus propias palabras: ¿por qué es importante para usted?', req: '(obligatorio)', eg: 'Por ejemplo',
+    tip: 'Haga clic en el cuadro vacío, o use las flechas ↓ y ↑, para ver una frase de ejemplo. Después, cámbiela con sus propias palabras.' },
+  ht: { label: 'Nan pwòp mo pa w: poukisa sa enpòtan pou ou?', req: '(obligatwa)', eg: 'Pa egzanp',
+    tip: 'Klike nan bwat vid la, oswa peze ↓ ak ↑, pou w wè yon fraz egzanp. Apre sa, chanje l ak pwòp mo pa w.' },
+};
 
 // Help text is markdown-lite. It is rendered with html=true first, so every fact arrives escaped.
 function md(text) {
@@ -204,37 +225,54 @@ export function openLetter(F, { geoid = null } = {}) {
         ${topic('masshealth', 'Pay for pharmacy rides or delivery', 'To MassHealth, with a copy to your officials')}
       </fieldset>
       <p class="act-label">Language</p>${langBtns(st.lang)}
-      <label class="act-label" for="own">In your own words: why does this matter to you? <small>(required)</small></label>
-      <textarea id="own" rows="3" maxlength="600" aria-describedby="own-tip" placeholder="${esc(`${FOR_EXAMPLE[st.lang]}: ${SAMPLES[st.lang][0]}`)}"></textarea>
-      <p class="act-small" id="own-tip">Click the empty box, or press ↓ and ↑, to fill in a sample sentence. Then make it your own.</p>
+      <div lang="${st.lang}">
+        <label class="act-label" for="own" id="own-label"></label>
+        <textarea id="own" rows="3" maxlength="600" aria-describedby="own-tip"></textarea>
+        <p class="act-small" id="own-tip"></p>
+      </div>
       <div class="row"><button class="btn" id="make" disabled>Make my letter</button><button class="btn btn-quiet" id="back2">Back</button></div>${note}`;
     const own = $('#own');
-    own.value = st.sentence;
-    const sync = () => { st.sentence = own.value.trim(); $('#make').disabled = !st.sentence; };
-    sync();
-    own.addEventListener('input', sync);
-    const samples = SAMPLES[st.lang];
-    let k = samples.indexOf(own.value.trim());
+    const samples = () => SAMPLES[st.topic][st.lang];
+    let k = -1;
+    const sync = () => { st.sentence = own.value.trim(); k = samples().indexOf(st.sentence); $('#make').disabled = !st.sentence; };
+    const dress = () => {  // label, tip and example follow the topic and the language
+      const f = FIELD[st.lang];
+      $('#own-label').innerHTML = `${esc(f.label)} <small>${esc(f.req)}</small>`;
+      $('#own-tip').textContent = f.tip;
+      own.placeholder = `${f.eg}: ${samples()[0]}`;
+    };
+    // A sample the resident has not changed follows a switch of topic or language; their own words never do.
+    const follow = (change) => {
+      const i = samples().indexOf(st.sentence);
+      change();
+      if (i >= 0) st.sentence = samples()[i];
+    };
     const put = (i) => {
-      k = (i + samples.length) % samples.length;
-      own.value = samples[k];
+      own.value = samples()[(i + samples().length) % samples().length];
       own.setSelectionRange(own.value.length, own.value.length);
       sync();
     };
+    own.value = st.sentence;
+    dress();
+    sync();
+    own.addEventListener('input', sync);
     own.addEventListener('click', () => { if (!own.value.trim()) put(0); });
     own.addEventListener('keydown', (e) => {
-      if (!['ArrowDown', 'ArrowUp'].includes(e.key) || (own.value.trim() && k < 0)) return;  // never replace the resident's own words
+      if (!['ArrowDown', 'ArrowUp'].includes(e.key) || (own.value.trim() && k < 0)) return;
       e.preventDefault();
       const step = e.key === 'ArrowDown' ? 1 : -1;
-      put(k < 0 ? (step > 0 ? 0 : samples.length - 1) : k + step);
+      put(k < 0 ? (step > 0 ? 0 : samples().length - 1) : k + step);
     });
-    own.addEventListener('input', () => { k = samples.indexOf(own.value.trim()); });
-    body.querySelectorAll('[name="topic"]').forEach((x) => x.addEventListener('change', () => { st.topic = x.value; }));
+    body.querySelectorAll('[name="topic"]').forEach((x) => x.addEventListener('change', () => {
+      follow(() => { st.topic = x.value; });
+      own.value = st.sentence;
+      dress();
+      sync();
+    }));
     body.querySelectorAll('[data-lang]').forEach((x) => x.addEventListener('click', () => {
-      const i = SAMPLES[st.lang].indexOf(st.sentence);  // a sample follows the language switch
-      st.lang = x.dataset.lang;
-      if (i >= 0) st.sentence = SAMPLES[st.lang][i];
+      follow(() => { st.lang = x.dataset.lang; });
       write();
+      body.querySelector(`[data-lang="${st.lang}"]`).focus();
     }));
     $('#make').addEventListener('click', show);
     $('#back2').addEventListener('click', confirm);

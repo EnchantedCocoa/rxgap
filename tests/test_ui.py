@@ -299,6 +299,13 @@ def test_own_words_box_offers_samples_but_keeps_typed_words(page):
     page.click('#act [data-lang="es"]')
     es = page.input_value('#own')
     assert es != first and es  # the same sample, in Spanish
+    assert page.inner_text('#own-label').startswith('En sus propias palabras')
+    assert page.get_attribute('#own', 'placeholder').startswith('Por ejemplo:')
+    page.check('#act [name="topic"][value="masshealth"]')
+    mh = page.input_value('#own')
+    assert mh and mh != es  # each topic has its own samples
+    page.check('#act [name="topic"][value="officials"]')
+    assert page.input_value('#own') == es
     page.fill('#own', 'Mis propias palabras.')
     page.press('#own', 'ArrowDown')
     assert page.input_value('#own') == 'Mis propias palabras.'
