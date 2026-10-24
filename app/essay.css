@@ -2,7 +2,7 @@
 #essay {
   --serif: "Iowan Old Style", "Charter", "Georgia", "Times New Roman", serif;
   position: fixed; inset: 0; z-index: 3000;
-  overflow-y: auto; scroll-behavior: smooth;
+  overflow-y: auto;
   background: #0B0D10; color: #F4F2EC; font-family: var(--font);
   transition: opacity var(--t-slow) var(--ease), transform var(--t-slow) var(--ease);
 }

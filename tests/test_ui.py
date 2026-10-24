@@ -170,3 +170,22 @@ def test_story_numbers_come_from_data(page):
     page.click('#es-skip')
     page.wait_for_selector('#essay', state='detached')
     assert [e for e in page.errors if 'arcgisonline' not in e] == []
+
+
+def test_story_one_arrow_press_moves_one_scene(page):
+    page.goto(page.url.split('?')[0] + '?tour=0')
+    page.wait_for_selector('#essay .es-ch')
+    spot = """i => { const r = document.querySelector('#essay'), s = r.querySelectorAll('.es-ch')[i];
+      return Math.max(0, Math.min(r.scrollHeight - r.clientHeight, s.offsetTop + (s.offsetHeight - r.clientHeight) / 2)); }"""
+    top = lambda: page.evaluate("document.querySelector('#essay').scrollTop")
+    page.keyboard.press('ArrowDown')
+    page.wait_for_timeout(1200)
+    assert abs(top() - page.evaluate(spot, 1)) < 2
+    page.keyboard.press('ArrowDown')
+    page.keyboard.press('ArrowDown')  # a quick second press queues the next scene
+    page.wait_for_timeout(1200)
+    assert abs(top() - page.evaluate(spot, 3)) < 2
+    page.keyboard.press('ArrowUp')
+    page.wait_for_timeout(1200)
+    assert abs(top() - page.evaluate(spot, 2)) < 2
+    assert [e for e in page.errors if 'arcgisonline' not in e] == []

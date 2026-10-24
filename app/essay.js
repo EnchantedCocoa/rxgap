@@ -115,8 +115,35 @@ export async function openEssay(D, { reduced = false } = {}) {
   addEventListener('resize', onScroll);
   paint();
 
+  // One arrow press glides to the next or previous scene, centered on screen.
+  const spot = (s) => Math.max(0, Math.min(root.scrollHeight - root.clientHeight, s.offsetTop + (s.offsetHeight - root.clientHeight) / 2));
+  let anim = 0, goal = -1;
+  const glide = (to) => {
+    cancelAnimationFrame(anim);
+    const from = root.scrollTop, t0 = performance.now(), ms = reduced ? 0 : 900;
+    const tick = (now) => {
+      const k = ms ? Math.min(1, (now - t0) / ms) : 1;
+      root.scrollTop = from + (to - from) * (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2);
+      if (k < 1) anim = requestAnimationFrame(tick); else goal = -1;
+    };
+    anim = requestAnimationFrame(tick);
+  };
+  const stop = () => { cancelAnimationFrame(anim); goal = -1; };
+  root.addEventListener('wheel', stop, { passive: true });
+  root.addEventListener('touchstart', stop, { passive: true });
+  const step = (d) => {
+    const T = secs.map(spot), y = root.scrollTop;
+    const i = goal >= 0 ? goal : T.findIndex((t) => Math.abs(t - y) < 4);
+    const n = i >= 0 ? i + d : d > 0 ? T.findIndex((t) => t > y + 4) : T.findLastIndex((t) => t < y - 4);
+    if (n < 0 || n >= T.length) return;
+    goal = n;
+    glide(T[n]);
+  };
+  const KEYS = { ArrowDown: 1, PageDown: 1, ArrowUp: -1, PageUp: -1 };
+
   return new Promise((done) => {
     const close = () => {
+      stop();
       root.removeEventListener('scroll', onScroll);
       removeEventListener('resize', onScroll);
       document.removeEventListener('keydown', onKey);
@@ -124,7 +151,10 @@ export async function openEssay(D, { reduced = false } = {}) {
       root.classList.add('is-leaving');
       setTimeout(() => { root.remove(); done(); }, reduced ? 0 : 700);
     };
-    const onKey = (e) => { if (e.key === 'Escape') close(); };
+    const onKey = (e) => {
+      if (e.key === 'Escape') close();
+      else if (KEYS[e.key]) { e.preventDefault(); step(KEYS[e.key]); }
+    };
     document.addEventListener('keydown', onKey);
     root.querySelector('#es-skip').addEventListener('click', close);
     root.querySelector('#es-go').addEventListener('click', close);
