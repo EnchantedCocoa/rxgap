@@ -1,2 +1,6 @@
 name,address,lat,lon,date,source_url
 Walgreens Codman Square,585 Washington St Dorchester MA 02124,42.281541,-71.08772,2025-09-10,https://www.dotnews.com/2026/10/14/rep-worrell-wants-legislation-to-look-into-pharmacy-deserts/
+Rite Aid (Suffolk),"100 Cambridge Street, Boston 02114",42.360981,-71.062624,2025-10-05,https://www.foxbusiness.com/economy/rite-aid-closes-down-all-remaining-stores-after-bankruptcy
+Rite Aid (Suffolk),address not in OSM,42.386166,-71.007479,2025-10-05,https://www.foxbusiness.com/economy/rite-aid-closes-down-all-remaining-stores-after-bankruptcy
+Rite Aid (Middlesex),address not in OSM,42.374287,-71.084831,2025-10-05,https://www.foxbusiness.com/economy/rite-aid-closes-down-all-remaining-stores-after-bankruptcy
+Rite Aid (Essex),address not in OSM,42.622473,-70.640253,2025-10-05,https://www.foxbusiness.com/economy/rite-aid-closes-down-all-remaining-stores-after-bankruptcy

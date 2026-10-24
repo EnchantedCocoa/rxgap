@@ -128,28 +128,6 @@
    "rank": 4
   },
   {
-   "name": "Rite Aid",
-   "lat": 42.386166,
-   "lon": -71.007479,
-   "people": 10856,
-   "age65": 1159,
-   "nocar_hh": 865,
-   "block_groups": [
-    "250259813001",
-    "250250511012",
-    "250250510002",
-    "250250510003",
-    "250250511011",
-    "250250511013",
-    "250250511014",
-    "250250510001"
-   ],
-   "hoods": [
-    "East Boston"
-   ],
-   "rank": 5
-  },
-  {
    "name": "Saigon Pharmacy",
    "lat": 42.310875,
    "lon": -71.057844,
@@ -170,7 +148,7 @@
    "hoods": [
     "Dorchester"
    ],
-   "rank": 6
+   "rank": 5
   },
   {
    "name": "CVS Pharmacy",
@@ -190,7 +168,7 @@
     "Roxbury",
     "South End"
    ],
-   "rank": 7
+   "rank": 6
   },
   {
    "name": "Star Market Pharmacy",
@@ -211,7 +189,7 @@
     "Dorchester",
     "South Boston"
    ],
-   "rank": 8
+   "rank": 7
   },
   {
    "name": "CVS Pharmacy",
@@ -230,7 +208,7 @@
    "hoods": [
     "West Roxbury"
    ],
-   "rank": 9
+   "rank": 8
   },
   {
    "name": "Walgreens",
@@ -248,7 +226,7 @@
    "hoods": [
     "Mission Hill"
    ],
-   "rank": 10
+   "rank": 9
   },
   {
    "name": "CVS Pharmacy",
@@ -269,7 +247,7 @@
     "Dorchester",
     "Mattapan"
    ],
-   "rank": 11
+   "rank": 10
   },
   {
    "name": "CVS Pharmacy",
@@ -286,7 +264,7 @@
    "hoods": [
     "Jamaica Plain"
    ],
-   "rank": 12
+   "rank": 11
   },
   {
    "name": "CVS Pharmacy",
@@ -303,7 +281,7 @@
    "hoods": [
     "Dorchester"
    ],
-   "rank": 13
+   "rank": 12
   },
   {
    "name": "CVS Pharmacy",
@@ -321,7 +299,7 @@
    "hoods": [
     "Jamaica Plain"
    ],
-   "rank": 14
+   "rank": 13
   },
   {
    "name": "CVS Pharmacy",
@@ -339,7 +317,7 @@
    "hoods": [
     "South Boston"
    ],
-   "rank": 15
+   "rank": 14
   },
   {
    "name": "CVS Pharmacy",
@@ -355,7 +333,7 @@
    "hoods": [
     "Charlestown"
    ],
-   "rank": 16
+   "rank": 15
   },
   {
    "name": "Walgreens",
@@ -370,7 +348,7 @@
    "hoods": [
     "East Boston"
    ],
-   "rank": 17
+   "rank": 16
   },
   {
    "name": "CVS Pharmacy",
@@ -385,7 +363,7 @@
    "hoods": [
     "Brighton"
    ],
-   "rank": 18
+   "rank": 17
   },
   {
    "name": "CVS Pharmacy",
@@ -400,7 +378,7 @@
    "hoods": [
     "West Roxbury"
    ],
-   "rank": 19
+   "rank": 18
   }
  ]
 }
