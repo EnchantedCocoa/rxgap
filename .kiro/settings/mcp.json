@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "boston-opendata": {
+      "url": "https://data-mcp.boston.gov/mcp",
+      "disabled": false
+    }
+  }
+}

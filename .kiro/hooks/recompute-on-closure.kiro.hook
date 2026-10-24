@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Recompute on closure",
+  "description": "When data/manual/closures.csv changes, recompute block-group status and the ranking, and report which block groups changed.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["data/manual/closures.csv"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "closures.csv changed. Run `../.venv/bin/python scripts/analyze_bg.py`, then `../.venv/bin/python scripts/rank.py`, then `../.venv/bin/python scripts/build_map.py`. Report how many people moved into desert or near-desert and in which neighborhoods. Then run `../.venv/bin/python -m pytest -q`. Append one line to docs/KIRO_LOG.md saying this hook fired and what it found."
+  }
+}

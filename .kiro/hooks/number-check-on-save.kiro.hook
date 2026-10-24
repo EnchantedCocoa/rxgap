@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Number check on save",
+  "description": "When analysis or template code changes, run the number-integrity tests.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["scripts/**/*.py", "rxgap/**/*.py", "templates/**/*"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Analysis or template code changed. Run `../.venv/bin/python -m pytest -q`. If any test fails, show the failing number and the file it came from, and fix it before doing anything else."
+  }
+}
