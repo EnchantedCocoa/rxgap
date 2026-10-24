@@ -72,3 +72,11 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   Added `data/manual/openings.csv` (each row has a source URL). Desert population
   142,943 -> 121,319; 24 block groups changed. Sullivan's (Roslindale) is now #1;
   the Blue Hill Ave CVS drops to #2 (20,083). Kornfield itself enters the list at #12.
+- 13:25 User asked to toggle to other MA places. Kiro pulled the HPC's own public
+  block-group dataset (DataPoints 31) and joined it to towns via Census TIGER. Most
+  at-risk city: Springfield (52,513 in desert or near-desert, 34%). Most affected
+  suburban town: Plymouth (21,966, 36%, 97% suburban block groups).
+  Two problems found by comparing with HPC: (1) the MassGIS EJ2020 layer only holds
+  EJ block groups, so our Boston map has 462 of 580 block groups (571k of 676k people);
+  (2) our Boston desert count (121,319) is ~4x HPC's (31,291), mainly because OSM lists
+  far fewer pharmacies than the state license data HPC used.
