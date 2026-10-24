@@ -15,17 +15,17 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 - [x] 1.1 Block groups from MassGIS EJ2020 (462 rows) — _Req 1_
 - [x] 1.2 ACS 2022 block-group no-car, poverty, 65+ (key works) — _Req 1_
-- [ ] 1.3 [P] Pharmacies: add `healthcare=pharmacy` tag, keep `addr:*` tags, save fetch time — _Req 1, 2.3, 12_
+- [x] 1.3 [P] Pharmacies: add `healthcare=pharmacy` tag, keep `addr:*` tags, save fetch time — _Req 1, 2.3, 12_
   - Done: `raw/pharmacies.json` has an address or "not in OSM" for each store; 10 known stores spot-checked
-- [ ] 1.4 [P] Districts: council via Boston OpenData MCP, House and Senate from MassGIS; hand-fill `manual/officials.csv` with `source_url` — _Req 4.1_
+- [x] 1.4 [P] Districts: council via Boston OpenData MCP, House and Senate from MassGIS; hand-fill `manual/officials.csv` with `source_url` — _Req 4.1_
   - Done: every Boston block group falls in one council, House and Senate district
-- [ ] 1.5 [P] Candidate sites: MassGIS health centers, MBTA rapid transit, `manual/candidate_sites.csv` — _Req 5.1_
+- [x] 1.5 [P] Candidate sites: MassGIS health centers, MBTA rapid transit, `manual/candidate_sites.csv` — _Req 5.1_
   - Done: `raw/sites.json` with name, kind, lat, lon
-- [ ] 1.6 [P] Walk graph: osmnx walk network for Boston + 1 mi, saved as `raw/walk.graphml` — _Req 3.3_
+- [x] 1.6 [P] Walk graph: osmnx walk network for Boston + 1 mi, saved as `raw/walk.graphml` — _Req 3.3_
   - Done: loads in under 10 s; one test route returns a sane time
-- [ ] 1.7 [P] (cut first) NPI cross-check with rapidfuzz, `source` field per store — _Req 12_
-- [ ] 1.8 [P] Vendor MapLibre GL JS + CSS into `app/vendor/`; pick and save base map style — _UI_
-- [ ] 1.9 Write `data/provenance.json` entries for every raw file (dataset, URL, pull date) — _Req 12_
+- [x] 1.7 [P] (cut first) NPI cross-check with rapidfuzz, `source` field per store — _Req 12_
+- [x] 1.8 [P] Vendor MapLibre GL JS + CSS into `app/vendor/`; pick and save base map style — _UI_
+- [x] 1.9 Write `data/provenance.json` entries for every raw file (dataset, URL, pull date) — _Req 12_
 
 ## Phase 2 — Core analysis
 

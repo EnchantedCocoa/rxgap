@@ -29,3 +29,11 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   Census key re-checked: 681 Suffolk block groups returned.
 - 12:20 Design approved. Kiro wrote `tasks.md`: 6 phases, parallel tasks marked [P],
   each tied to requirements with a done check; cut order written at the top.
+- 12:23 Phase 1 ran as 6 parallel Kiro Crew subagents (pharmacies, districts + officials,
+  candidate sites, walk graph, NPI, MapLibre vendor). All 6 succeeded in about 4 minutes.
+  Every block group now has a council, House and Senate district; 38 officials listed.
+- 12:28 Found that all Rite Aid stores closed by Oct 2025, but OSM still lists 4 nearby.
+  Added them to closures.csv. The East Boston one was #5 on the can't-lose list; removing
+  it moved 10,856 people into deserts (desert total now 142,943).
+- NPI cross-check: about 41 Boston retail pharmacies in NPI look missing from OSM, mostly
+  in Dorchester and Roxbury. Not added yet; needs checking.
