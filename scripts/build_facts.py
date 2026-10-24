@@ -7,7 +7,7 @@ from places import MANUAL, OUT as DATA, PLACE, SLUG
 TITLE = {'council': 'Councilor', 'house': 'Rep.', 'senate': 'Sen.'}
 GOV = {'boston': ('the City of Boston', 'la Ciudad de Boston', 'Vil Boston'),
        'springfield': ('the City of Springfield', 'la Ciudad de Springfield', 'Vil Springfield'),
-       'plymouth': ('the Town of Plymouth', 'el Pueblo de Plymouth', 'Vil Plymouth')}
+       'plymouth': ('the Town of Plymouth', 'el Municipio de Plymouth', 'Vil Plymouth')}
 AGE_CUT = 65  # analyze_bg sums the ACS age bins from 65 up
 
 
