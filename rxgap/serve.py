@@ -1,5 +1,5 @@
 # 앱과 데이터 폴더만 127.0.0.1에서 제공하고, 선거구별 편지 수(이름·주소 없이)를 DuckDB에 세는 로컬 서버.
-import csv, http.server, json, os, sys, threading
+import csv, http.server, json, os, re, sys, threading, urllib.parse, urllib.request
 from datetime import date
 from functools import partial
 from pathlib import Path
@@ -10,6 +10,18 @@ ALLOWED = ('/app/', '/data/')
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
 DB_PATH = Path(os.environ.get('RXGAP_DB', ROOT / 'data' / 'letters.duckdb'))  # tests point this elsewhere
 MAX_BODY = 1024
+GEOCODER = 'https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress'
+
+
+def geocode(address):
+    """US Census geocoder: address -> 2020 block group. The browser cannot call it directly (no CORS)."""
+    q = urllib.parse.urlencode({'address': address, 'benchmark': 'Public_AR_Current', 'vintage': 'Current_Current',
+                                'layers': 'Census Block Groups', 'format': 'json'})
+    with urllib.request.urlopen(f'{GEOCODER}?{q}', timeout=20) as r:
+        m = json.load(r)['result']['addressMatches']
+    if not m:
+        return None
+    return {'geoid': m[0]['geographies']['Census Block Groups'][0]['GEOID'], 'matched': m[0]['matchedAddress']}
 
 
 def known_districts():
@@ -61,6 +73,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
         if path == '/counts':
             return self._json(200, self.counts.all())
+        if path == '/geocode':  # the address is passed on to the Census Bureau, never stored or logged
+            address = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get('address', [''])[0].strip()
+            if not 5 <= len(address) <= 200:
+                return self._json(400, {'error': 'bad address'})
+            try:
+                hit = geocode(address)
+            except Exception:
+                return self._json(502, {'error': 'geocoder unavailable'})
+            return self._json(200, hit) if hit else self._json(404, {'error': 'no match'})
         if not path.startswith(ALLOWED) or '/.' in path or '..' in path:
             self.send_error(404)
             return
@@ -78,6 +99,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         except (ValueError, KeyError, TypeError):
             ok = False
         return self._json(200 if ok else 400, {'ok': ok})
+
+    def log_message(self, fmt, *args):  # drop query strings so an address never reaches the log
+        super().log_message(fmt, *(re.sub(r'\?\S*', '', a) if isinstance(a, str) else a for a in args))
 
     def end_headers(self):
         self.send_header('Cache-Control', 'no-store')
