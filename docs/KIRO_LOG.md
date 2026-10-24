@@ -24,3 +24,6 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   the ranking and the closure simulation (one source of truth, instant redraw); text from
   digit-free templates, numbers from a facts dict; letter counts in DuckDB on a
   localhost-only server.
+- 12:18 Design updated for polish: MapLibre GL instead of Leaflet, one tokens file,
+  an animated closure moment, print-ready brief, 3-step phone-first letter flow.
+  Census key re-checked: 681 Suffolk block groups returned.

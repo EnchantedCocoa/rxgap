@@ -6,8 +6,9 @@ RxGap is an offline batch pipeline plus one local web page.
 
 - Python scripts ingest raw data once into `data/raw/` and compute every number into
   `data/*.json`. Nothing on screen is computed from scratch in the browser.
-- The page (`app.html`, Leaflet) reads those JSON files. A closure click is a lookup in
-  precomputed results, so it redraws instantly (Req 3.1, under 5 s).
+- The page (`app/index.html`, MapLibre GL, see "UI and visualization") reads those JSON
+  files. A closure click is a lookup in precomputed results, so it redraws instantly
+  (Req 3.1, under 5 s).
 - A tiny local server (`python -m rxgap.serve`, 127.0.0.1 only) serves the page and keeps
   anonymous letter counts (Req 7).
 - `python -m rxgap.check` reruns the pipeline from `closures.csv` and prints what changed
@@ -169,6 +170,98 @@ A test fails if a number key on screen has no provenance entry.
 - `scripts/verify_numbers.py`: recompute desert / near-desert / covered population from
   `data/raw/` without reading any output file, and assert it matches the headline.
 
+## UI and visualization
+
+Polish and interactivity are a judged feature, not a final coat. The demo is the closure
+moment, so that one interaction gets the most care.
+
+### Stack
+
+- **MapLibre GL JS** (vector map, GPU drawing) instead of Leaflet: smooth zoom, color
+  changes that fade instead of snap, fly-to camera moves. Loaded from a vendored copy in
+  `app/vendor/`, so the demo does not depend on a CDN.
+- Basemap: a muted light vector style (CARTO Positron-like). Offline fallback: blank
+  background plus neighborhood outlines from `raw/neighborhoods.geojson`.
+- Plain HTML, CSS and one ES module. No build step, no framework.
+- Design tokens (colors, type, spacing, motion) in one file, `app/tokens.css`. No colors
+  anywhere else.
+- folium is used only for the static mini-map printed in each brief.
+
+### Layout
+
+```text
++--------------------------------------------------------------+
+| RxGap   [Risk map] [Officials] [Write a letter]     (i) method |
++------------------+-------------------------------------------+
+| Headline         |                                           |
+|  132,087 in      |                 MAP                       |
+|  deserts  (i)    |   blocks: desert / near / covered         |
+|                  |   stores: dots, ranked ones larger        |
+| Can't-lose list  |                                           |
+|  1 CVS  24,080 > |                        [legend] [slider]  |
+|  2 Sullivan's  > |                                           |
+|  ...             |          bottom sheet: block details      |
++------------------+-------------------------------------------+
+```
+
+- Left panel: headline numbers, then the ranked list. Hovering a row lights up its
+  store and the blocks it holds up on the map.
+- Map fills the rest. Clicking a block opens a bottom sheet (not a popup) with its
+  people, 65+, no car, limited English, and the three nearest stores with walk times.
+- Phone width: panel becomes a pull-up sheet. The letter flow is phone-first, since
+  residents use it.
+
+### The closure moment (Req 3)
+
+1. Click "Simulate closure" on a store row or map dot.
+2. The store dot shrinks and turns gray.
+3. Blocks it held up fade to red in about 0.6 s, one wave outward from the store.
+4. The camera eases to fit the lost blocks.
+5. A results card slides in: people cut off, 65+, homes without a car, limited English,
+   the officials affected, and "Open brief" / "Best replacement site".
+6. "Undo" restores the map the same way in reverse.
+
+Number counters ease from the old value to the new one. The last frame is always the
+exact code-produced value, and the counter is skipped under reduced motion.
+
+### Other screens
+
+- **Siting**: candidate sites as outlined pins; the best 3 are numbered. Selecting one
+  shows its walk-limit ring and turns restored blocks back from red, with a before/after
+  table of covered share (the "math", Req 5.2).
+- **Brief**: a clean one-page view with a print stylesheet (US Letter). Headline, mini-map,
+  lost blocks table, top sites, letter count. "Print / Save as PDF" button.
+- **Letter**: 3 steps with a progress bar: (1) address → confirm officials, (2) language
+  and your own sentence, (3) side-by-side letter and English copy with Copy and "Open in
+  my email". The banner "AI tool built at Hackachusetts, not the City of Boston" stays
+  visible on every step.
+- **Method**: a short page with the HPC rule, sources and pull dates, and the
+  Globe comparison (Req 9).
+
+### Visual rules
+
+- Status colors are color-blind safe and also differ by pattern: desert = solid deep red,
+  near-desert = amber with fine hatch, covered = pale teal at low opacity so the city
+  doesn't look like a quilt.
+- One sans-serif family (Inter or system UI), tabular numbers for all figures.
+- Motion 150-600 ms, ease-out; respect `prefers-reduced-motion`.
+- "How we got this" is a small (i) next to each number that opens a popover with
+  function, dataset and pull date (Req 12). Source labels ("OSM, floor not truth") sit in
+  the legend.
+
+### Accessibility
+
+- Every map action also works from the list with the keyboard.
+- Text contrast at least 4.5:1, focus rings visible.
+- The results card is an ARIA live region, so screen readers hear who lost access.
+
+### Effort
+
+UI moves from "60 min for screens 1-2" to the biggest block of the day. Order: tokens and
+layout, closure moment, block sheet, siting view, brief print view, letter flow. If time
+runs short, cut motion polish on the secondary screens first, never on the closure
+moment.
+
 ## Data Models
 
 ```text
@@ -218,5 +311,7 @@ No API is called at page load. Every fetch result is cached first.
 - **Integrity** (Req 8): every number in rendered briefs and letters is in the facts;
   templates contain no digits.
 - **Provenance** (Req 12): every on-screen number key has an entry.
+- **UI smoke**: a headless browser loads `app/index.html`, simulates closing the top store,
+  and checks the results card shows the same people count as `cant_lose.json`.
 - **Letters**: no rendered letter path calls any send function; output always includes
   the English copy and the Hackachusetts disclaimer.
