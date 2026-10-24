@@ -46,6 +46,9 @@ def main():
              'hpc_report': v['hpc_report'], 'desert_share': v['area_pct'], 'age_cut': AGE_CUT,
              'place_desert': h['desert'], 'place_near': h['near'], 'walk_estimate': bool(D['place']['walk_estimate']),
              **policy_facts()}
+    sample = json.loads((MANUAL / 'sample_addresses.json').read_text()).get(SLUG)  # a public building in a desert, for the letter form
+    if sample:
+        place.update(sample_address=sample['address'], sample_what=sample['what'], sample_geoid=sample['geoid'])
 
     briefs = {}
     for s in D['stores']:

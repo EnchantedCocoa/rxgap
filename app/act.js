@@ -43,6 +43,7 @@ const UI = {
     note: (gov) => `RxGap is an AI tool built at Hackachusetts, not ${gov}. It never sends anything for you.`,
     addr: (place) => `Your home address in ${place}`, addrHint: 'Street, city and ZIP', find: 'Find my officials',
     privacy: 'Your address goes to the US Census Bureau only to find your block. RxGap does not keep it.',
+    sampleTip: (what) => `The gray text is a sample address: ${what}, a public building in a pharmacy desert. Click the box or press ↓ to use it.`,
     looking: 'Looking up your block…',
     noMatch: 'We could not match that address. Check the street and ZIP, or pick your block on the map.',
     down: 'The Census lookup is not available right now. Pick your block on the map instead.',
@@ -72,6 +73,7 @@ const UI = {
     note: (gov) => `RxGap es una herramienta de IA creada en Hackachusetts; no es ${gov}. Nunca envía nada por usted.`,
     addr: (place) => `Su dirección en ${place}`, addrHint: 'Calle, ciudad y código postal', find: 'Buscar mis funcionarios',
     privacy: 'Su dirección se envía a la Oficina del Censo de EE. UU. solo para encontrar su cuadra. RxGap no la guarda.',
+    sampleTip: (what) => `El texto gris es una dirección de ejemplo: ${what}, un edificio público en un desierto de farmacias. Haga clic en el cuadro o presione ↓ para usarla.`,
     looking: 'Buscando su cuadra…',
     noMatch: 'No encontramos esa dirección. Revise la calle y el código postal, o elija su cuadra en el mapa.',
     down: 'La búsqueda del Censo no está disponible en este momento. Elija su cuadra en el mapa.',
@@ -101,6 +103,7 @@ const UI = {
     note: (gov) => `RxGap se yon zouti IA yo te fè nan Hackachusetts; se pa ${gov}. Li pa janm voye anyen pou ou.`,
     addr: (place) => `Adrès lakay ou nan ${place}`, addrHint: 'Lari, vil ak kòd postal', find: 'Jwenn reprezantan m yo',
     privacy: 'Adrès ou ale nan Biwo Resansman Etazini sèlman pou jwenn zòn ou. RxGap pa kenbe l.',
+    sampleTip: (what) => `Tèks gri a se yon adrès egzanp: ${what}, yon bilding piblik nan yon dezè famasi. Klike nan bwat la oswa peze ↓ pou w sèvi avè l.`,
     looking: 'N ap chèche zòn ou…',
     noMatch: 'Nou pa jwenn adrès sa a. Verifye lari a ak kòd postal la, oswa chwazi zòn ou sou kat la.',
     down: 'Rechèch Resansman an pa disponib kounye a. Chwazi zòn ou sou kat la.',
@@ -277,12 +280,23 @@ export function openLetter(F, { geoid = null } = {}) {
     body.innerHTML = `${steps(1)}
       <form class="find" id="find">
         <label for="addr">${esc(t().addr(F.place.place))}</label>
-        <div class="row"><input id="addr" autocomplete="street-address" placeholder="${esc(t().addrHint)}" required minlength="5" maxlength="200">
+        <div class="row"><input id="addr" autocomplete="street-address" placeholder="${esc(F.place.sample_address || t().addrHint)}" required minlength="5" maxlength="200"${F.place.sample_address ? ' aria-describedby="addr-tip"' : ''}>
           <button class="btn">${esc(t().find)}</button></div>
+        ${F.place.sample_address ? `<p class="act-small" id="addr-tip">${esc(t().sampleTip(F.place.sample_what))}</p>` : ''}
         <p class="act-small">${esc(t().privacy)}</p>
       </form>
       <p class="act-msg" id="find-msg" role="status"></p>
       <p class="act-small">${esc(t().noAddr)}</p>${note()}`;
+    // The gray sample becomes real text on a click or ↓, selected so typing replaces it at once.
+    const addr = $('#addr');
+    const useSample = () => {
+      if (!F.place.sample_address || addr.value.trim()) return false;
+      addr.value = F.place.sample_address;
+      addr.select();
+      return true;
+    };
+    addr.addEventListener('click', useSample);
+    addr.addEventListener('keydown', (e) => { if (['ArrowDown', 'ArrowRight', 'Enter'].includes(e.key) && useSample()) e.preventDefault(); });
     $('#find').addEventListener('submit', async (e) => {
       e.preventDefault();
       const say = (s) => { $('#find-msg').textContent = s; };

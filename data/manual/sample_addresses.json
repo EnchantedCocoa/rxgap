@@ -1,0 +1,23 @@
+{
+ "boston": {
+  "address": "895 Blue Hill Ave, Boston, MA 02124",
+  "what": "Harvard Street Adolescent Child Life Center",
+  "geoid": "250251001006",
+  "checked": "2026-10-24",
+  "how": "Public health center from MassGIS sites; US Census geocoder returns this block group, a pharmacy desert in RxGap."
+ },
+ "springfield": {
+  "address": "44 Oak Street, Springfield, MA 01151",
+  "what": "Indian Orchard Branch Library",
+  "geoid": "250138001021",
+  "checked": "2026-10-24",
+  "how": "Public library from OpenStreetMap; US Census geocoder returns this block group, a pharmacy desert in RxGap."
+ },
+ "plymouth": {
+  "address": "26 Court Street, Plymouth, MA 02360",
+  "what": "Plymouth Town Hall",
+  "geoid": "250235303001",
+  "checked": "2026-10-24",
+  "how": "Town hall from OpenStreetMap; US Census geocoder returns this block group, a pharmacy desert in RxGap."
+ }
+}

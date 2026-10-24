@@ -338,3 +338,19 @@ def test_letter_steps_speak_the_chosen_language(page):
     page.click('#act [data-lang="ht"]')
     page.wait_for_function("document.querySelector('#copy')?.textContent === 'Kopye lèt la'")
     page.click('#act .close')
+
+
+def test_letter_address_box_offers_a_desert_sample(page):
+    pl = facts()['place']
+    fresh(page)
+    page.click('#tab-letter')
+    assert page.get_attribute('#addr', 'placeholder') == pl['sample_address'] and page.input_value('#addr') == ''
+    assert pl['sample_what'] in page.inner_text('#addr-tip')
+    page.click('#addr')
+    assert page.input_value('#addr') == pl['sample_address']
+    page.keyboard.type('12 My Street')  # the sample is selected, so typing replaces it
+    assert page.input_value('#addr') == '12 My Street'
+    page.fill('#addr', '')
+    page.press('#addr', 'ArrowDown')
+    assert page.input_value('#addr') == pl['sample_address']
+    page.click('#act .close')

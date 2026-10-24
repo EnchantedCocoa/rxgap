@@ -123,3 +123,16 @@ def test_facts_match_analysis(slug):
         else:
             assert 'store_people' not in b and 'site_gain' not in b
         assert [n['mi'] for n in b['near_stores']] == [n['mi'] for n in extras[g]['near']]
+
+
+@pytest.mark.parametrize('slug', BASES)
+def test_sample_address_is_in_a_desert(slug):
+    pl = load(BASES[slug] / 'facts.json')['place']
+    b = load(BASES[slug] / 'facts.json')['blocks'][pl['sample_geoid']]
+    assert b['is_desert'], slug
+    from rxgap.serve import geocode
+    try:
+        hit = geocode(pl['sample_address'])
+    except OSError:
+        pytest.skip('Census geocoder not reachable')
+    assert hit and hit['geoid'] == pl['sample_geoid'], hit
