@@ -48,7 +48,7 @@ flowchart LR
   W --> T --> CL
   D --> O --> BR
   CL & SI --> BR
-  BO & CL & SI & BR & PV --> APP[app.html via rxgap.serve]
+  BO & CL & SI & BR & PV --> APP[app/index.html via rxgap.serve]
   APP --> LET[letter: rendered in browser, never sent]
 ```
 
