@@ -280,3 +280,26 @@ def test_letter_flow_needs_own_words_counts_and_never_sends(page):
     page.remove_listener('request', spy)
     assert [e for e in page.errors if 'arcgisonline' not in e] == []
     assert page.evaluate("fetch('/geocode?address=ab').then(r => r.status)") == 400  # too short: never sent on
+
+
+def test_own_words_box_offers_samples_but_keeps_typed_words(page):
+    F = facts()
+    g = next(g for g, b in F['blocks'].items() if b['is_desert'])
+    fresh(page)
+    page.evaluate(f'window.rxgap.sheet({json.dumps(g)})')
+    page.click('#sheet-letter')
+    page.click('#ok1')
+    page.click('#own')
+    first = page.input_value('#own')
+    assert first and not page.is_disabled('#make')
+    page.press('#own', 'ArrowDown')
+    second = page.input_value('#own')
+    page.press('#own', 'ArrowUp')
+    assert second != first and page.input_value('#own') == first
+    page.click('#act [data-lang="es"]')
+    es = page.input_value('#own')
+    assert es != first and es  # the same sample, in Spanish
+    page.fill('#own', 'Mis propias palabras.')
+    page.press('#own', 'ArrowDown')
+    assert page.input_value('#own') == 'Mis propias palabras.'
+    page.click('#act .close')

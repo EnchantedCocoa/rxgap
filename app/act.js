@@ -11,6 +11,19 @@ const get = (url, kind = 'text') => {
 const tpl = (name) => get(`../data/templates/${name}`);
 const policy = () => get('../data/manual/policy.json', 'json');
 const counted = new Set();
+// Sample sentences for "in your own words". The resident can take one and change it.
+const SAMPLES = {
+  en: ['My father takes heart medicine every day and does not drive.',
+    'I am a senior, and the next pharmacy is too far for me to walk.',
+    'My neighbors pick up insulin and blood pressure pills at this store.'],
+  es: ['Mi padre toma medicina para el corazón todos los días y no maneja.',
+    'Soy una persona mayor, y la próxima farmacia está demasiado lejos para ir a pie.',
+    'Mis vecinos recogen insulina y pastillas para la presión en esta farmacia.'],
+  ht: ['Papa m pran medikaman pou kè chak jou, epi li pa kondui.',
+    'Mwen se yon granmoun, epi pwochen famasi a twò lwen pou m mache ale.',
+    'Vwazen m yo pran ensilin ak grenn pou tansyon nan famasi sa a.'],
+};
+const FOR_EXAMPLE = { en: 'For example', es: 'Por ejemplo', ht: 'Pa egzanp' };
 
 // Help text is markdown-lite. It is rendered with html=true first, so every fact arrives escaped.
 function md(text) {
@@ -192,15 +205,37 @@ export function openLetter(F, { geoid = null } = {}) {
       </fieldset>
       <p class="act-label">Language</p>${langBtns(st.lang)}
       <label class="act-label" for="own">In your own words: why does this matter to you? <small>(required)</small></label>
-      <textarea id="own" rows="3" maxlength="600" placeholder="For example: my father takes heart medicine and does not drive."></textarea>
+      <textarea id="own" rows="3" maxlength="600" aria-describedby="own-tip" placeholder="${esc(`${FOR_EXAMPLE[st.lang]}: ${SAMPLES[st.lang][0]}`)}"></textarea>
+      <p class="act-small" id="own-tip">Click the empty box, or press ↓ and ↑, to fill in a sample sentence. Then make it your own.</p>
       <div class="row"><button class="btn" id="make" disabled>Make my letter</button><button class="btn btn-quiet" id="back2">Back</button></div>${note}`;
     const own = $('#own');
     own.value = st.sentence;
     const sync = () => { st.sentence = own.value.trim(); $('#make').disabled = !st.sentence; };
     sync();
     own.addEventListener('input', sync);
+    const samples = SAMPLES[st.lang];
+    let k = samples.indexOf(own.value.trim());
+    const put = (i) => {
+      k = (i + samples.length) % samples.length;
+      own.value = samples[k];
+      own.setSelectionRange(own.value.length, own.value.length);
+      sync();
+    };
+    own.addEventListener('click', () => { if (!own.value.trim()) put(0); });
+    own.addEventListener('keydown', (e) => {
+      if (!['ArrowDown', 'ArrowUp'].includes(e.key) || (own.value.trim() && k < 0)) return;  // never replace the resident's own words
+      e.preventDefault();
+      const step = e.key === 'ArrowDown' ? 1 : -1;
+      put(k < 0 ? (step > 0 ? 0 : samples.length - 1) : k + step);
+    });
+    own.addEventListener('input', () => { k = samples.indexOf(own.value.trim()); });
     body.querySelectorAll('[name="topic"]').forEach((x) => x.addEventListener('change', () => { st.topic = x.value; }));
-    body.querySelectorAll('[data-lang]').forEach((x) => x.addEventListener('click', () => { st.lang = x.dataset.lang; write(); }));
+    body.querySelectorAll('[data-lang]').forEach((x) => x.addEventListener('click', () => {
+      const i = SAMPLES[st.lang].indexOf(st.sentence);  // a sample follows the language switch
+      st.lang = x.dataset.lang;
+      if (i >= 0) st.sentence = SAMPLES[st.lang][i];
+      write();
+    }));
     $('#make').addEventListener('click', show);
     $('#back2').addEventListener('click', confirm);
   };
