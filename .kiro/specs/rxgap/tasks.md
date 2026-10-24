@@ -84,8 +84,12 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 ## Phase 6 — Crew, write-up, video
 
-- [ ] 6.1 Hook check: closure row added → pipeline reruns → map updates — _Req 3.1_
-- [ ] 6.2 Run all tests and `verify_numbers.py`; fix any drift — _Req 8, 11_
-- [ ] 6.3 (cut second) Crew daily 7:00 job running `rxgap.check`, posts to Slack only on change; trigger by hand for the demo — _Req 10_
-- [ ] 6.4 Write the submission from `docs/KIRO_LOG.md`
+- [x] 6.1 Hook check: closure row added → pipeline reruns → map updates — _Req 3.1_
+  - Done by hand from the CLI (IDE hooks fire only in the Kiro IDE): closing the top Boston store moved 10 block groups to desert and the app showed the new headline; reverted
+- [x] 6.2 Run all tests and `verify_numbers.py`; fix any drift — _Req 8, 11_
+  - All three places match; a full `run_all.py` rebuild leaves git unchanged
+- [x] 6.3 (cut second) Crew daily 7:00 job running `rxgap.check`, posts to Slack only on change; trigger by hand for the demo — _Req 10_
+  - Script job `~/.kiro/crew/crons/rxgap_daily.py:run`, no model tokens; triggered once, ran clean
+- [x] 6.4 Write the submission from `docs/KIRO_LOG.md`
+  - `docs/SUBMISSION.md`, built by `scripts/build_submission.py` from a digit-free template; tested
 - [ ] 6.5 Record the 3-minute demo
