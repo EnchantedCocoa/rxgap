@@ -87,3 +87,13 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   people), not the 462 EJ-only MassGIS layer. Result: desert 173,050, near-desert
   188,091; 24 can't-lose stores. A test caught one 7-person block that depends on three
   stores at once; the test was too strict and now counts each block group once.
+- 14:00 Store list fix. Pulled NPI retail pharmacies (Boston + neighboring ZIPs), kept
+  only Community/Retail with no institutional/mail/specialty codes, geocoded with the
+  Census geocoder, matched to OSM. 75 NPI-only addresses would change a Boston block;
+  4 parallel Kiro Crew subagents checked each one on the web (store pages, news):
+  58 open, 13 closed, 4 unclear. Kiro re-checked the Gallivan Blvd Walgreens (a helper
+  said open; the Globe says it closed 2025-04-28) and dropped 533 Columbia Rd (not on
+  the Walgreens locator). 54 confirmed-open stores added to openings.csv with evidence
+  URLs, mostly health-center and grocery pharmacies OSM was missing.
+  Result: desert 173,050 -> 42,417; near-desert 89,889. Versus the HPC's own block
+  data (June 2025): same status for 86% of residents. New test keeps it >= 80%.

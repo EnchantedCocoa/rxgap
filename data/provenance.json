@@ -40,6 +40,13 @@
    "DORCHESTER CENTER"
   ]
  },
+ "npi_retail": {
+  "dataset": "NPI Registry, active organizations listing Community/Retail Pharmacy (3336C0003X), primary Retail or Pharmacy, no institutional/mail/specialty/LTC codes, Boston + neighboring ZIPs, geocoded with the US Census geocoder",
+  "url": "https://npiregistry.cms.hhs.gov/api/",
+  "function": "scripts/fetch_npi_retail.py:main",
+  "count": 270,
+  "pulled": "2026-10-24T17:44:05+00:00"
+ },
  "pharmacies": {
   "dataset": "OpenStreetMap amenity=pharmacy|healthcare=pharmacy, 5 counties (Suffolk, Middlesex, Norfolk, Essex, Plymouth)",
   "source": "Overpass API via osmnx",
@@ -98,12 +105,12 @@
   "dataset": "Hand-kept closure list with a source URL per row",
   "file": "data/manual/closures.csv",
   "function": "scripts/analyze_bg.py:load_pharmacies",
-  "pulled": "2026-10-24T16:32:52+00:00"
+  "pulled": "2026-10-24T17:48:50+00:00"
  },
  "openings": {
   "dataset": "Hand-kept list of pharmacies OpenStreetMap is missing, with a source URL per row",
   "file": "data/manual/openings.csv",
   "function": "scripts/analyze_bg.py:load_pharmacies",
-  "pulled": "2026-10-24T17:07:11+00:00"
+  "pulled": "2026-10-24T17:48:42+00:00"
  }
 }

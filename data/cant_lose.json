@@ -2,47 +2,386 @@
  "rule": "state",
  "stores": [
   {
-   "name": "CVS Pharmacy",
-   "address": "West Broadway",
-   "osm_id": "node/13472522655",
-   "source": "OpenStreetMap",
-   "lat": 42.336622,
-   "lon": -71.047754,
-   "people": 22970,
-   "age65": 1903,
-   "nocar_hh": 3121,
+   "name": "CVS Pharmacy #05464",
+   "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.270183,
+   "lon": -71.093853,
+   "people": 12623,
+   "age65": 2061,
+   "nocar_hh": 1792,
    "block_groups": [
-    "250250610002",
-    "250250604002",
-    "250250607001",
-    "250250610001",
-    "250250608003",
-    "250250608002",
-    "250250605013",
-    "250250606011",
-    "250250610003",
-    "250250605012",
-    "250250607002",
-    "250250604005",
-    "250250612011",
-    "250250603011",
-    "250250605015",
-    "250250604004",
-    "250250603013",
-    "250250604001",
-    "250250608004",
-    "250250608001"
+    "250251010016",
+    "250251010023",
+    "250251011023",
+    "250251404001",
+    "250251010014",
+    "250251010022",
+    "250251010015",
+    "250251011024",
+    "250251010013",
+    "250251010012"
+   ],
+   "hoods": [
+    "Hyde Park",
+    "Mattapan"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251010016",
+     "pop": 1351,
+     "age65": 167,
+     "nocar_hh": 64,
+     "lim_eng": 9.3,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2401,
+       "walk_min": 30
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2617,
+       "walk_min": 33
+      },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2760,
+       "walk_min": 35
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010023",
+     "pop": 2098,
+     "age65": 255,
+     "nocar_hh": 272,
+     "lim_eng": 5.9,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2409,
+       "walk_min": 30
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 2805,
+       "walk_min": 35
+      },
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 3130,
+       "walk_min": 39
+      }
+     ]
+    },
+    {
+     "GEOID": "250251011023",
+     "pop": 777,
+     "age65": 109,
+     "nocar_hh": 228,
+     "lim_eng": 4.8,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 2318,
+       "walk_min": 29
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2448,
+       "walk_min": 31
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "451 Washington Street, Dorchester 02124",
+       "walk_m": 2873,
+       "walk_min": 36
+      }
+     ]
+    },
+    {
+     "GEOID": "250251404001",
+     "pop": 684,
+     "age65": 181,
+     "nocar_hh": 247,
+     "lim_eng": 4.9,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2495,
+       "walk_min": 31
+      },
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2978,
+       "walk_min": 37
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 3363,
+       "walk_min": 42
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010014",
+     "pop": 970,
+     "age65": 36,
+     "nocar_hh": 36,
+     "lim_eng": 15.0,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2364,
+       "walk_min": 30
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2580,
+       "walk_min": 32
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2803,
+       "walk_min": 35
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010022",
+     "pop": 2580,
+     "age65": 671,
+     "nocar_hh": 386,
+     "lim_eng": 3.8,
+     "districts": {
+      "council": "4",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2140,
+       "walk_min": 27
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 3582,
+       "walk_min": 45
+      },
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 3822,
+       "walk_min": 48
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010015",
+     "pop": 985,
+     "age65": 226,
+     "nocar_hh": 128,
+     "lim_eng": 6.0,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2476,
+       "walk_min": 31
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2692,
+       "walk_min": 34
+      },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 3011,
+       "walk_min": 38
+      }
+     ]
+    },
+    {
+     "GEOID": "250251011024",
+     "pop": 1569,
+     "age65": 112,
+     "nocar_hh": 216,
+     "lim_eng": 12.8,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2665,
+       "walk_min": 33
+      },
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2671,
+       "walk_min": 33
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 2847,
+       "walk_min": 36
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010013",
+     "pop": 845,
+     "age65": 181,
+     "nocar_hh": 169,
+     "lim_eng": 18.4,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2812,
+       "walk_min": 35
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2813,
+       "walk_min": 35
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2814,
+       "walk_min": 35
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010012",
+     "pop": 764,
+     "age65": 123,
+     "nocar_hh": 46,
+     "lim_eng": 22.7,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 1947,
+       "walk_min": 24
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2163,
+       "walk_min": 27
+      },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2381,
+       "walk_min": 30
+      }
+     ]
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "name": "Walgreens #17169",
+   "address": "710 E BROADWAY, BOSTON MA 02127",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.335657,
+   "lon": -71.03686,
+   "people": 8537,
+   "age65": 867,
+   "nocar_hh": 662,
+   "block_groups": [
+    "250250601013",
+    "250250602002",
+    "250250601012",
+    "250250602001",
+    "250250603012",
+    "250250601011",
+    "250250601014",
+    "250250605011",
+    "250250605014"
    ],
    "hoods": [
     "South Boston"
    ],
    "lost": [
     {
-     "GEOID": "250250610002",
-     "pop": 535,
-     "age65": 41,
-     "nocar_hh": 118,
-     "lim_eng": 16.8,
+     "GEOID": "250250601013",
+     "pop": 1067,
+     "age65": 100,
+     "nocar_hh": 54,
+     "lim_eng": 0.0,
      "districts": {
       "council": "2",
       "house": "4th Suffolk",
@@ -50,29 +389,61 @@
      },
      "nearest": [
       {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 1767,
+       "name": "CVS Pharmacy",
+       "address": "West Broadway",
+       "walk_m": 1768,
        "walk_min": 22
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2883,
-       "walk_min": 36
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2594,
+       "walk_min": 33
       },
       {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2929,
-       "walk_min": 37
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2761,
+       "walk_min": 35
       }
      ]
     },
     {
-     "GEOID": "250250604002",
-     "pop": 1152,
-     "age65": 226,
+     "GEOID": "250250602002",
+     "pop": 1332,
+     "age65": 128,
+     "nocar_hh": 103,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "West Broadway",
+       "walk_m": 1597,
+       "walk_min": 20
+      },
+      {
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2248,
+       "walk_min": 28
+      },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2551,
+       "walk_min": 32
+      }
+     ]
+    },
+    {
+     "GEOID": "250250601012",
+     "pop": 667,
+     "age65": 26,
      "nocar_hh": 70,
      "lim_eng": 0.0,
      "districts": {
@@ -82,1277 +453,214 @@
      },
      "nearest": [
       {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2741,
-       "walk_min": 34
-      },
-      {
        "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 3001,
-       "walk_min": 38
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 3273,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250250607001",
-     "pop": 997,
-     "age65": 90,
-     "nocar_hh": 327,
-     "lim_eng": 24.9,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 1873,
-       "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 1919,
-       "walk_min": 24
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2025,
-       "walk_min": 25
-      }
-     ]
-    },
-    {
-     "GEOID": "250250610001",
-     "pop": 1170,
-     "age65": 41,
-     "nocar_hh": 176,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2005,
-       "walk_min": 25
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2886,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2959,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250250608003",
-     "pop": 1243,
-     "age65": 17,
-     "nocar_hh": 176,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2216,
-       "walk_min": 28
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2241,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2384,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250608002",
-     "pop": 960,
-     "age65": 59,
-     "nocar_hh": 75,
-     "lim_eng": 4.5,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2171,
-       "walk_min": 27
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2469,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2568,
-       "walk_min": 32
-      }
-     ]
-    },
-    {
-     "GEOID": "250250605013",
-     "pop": 1162,
-     "age65": 0,
-     "nocar_hh": 91,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2319,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2556,
-       "walk_min": 32
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2815,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250606011",
-     "pop": 2006,
-     "age65": 167,
-     "nocar_hh": 401,
-     "lim_eng": 3.5,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 1910,
-       "walk_min": 24
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2094,
-       "walk_min": 26
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2224,
-       "walk_min": 28
-      }
-     ]
-    },
-    {
-     "GEOID": "250250610003",
-     "pop": 711,
-     "age65": 158,
-     "nocar_hh": 227,
-     "lim_eng": 20.2,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 1641,
-       "walk_min": 21
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2757,
-       "walk_min": 35
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2832,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250605012",
-     "pop": 936,
-     "age65": 93,
-     "nocar_hh": 47,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2480,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2846,
-       "walk_min": 36
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 3105,
-       "walk_min": 39
-      }
-     ]
-    },
-    {
-     "GEOID": "250250607002",
-     "pop": 692,
-     "age65": 182,
-     "nocar_hh": 289,
-     "lim_eng": 58.2,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2035,
-       "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2134,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2237,
-       "walk_min": 28
-      }
-     ]
-    },
-    {
-     "GEOID": "250250604005",
-     "pop": 666,
-     "age65": 0,
-     "nocar_hh": 73,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2318,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2782,
-       "walk_min": 35
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2830,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250612011",
-     "pop": 2013,
-     "age65": 66,
-     "nocar_hh": 186,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2178,
-       "walk_min": 27
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2638,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2786,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250603011",
-     "pop": 1491,
-     "age65": 192,
-     "nocar_hh": 135,
-     "lim_eng": 3.5,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2728,
-       "walk_min": 34
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2979,
-       "walk_min": 37
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 3140,
-       "walk_min": 39
-      }
-     ]
-    },
-    {
-     "GEOID": "250250605015",
-     "pop": 909,
-     "age65": 89,
-     "nocar_hh": 77,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2157,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2344,
-       "walk_min": 29
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2592,
-       "walk_min": 32
-      }
-     ]
-    },
-    {
-     "GEOID": "250250604004",
-     "pop": 1224,
-     "age65": 62,
-     "nocar_hh": 134,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2327,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2902,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 3128,
-       "walk_min": 39
-      }
-     ]
-    },
-    {
-     "GEOID": "250250603013",
-     "pop": 1308,
-     "age65": 168,
-     "nocar_hh": 88,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2592,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 3004,
-       "walk_min": 38
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 3215,
-       "walk_min": 40
-      }
-     ]
-    },
-    {
-     "GEOID": "250250604001",
-     "pop": 1139,
-     "age65": 98,
-     "nocar_hh": 88,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2669,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2678,
-       "walk_min": 34
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 2904,
-       "walk_min": 36
-      }
-     ]
-    },
-    {
-     "GEOID": "250250608004",
-     "pop": 1923,
-     "age65": 154,
-     "nocar_hh": 312,
-     "lim_eng": 7.1,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2069,
-       "walk_min": 26
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2361,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2460,
-       "walk_min": 31
-      }
-     ]
-    },
-    {
-     "GEOID": "250250608001",
-     "pop": 733,
-     "age65": 0,
-     "nocar_hh": 31,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2282,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "91 Seaport Boulevard, Boston 02210",
-       "walk_m": 2609,
-       "walk_min": 33
-      },
-      {
-       "name": "Koala Health",
-       "address": "179 South Street, Boston 02111",
-       "walk_m": 2628,
-       "walk_min": 33
-      }
-     ]
-    }
-   ],
-   "rank": 1
-  },
-  {
-   "name": "CVS Pharmacy",
-   "address": "451 Washington Street, Dorchester 02124",
-   "osm_id": "way/29646775",
-   "source": "OpenStreetMap",
-   "lat": 42.295649,
-   "lon": -71.072459,
-   "people": 21461,
-   "age65": 2221,
-   "nocar_hh": 2198,
-   "block_groups": [
-    "250250922002",
-    "250250923002",
-    "250251001007",
-    "250250922004",
-    "250251005005",
-    "250251005003",
-    "250250919003",
-    "250250922003",
-    "250250923001",
-    "250250917003",
-    "250250920004",
-    "250250924002",
-    "250250901005",
-    "250250920002",
-    "250251005004",
-    "250250919002",
-    "250250923003",
-    "250250922001",
-    "250250920003",
-    "250250924001"
-   ],
-   "hoods": [
-    "Dorchester"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250922002",
-     "pop": 856,
-     "age65": 138,
-     "nocar_hh": 66,
-     "lim_eng": 3.9,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2174,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2440,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2502,
-       "walk_min": 31
-      }
-     ]
-    },
-    {
-     "GEOID": "250250923002",
-     "pop": 784,
-     "age65": 99,
-     "nocar_hh": 128,
-     "lim_eng": 34.4,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2281,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2386,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2801,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250251001007",
-     "pop": 827,
-     "age65": 92,
-     "nocar_hh": 112,
-     "lim_eng": 9.8,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2552,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2902,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 4030,
-       "walk_min": 50
-      }
-     ]
-    },
-    {
-     "GEOID": "250250922004",
-     "pop": 962,
-     "age65": 151,
-     "nocar_hh": 71,
-     "lim_eng": 21.4,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2234,
-       "walk_min": 28
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2281,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2704,
-       "walk_min": 34
-      }
-     ]
-    },
-    {
-     "GEOID": "250251005005",
-     "pop": 1429,
-     "age65": 37,
-     "nocar_hh": 60,
-     "lim_eng": 27.6,
-     "districts": {
-      "council": "4",
-      "house": "12th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2118,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2699,
-       "walk_min": 34
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2779,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250251005003",
-     "pop": 1418,
-     "age65": 252,
-     "nocar_hh": 130,
-     "lim_eng": 37.6,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2015,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2240,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2740,
-       "walk_min": 34
-      }
-     ]
-    },
-    {
-     "GEOID": "250250919003",
-     "pop": 1718,
-     "age65": 61,
-     "nocar_hh": 170,
-     "lim_eng": 13.1,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1298,
-       "walk_min": 16
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2548,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3311,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250250922003",
-     "pop": 812,
-     "age65": 136,
-     "nocar_hh": 79,
-     "lim_eng": 7.6,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2409,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2456,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2603,
-       "walk_min": 33
-      }
-     ]
-    },
-    {
-     "GEOID": "250250923001",
-     "pop": 781,
-     "age65": 89,
-     "nocar_hh": 92,
-     "lim_eng": 4.4,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2016,
-       "walk_min": 25
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2568,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2758,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250917003",
-     "pop": 767,
-     "age65": 54,
-     "nocar_hh": 63,
-     "lim_eng": 26.6,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1531,
-       "walk_min": 19
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1642,
-       "walk_min": 21
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 3386,
-       "walk_min": 42
-      }
-     ]
-    },
-    {
-     "GEOID": "250250920004",
-     "pop": 1022,
-     "age65": 71,
-     "nocar_hh": 139,
-     "lim_eng": 9.7,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1746,
+       "address": "West Broadway",
+       "walk_m": 1737,
        "walk_min": 22
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1857,
-       "walk_min": 23
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2601,
+       "walk_min": 33
       },
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3477,
-       "walk_min": 44
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2632,
+       "walk_min": 33
       }
      ]
     },
     {
-     "GEOID": "250250924002",
-     "pop": 1223,
-     "age65": 37,
-     "nocar_hh": 92,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1807,
-       "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3059,
-       "walk_min": 38
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 3309,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250250901005",
-     "pop": 775,
-     "age65": 26,
-     "nocar_hh": 62,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1605,
-       "walk_min": 20
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 3043,
-       "walk_min": 38
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3277,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250250920002",
-     "pop": 1823,
-     "age65": 196,
-     "nocar_hh": 150,
-     "lim_eng": 7.1,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1908,
-       "walk_min": 24
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1952,
-       "walk_min": 24
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 3370,
-       "walk_min": 42
-      }
-     ]
-    },
-    {
-     "GEOID": "250251005004",
-     "pop": 1502,
-     "age65": 129,
-     "nocar_hh": 272,
-     "lim_eng": 6.1,
-     "districts": {
-      "council": "4",
-      "house": "12th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2023,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2820,
-       "walk_min": 35
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2826,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250919002",
-     "pop": 918,
+     "GEOID": "250250602001",
+     "pop": 996,
      "age65": 100,
-     "nocar_hh": 66,
-     "lim_eng": 9.3,
+     "nocar_hh": 88,
+     "lim_eng": 0.0,
      "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1414,
+       "address": "West Broadway",
+       "walk_m": 1408,
        "walk_min": 18
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2169,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3158,
-       "walk_min": 40
-      }
-     ]
-    },
-    {
-     "GEOID": "250250923003",
-     "pop": 1071,
-     "age65": 162,
-     "nocar_hh": 168,
-     "lim_eng": 15.8,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2098,
-       "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2548,
-       "walk_min": 32
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2974,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250250922001",
-     "pop": 972,
-     "age65": 147,
-     "nocar_hh": 110,
-     "lim_eng": 3.2,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1693,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2286,
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2330,
        "walk_min": 29
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2878,
-       "walk_min": 36
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2359,
+       "walk_min": 30
       }
      ]
     },
     {
-     "GEOID": "250250920003",
-     "pop": 981,
-     "age65": 100,
-     "nocar_hh": 62,
-     "lim_eng": 8.4,
+     "GEOID": "250250603012",
+     "pop": 810,
+     "age65": 115,
+     "nocar_hh": 89,
+     "lim_eng": 0.0,
      "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
+      "council": "2",
+      "house": "4th Suffolk",
       "senate": "First Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1735,
-       "walk_min": 22
+       "address": "West Broadway",
+       "walk_m": 1578,
+       "walk_min": 20
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2238,
-       "walk_min": 28
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 1984,
+       "walk_min": 25
       },
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2878,
-       "walk_min": 36
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2670,
+       "walk_min": 33
       }
      ]
     },
     {
-     "GEOID": "250250924001",
-     "pop": 820,
-     "age65": 144,
-     "nocar_hh": 106,
-     "lim_eng": 35.2,
+     "GEOID": "250250601011",
+     "pop": 1171,
+     "age65": 95,
+     "nocar_hh": 79,
+     "lim_eng": 0.0,
      "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1983,
-       "walk_min": 25
+       "address": "West Broadway",
+       "walk_m": 1794,
+       "walk_min": 22
       },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2470,
+       "walk_min": 31
+      },
+      {
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2796,
+       "walk_min": 35
+      }
+     ]
+    },
+    {
+     "GEOID": "250250601014",
+     "pop": 768,
+     "age65": 102,
+     "nocar_hh": 93,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2788,
-       "walk_min": 35
+       "address": "West Broadway",
+       "walk_m": 1900,
+       "walk_min": 24
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 3073,
-       "walk_min": 39
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2541,
+       "walk_min": 32
+      },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2769,
+       "walk_min": 35
+      }
+     ]
+    },
+    {
+     "GEOID": "250250605011",
+     "pop": 886,
+     "age65": 61,
+     "nocar_hh": 14,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "West Broadway",
+       "walk_m": 1110,
+       "walk_min": 14
+      },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 1826,
+       "walk_min": 23
+      },
+      {
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2117,
+       "walk_min": 27
+      }
+     ]
+    },
+    {
+     "GEOID": "250250605014",
+     "pop": 840,
+     "age65": 140,
+     "nocar_hh": 72,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "West Broadway",
+       "walk_m": 1437,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 2113,
+       "walk_min": 26
+      },
+      {
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 2440,
+       "walk_min": 31
       }
      ]
     }
@@ -1361,2381 +669,18 @@
   },
   {
    "name": "CVS Pharmacy",
-   "address": "468 Blue Hill Avenue, Dorchester 02121",
-   "osm_id": "way/29616925",
-   "source": "OpenStreetMap",
-   "lat": 42.308789,
-   "lon": -71.08182,
-   "people": 20251,
-   "age65": 2486,
-   "nocar_hh": 3077,
-   "block_groups": [
-    "250250903001",
-    "250250902003",
-    "250250821003",
-    "250250902001",
-    "250250821001",
-    "250250901003",
-    "250250902002",
-    "250250820003",
-    "250250901001",
-    "250250901002",
-    "250250903003",
-    "250250903002",
-    "250250918003",
-    "250250904002",
-    "250250820002",
-    "250250821002",
-    "250250820001"
-   ],
-   "hoods": [
-    "Dorchester",
-    "Roxbury"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250903001",
-     "pop": 1033,
-     "age65": 102,
-     "nocar_hh": 132,
-     "lim_eng": 46.8,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1814,
-       "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2184,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2489,
-       "walk_min": 31
-      }
-     ]
-    },
-    {
-     "GEOID": "250250902003",
-     "pop": 984,
-     "age65": 113,
-     "nocar_hh": 95,
-     "lim_eng": 11.4,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1902,
-       "walk_min": 24
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2389,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2706,
-       "walk_min": 34
-      }
-     ]
-    },
-    {
-     "GEOID": "250250821003",
-     "pop": 2358,
-     "age65": 794,
-     "nocar_hh": 642,
-     "lim_eng": 15.9,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2472,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 2727,
-       "walk_min": 34
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2774,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250902001",
-     "pop": 712,
-     "age65": 82,
-     "nocar_hh": 129,
-     "lim_eng": 22.3,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1478,
-       "walk_min": 19
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2103,
-       "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 3019,
-       "walk_min": 38
-      }
-     ]
-    },
-    {
-     "GEOID": "250250821001",
-     "pop": 1323,
-     "age65": 0,
-     "nocar_hh": 234,
-     "lim_eng": 48.9,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1977,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2625,
-       "walk_min": 33
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2921,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250250901003",
-     "pop": 856,
-     "age65": 135,
-     "nocar_hh": 46,
-     "lim_eng": 8.4,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1483,
-       "walk_min": 19
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2811,
-       "walk_min": 35
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3319,
-       "walk_min": 42
-      }
-     ]
-    },
-    {
-     "GEOID": "250250902002",
-     "pop": 716,
-     "age65": 50,
-     "nocar_hh": 61,
-     "lim_eng": 46.0,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1666,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2704,
-       "walk_min": 34
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2721,
-       "walk_min": 34
-      }
-     ]
-    },
-    {
-     "GEOID": "250250820003",
-     "pop": 950,
-     "age65": 86,
-     "nocar_hh": 138,
-     "lim_eng": 51.4,
-     "districts": {
-      "council": "7",
-      "house": "7th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1690,
-       "walk_min": 21
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1992,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 2760,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250901001",
-     "pop": 1610,
-     "age65": 124,
-     "nocar_hh": 199,
-     "lim_eng": 17.4,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1593,
-       "walk_min": 20
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2665,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2788,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250901002",
-     "pop": 645,
-     "age65": 133,
-     "nocar_hh": 146,
-     "lim_eng": 21.4,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1308,
-       "walk_min": 16
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2553,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 3132,
-       "walk_min": 39
-      }
-     ]
-    },
-    {
-     "GEOID": "250250903003",
-     "pop": 1081,
-     "age65": 101,
-     "nocar_hh": 97,
-     "lim_eng": 7.2,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2078,
-       "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2137,
-       "walk_min": 27
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2431,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250903002",
-     "pop": 1681,
-     "age65": 64,
-     "nocar_hh": 136,
-     "lim_eng": 31.4,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2105,
-       "walk_min": 26
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2267,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2496,
-       "walk_min": 31
-      }
-     ]
-    },
-    {
-     "GEOID": "250250918003",
-     "pop": 1052,
-     "age65": 198,
-     "nocar_hh": 210,
-     "lim_eng": 15.0,
-     "districts": {
-      "council": "4",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1430,
-       "walk_min": 18
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1724,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 3300,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250250904002",
-     "pop": 1462,
-     "age65": 70,
-     "nocar_hh": 167,
-     "lim_eng": 17.2,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1845,
-       "walk_min": 23
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2138,
-       "walk_min": 27
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2243,
-       "walk_min": 28
-      }
-     ]
-    },
-    {
-     "GEOID": "250250820002",
-     "pop": 747,
-     "age65": 171,
-     "nocar_hh": 50,
-     "lim_eng": 14.1,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2017,
-       "walk_min": 25
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2312,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2367,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250821002",
-     "pop": 1543,
-     "age65": 118,
-     "nocar_hh": 324,
-     "lim_eng": 16.5,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1761,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2842,
-       "walk_min": 36
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2911,
-       "walk_min": 36
-      }
-     ]
-    },
-    {
-     "GEOID": "250250820001",
-     "pop": 1498,
-     "age65": 145,
-     "nocar_hh": 271,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "7",
-      "house": "5th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1909,
-       "walk_min": 24
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2203,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2462,
-       "walk_min": 31
-      }
-     ]
-    }
-   ],
-   "rank": 3
-  },
-  {
-   "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-   "address": "1 Corinth Street, Boston 02131",
-   "osm_id": "node/12069985163",
-   "source": "OpenStreetMap",
-   "lat": 42.286647,
-   "lon": -71.13075,
-   "people": 16757,
-   "age65": 2396,
-   "nocar_hh": 687,
-   "block_groups": [
-    "250251104012",
-    "250251105023",
-    "250251104011",
-    "250251105021",
-    "250251106071",
-    "250251104033",
-    "250251105022",
-    "250251103011",
-    "250251101041",
-    "250251106074",
-    "250251104034",
-    "250259807001",
-    "250251104032",
-    "250251106073",
-    "250251104035"
-   ],
-   "hoods": [
-    "Hyde Park",
-    "Roslindale"
-   ],
-   "lost": [
-    {
-     "GEOID": "250251104012",
-     "pop": 1658,
-     "age65": 166,
-     "nocar_hh": 111,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3443,
-       "walk_min": 43
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3497,
-       "walk_min": 44
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3773,
-       "walk_min": 47
-      }
-     ]
-    },
-    {
-     "GEOID": "250251105023",
-     "pop": 757,
-     "age65": 130,
-     "nocar_hh": 26,
-     "lim_eng": 24.2,
-     "districts": {
-      "council": "5",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2434,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2849,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 4239,
-       "walk_min": 53
-      }
-     ]
-    },
-    {
-     "GEOID": "250251104011",
-     "pop": 1967,
-     "age65": 296,
-     "nocar_hh": 137,
-     "lim_eng": 18.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 2998,
-       "walk_min": 38
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3393,
-       "walk_min": 43
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3724,
-       "walk_min": 47
-      }
-     ]
-    },
-    {
-     "GEOID": "250251105021",
-     "pop": 1382,
-     "age65": 96,
-     "nocar_hh": 71,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2446,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2860,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3746,
-       "walk_min": 47
-      }
-     ]
-    },
-    {
-     "GEOID": "250251106071",
-     "pop": 1017,
-     "age65": 77,
-     "nocar_hh": 80,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2225,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2258,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3352,
-       "walk_min": 42
-      }
-     ]
-    },
-    {
-     "GEOID": "250251104033",
-     "pop": 731,
-     "age65": 153,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3498,
-       "walk_min": 44
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3913,
-       "walk_min": 49
-      },
-      {
-       "name": "Walgreens",
-       "address": "1035 Truman Parkway, Boston 02136",
-       "walk_m": 4249,
-       "walk_min": 53
-      }
-     ]
-    },
-    {
-     "GEOID": "250251105022",
-     "pop": 1861,
-     "age65": 308,
-     "nocar_hh": 162,
-     "lim_eng": 7.6,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2879,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3294,
-       "walk_min": 41
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3942,
-       "walk_min": 49
-      }
-     ]
-    },
-    {
-     "GEOID": "250251103011",
-     "pop": 1137,
-     "age65": 212,
-     "nocar_hh": 32,
-     "lim_eng": 11.1,
-     "districts": {
-      "council": "4",
-      "house": "6th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3689,
-       "walk_min": 46
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 4178,
-       "walk_min": 52
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 4272,
-       "walk_min": 54
-      }
-     ]
-    },
-    {
-     "GEOID": "250251101041",
-     "pop": 820,
-     "age65": 88,
-     "nocar_hh": 10,
-     "lim_eng": 6.7,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 2564,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3418,
-       "walk_min": 43
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 3471,
-       "walk_min": 43
-      }
-     ]
-    },
-    {
-     "GEOID": "250251106074",
-     "pop": 1073,
-     "age65": 350,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2295,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2511,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 2939,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250251104034",
-     "pop": 1014,
-     "age65": 87,
-     "nocar_hh": 6,
-     "lim_eng": 2.7,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3043,
-       "walk_min": 38
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3458,
-       "walk_min": 43
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 4086,
-       "walk_min": 51
-      }
-     ]
-    },
-    {
-     "GEOID": "250259807001",
-     "pop": 7,
-     "age65": 1,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Walgreens",
-       "address": "1035 Truman Parkway, Boston 02136",
-       "walk_m": 4196,
-       "walk_min": 53
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 4427,
-       "walk_min": 55
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4872,
-       "walk_min": 61
-      }
-     ]
-    },
-    {
-     "GEOID": "250251104032",
-     "pop": 811,
-     "age65": 155,
-     "nocar_hh": 7,
-     "lim_eng": 4.7,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3159,
-       "walk_min": 40
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3510,
-       "walk_min": 44
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3867,
-       "walk_min": 48
-      }
-     ]
-    },
-    {
-     "GEOID": "250251106073",
-     "pop": 1586,
-     "age65": 158,
-     "nocar_hh": 18,
-     "lim_eng": 4.4,
-     "districts": {
-      "council": "5",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 2640,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2774,
-       "walk_min": 35
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 3228,
-       "walk_min": 40
-      }
-     ]
-    },
-    {
-     "GEOID": "250251104035",
-     "pop": 936,
-     "age65": 119,
-     "nocar_hh": 27,
-     "lim_eng": 1.8,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 3096,
-       "walk_min": 39
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3511,
-       "walk_min": 44
-      },
-      {
-       "name": "Walgreens",
-       "address": "1035 Truman Parkway, Boston 02136",
-       "walk_m": 4231,
-       "walk_min": 53
-      }
-     ]
-    }
-   ],
-   "rank": 4
-  },
-  {
-   "name": "Walgreens",
-   "address": "1035 Truman Parkway, Boston 02136",
-   "osm_id": "way/663624151",
-   "source": "OpenStreetMap",
-   "lat": 42.241868,
-   "lon": -71.12726,
-   "people": 12701,
-   "age65": 2094,
-   "nocar_hh": 246,
-   "block_groups": [
-    "250251402023",
-    "250251401022",
-    "250251402025",
-    "250251402012",
-    "250251402022",
-    "250251401024",
-    "250251402021",
-    "250251402011",
-    "250251401023",
-    "250259807001",
-    "250251402024",
-    "250251401072"
-   ],
-   "hoods": [
-    "Hyde Park"
-   ],
-   "lost": [
-    {
-     "GEOID": "250251402023",
-     "pop": 1120,
-     "age65": 144,
-     "nocar_hh": 15,
-     "lim_eng": 17.6,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 5085,
-       "walk_min": 64
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5500,
-       "walk_min": 69
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5996,
-       "walk_min": 75
-      }
-     ]
-    },
-    {
-     "GEOID": "250251401022",
-     "pop": 1188,
-     "age65": 170,
-     "nocar_hh": 24,
-     "lim_eng": 11.6,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3430,
-       "walk_min": 43
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3725,
-       "walk_min": 47
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 5700,
-       "walk_min": 71
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402025",
-     "pop": 770,
-     "age65": 163,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 5280,
-       "walk_min": 66
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5859,
-       "walk_min": 73
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 6191,
-       "walk_min": 78
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402012",
-     "pop": 1104,
-     "age65": 136,
-     "nocar_hh": 7,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Randolph Pharmacy",
-       "address": "1187 North Main Street",
-       "walk_m": 3169,
-       "walk_min": 40
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3517,
-       "walk_min": 44
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3818,
-       "walk_min": 48
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402022",
-     "pop": 1428,
-     "age65": 61,
-     "nocar_hh": 58,
-     "lim_eng": 7.1,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5198,
-       "walk_min": 65
-      },
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 5871,
-       "walk_min": 74
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5906,
-       "walk_min": 74
-      }
-     ]
-    },
-    {
-     "GEOID": "250251401024",
-     "pop": 1519,
-     "age65": 296,
-     "nocar_hh": 0,
-     "lim_eng": 3.3,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3554,
-       "walk_min": 45
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4308,
-       "walk_min": 54
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 4797,
-       "walk_min": 60
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402021",
-     "pop": 971,
-     "age65": 254,
-     "nocar_hh": 8,
-     "lim_eng": 9.4,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 5335,
-       "walk_min": 67
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5455,
-       "walk_min": 68
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 6045,
-       "walk_min": 76
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402011",
-     "pop": 1207,
-     "age65": 212,
-     "nocar_hh": 75,
-     "lim_eng": 31.7,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4053,
-       "walk_min": 51
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4757,
-       "walk_min": 60
-      },
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 6862,
-       "walk_min": 86
-      }
-     ]
-    },
-    {
-     "GEOID": "250251401023",
-     "pop": 1050,
-     "age65": 135,
-     "nocar_hh": 29,
-     "lim_eng": 7.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2972,
-       "walk_min": 37
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2972,
-       "walk_min": 37
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3293,
-       "walk_min": 41
-      }
-     ]
-    },
-    {
-     "GEOID": "250259807001",
-     "pop": 7,
-     "age65": 1,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3336,
-       "walk_min": 42
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1921 Centre Street, West Roxbury 02132",
-       "walk_m": 4427,
-       "walk_min": 55
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4872,
-       "walk_min": 61
-      }
-     ]
-    },
-    {
-     "GEOID": "250251402024",
-     "pop": 1535,
-     "age65": 356,
-     "nocar_hh": 3,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 5258,
-       "walk_min": 66
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5728,
-       "walk_min": 72
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 5999,
-       "walk_min": 75
-      }
-     ]
-    },
-    {
-     "GEOID": "250251401072",
-     "pop": 802,
-     "age65": 166,
-     "nocar_hh": 27,
-     "lim_eng": 6.2,
-     "districts": {
-      "council": "5",
-      "house": "14th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4205,
-       "walk_min": 53
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4388,
-       "walk_min": 55
-      },
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 4529,
-       "walk_min": 57
-      }
-     ]
-    }
-   ],
-   "rank": 5
-  },
-  {
-   "name": "Saigon Pharmacy",
-   "address": "1167 Dorchester Avenue, Boston 02125",
-   "osm_id": "node/13878663278",
-   "source": "OpenStreetMap",
-   "lat": 42.310875,
-   "lon": -71.057844,
-   "people": 11598,
-   "age65": 1150,
-   "nocar_hh": 1246,
-   "block_groups": [
-    "250250918001",
-    "250250910011",
-    "250250916003",
-    "250250910012",
-    "250250912003",
-    "250250915001",
-    "250250916002",
-    "250250912002",
-    "250250915003",
-    "250250915002"
-   ],
-   "hoods": [
-    "Dorchester"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250918001",
-     "pop": 1570,
-     "age65": 212,
-     "nocar_hh": 74,
-     "lim_eng": 6.5,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1529,
-       "walk_min": 19
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1968,
-       "walk_min": 25
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2826,
-       "walk_min": 35
-      }
-     ]
-    },
-    {
-     "GEOID": "250250910011",
-     "pop": 645,
-     "age65": 5,
-     "nocar_hh": 168,
-     "lim_eng": 38.6,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2024,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2720,
-       "walk_min": 34
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2842,
-       "walk_min": 36
-      }
-     ]
-    },
-    {
-     "GEOID": "250250916003",
-     "pop": 666,
-     "age65": 198,
-     "nocar_hh": 201,
-     "lim_eng": 55.6,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 1857,
-       "walk_min": 23
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2512,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2535,
-       "walk_min": 32
-      }
-     ]
-    },
-    {
-     "GEOID": "250250910012",
-     "pop": 796,
-     "age65": 65,
-     "nocar_hh": 57,
-     "lim_eng": 10.2,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2074,
-       "walk_min": 26
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2442,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2623,
-       "walk_min": 33
-      }
-     ]
-    },
-    {
-     "GEOID": "250250912003",
-     "pop": 720,
-     "age65": 38,
-     "nocar_hh": 102,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 1939,
-       "walk_min": 24
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2191,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2372,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250915001",
-     "pop": 1926,
-     "age65": 128,
-     "nocar_hh": 296,
-     "lim_eng": 14.4,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2161,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2315,
-       "walk_min": 29
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2335,
-       "walk_min": 29
-      }
-     ]
-    },
-    {
-     "GEOID": "250250916002",
-     "pop": 1250,
-     "age65": 53,
-     "nocar_hh": 20,
-     "lim_eng": 25.6,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2137,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2166,
-       "walk_min": 27
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2469,
-       "walk_min": 31
-      }
-     ]
-    },
-    {
-     "GEOID": "250250912002",
-     "pop": 1363,
-     "age65": 147,
-     "nocar_hh": 159,
-     "lim_eng": 11.9,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 1767,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2369,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2599,
-       "walk_min": 33
-      }
-     ]
-    },
-    {
-     "GEOID": "250250915003",
-     "pop": 922,
-     "age65": 92,
-     "nocar_hh": 69,
-     "lim_eng": 30.7,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2065,
-       "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2094,
-       "walk_min": 26
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2395,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250915002",
-     "pop": 1740,
-     "age65": 212,
-     "nocar_hh": 100,
-     "lim_eng": 17.9,
-     "districts": {
-      "council": "3",
-      "house": "5th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 1717,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2285,
-       "walk_min": 29
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2708,
-       "walk_min": 34
-      }
-     ]
-    }
-   ],
-   "rank": 6
-  },
-  {
-   "name": "CVS Pharmacy",
-   "address": "21 Austin Street, Charlestown 02129",
-   "osm_id": "node/3938341107",
-   "source": "OpenStreetMap",
-   "lat": 42.375988,
-   "lon": -71.06565,
-   "people": 9432,
-   "age65": 961,
-   "nocar_hh": 1044,
-   "block_groups": [
-    "250250408011",
-    "250250404011",
-    "250250403005",
-    "250250406001",
-    "250250403003",
-    "250250403004",
-    "250250403002",
-    "250250403001"
-   ],
-   "hoods": [
-    "Charlestown"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250408011",
-     "pop": 1190,
-     "age65": 135,
-     "nocar_hh": 240,
-     "lim_eng": 25.4,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1846,
-       "walk_min": 23
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 1873,
-       "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "218 Hanover Street, Boston 02116",
-       "walk_m": 2202,
-       "walk_min": 28
-      }
-     ]
-    },
-    {
-     "GEOID": "250250404011",
-     "pop": 1957,
-     "age65": 232,
-     "nocar_hh": 200,
-     "lim_eng": 3.0,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1745,
-       "walk_min": 22
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 1772,
-       "walk_min": 22
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 1823,
-       "walk_min": 23
-      }
-     ]
-    },
-    {
-     "GEOID": "250250403005",
-     "pop": 827,
-     "age65": 80,
-     "nocar_hh": 76,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1981,
-       "walk_min": 25
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 2008,
-       "walk_min": 25
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 2015,
-       "walk_min": 25
-      }
-     ]
-    },
-    {
-     "GEOID": "250250406001",
-     "pop": 1760,
-     "age65": 137,
-     "nocar_hh": 158,
-     "lim_eng": 2.1,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "180 Somerville Avenue, Somerville 02143",
-       "walk_m": 1886,
-       "walk_min": 24
-      },
-      {
-       "name": "Walgreens",
-       "address": "343 Broadway, Somerville 02145",
-       "walk_m": 2066,
-       "walk_min": 26
-      },
-      {
-       "name": "CHA Pharmacy East Cambridge",
-       "address": "163 Gore Street",
-       "walk_m": 2367,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250250403003",
-     "pop": 739,
-     "age65": 60,
-     "nocar_hh": 47,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1919,
-       "walk_min": 24
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 1946,
-       "walk_min": 24
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 2071,
-       "walk_min": 26
-      }
-     ]
-    },
-    {
-     "GEOID": "250250403004",
-     "pop": 699,
-     "age65": 75,
-     "nocar_hh": 58,
-     "lim_eng": 8.8,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 2168,
-       "walk_min": 27
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 2195,
-       "walk_min": 28
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 2248,
-       "walk_min": 28
-      }
-     ]
-    },
-    {
-     "GEOID": "250250403002",
-     "pop": 1486,
-     "age65": 206,
-     "nocar_hh": 143,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1560,
-       "walk_min": 20
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 1587,
-       "walk_min": 20
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 1821,
-       "walk_min": 23
-      }
-     ]
-    },
-    {
-     "GEOID": "250250403001",
-     "pop": 774,
-     "age65": 36,
-     "nocar_hh": 122,
-     "lim_eng": 7.4,
-     "districts": {
-      "council": "1",
-      "house": "2nd Suffolk",
-      "senate": "Middlesex and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1910,
-       "walk_min": 24
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "90 Causeway Street, Boston 02114",
-       "walk_m": 1937,
-       "walk_min": 24
-      },
-      {
-       "name": "Cambridge Medical Supply",
-       "address": "218 Monsignor O'Brien Highway, 02141",
-       "walk_m": 2209,
-       "walk_min": 28
-      }
-     ]
-    }
-   ],
-   "rank": 7
-  },
-  {
-   "name": "Star Market Pharmacy",
-   "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-   "osm_id": "node/12291481546",
-   "source": "OpenStreetMap",
-   "lat": 42.318244,
-   "lon": -71.0509,
-   "people": 9237,
-   "age65": 794,
-   "nocar_hh": 1519,
-   "block_groups": [
-    "250250909012",
-    "250250909011",
-    "250250907001",
-    "250250907003",
-    "250250611012",
-    "250250907002"
-   ],
-   "hoods": [
-    "Dorchester",
-    "South Boston"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250909012",
-     "pop": 2197,
-     "age65": 148,
-     "nocar_hh": 314,
-     "lim_eng": 15.8,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2388,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 3356,
-       "walk_min": 42
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 4535,
-       "walk_min": 57
-      }
-     ]
-    },
-    {
-     "GEOID": "250250909011",
-     "pop": 1403,
-     "age65": 127,
-     "nocar_hh": 237,
-     "lim_eng": 30.7,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2028,
-       "walk_min": 25
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 2547,
-       "walk_min": 32
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 3725,
-       "walk_min": 47
-      }
-     ]
-    },
-    {
-     "GEOID": "250250907001",
-     "pop": 1171,
-     "age65": 82,
-     "nocar_hh": 126,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "3",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1499,
-       "walk_min": 19
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 2234,
-       "walk_min": 28
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2951,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250250907003",
-     "pop": 1178,
-     "age65": 143,
-     "nocar_hh": 127,
-     "lim_eng": 11.2,
-     "districts": {
-      "council": "3",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1428,
-       "walk_min": 18
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 2544,
-       "walk_min": 32
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2562,
-       "walk_min": 32
-      }
-     ]
-    },
-    {
-     "GEOID": "250250611012",
-     "pop": 2028,
-     "age65": 62,
-     "nocar_hh": 516,
-     "lim_eng": 36.2,
-     "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 1983,
-       "walk_min": 25
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2887,
-       "walk_min": 36
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 3035,
-       "walk_min": 38
-      }
-     ]
-    },
-    {
-     "GEOID": "250250907002",
-     "pop": 1260,
-     "age65": 232,
-     "nocar_hh": 199,
-     "lim_eng": 18.2,
-     "districts": {
-      "council": "3",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 1566,
-       "walk_min": 20
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 2187,
-       "walk_min": 27
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 2707,
-       "walk_min": 34
-      }
-     ]
-    }
-   ],
-   "rank": 8
-  },
-  {
-   "name": "CVS Pharmacy",
    "address": "address not in OSM",
    "osm_id": "way/29648302",
    "source": "OpenStreetMap",
    "lat": 42.27397,
    "lon": -71.068635,
-   "people": 8191,
-   "age65": 1746,
-   "nocar_hh": 629,
+   "people": 6602,
+   "age65": 1432,
+   "nocar_hh": 593,
    "block_groups": [
     "250251009001",
     "250251009004",
-    "250251009003",
     "250251008005",
-    "250251009002",
     "250251004003",
     "250251004002",
     "250251008004"
@@ -3758,22 +703,22 @@
      },
      "nearest": [
       {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1432,
+       "walk_min": 18
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1792,
+       "walk_min": 22
+      },
+      {
        "name": "CVS Pharmacy",
        "address": "703 Gallivan Boulevard, Dorchester Center 02124",
        "walk_m": 2067,
        "walk_min": 26
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2121,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 3994,
-       "walk_min": 50
       }
      ]
     },
@@ -3790,54 +735,22 @@
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 3010,
-       "walk_min": 38
+       "name": "CVS Pharmacy #05464",
+       "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+       "walk_m": 1703,
+       "walk_min": 21
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 3150,
-       "walk_min": 39
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 2462,
+       "walk_min": 31
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "10 Bassett Street",
-       "walk_m": 4720,
-       "walk_min": 59
-      }
-     ]
-    },
-    {
-     "GEOID": "250251009003",
-     "pop": 1011,
-     "age65": 243,
-     "nocar_hh": 24,
-     "lim_eng": 2.8,
-     "districts": {
-      "council": "4",
-      "house": "12th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2530,
-       "walk_min": 32
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2662,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 4083,
-       "walk_min": 51
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 2783,
+       "walk_min": 35
       }
      ]
     },
@@ -3854,54 +767,22 @@
      },
      "nearest": [
       {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1757,
+       "walk_min": 22
+      },
+      {
        "name": "CVS Pharmacy",
        "address": "703 Gallivan Boulevard, Dorchester Center 02124",
        "walk_m": 1813,
        "walk_min": 23
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2612,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "10 Bassett Street",
-       "walk_m": 3526,
-       "walk_min": 44
-      }
-     ]
-    },
-    {
-     "GEOID": "250251009002",
-     "pop": 578,
-     "age65": 71,
-     "nocar_hh": 12,
-     "lim_eng": 12.6,
-     "districts": {
-      "council": "3",
-      "house": "12th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2667,
-       "walk_min": 33
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 3100,
-       "walk_min": 39
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "10 Bassett Street",
-       "walk_m": 4377,
-       "walk_min": 55
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1999,
+       "walk_min": 25
       }
      ]
     },
@@ -3918,22 +799,22 @@
      },
      "nearest": [
       {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1062,
+       "walk_min": 13
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1624,
+       "walk_min": 20
+      },
+      {
        "name": "CVS Pharmacy",
        "address": "451 Washington Street, Dorchester 02124",
        "walk_m": 1751,
        "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 2311,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 3624,
-       "walk_min": 45
       }
      ]
     },
@@ -3950,22 +831,22 @@
      },
      "nearest": [
       {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1180,
+       "walk_min": 15
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1275,
+       "walk_min": 16
+      },
+      {
        "name": "CVS Pharmacy",
        "address": "451 Washington Street, Dorchester 02124",
        "walk_m": 1868,
        "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-       "walk_m": 1938,
-       "walk_min": 24
-      },
-      {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 3543,
-       "walk_min": 44
       }
      ]
     },
@@ -3988,21 +869,21 @@
        "walk_min": 22
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2990,
-       "walk_min": 37
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 2124,
+       "walk_min": 27
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "10 Bassett Street",
-       "walk_m": 3495,
-       "walk_min": 44
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 2377,
+       "walk_min": 30
       }
      ]
     }
    ],
-   "rank": 9
+   "rank": 3
   },
   {
    "name": "CVS Pharmacy",
@@ -4011,17 +892,16 @@
    "source": "OpenStreetMap",
    "lat": 42.311538,
    "lon": -71.114217,
-   "people": 7824,
-   "age65": 982,
-   "nocar_hh": 740,
+   "people": 6459,
+   "age65": 784,
+   "nocar_hh": 622,
    "block_groups": [
     "250251202011",
     "250251201041",
     "250251204002",
     "250251201051",
     "250251204003",
-    "250251202012",
-    "250251203014"
+    "250251202012"
    ],
    "hoods": [
     "Jamaica Plain"
@@ -4046,16 +926,16 @@
        "walk_min": 24
       },
       {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 2629,
-       "walk_min": 33
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 2167,
+       "walk_min": 27
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 3622,
-       "walk_min": 45
+       "name": "Walgreens #4072",
+       "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+       "walk_m": 2256,
+       "walk_min": 28
       }
      ]
     },
@@ -4078,16 +958,16 @@
        "walk_min": 18
       },
       {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3191,
-       "walk_min": 40
+       "name": "Walgreens #16237",
+       "address": "75 AMORY ST STE 100, BOSTON MA 02119",
+       "walk_m": 2383,
+       "walk_min": 30
       },
       {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 3570,
-       "walk_min": 45
+       "name": "Walgreens #4072",
+       "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+       "walk_m": 2448,
+       "walk_min": 31
       }
      ]
     },
@@ -4110,16 +990,16 @@
        "walk_min": 18
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 3206,
-       "walk_min": 40
+       "name": "Walgreens #16237",
+       "address": "75 AMORY ST STE 100, BOSTON MA 02119",
+       "walk_m": 1754,
+       "walk_min": 22
       },
       {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3361,
-       "walk_min": 42
+       "name": "Walgreens #4072",
+       "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+       "walk_m": 1812,
+       "walk_min": 23
       }
      ]
     },
@@ -4142,16 +1022,16 @@
        "walk_min": 34
       },
       {
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 2738,
+       "walk_min": 34
+      },
+      {
        "name": "CVS Pharmacy",
        "address": "467 Centre Street, 02130",
        "walk_m": 2890,
        "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3429,
-       "walk_min": 43
       }
      ]
     },
@@ -4174,16 +1054,16 @@
        "walk_min": 15
       },
       {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 3313,
-       "walk_min": 42
+       "name": "Walgreens #16237",
+       "address": "75 AMORY ST STE 100, BOSTON MA 02119",
+       "walk_m": 2002,
+       "walk_min": 25
       },
       {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3383,
-       "walk_min": 42
+       "name": "Walgreens #4072",
+       "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+       "walk_m": 2067,
+       "walk_min": 26
       }
      ]
     },
@@ -4200,708 +1080,388 @@
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 1893,
-       "walk_min": 24
+       "name": "Walgreens #4072",
+       "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+       "walk_m": 1556,
+       "walk_min": 20
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2896,
-       "walk_min": 36
+       "name": "Dimock Pharmacy",
+       "address": "55 DIMOCK ST, ROXBURY MA 02119",
+       "walk_m": 1835,
+       "walk_min": 23
       },
       {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3195,
-       "walk_min": 40
-      }
-     ]
-    },
-    {
-     "GEOID": "250251203014",
-     "pop": 1365,
-     "age65": 198,
-     "nocar_hh": 118,
-     "lim_eng": 3.3,
-     "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 1397,
-       "walk_min": 18
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2451,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2754,
-       "walk_min": 35
+       "name": "Walgreens #16237",
+       "address": "75 AMORY ST STE 100, BOSTON MA 02119",
+       "walk_m": 1860,
+       "walk_min": 23
       }
      ]
     }
    ],
-   "rank": 10
+   "rank": 4
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "467 Centre Street, 02130",
-   "osm_id": "node/2295308900",
-   "source": "OpenStreetMap",
-   "lat": 42.319329,
-   "lon": -71.111982,
-   "people": 7788,
-   "age65": 651,
-   "nocar_hh": 915,
+   "name": "Star Market (Osco) Pharmacy #3577",
+   "address": "75 SPRING ST, WEST ROXBURY MA 02132",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.277529,
+   "lon": -71.16324,
+   "people": 5966,
+   "age65": 1497,
+   "nocar_hh": 390,
    "block_groups": [
-    "250251207001",
-    "250251206001",
-    "250250812001",
-    "250251205003",
-    "250251206002",
-    "250251205001",
-    "250251203011",
-    "250251205002"
+    "250251304041",
+    "250259819001",
+    "250251304024",
+    "250251304021",
+    "250251304023"
    ],
    "hoods": [
-    "Jamaica Plain"
+    "West Roxbury"
    ],
    "lost": [
     {
-     "GEOID": "250251207001",
-     "pop": 1000,
-     "age65": 52,
-     "nocar_hh": 129,
-     "lim_eng": 6.2,
+     "GEOID": "250251304041",
+     "pop": 2039,
+     "age65": 483,
+     "nocar_hh": 172,
+     "lim_eng": 7.2,
      "districts": {
       "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 1420,
-       "walk_min": 18
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1750,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1872,
-       "walk_min": 23
-      }
-     ]
-    },
-    {
-     "GEOID": "250251206001",
-     "pop": 910,
-     "age65": 72,
-     "nocar_hh": 108,
-     "lim_eng": 1.8,
-     "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1667,
-       "walk_min": 21
-      },
-      {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 2204,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 2816,
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 2805,
        "walk_min": 35
+      },
+      {
+       "name": "CVS Pharmacy #01031",
+       "address": "4600 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 2830,
+       "walk_min": 35
+      },
+      {
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 2998,
+       "walk_min": 38
       }
      ]
     },
     {
-     "GEOID": "250250812001",
-     "pop": 1393,
-     "age65": 41,
-     "nocar_hh": 80,
-     "lim_eng": 3.3,
-     "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 1654,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1704,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 2275,
-       "walk_min": 29
-      }
-     ]
-    },
-    {
-     "GEOID": "250251205003",
-     "pop": 742,
-     "age65": 44,
-     "nocar_hh": 82,
-     "lim_eng": 10.0,
-     "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 1617,
-       "walk_min": 20
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1799,
-       "walk_min": 23
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2286,
-       "walk_min": 29
-      }
-     ]
-    },
-    {
-     "GEOID": "250251206002",
-     "pop": 850,
-     "age65": 89,
-     "nocar_hh": 141,
+     "GEOID": "250259819001",
+     "pop": 0,
+     "age65": 0,
+     "nocar_hh": 0,
      "lim_eng": 0.0,
      "districts": {
       "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1304,
-       "walk_min": 16
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 2596,
+       "walk_min": 33
       },
       {
-       "name": "Walgreens",
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 2817,
+       "walk_min": 35
+      },
+      {
+       "name": "CVS Pharmacy",
        "address": null,
-       "walk_m": 2231,
-       "walk_min": 28
+       "walk_m": 3376,
+       "walk_min": 42
+      }
+     ]
+    },
+    {
+     "GEOID": "250251304024",
+     "pop": 1900,
+     "age65": 644,
+     "nocar_hh": 144,
+     "lim_eng": 11.1,
+     "districts": {
+      "council": "6",
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Birds Hill Pharmacy",
+       "address": null,
+       "walk_m": 2137,
+       "walk_min": 27
       },
       {
-       "name": "Walgreens",
-       "address": "99 Harvard Street, Brookline 02446",
-       "walk_m": 2685,
+       "name": "CVS Pharmacy",
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 2439,
+       "walk_min": 31
+      },
+      {
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 2660,
+       "walk_min": 33
+      }
+     ]
+    },
+    {
+     "GEOID": "250251304021",
+     "pop": 1050,
+     "age65": 285,
+     "nocar_hh": 74,
+     "lim_eng": 8.3,
+     "districts": {
+      "council": "6",
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 2279,
+       "walk_min": 29
+      },
+      {
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 2500,
+       "walk_min": 31
+      },
+      {
+       "name": "Birds Hill Pharmacy",
+       "address": null,
+       "walk_m": 2706,
        "walk_min": 34
       }
      ]
     },
     {
-     "GEOID": "250251205001",
-     "pop": 923,
-     "age65": 114,
-     "nocar_hh": 78,
-     "lim_eng": 12.7,
+     "GEOID": "250251304023",
+     "pop": 977,
+     "age65": 85,
+     "nocar_hh": 0,
+     "lim_eng": 9.3,
      "districts": {
       "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
      },
      "nearest": [
       {
+       "name": "CVS Pharmacy #02201",
+       "address": "270 BUSSEY ST DELLA PARK PLZ, DEDHAM MA 02026",
+       "walk_m": 2131,
+       "walk_min": 27
+      },
+      {
        "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1551,
+       "address": null,
+       "walk_m": 2285,
+       "walk_min": 29
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 2710,
+       "walk_min": 34
+      }
+     ]
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "name": "Shaw's / Osco Pharmacy #2579",
+   "address": "1377 HYDE PARK AVE, HYDE PARK MA 02136",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.25109,
+   "lon": -71.125818,
+   "people": 5691,
+   "age65": 1175,
+   "nocar_hh": 647,
+   "block_groups": [
+    "250251401071",
+    "250251403001",
+    "250251403003",
+    "250251401021"
+   ],
+   "hoods": [
+    "Hyde Park"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251401071",
+     "pop": 1976,
+     "age65": 424,
+     "nocar_hh": 189,
+     "lim_eng": 30.7,
+     "districts": {
+      "council": "5",
+      "house": "14th Suffolk",
+      "senate": "Norfolk and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 1543,
        "walk_min": 19
       },
       {
        "name": "Walgreens",
-       "address": null,
-       "walk_m": 2012,
-       "walk_min": 25
+       "address": "1035 Truman Parkway, Boston 02136",
+       "walk_m": 2371,
+       "walk_min": 30
       },
       {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2415,
-       "walk_min": 30
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2529,
+       "walk_min": 32
       }
      ]
     },
     {
-     "GEOID": "250251203011",
-     "pop": 1212,
-     "age65": 11,
-     "nocar_hh": 73,
-     "lim_eng": 6.1,
+     "GEOID": "250251403001",
+     "pop": 1036,
+     "age65": 35,
+     "nocar_hh": 88,
+     "lim_eng": 25.3,
      "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
+      "council": "5",
+      "house": "14th Suffolk",
       "senate": "Second Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1669,
-       "walk_min": 21
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 1498,
+       "walk_min": 19
       },
-      {
-       "name": "CVS Pharmacy",
-       "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2144,
-       "walk_min": 27
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2393,
-       "walk_min": 30
-      }
-     ]
-    },
-    {
-     "GEOID": "250251205002",
-     "pop": 758,
-     "age65": 228,
-     "nocar_hh": 224,
-     "lim_eng": 43.4,
-     "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
       {
        "name": "Walgreens",
-       "address": null,
-       "walk_m": 1777,
-       "walk_min": 22
+       "address": "1035 Truman Parkway, Boston 02136",
+       "walk_m": 1941,
+       "walk_min": 24
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "704 Centre Street",
-       "walk_m": 1786,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2447,
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2456,
        "walk_min": 31
       }
      ]
-    }
-   ],
-   "rank": 11
-  },
-  {
-   "name": "Walgreens",
-   "address": "address not in OSM",
-   "osm_id": "node/4983448185",
-   "source": "OpenStreetMap",
-   "lat": 42.333488,
-   "lon": -71.10475,
-   "people": 7714,
-   "age65": 385,
-   "nocar_hh": 796,
-   "block_groups": [
-    "250250811011",
-    "250250809002",
-    "250250808011",
-    "250250810011",
-    "250250811021",
-    "250250814004"
-   ],
-   "hoods": [
-    "Mission Hill"
-   ],
-   "lost": [
+    },
     {
-     "GEOID": "250250811011",
-     "pop": 372,
-     "age65": 8,
-     "nocar_hh": 252,
-     "lim_eng": 25.6,
+     "GEOID": "250251403003",
+     "pop": 1478,
+     "age65": 624,
+     "nocar_hh": 308,
+     "lim_eng": 9.1,
      "districts": {
-      "council": "6",
-      "house": "15th Suffolk",
+      "council": "5",
+      "house": "14th Suffolk",
       "senate": "Second Suffolk"
      },
      "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1104,
-       "walk_min": 14
-      },
       {
        "name": "Walgreens",
-       "address": "99 Harvard Street, Brookline 02446",
-       "walk_m": 1230,
-       "walk_min": 15
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 1331,
-       "walk_min": 17
-      }
-     ]
-    },
-    {
-     "GEOID": "250250809002",
-     "pop": 1780,
-     "age65": 116,
-     "nocar_hh": 148,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "8",
-      "house": "7th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1655,
+       "address": "1035 Truman Parkway, Boston 02136",
+       "walk_m": 1678,
        "walk_min": 21
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1785,
-       "walk_min": 22
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1877,
-       "walk_min": 24
-      }
-     ]
-    },
-    {
-     "GEOID": "250250808011",
-     "pop": 2384,
-     "age65": 62,
-     "nocar_hh": 287,
-     "lim_eng": 28.0,
-     "districts": {
-      "council": "7",
-      "house": "7th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1411,
-       "walk_min": 18
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1476,
-       "walk_min": 19
-      },
-      {
-       "name": "Fenway Health Pharmacy",
-       "address": "1340 Boylston Street, Boston 02115",
-       "walk_m": 1503,
-       "walk_min": 19
-      }
-     ]
-    },
-    {
-     "GEOID": "250250810011",
-     "pop": 1062,
-     "age65": 0,
-     "nocar_hh": 38,
-     "lim_eng": 13.3,
-     "districts": {
-      "council": "8",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1531,
-       "walk_min": 19
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 1787,
-       "walk_min": 22
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2001,
-       "walk_min": 25
-      }
-     ]
-    },
-    {
-     "GEOID": "250250811021",
-     "pop": 1572,
-     "age65": 189,
-     "nocar_hh": 47,
-     "lim_eng": 14.1,
-     "districts": {
-      "council": "8",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "467 Centre Street, 02130",
-       "walk_m": 1490,
-       "walk_min": 19
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1638,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 2117,
-       "walk_min": 27
-      }
-     ]
-    },
-    {
-     "GEOID": "250250814004",
-     "pop": 544,
-     "age65": 10,
-     "nocar_hh": 24,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "8",
-      "house": "15th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1436,
-       "walk_min": 18
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1674,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "350 Longwood Avenue, Boston 02115",
-       "walk_m": 1823,
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 1828,
        "walk_min": 23
-      }
-     ]
-    }
-   ],
-   "rank": 12
-  },
-  {
-   "name": "CVS Pharmacy",
-   "address": "address not in OSM",
-   "osm_id": "node/5197357023",
-   "source": "OpenStreetMap",
-   "lat": 42.344495,
-   "lon": -71.087089,
-   "people": 6612,
-   "age65": 588,
-   "nocar_hh": 651,
-   "block_groups": [
-    "250250708011",
-    "250250104051",
-    "250250708021"
-   ],
-   "hoods": [
-    "Fenway",
-    "Roxbury",
-    "South End"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250708011",
-     "pop": 1056,
-     "age65": 102,
-     "nocar_hh": 225,
-     "lim_eng": 4.6,
-     "districts": {
-      "council": "7",
-      "house": "9th Suffolk",
-      "senate": "Second Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1121,
-       "walk_min": 14
       },
       {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1400,
-       "walk_min": 18
-      },
-      {
-       "name": "Walgreens",
-       "address": "841 Boylston Street",
-       "walk_m": 1424,
-       "walk_min": 18
+       "name": "Walgreens #10317",
+       "address": "1065 TRUMAN HWY, BOSTON MA 02136",
+       "walk_m": 2410,
+       "walk_min": 30
       }
      ]
     },
     {
-     "GEOID": "250250104051",
-     "pop": 4004,
-     "age65": 50,
-     "nocar_hh": 16,
-     "lim_eng": 0.0,
+     "GEOID": "250251401021",
+     "pop": 1201,
+     "age65": 92,
+     "nocar_hh": 62,
+     "lim_eng": 9.9,
      "districts": {
-      "council": "7",
-      "house": "8th Suffolk",
-      "senate": "Second Suffolk"
+      "council": "5",
+      "house": "14th Suffolk",
+      "senate": "Norfolk and Suffolk"
      },
      "nearest": [
       {
-       "name": "Fenway Health Pharmacy",
-       "address": "1340 Boylston Street, Boston 02115",
-       "walk_m": 1143,
-       "walk_min": 14
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2364,
+       "walk_min": 30
       },
-      {
-       "name": "CVS Pharmacy",
-       "address": "1341 Boylston Street, Boston 02215",
-       "walk_m": 1306,
-       "walk_min": 16
-      },
-      {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1339,
-       "walk_min": 17
-      }
-     ]
-    },
-    {
-     "GEOID": "250250708021",
-     "pop": 1552,
-     "age65": 436,
-     "nocar_hh": 410,
-     "lim_eng": 11.4,
-     "districts": {
-      "council": "7",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
       {
        "name": "Walgreens",
-       "address": "841 Boylston Street",
-       "walk_m": 1330,
-       "walk_min": 17
+       "address": "1035 Truman Parkway, Boston 02136",
+       "walk_m": 2640,
+       "walk_min": 33
       },
       {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1332,
-       "walk_min": 17
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "587 Boylston Street, Boston 02116",
-       "walk_m": 1375,
-       "walk_min": 17
+       "name": "CVS Pharmacy #02201",
+       "address": "270 BUSSEY ST DELLA PARK PLZ, DEDHAM MA 02026",
+       "walk_m": 2664,
+       "walk_min": 33
       }
      ]
     }
    ],
-   "rank": 13
+   "rank": 6
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "703 Gallivan Boulevard, Dorchester Center 02124",
-   "osm_id": "node/9301544486",
-   "source": "OpenStreetMap",
-   "lat": 42.283286,
-   "lon": -71.0477,
-   "people": 6244,
-   "age65": 920,
-   "nocar_hh": 431,
+   "name": "Crawford Drug LLC",
+   "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.290905,
+   "lon": -71.06294,
+   "people": 4976,
+   "age65": 910,
+   "nocar_hh": 618,
    "block_groups": [
-    "250251006031",
-    "250251006011",
-    "250251007003",
-    "250251007002",
-    "250251008003",
-    "250251007001"
+    "250250921011",
+    "250250921015",
+    "250251008006"
    ],
    "hoods": [
     "Dorchester"
    ],
    "lost": [
     {
-     "GEOID": "250251006031",
-     "pop": 1483,
-     "age65": 100,
-     "nocar_hh": 67,
-     "lim_eng": 2.3,
+     "GEOID": "250250921011",
+     "pop": 1158,
+     "age65": 309,
+     "nocar_hh": 135,
+     "lim_eng": 51.5,
      "districts": {
       "council": "3",
       "house": "13th Suffolk",
@@ -4909,31 +1469,31 @@
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2725,
-       "walk_min": 34
+       "name": "Maxim Pharmacy",
+       "address": "1365 1377 DORCHESTER AVE, DORCHESTER MA 02122",
+       "walk_m": 1187,
+       "walk_min": 15
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2870,
-       "walk_min": 36
+       "name": "DotHouse Health Pharmacy",
+       "address": "1353 DORCHESTER AVE, DORCHESTER MA 02122",
+       "walk_m": 1242,
+       "walk_min": 16
       },
       {
        "name": "CVS Pharmacy",
-       "address": "321 Quincy Shore Drive",
-       "walk_m": 2981,
-       "walk_min": 37
+       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
+       "walk_m": 1811,
+       "walk_min": 23
       }
      ]
     },
     {
-     "GEOID": "250251006011",
-     "pop": 1027,
-     "age65": 250,
-     "nocar_hh": 16,
-     "lim_eng": 0.0,
+     "GEOID": "250250921015",
+     "pop": 2590,
+     "age65": 400,
+     "nocar_hh": 402,
+     "lim_eng": 7.1,
      "districts": {
       "council": "3",
       "house": "13th Suffolk",
@@ -4941,31 +1501,31 @@
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2842,
-       "walk_min": 36
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1262,
+       "walk_min": 16
       },
       {
-       "name": "Saigon Pharmacy",
-       "address": "1167 Dorchester Avenue, Boston 02125",
-       "walk_m": 2987,
-       "walk_min": 37
+       "name": "Maxim Pharmacy",
+       "address": "1365 1377 DORCHESTER AVE, DORCHESTER MA 02122",
+       "walk_m": 1295,
+       "walk_min": 16
       },
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3139,
-       "walk_min": 39
+       "name": "DotHouse Health Pharmacy",
+       "address": "1353 DORCHESTER AVE, DORCHESTER MA 02122",
+       "walk_m": 1350,
+       "walk_min": 17
       }
      ]
     },
     {
-     "GEOID": "250251007003",
-     "pop": 724,
-     "age65": 36,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
+     "GEOID": "250251008006",
+     "pop": 1228,
+     "age65": 201,
+     "nocar_hh": 81,
+     "lim_eng": 17.7,
      "districts": {
       "council": "3",
       "house": "13th Suffolk",
@@ -4975,430 +1535,270 @@
       {
        "name": "CVS Pharmacy",
        "address": null,
-       "walk_m": 2183,
-       "walk_min": 27
+       "walk_m": 1192,
+       "walk_min": 15
       },
       {
-       "name": "Stop and Shop Pharmacy",
-       "address": null,
-       "walk_m": 2890,
-       "walk_min": 36
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2966,
-       "walk_min": 37
-      }
-     ]
-    },
-    {
-     "GEOID": "250251007002",
-     "pop": 1008,
-     "age65": 310,
-     "nocar_hh": 98,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2617,
-       "walk_min": 33
-      },
-      {
-       "name": "Stop and Shop Pharmacy",
-       "address": null,
-       "walk_m": 2878,
-       "walk_min": 36
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1254,
+       "walk_min": 16
       },
       {
        "name": "CVS Pharmacy",
-       "address": "321 Quincy Shore Drive",
-       "walk_m": 2884,
-       "walk_min": 36
-      }
-     ]
-    },
-    {
-     "GEOID": "250251008003",
-     "pop": 924,
-     "age65": 122,
-     "nocar_hh": 218,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1701,
-       "walk_min": 21
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2237,
-       "walk_min": 28
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "10 Bassett Street",
-       "walk_m": 3053,
-       "walk_min": 38
-      }
-     ]
-    },
-    {
-     "GEOID": "250251007001",
-     "pop": 1078,
-     "age65": 102,
-     "nocar_hh": 32,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "3",
-      "house": "13th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2298,
-       "walk_min": 29
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": "451 Washington Street, Dorchester 02124",
-       "walk_m": 2600,
-       "walk_min": 33
-      },
-      {
-       "name": "Stop and Shop Pharmacy",
-       "address": null,
-       "walk_m": 3136,
-       "walk_min": 39
+       "address": "703 Gallivan Boulevard, Dorchester Center 02124",
+       "walk_m": 1466,
+       "walk_min": 18
       }
      ]
     }
    ],
-   "rank": 14
+   "rank": 7
   },
   {
-   "name": "Kornfield Pharmacy",
-   "address": "2121 Washington St, Roxbury MA 02119",
-   "osm_id": null,
-   "source": "manual (openings.csv)",
-   "lat": 42.331897,
-   "lon": -71.081887,
-   "people": 6041,
-   "age65": 761,
-   "nocar_hh": 1006,
+   "name": "CVS Pharmacy",
+   "address": "West Broadway",
+   "osm_id": "node/13472522655",
+   "source": "OpenStreetMap",
+   "lat": 42.336622,
+   "lon": -71.047754,
+   "people": 4246,
+   "age65": 274,
+   "nocar_hh": 904,
    "block_groups": [
-    "250250711011",
-    "250250709011",
-    "250250801001",
-    "250250709021"
+    "250250607001",
+    "250250608003",
+    "250250606011"
    ],
    "hoods": [
-    "Roxbury",
-    "South End"
+    "South Boston"
    ],
    "lost": [
     {
-     "GEOID": "250250711011",
-     "pop": 1540,
-     "age65": 240,
-     "nocar_hh": 162,
+     "GEOID": "250250607001",
+     "pop": 997,
+     "age65": 90,
+     "nocar_hh": 327,
+     "lim_eng": 24.9,
+     "districts": {
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 1194,
+       "walk_min": 15
+      },
+      {
+       "name": "CVS Pharmacy #11082",
+       "address": "341 HARRISON AVE, BOSTON MA 02118",
+       "walk_m": 1215,
+       "walk_min": 15
+      },
+      {
+       "name": "Tai Tung Pharmacy / SCCHC Pharmacy",
+       "address": "256 HARRISON AVE, BOSTON MA 02111",
+       "walk_m": 1476,
+       "walk_min": 19
+      }
+     ]
+    },
+    {
+     "GEOID": "250250608003",
+     "pop": 1243,
+     "age65": 17,
+     "nocar_hh": 176,
      "lim_eng": 0.0,
      "districts": {
-      "council": "3",
-      "house": "9th Suffolk",
+      "council": "2",
+      "house": "4th Suffolk",
       "senate": "First Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1119,
-       "walk_min": 14
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 1168,
+       "walk_min": 15
       },
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1656,
-       "walk_min": 21
+       "name": "Walgreens #17169",
+       "address": "710 E BROADWAY, BOSTON MA 02127",
+       "walk_m": 1216,
+       "walk_min": 15
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "587 Boylston Street, Boston 02116",
-       "walk_m": 1940,
-       "walk_min": 24
+       "name": "CVS Pharmacy #11082",
+       "address": "341 HARRISON AVE, BOSTON MA 02118",
+       "walk_m": 1582,
+       "walk_min": 20
       }
      ]
     },
     {
-     "GEOID": "250250709011",
-     "pop": 1165,
-     "age65": 150,
-     "nocar_hh": 384,
-     "lim_eng": 42.0,
+     "GEOID": "250250606011",
+     "pop": 2006,
+     "age65": 167,
+     "nocar_hh": 401,
+     "lim_eng": 3.5,
      "districts": {
-      "council": "7",
-      "house": "9th Suffolk",
-      "senate": "Second Suffolk"
+      "council": "2",
+      "house": "4th Suffolk",
+      "senate": "First Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1131,
+       "name": "Walgreens #17169",
+       "address": "710 E BROADWAY, BOSTON MA 02127",
+       "walk_m": 1148,
        "walk_min": 14
       },
       {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1138,
-       "walk_min": 14
+       "name": "Galaxy Pharmacy",
+       "address": "534 DORCHESTER AVE UNIT C-1, BOSTON MA 02127",
+       "walk_m": 1347,
+       "walk_min": 17
       },
+      {
+       "name": "CVS Pharmacy #10517",
+       "address": "91 SEAPORT BLVD, BOSTON MA 02210",
+       "walk_m": 1524,
+       "walk_min": 19
+      }
+     ]
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "name": "NeighborHealth (EBNHC) Maverick Pharmacy",
+   "address": "20 MAVERICK SQ, EAST BOSTON MA 02128",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.369479,
+   "lon": -71.03956,
+   "people": 3454,
+   "age65": 216,
+   "nocar_hh": 415,
+   "block_groups": [
+    "250250512001",
+    "250250512002",
+    "250250512003"
+   ],
+   "hoods": [
+    "East Boston"
+   ],
+   "lost": [
+    {
+     "GEOID": "250250512001",
+     "pop": 833,
+     "age65": 13,
+     "nocar_hh": 71,
+     "lim_eng": 12.1,
+     "districts": {
+      "council": "1",
+      "house": "1st Suffolk",
+      "senate": "Third Suffolk"
+     },
+     "nearest": [
       {
        "name": "Walgreens",
-       "address": "841 Boylston Street",
-       "walk_m": 1718,
-       "walk_min": 22
+       "address": null,
+       "walk_m": 1097,
+       "walk_min": 14
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 1297,
+       "walk_min": 16
       }
      ]
     },
     {
-     "GEOID": "250250801001",
-     "pop": 2125,
-     "age65": 203,
-     "nocar_hh": 227,
-     "lim_eng": 24.2,
+     "GEOID": "250250512002",
+     "pop": 1703,
+     "age65": 146,
+     "nocar_hh": 155,
+     "lim_eng": 6.8,
      "districts": {
-      "council": "3",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
+      "council": "1",
+      "house": "1st Suffolk",
+      "senate": "Third Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1361,
+       "name": "Walgreens",
+       "address": null,
+       "walk_m": 1276,
+       "walk_min": 16
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 1477,
+       "walk_min": 19
+      }
+     ]
+    },
+    {
+     "GEOID": "250250512003",
+     "pop": 918,
+     "age65": 57,
+     "nocar_hh": 189,
+     "lim_eng": 13.9,
+     "districts": {
+      "council": "1",
+      "house": "1st Suffolk",
+      "senate": "Third Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens",
+       "address": null,
+       "walk_m": 1325,
        "walk_min": 17
       },
       {
        "name": "CVS Pharmacy",
        "address": null,
-       "walk_m": 2399,
-       "walk_min": 30
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "45 William T. Morrissey Boulevard, Dorchester 02125",
-       "walk_m": 2518,
-       "walk_min": 32
-      }
-     ]
-    },
-    {
-     "GEOID": "250250709021",
-     "pop": 1211,
-     "age65": 168,
-     "nocar_hh": 233,
-     "lim_eng": 16.3,
-     "districts": {
-      "council": "7",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1160,
-       "walk_min": 15
-      },
-      {
-       "name": "CVS Pharmacy (Nubian Square)",
-       "address": "32 Warren St, Roxbury MA 02119",
-       "walk_m": 1218,
-       "walk_min": 15
-      },
-      {
-       "name": "Walgreens",
-       "address": "841 Boylston Street",
-       "walk_m": 1617,
-       "walk_min": 20
+       "walk_m": 1525,
+       "walk_min": 19
       }
      ]
     }
    ],
-   "rank": 15
+   "rank": 9
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "1921 Centre Street, West Roxbury 02132",
-   "osm_id": "node/12134879903",
-   "source": "OpenStreetMap",
-   "lat": 42.284012,
-   "lon": -71.157378,
-   "people": 3528,
-   "age65": 662,
-   "nocar_hh": 22,
+   "name": "CVS Pharmacy #01031",
+   "address": "4600 WASHINGTON ST, ROSLINDALE MA 02131",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.27723,
+   "lon": -71.138158,
+   "people": 3203,
+   "age65": 487,
+   "nocar_hh": 265,
    "block_groups": [
-    "250251303005",
-    "250251303003",
-    "250251304022",
-    "250251301015",
-    "250259807001"
+    "250251401062",
+    "250251401061",
+    "250251303004"
    ],
    "hoods": [
-    "Hyde Park",
+    "Roslindale",
     "West Roxbury"
    ],
    "lost": [
     {
-     "GEOID": "250251303005",
-     "pop": 652,
+     "GEOID": "250251401062",
+     "pop": 713,
      "age65": 118,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "6",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2703,
-       "walk_min": 34
-      },
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 2974,
-       "walk_min": 37
-      },
-      {
-       "name": "Birds Hill Pharmacy",
-       "address": null,
-       "walk_m": 4264,
-       "walk_min": 53
-      }
-     ]
-    },
-    {
-     "GEOID": "250251303003",
-     "pop": 815,
-     "age65": 224,
-     "nocar_hh": 22,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "6",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 2387,
-       "walk_min": 30
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 2450,
-       "walk_min": 31
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4629,
-       "walk_min": 58
-      }
-     ]
-    },
-    {
-     "GEOID": "250251304022",
-     "pop": 906,
-     "age65": 151,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
-     "districts": {
-      "council": "6",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3134,
-       "walk_min": 39
-      },
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 3521,
-       "walk_min": 44
-      },
-      {
-       "name": "Birds Hill Pharmacy",
-       "address": null,
-       "walk_m": 3524,
-       "walk_min": 44
-      }
-     ]
-    },
-    {
-     "GEOID": "250251301015",
-     "pop": 1148,
-     "age65": 168,
-     "nocar_hh": 0,
-     "lim_eng": 11.0,
-     "districts": {
-      "council": "6",
-      "house": "10th Suffolk",
-      "senate": "Norfolk and Suffolk"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1972,
-       "walk_min": 25
-      },
-      {
-       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
-       "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3879,
-       "walk_min": 49
-      },
-      {
-       "name": "Birds Hill Pharmacy",
-       "address": null,
-       "walk_m": 4032,
-       "walk_min": 51
-      }
-     ]
-    },
-    {
-     "GEOID": "250259807001",
-     "pop": 7,
-     "age65": 1,
-     "nocar_hh": 0,
-     "lim_eng": 0.0,
+     "nocar_hh": 115,
+     "lim_eng": 44.1,
      "districts": {
       "council": "5",
       "house": "14th Suffolk",
@@ -5408,25 +1808,549 @@
       {
        "name": "Sullivan\u2019s Pharmacy & Medical Supply",
        "address": "1 Corinth Street, Boston 02131",
-       "walk_m": 3336,
-       "walk_min": 42
+       "walk_m": 1449,
+       "walk_min": 18
       },
       {
-       "name": "Walgreens",
-       "address": "1035 Truman Parkway, Boston 02136",
-       "walk_m": 4196,
-       "walk_min": 53
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 1608,
+       "walk_min": 20
       },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2112,
+       "walk_min": 26
+      }
+     ]
+    },
+    {
+     "GEOID": "250251401061",
+     "pop": 1465,
+     "age65": 242,
+     "nocar_hh": 119,
+     "lim_eng": 13.8,
+     "districts": {
+      "council": "5",
+      "house": "14th Suffolk",
+      "senate": "Norfolk and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
+       "address": "1 Corinth Street, Boston 02131",
+       "walk_m": 1984,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 2144,
+       "walk_min": 27
+      },
+      {
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 2266,
+       "walk_min": 28
+      }
+     ]
+    },
+    {
+     "GEOID": "250251303004",
+     "pop": 1025,
+     "age65": 127,
+     "nocar_hh": 31,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "6",
+      "house": "10th Suffolk",
+      "senate": "Norfolk and Suffolk"
+     },
+     "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 4872,
-       "walk_min": 61
+       "address": "1921 Centre Street, West Roxbury 02132",
+       "walk_m": 1748,
+       "walk_min": 22
+      },
+      {
+       "name": "West Roxbury Pharmacy",
+       "address": "1868 CENTRE ST, WEST ROXBURY MA 02132",
+       "walk_m": 1930,
+       "walk_min": 24
+      },
+      {
+       "name": "Star Market (Osco) Pharmacy #3577",
+       "address": "75 SPRING ST, WEST ROXBURY MA 02132",
+       "walk_m": 2079,
+       "walk_min": 26
       }
      ]
     }
    ],
-   "rank": 16
+   "rank": 10
+  },
+  {
+   "name": "BMC Pharmacy at Codman Square",
+   "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.289399,
+   "lon": -71.071411,
+   "people": 2986,
+   "age65": 542,
+   "nocar_hh": 260,
+   "block_groups": [
+    "250251004004",
+    "250251003001"
+   ],
+   "hoods": [
+    "Dorchester"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251004004",
+     "pop": 1698,
+     "age65": 224,
+     "nocar_hh": 185,
+     "lim_eng": 2.6,
+     "districts": {
+      "council": "4",
+      "house": "12th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 1385,
+       "walk_min": 17
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1405,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "451 Washington Street, Dorchester 02124",
+       "walk_m": 1422,
+       "walk_min": 18
+      }
+     ]
+    },
+    {
+     "GEOID": "250251003001",
+     "pop": 1288,
+     "age65": 318,
+     "nocar_hh": 75,
+     "lim_eng": 6.1,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "451 Washington Street, Dorchester 02124",
+       "walk_m": 1422,
+       "walk_min": 18
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 1717,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 1905,
+       "walk_min": 24
+      }
+     ]
+    }
+   ],
+   "rank": 11
+  },
+  {
+   "name": "Upham's Community Care Pharmacy",
+   "address": "415 COLUMBIA RD, DORCHESTER MA 02125",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.312969,
+   "lon": -71.068091,
+   "people": 2957,
+   "age65": 409,
+   "nocar_hh": 548,
+   "block_groups": [
+    "250250904003",
+    "250250904001",
+    "250250914002"
+   ],
+   "hoods": [
+    "Dorchester",
+    "Roxbury"
+   ],
+   "lost": [
+    {
+     "GEOID": "250250904003",
+     "pop": 898,
+     "age65": 207,
+     "nocar_hh": 211,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "7",
+      "house": "5th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #17018 (South Bay)",
+       "address": "7 ALLSTATE RD, DORCHESTER MA 02125",
+       "walk_m": 1371,
+       "walk_min": 17
+      },
+      {
+       "name": "Stop & Shop Pharmacy #429",
+       "address": "1100 MASSACHUSETTS AVE, DORCHESTER MA 02125",
+       "walk_m": 1410,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "468 Blue Hill Avenue, Dorchester 02121",
+       "walk_m": 1568,
+       "walk_min": 20
+      }
+     ]
+    },
+    {
+     "GEOID": "250250904001",
+     "pop": 921,
+     "age65": 43,
+     "nocar_hh": 163,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "7",
+      "house": "5th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "468 Blue Hill Avenue, Dorchester 02121",
+       "walk_m": 1290,
+       "walk_min": 16
+      },
+      {
+       "name": "Hamilton Pharmacy / Community Care Pharmacy",
+       "address": "246 BOWDOIN ST, DORCHESTER MA 02122",
+       "walk_m": 1626,
+       "walk_min": 20
+      },
+      {
+       "name": "Prime Pharmacy",
+       "address": "201 HUMBOLDT AVENUE, DORCHESTER MA 02120",
+       "walk_m": 1640,
+       "walk_min": 21
+      }
+     ]
+    },
+    {
+     "GEOID": "250250914002",
+     "pop": 1138,
+     "age65": 159,
+     "nocar_hh": 174,
+     "lim_eng": 16.8,
+     "districts": {
+      "council": "7",
+      "house": "5th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Hamilton Pharmacy / Community Care Pharmacy",
+       "address": "246 BOWDOIN ST, DORCHESTER MA 02122",
+       "walk_m": 1402,
+       "walk_min": 18
+      },
+      {
+       "name": "BILH Pharmacy at Bowdoin Street Health Center",
+       "address": "230 BOWDOIN ST, DORCHESTER MA 02122",
+       "walk_m": 1494,
+       "walk_min": 19
+      },
+      {
+       "name": "CVS Pharmacy #17018 (South Bay)",
+       "address": "7 ALLSTATE RD, DORCHESTER MA 02125",
+       "walk_m": 1520,
+       "walk_min": 19
+      }
+     ]
+    }
+   ],
+   "rank": 12
+  },
+  {
+   "name": "CVS Pharmacy #00619",
+   "address": "1150 SARATOGA ST, BOSTON MA 02128",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.384451,
+   "lon": -71.000428,
+   "people": 2902,
+   "age65": 272,
+   "nocar_hh": 182,
+   "block_groups": [
+    "250250511011",
+    "250250511014"
+   ],
+   "hoods": [
+    "East Boston"
+   ],
+   "lost": [
+    {
+     "GEOID": "250250511011",
+     "pop": 1803,
+     "age65": 162,
+     "nocar_hh": 133,
+     "lim_eng": 19.4,
+     "districts": {
+      "council": "1",
+      "house": "1st Suffolk",
+      "senate": "Third Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #00140",
+       "address": "3 WOODSIDE AVE, WINTHROP MA 02152",
+       "walk_m": 2630,
+       "walk_min": 33
+      },
+      {
+       "name": "Brown's Rexall Drug (Health Mart)",
+       "address": "214 WINTHROP ST, WINTHROP MA 02152",
+       "walk_m": 2676,
+       "walk_min": 34
+      },
+      {
+       "name": "Pharmacy",
+       "address": "167 Shirley Avenue",
+       "walk_m": 3025,
+       "walk_min": 38
+      }
+     ]
+    },
+    {
+     "GEOID": "250250511014",
+     "pop": 1099,
+     "age65": 110,
+     "nocar_hh": 49,
+     "lim_eng": 7.7,
+     "districts": {
+      "council": "1",
+      "house": "1st Suffolk",
+      "senate": "Third Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Pharmacy",
+       "address": "167 Shirley Avenue",
+       "walk_m": 3222,
+       "walk_min": 40
+      },
+      {
+       "name": "Walgreens",
+       "address": "430 Broadway, Revere 02151",
+       "walk_m": 3521,
+       "walk_min": 44
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "467 Broadway, Revere 02151",
+       "walk_m": 3550,
+       "walk_min": 44
+      }
+     ]
+    }
+   ],
+   "rank": 13
+  },
+  {
+   "name": "Harvard Neighborhood Pharmacy Inc",
+   "address": "632 BLUE HILL AVE, DORCHESTER MA 02121",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.302817,
+   "lon": -71.085153,
+   "people": 2590,
+   "age65": 354,
+   "nocar_hh": 247,
+   "block_groups": [
+    "250250924003",
+    "250250924005"
+   ],
+   "hoods": [
+    "Dorchester"
+   ],
+   "lost": [
+    {
+     "GEOID": "250250924003",
+     "pop": 1811,
+     "age65": 226,
+     "nocar_hh": 201,
+     "lim_eng": 12.3,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "451 Washington Street, Dorchester 02124",
+       "walk_m": 1311,
+       "walk_min": 16
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "468 Blue Hill Avenue, Dorchester 02121",
+       "walk_m": 1345,
+       "walk_min": 17
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1669,
+       "walk_min": 21
+      }
+     ]
+    },
+    {
+     "GEOID": "250250924005",
+     "pop": 779,
+     "age65": 128,
+     "nocar_hh": 46,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "451 Washington Street, Dorchester 02124",
+       "walk_m": 1649,
+       "walk_min": 21
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1715,
+       "walk_min": 21
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "468 Blue Hill Avenue, Dorchester 02121",
+       "walk_m": 1916,
+       "walk_min": 24
+      }
+     ]
+    }
+   ],
+   "rank": 14
+  },
+  {
+   "name": "Walgreens #15001",
+   "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.273973,
+   "lon": -71.116751,
+   "people": 2284,
+   "age65": 416,
+   "nocar_hh": 121,
+   "block_groups": [
+    "250251404005",
+    "250251010012"
+   ],
+   "hoods": [
+    "Hyde Park",
+    "Mattapan"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251404005",
+     "pop": 1520,
+     "age65": 293,
+     "nocar_hh": 75,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #05464",
+       "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+       "walk_m": 1333,
+       "walk_min": 17
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 1680,
+       "walk_min": 21
+      },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2045,
+       "walk_min": 26
+      }
+     ]
+    },
+    {
+     "GEOID": "250251010012",
+     "pop": 764,
+     "age65": 123,
+     "nocar_hh": 46,
+     "lim_eng": 22.7,
+     "districts": {
+      "council": "5",
+      "house": "12th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #05464",
+       "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+       "walk_m": 1460,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy #01049",
+       "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2163,
+       "walk_min": 27
+      },
+      {
+       "name": "Roslindale Pharmacy Ltd",
+       "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+       "walk_m": 2381,
+       "walk_min": 30
+      }
+     ]
+    }
+   ],
+   "rank": 15
   },
   {
    "name": "CVS Pharmacy",
@@ -5497,16 +2421,68 @@
        "walk_min": 19
       },
       {
+       "name": "Charles River Community Health Pharmacy",
+       "address": "495 WESTERN AVE, BRIGHTON MA 02135",
+       "walk_m": 2376,
+       "walk_min": 30
+      },
+      {
        "name": "Brighton Pharmacy",
        "address": "1690 Commonwealth Avenue, Brighton 02135",
        "walk_m": 2452,
        "walk_min": 31
+      }
+     ]
+    }
+   ],
+   "rank": 16
+  },
+  {
+   "name": "CVS Pharmacy",
+   "address": "21 Austin Street, Charlestown 02129",
+   "osm_id": "node/3938341107",
+   "source": "OpenStreetMap",
+   "lat": 42.375988,
+   "lon": -71.06565,
+   "people": 1957,
+   "age65": 232,
+   "nocar_hh": 200,
+   "block_groups": [
+    "250250404011"
+   ],
+   "hoods": [
+    "Charlestown"
+   ],
+   "lost": [
+    {
+     "GEOID": "250250404011",
+     "pop": 1957,
+     "age65": 232,
+     "nocar_hh": 200,
+     "lim_eng": 3.0,
+     "districts": {
+      "council": "1",
+      "house": "2nd Suffolk",
+      "senate": "Middlesex and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "New Health Charlestown Pharmacy",
+       "address": "15 TUFTS ST, CHARLESTOWN MA 02129",
+       "walk_m": 1127,
+       "walk_min": 14
       },
       {
-       "name": "Health First Pharmacy",
-       "address": "1670 Commonwealth Avenue, Brighton 02135",
-       "walk_m": 2501,
-       "walk_min": 31
+       "name": "CVS Pharmacy",
+       "address": "101 Canal Street, Boston 02114",
+       "walk_m": 1745,
+       "walk_min": 22
+      },
+      {
+       "name": "Star Market Pharmacy",
+       "address": "90 Causeway Street, Boston 02114",
+       "walk_m": 1772,
+       "walk_min": 22
       }
      ]
     }
@@ -5566,51 +2542,51 @@
    "rank": 18
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "91 Seaport Boulevard, Boston 02210",
-   "osm_id": "node/4958651312",
-   "source": "OpenStreetMap",
-   "lat": 42.351674,
-   "lon": -71.04583,
-   "people": 1502,
-   "age65": 50,
-   "nocar_hh": 369,
+   "name": "Walgreens #4072",
+   "address": "1890 COLUMBUS AVE, ROXBURY MA 02119",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.318092,
+   "lon": -71.098166,
+   "people": 1527,
+   "age65": 258,
+   "nocar_hh": 218,
    "block_groups": [
-    "250250606031"
+    "250251203013"
    ],
    "hoods": [
-    "South Boston Waterfront"
+    "Jamaica Plain"
    ],
    "lost": [
     {
-     "GEOID": "250250606031",
-     "pop": 1502,
-     "age65": 50,
-     "nocar_hh": 369,
-     "lim_eng": 0.0,
+     "GEOID": "250251203013",
+     "pop": 1527,
+     "age65": 258,
+     "nocar_hh": 218,
+     "lim_eng": 7.7,
      "districts": {
-      "council": "2",
-      "house": "4th Suffolk",
-      "senate": "First Suffolk"
+      "council": "6",
+      "house": "15th Suffolk",
+      "senate": "Second Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "700 Atlantic Avenue, Boston 02116",
-       "walk_m": 1587,
+       "name": "Prime Pharmacy",
+       "address": "201 HUMBOLDT AVENUE, DORCHESTER MA 02120",
+       "walk_m": 1573,
        "walk_min": 20
       },
       {
        "name": "CVS Pharmacy",
-       "address": "West Broadway",
-       "walk_m": 1713,
-       "walk_min": 21
+       "address": "704 Centre Street",
+       "walk_m": 1805,
+       "walk_min": 23
       },
       {
-       "name": "CVS Pharmacy",
-       "address": null,
-       "walk_m": 1998,
-       "walk_min": 25
+       "name": "Dimock Pharmacy",
+       "address": "55 DIMOCK ST, ROXBURY MA 02119",
+       "walk_m": 1864,
+       "walk_min": 23
       }
      ]
     }
@@ -5618,51 +2594,84 @@
    "rank": 19
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "address not in OSM",
-   "osm_id": "node/1979647301",
-   "source": "OpenStreetMap",
-   "lat": 42.360627,
-   "lon": -71.070571,
-   "people": 1226,
-   "age65": 31,
-   "nocar_hh": 423,
+   "name": "New Health Charlestown Pharmacy",
+   "address": "15 TUFTS ST, CHARLESTOWN MA 02129",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.378367,
+   "lon": -71.056751,
+   "people": 1401,
+   "age65": 253,
+   "nocar_hh": 196,
    "block_groups": [
-    "250250202003"
+    "250250402001",
+    "250250408012"
    ],
    "hoods": [
-    "Beacon Hill"
+    "Charlestown"
    ],
    "lost": [
     {
-     "GEOID": "250250202003",
-     "pop": 1226,
-     "age65": 31,
-     "nocar_hh": 423,
+     "GEOID": "250250402001",
+     "pop": 636,
+     "age65": 45,
+     "nocar_hh": 112,
      "lim_eng": 0.0,
      "districts": {
-      "council": "8",
-      "house": "8th Suffolk",
-      "senate": "Third Suffolk"
+      "council": "1",
+      "house": "2nd Suffolk",
+      "senate": "Middlesex and Suffolk"
      },
      "nearest": [
       {
        "name": "CVS Pharmacy",
-       "address": "631 Washington Street, Boston 02111",
-       "walk_m": 1208,
+       "address": "21 Austin Street, Charlestown 02129",
+       "walk_m": 1229,
        "walk_min": 15
       },
       {
        "name": "CVS Pharmacy",
        "address": "101 Canal Street, Boston 02114",
-       "walk_m": 1234,
-       "walk_min": 15
+       "walk_m": 1863,
+       "walk_min": 23
       },
       {
-       "name": "Capsule",
-       "address": "414 Boylston Street, Boston 02116",
-       "walk_m": 1254,
-       "walk_min": 16
+       "name": "Star Market Pharmacy",
+       "address": "90 Causeway Street, Boston 02114",
+       "walk_m": 1890,
+       "walk_min": 24
+      }
+     ]
+    },
+    {
+     "GEOID": "250250408012",
+     "pop": 765,
+     "age65": 208,
+     "nocar_hh": 84,
+     "lim_eng": 12.3,
+     "districts": {
+      "council": "1",
+      "house": "2nd Suffolk",
+      "senate": "Middlesex and Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": "21 Austin Street, Charlestown 02129",
+       "walk_m": 1726,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "101 Canal Street, Boston 02114",
+       "walk_m": 2264,
+       "walk_min": 28
+      },
+      {
+       "name": "Star Market Pharmacy",
+       "address": "90 Causeway Street, Boston 02114",
+       "walk_m": 2291,
+       "walk_min": 29
       }
      ]
     }
@@ -5670,50 +2679,50 @@
    "rank": 20
   },
   {
-   "name": "Capsule",
-   "address": "414 Boylston Street, Boston 02116",
-   "osm_id": "node/7683562820",
+   "name": "CVS Pharmacy",
+   "address": "468 Blue Hill Avenue, Dorchester 02121",
+   "osm_id": "way/29616925",
    "source": "OpenStreetMap",
-   "lat": 42.351256,
-   "lon": -71.072408,
-   "people": 1149,
-   "age65": 81,
-   "nocar_hh": 151,
+   "lat": 42.308789,
+   "lon": -71.08182,
+   "people": 1248,
+   "age65": 93,
+   "nocar_hh": 55,
    "block_groups": [
-    "250250705011"
+    "250250818003"
    ],
    "hoods": [
-    "South End"
+    "Roxbury"
    ],
    "lost": [
     {
-     "GEOID": "250250705011",
-     "pop": 1149,
-     "age65": 81,
-     "nocar_hh": 151,
-     "lim_eng": 2.2,
+     "GEOID": "250250818003",
+     "pop": 1248,
+     "age65": 93,
+     "nocar_hh": 55,
+     "lim_eng": 0.0,
      "districts": {
-      "council": "2",
-      "house": "9th Suffolk",
-      "senate": "First Suffolk"
+      "council": "7",
+      "house": "7th Suffolk",
+      "senate": "Second Suffolk"
      },
      "nearest": [
       {
-       "name": "CVS Pharmacy",
-       "address": "587 Boylston Street, Boston 02116",
-       "walk_m": 1181,
-       "walk_min": 15
+       "name": "Prime Pharmacy",
+       "address": "201 HUMBOLDT AVENUE, DORCHESTER MA 02120",
+       "walk_m": 962,
+       "walk_min": 12
       },
       {
-       "name": "CVS Pharmacy",
-       "address": "631 Washington Street, Boston 02111",
-       "walk_m": 1373,
-       "walk_min": 17
+       "name": "Upham's Community Care Pharmacy",
+       "address": "415 COLUMBIA RD, DORCHESTER MA 02125",
+       "walk_m": 1401,
+       "walk_min": 18
       },
       {
-       "name": "Walgreens",
-       "address": "841 Boylston Street",
-       "walk_m": 1547,
+       "name": "CVS Pharmacy (Nubian Square)",
+       "address": "32 Warren St, Roxbury MA 02119",
+       "walk_m": 1514,
        "walk_min": 19
       }
      ]
@@ -5722,80 +2731,28 @@
    "rank": 21
   },
   {
-   "name": "CVS Pharmacy",
-   "address": "address not in OSM",
-   "osm_id": "way/29585690",
-   "source": "OpenStreetMap",
-   "lat": 42.355681,
-   "lon": -71.150235,
-   "people": 1016,
-   "age65": 48,
-   "nocar_hh": 108,
-   "block_groups": [
-    "250250006014"
-   ],
-   "hoods": [
-    "Brighton"
-   ],
-   "lost": [
-    {
-     "GEOID": "250250006014",
-     "pop": 1016,
-     "age65": 48,
-     "nocar_hh": 108,
-     "lim_eng": 10.5,
-     "districts": {
-      "council": "9",
-      "house": "17th Suffolk",
-      "senate": "Suffolk and Middlesex"
-     },
-     "nearest": [
-      {
-       "name": "CVS Pharmacy",
-       "address": "427 Washington Street, Brighton 02135",
-       "walk_m": 1259,
-       "walk_min": 16
-      },
-      {
-       "name": "Central Pharmacy",
-       "address": "1349 Commonwealth Avenue",
-       "walk_m": 1551,
-       "walk_min": 19
-      },
-      {
-       "name": "Star Market Pharmacy",
-       "address": "370 Western Avenue, Brighton 02135",
-       "walk_m": 1597,
-       "walk_min": 20
-      }
-     ]
-    }
-   ],
-   "rank": 22
-  },
-  {
-   "name": "CVS Pharmacy (Nubian Square)",
-   "address": "32 Warren St, Roxbury MA 02119",
+   "name": "Prime Pharmacy",
+   "address": "201 HUMBOLDT AVENUE, DORCHESTER MA 02120",
    "osm_id": null,
    "source": "manual (openings.csv)",
-   "lat": 42.329676,
-   "lon": -71.083218,
-   "people": 950,
-   "age65": 169,
-   "nocar_hh": 294,
+   "lat": 42.313011,
+   "lon": -71.089698,
+   "people": 1248,
+   "age65": 93,
+   "nocar_hh": 55,
    "block_groups": [
-    "250250817004"
+    "250250818003"
    ],
    "hoods": [
     "Roxbury"
    ],
    "lost": [
     {
-     "GEOID": "250250817004",
-     "pop": 950,
-     "age65": 169,
-     "nocar_hh": 294,
-     "lim_eng": 7.3,
+     "GEOID": "250250818003",
+     "pop": 1248,
+     "age65": 93,
+     "nocar_hh": 55,
+     "lim_eng": 0.0,
      "districts": {
       "council": "7",
       "house": "7th Suffolk",
@@ -5803,22 +2760,74 @@
      },
      "nearest": [
       {
-       "name": "Kornfield Pharmacy",
-       "address": "2121 Washington St, Roxbury MA 02119",
-       "walk_m": 1196,
-       "walk_min": 15
-      },
-      {
        "name": "CVS Pharmacy",
        "address": "468 Blue Hill Avenue, Dorchester 02121",
-       "walk_m": 2087,
-       "walk_min": 26
+       "walk_m": 1118,
+       "walk_min": 14
       },
       {
-       "name": "Walgreens",
-       "address": null,
-       "walk_m": 2369,
-       "walk_min": 30
+       "name": "Upham's Community Care Pharmacy",
+       "address": "415 COLUMBIA RD, DORCHESTER MA 02125",
+       "walk_m": 1401,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy (Nubian Square)",
+       "address": "32 Warren St, Roxbury MA 02119",
+       "walk_m": 1514,
+       "walk_min": 19
+      }
+     ]
+    }
+   ],
+   "rank": 22
+  },
+  {
+   "name": "CVS Pharmacy #01049",
+   "address": "942A HYDE PARK AVE, HYDE PARK MA 02136",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.267586,
+   "lon": -71.120853,
+   "people": 1233,
+   "age65": 175,
+   "nocar_hh": 83,
+   "block_groups": [
+    "250251403005"
+   ],
+   "hoods": [
+    "Hyde Park"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251403005",
+     "pop": 1233,
+     "age65": 175,
+     "nocar_hh": 83,
+     "lim_eng": 27.9,
+     "districts": {
+      "council": "5",
+      "house": "14th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 1954,
+       "walk_min": 24
+      },
+      {
+       "name": "CVS Pharmacy #05464",
+       "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+       "walk_m": 2352,
+       "walk_min": 29
+      },
+      {
+       "name": "Shaw's / Osco Pharmacy #2579",
+       "address": "1377 HYDE PARK AVE, HYDE PARK MA 02136",
+       "walk_m": 2592,
+       "walk_min": 32
       }
      ]
     }
@@ -5826,28 +2835,130 @@
    "rank": 23
   },
   {
-   "name": "Walgreens",
-   "address": "address not in OSM",
-   "osm_id": "way/29614657",
+   "name": "CVS Pharmacy",
+   "address": "451 Washington Street, Dorchester 02124",
+   "osm_id": "way/29646775",
    "source": "OpenStreetMap",
-   "lat": 42.374393,
-   "lon": -71.03867,
-   "people": 79,
-   "age65": 0,
-   "nocar_hh": 0,
+   "lat": 42.295649,
+   "lon": -71.072459,
+   "people": 1223,
+   "age65": 37,
+   "nocar_hh": 92,
    "block_groups": [
-    "250259813001"
+    "250250924002"
    ],
    "hoods": [
-    "East Boston"
+    "Dorchester"
    ],
    "lost": [
     {
-     "GEOID": "250259813001",
-     "pop": 79,
-     "age65": 0,
-     "nocar_hh": 0,
+     "GEOID": "250250924002",
+     "pop": 1223,
+     "age65": 37,
+     "nocar_hh": 92,
      "lim_eng": 0.0,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Harvard Neighborhood Pharmacy Inc",
+       "address": "632 BLUE HILL AVE, DORCHESTER MA 02121",
+       "walk_m": 1031,
+       "walk_min": 13
+      },
+      {
+       "name": "BMC Pharmacy at Codman Square",
+       "address": "637 WASHINGTON ST, DORCHESTER MA 02124",
+       "walk_m": 1224,
+       "walk_min": 15
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "468 Blue Hill Avenue, Dorchester 02121",
+       "walk_m": 1807,
+       "walk_min": 23
+      }
+     ]
+    }
+   ],
+   "rank": 24
+  },
+  {
+   "name": "CVS Pharmacy",
+   "address": "703 Gallivan Boulevard, Dorchester Center 02124",
+   "osm_id": "node/9301544486",
+   "source": "OpenStreetMap",
+   "lat": 42.283286,
+   "lon": -71.0477,
+   "people": 1008,
+   "age65": 310,
+   "nocar_hh": 98,
+   "block_groups": [
+    "250251007002"
+   ],
+   "hoods": [
+    "Dorchester"
+   ],
+   "lost": [
+    {
+     "GEOID": "250251007002",
+     "pop": 1008,
+     "age65": 310,
+     "nocar_hh": 98,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "3",
+      "house": "13th Suffolk",
+      "senate": "First Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "walk_m": 2617,
+       "walk_min": 33
+      },
+      {
+       "name": "Crawford Drug LLC",
+       "address": "1735 DORCHESTER AVE, DORCHESTER CENTER MA 02124",
+       "walk_m": 2677,
+       "walk_min": 34
+      },
+      {
+       "name": "Stop and Shop Pharmacy",
+       "address": null,
+       "walk_m": 2878,
+       "walk_min": 36
+      }
+     ]
+    }
+   ],
+   "rank": 25
+  },
+  {
+   "name": "CVS Pharmacy #00496",
+   "address": "324 BROADWAY, CHELSEA MA 02150",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.39138,
+   "lon": -71.036697,
+   "people": 961,
+   "age65": 31,
+   "nocar_hh": 103,
+   "block_groups": [
+    "250250509013"
+   ],
+   "hoods": [],
+   "lost": [
+    {
+     "GEOID": "250250509013",
+     "pop": 961,
+     "age65": 31,
+     "nocar_hh": 103,
+     "lim_eng": 21.5,
      "districts": {
       "council": "1",
       "house": "1st Suffolk",
@@ -5857,13 +2968,111 @@
       {
        "name": "CVS Pharmacy",
        "address": null,
-       "walk_m": 3676,
-       "walk_min": 46
+       "walk_m": 1408,
+       "walk_min": 18
+      },
+      {
+       "name": "Walgreens",
+       "address": null,
+       "walk_m": 1442,
+       "walk_min": 18
+      },
+      {
+       "name": "NeighborHealth (EBNHC) Maverick Pharmacy",
+       "address": "20 MAVERICK SQ, EAST BOSTON MA 02128",
+       "walk_m": 1970,
+       "walk_min": 25
       }
      ]
     }
    ],
-   "rank": 24
+   "rank": 26
+  },
+  {
+   "name": "Roslindale Pharmacy Ltd",
+   "address": "452 HYDE PARK AVE, ROSLINDALE MA 02131",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.285201,
+   "lon": -71.118796,
+   "people": 785,
+   "age65": 397,
+   "nocar_hh": 105,
+   "block_groups": [
+    "250259811003",
+    "250251101062"
+   ],
+   "hoods": [
+    "Jamaica Plain",
+    "Mattapan"
+   ],
+   "lost": [
+    {
+     "GEOID": "250259811003",
+     "pop": 91,
+     "age65": 0,
+     "nocar_hh": 0,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2334,
+       "walk_min": 29
+      },
+      {
+       "name": "CVS Pharmacy #05464",
+       "address": "1575 BLUE HILL AVE, MATTAPAN MA 02126",
+       "walk_m": 2396,
+       "walk_min": 30
+      },
+      {
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 2650,
+       "walk_min": 33
+      }
+     ]
+    },
+    {
+     "GEOID": "250251101062",
+     "pop": 694,
+     "age65": 397,
+     "nocar_hh": 105,
+     "lim_eng": 0.0,
+     "districts": {
+      "council": "4",
+      "house": "6th Suffolk",
+      "senate": "Second Suffolk"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #17727",
+       "address": "4165 WASHINGTON ST, ROSLINDALE MA 02131",
+       "walk_m": 1651,
+       "walk_min": 21
+      },
+      {
+       "name": "Sullivan\u2019s Pharmacy & Medical Supply",
+       "address": "1 Corinth Street, Boston 02131",
+       "walk_m": 2069,
+       "walk_min": 26
+      },
+      {
+       "name": "Walgreens #15001",
+       "address": "980 AMERICAN LEGION HWY, ROSLINDALE MA 02131",
+       "walk_m": 2220,
+       "walk_min": 28
+      }
+     ]
+    }
+   ],
+   "rank": 27
   }
  ]
 }
