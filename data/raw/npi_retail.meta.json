@@ -1,0 +1,7 @@
+{
+  "dataset": "NPI Registry, active organizations listing Community/Retail Pharmacy (3336C0003X), primary Retail or Pharmacy, no institutional/mail/specialty/LTC codes, Boston + neighboring ZIPs, geocoded with the US Census geocoder",
+  "url": "https://npiregistry.cms.hhs.gov/api/",
+  "function": "scripts/fetch_npi_retail.py:main",
+  "count": 270,
+  "pulled": "2026-10-24T17:44:05+00:00"
+}
