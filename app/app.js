@@ -49,7 +49,6 @@ function renderHeadline() {
   countTo($('[data-num="desert"]'), h.desert);
   countTo($('[data-num="near"]'), h.near);
   countTo($('[data-num="atrisk"]'), h.desert + h.near);
-  $('[data-num="globe"]').textContent = fmt(D.validation.globe_pop);
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
     $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`; // gray remainder = everyone else
   $('#hl-title').textContent = 'Boston residents in a pharmacy desert or one closure away';
