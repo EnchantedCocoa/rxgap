@@ -5,8 +5,9 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const STATUS_LABEL = { desert: 'Desert', 'near-desert': 'One closure away', covered: 'Covered' };
 
-const state = { rule: 'state', selected: null, closed: null, timers: [] };
-let D, BG, map, bgIndex;
+const state = { rule: 'state', selected: null, closed: null, timers: [], town: 'boston' };
+let D, BG, map, bgIndex, TOWNS, bostonLayer, townLayer, pinLayer;
+const townIndex = new Map();
 
 // ---------- data ----------
 async function load() {
@@ -15,6 +16,7 @@ async function load() {
     fetch('../data/bg_out.geojson').then((r) => r.json()),
   ]);
   D = d; BG = bg;
+  TOWNS = await fetch('../data/towns/towns.json').then((r) => r.json());
   bgIndex = new Map(bg.features.map((f) => [f.properties.GEOID, f]));
   for (const f of bg.features) f.properties._c = centroid(f.geometry);
 }
@@ -50,6 +52,7 @@ function renderHeadline() {
   $('[data-num="globe"]').textContent = fmt(D.validation.globe_pop);
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
     $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`;
+  $('#hl-title').textContent = 'Boston residents in a pharmacy desert';
   $('#fallback-banner').hidden = D.rule === 'state';
   const manual = D.pharmacies.filter((p) => p.source && p.source !== 'OpenStreetMap').length;
   if (manual) $('#source-note').textContent = `Stores: OpenStreetMap (a floor, not the full list), plus ${fmt(manual)} added by hand with a source.`;
@@ -136,7 +139,8 @@ function initMap() {
   tiles('Base', 'tilePane').addTo(map);
   tiles('Reference', 'labels').addTo(map); // labels stay readable above the colored blocks
 
-  L.geoJSON(BG, {
+  pinLayer = L.layerGroup().addTo(map);
+  bostonLayer = L.geoJSON(BG, {
     style: () => ({ className: 'bg', weight: 0.6 }),
     onEachFeature: (f, l) => {
       layers.set(f.properties.GEOID, l);
@@ -146,8 +150,8 @@ function initMap() {
   restyle();
 
   for (const c of D.closed) {
-    L.marker([c.lat, c.lon], { keyboard: false, title: `${c.name} — closed ${c.date}`,
-      icon: L.divIcon({ className: 'pin pin-closed', iconSize: [12, 12] }) }).addTo(map);
+    pinLayer.addLayer(L.marker([c.lat, c.lon], { keyboard: false, title: `${c.name} — closed ${c.date}`,
+      icon: L.divIcon({ className: 'pin pin-closed', iconSize: [12, 12] }) }));
   }
   for (const p of D.pharmacies) {
     const s = p.rank && D.stores[p.rank - 1];
@@ -155,10 +159,78 @@ function initMap() {
     const m = L.marker([p.lat, p.lon], {
       keyboard: false, title: p.name, zIndexOffset: s ? 1000 - p.rank : 0,
       icon: L.divIcon({ className: s ? 'pin pin-rank' : 'pin pin-minor', iconSize: [size, size], html: s ? `<span>${p.rank}</span>` : '' }),
-    }).addTo(map);
+    }).addTo(pinLayer);
     m.on('click', () => (s ? select(s) : selectMinor(p.name)));
     markers.set(p.id, m);
   }
+}
+
+// ---------- other places (state's published results) ----------
+async function setTown(slug) {
+  if (slug === state.town) return;
+  if (state.closed) undo(true);
+  clearSiting();
+  ['#store-card', '#result-card', '#sheet'].forEach((s) => { $(s).hidden = true; });
+  state.town = slug;
+  const boston = slug === 'boston';
+  document.querySelectorAll('.boston-only').forEach((el) => { el.hidden = !boston; });
+  document.querySelectorAll('.town-only').forEach((el) => { el.hidden = boston; });
+  $('#boston-compare').hidden = !boston;
+  $('#town-note').hidden = boston;
+  townLayer?.remove(); townLayer = null;
+  if (boston) {
+    bostonLayer.addTo(map); pinLayer.addTo(map); restyle();
+    map.flyToBounds(bostonLayer.getBounds(), { animate: !reduced, duration: 1 });
+    renderHeadline();
+    return;
+  }
+  bostonLayer.remove(); pinLayer.remove();
+  const t = TOWNS[slug];
+  const gj = await fetch(`../data/towns/${slug}.geojson`).then((r) => r.json());
+  townIndex.clear();
+  townLayer = L.geoJSON(gj, {
+    style: () => ({ className: 'bg', weight: 0.6 }),
+    onEachFeature: (f, l) => { townIndex.set(f.properties.GEOID, f); l.on('click', () => openTownSheet(f.properties)); },
+  }).addTo(map);
+  townLayer.eachLayer((l) => l.getElement()?.classList.add(`st-${l.feature.properties.s_state}`));
+  map.flyToBounds(t.bounds, { animate: !reduced, duration: 1.2 });
+  renderTownHeadline(t);
+}
+
+function renderTownHeadline(t) {
+  $('#hl-title').textContent = `${t.name} residents in a pharmacy desert`;
+  countTo($('[data-num="desert"]'), t.desert);
+  countTo($('[data-num="near"]'), t.near);
+  countTo($('[data-num="covered"]'), t.covered);
+  for (const [k, v] of [['desert', t.desert], ['near', t.near], ['covered', t.covered]])
+    $(`#seg-${k}`).style.width = `${(v / t.total) * 100}%`;
+  $('#town-note').innerHTML = `${esc(t.why)}. <button class="info" data-prov="town" aria-label="How we got this number">i</button>`;
+  const rows = Object.entries(t.types).sort((a, b) => b[1] - a[1]).map(([k, v]) =>
+    `<tr><td>${k[0].toUpperCase() + k.slice(1)}</td><td>${fmt(v)}</td><td>${k === 'urban' ? '1 mi (½ if low-access)' : k === 'suburban' ? '2 mi (1 if low-access)' : '5 mi (2½ if low-access)'}</td></tr>`).join('');
+  $('#town-panel').innerHTML = `
+    <div class="section-head"><h2 id="tp-title">How ${esc(t.name)} is measured</h2></div>
+    <p class="sub">The state sets the walk limit per block group by density: urban above 5,000 people per square mile, suburban below.</p>
+    <table class="town-panel-types"><thead><tr><th>Area type</th><th>Residents</th><th>Distance limit</th></tr></thead><tbody>${rows}</tbody></table>
+    <p class="sub">These are the state's published results. Closure simulation and the can't-lose ranking are for Boston only for now, because they need a checked store list.</p>`;
+}
+
+function openTownSheet(p) {
+  const sheet = $('#sheet');
+  sheet.innerHTML = `
+    <button class="close" aria-label="Close">×</button>
+    <span class="pill pill-${p.s_state}">${STATUS_LABEL[p.s_state]}</span>
+    <h3 id="sheet-title" style="margin:6px 0 0">${esc(TOWNS[state.town].name)} <small style="color:var(--muted);font-weight:400">block group ${esc(p.GEOID)}</small></h3>
+    <dl class="grid">
+      <div><dt>Residents</dt><dd>${fmt(p.pop)}</dd></div>
+      <div><dt>Age 65+</dt><dd>${p.age65_pct}%</dd></div>
+      <div><dt>Homes, no car</dt><dd>${p.nocar_pct}%</dd></div>
+      <div><dt>In poverty</dt><dd>${p.pov_pct}%</dd></div>
+    </dl>
+    <p style="margin:0;font-size:var(--fs-sm);color:var(--ink-2)">${p.type[0].toUpperCase() + p.type.slice(1)}${p.low_access ? ', low-access' : ''}: limit ${p.limit_mi} mi.
+      ${p.share_in_reach}% of the area is within reach (desert if under 15%).
+      <button class="info" data-prov="town" aria-label="How we got these numbers">i</button></p>`;
+  sheet.hidden = false;
+  $('.close', sheet).addEventListener('click', () => { sheet.hidden = true; });
 }
 
 // ---------- selection + simulation ----------
@@ -413,6 +485,7 @@ async function boot() {
   renderRanking();
   initMap();
   renderMethod();
+  $('#town').addEventListener('change', (e) => setTown(e.target.value));
   document.querySelectorAll('.rules button').forEach((b) => b.addEventListener('click', () => setRule(b.dataset.rule)));
   for (const id of ['open-method', 'why-differ']) $(`#${id}`).addEventListener('click', () => $('#method').showModal());
   document.addEventListener('keydown', (e) => {

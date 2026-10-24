@@ -39,6 +39,10 @@ def main():
         'dataset': 'Hand-kept list of pharmacies OpenStreetMap is missing, with a source URL per row',
         'file': 'data/manual/openings.csv', 'function': 'scripts/analyze_bg.py:load_pharmacies',
         'pulled': mtime(ROOT / 'data' / 'manual' / 'openings.csv')}
+    out['hpc'] = {
+        'dataset': 'HPC DataPoints 31 public dataset: status of all 5,109 MA block groups (pharmacy licenses as of June 2025)',
+        'url': 'https://masshpc.gov/sites/default/files/Public_Dataset_Pharmacy_deserts_2025.xlsx',
+        'function': 'scripts/build_towns.py:main', 'pulled': mtime(RAW / 'hpc' / 'Public_Dataset_Pharmacy_deserts_2025.xlsx')}
     (ROOT / 'data' / 'provenance.json').write_text(json.dumps(out, indent=1))
     print(f'{len(out)} sources -> data/provenance.json')
 

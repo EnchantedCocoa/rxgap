@@ -17,6 +17,14 @@
       <span class="name">RxGap</span>
       <span class="tag">When a pharmacy closes, who loses access?</span>
     </div>
+    <label class="town-pick">
+      <span class="sr-only">Place</span>
+      <select id="town" aria-label="Choose a place">
+        <option value="boston">Boston</option>
+        <option value="springfield">Springfield · city</option>
+        <option value="plymouth">Plymouth · suburban</option>
+      </select>
+    </label>
     <nav class="tabs" aria-label="Screens">
       <button class="tab is-active" aria-current="page">Risk map</button>
       <button class="tab" disabled title="Coming next">Officials</button>
@@ -41,10 +49,13 @@
           <div><dt><i class="dot dot-near"></i>One closure away</dt><dd data-num="near">—</dd></div>
           <div><dt><i class="dot dot-covered"></i>Covered</dt><dd data-num="covered">—</dd></div>
         </dl>
-        <p class="compare">The Boston Globe counted about <span data-num="globe">—</span><button class="info" data-prov="globe" aria-label="How we got this number">i</button>. <button class="link" id="why-differ">Why we differ</button></p>
+        <p class="compare" id="town-note" hidden></p>
+        <p class="compare" id="boston-compare">The Boston Globe counted about <span data-num="globe">—</span><button class="info" data-prov="globe" aria-label="How we got this number">i</button>. <button class="link" id="why-differ">Why we differ</button></p>
       </section>
 
-      <section class="ranking" aria-labelledby="rk-title">
+      <section class="ranking town-only" id="town-panel" hidden aria-labelledby="tp-title"></section>
+
+      <section class="ranking boston-only" aria-labelledby="rk-title">
         <div class="section-head">
           <h2 id="rk-title">Stores Boston can’t afford to lose</h2>
           <button class="info" data-prov="store" aria-label="How we got this ranking">i</button>
@@ -64,7 +75,7 @@
       <div class="sheet" id="sheet" hidden role="dialog" aria-labelledby="sheet-title"></div>
 
       <div class="legend" aria-label="Legend">
-        <div class="rules" role="radiogroup" aria-label="Walk limit">
+        <div class="rules boston-only" role="radiogroup" aria-label="Walk limit">
           <button role="radio" aria-checked="true" data-rule="state">State rule</button>
           <button role="radio" aria-checked="false" data-rule="half">½ mile</button>
           <button role="radio" aria-checked="false" data-rule="one">1 mile</button>
@@ -73,10 +84,11 @@
           <li><i class="sw sw-desert"></i>Desert</li>
           <li><i class="sw sw-near"></i>One closure away</li>
           <li><i class="sw sw-covered"></i>Covered</li>
-          <li><i class="sw sw-store"></i>Pharmacy</li>
-          <li><i class="sw sw-closed"></i>Closed</li>
+          <li class="boston-only"><i class="sw sw-store"></i>Pharmacy</li>
+          <li class="boston-only"><i class="sw sw-closed"></i>Closed</li>
         </ul>
-        <p class="source" id="source-note">Stores: OpenStreetMap, a floor, not the full list.</p>
+        <p class="source town-only" id="town-source" hidden>Results from the state (HPC DataPoints 31), pharmacy licenses as of June 2025.</p>
+        <p class="source boston-only" id="source-note">Stores: OpenStreetMap, a floor, not the full list.</p>
       </div>
     </section>
   </main>

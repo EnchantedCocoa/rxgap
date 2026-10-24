@@ -1,0 +1,48 @@
+{
+ "springfield": {
+  "name": "Springfield",
+  "why": "Most residents at risk of any large Massachusetts city",
+  "desert": 29506,
+  "near": 23007,
+  "covered": 103416,
+  "total": 155929,
+  "blocks": 122,
+  "types": {
+   "suburban": 57101,
+   "urban": 98828
+  },
+  "bounds": [
+   [
+    42.063736,
+    -72.622132
+   ],
+   [
+    42.162173,
+    -72.471087
+   ]
+  ]
+ },
+ "plymouth": {
+  "name": "Plymouth",
+  "why": "Most residents at risk of any mostly-suburban town",
+  "desert": 14015,
+  "near": 7951,
+  "covered": 39251,
+  "total": 61217,
+  "blocks": 39,
+  "types": {
+   "suburban": 60261,
+   "urban": 956
+  },
+  "bounds": [
+   [
+    41.76290400000001,
+    -70.753527
+   ],
+   [
+    42.01383,
+    -70.525567
+   ]
+  ]
+ }
+}

@@ -52,6 +52,10 @@ Each task names the requirements it serves and its done check. Cut order if behi
 - [x] 3.8 Method page with HPC rule and Globe comparison — _Req 9_
 - [x] 3.9 UI smoke test in a headless browser (close top store, check card number) — _Req 3, 8_
 
+## Phase 3b — Other places
+
+- [x] 3b.1 Town picker: Springfield (city) and Plymouth (suburban) from the state's published block results (`scripts/build_towns.py`); closure simulation stays Boston-only — _UI_
+
 ## Phase 4 — Siting and letter-count server
 
 - [x] 4.1 `rxgap/serve.py`: serves `app/`, `POST /count`, `GET /counts`, DuckDB, 127.0.0.1 only — _Req 7_

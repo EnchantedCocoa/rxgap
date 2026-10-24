@@ -89,3 +89,19 @@ def test_letter_counts_endpoint(page):
     rows = page.request.get(f'{base}/counts').json()
     assert any(r['district_type'] == 'council' and r['district_id'] == '7' and r['letters'] >= 1 for r in rows)
     assert set(rows[0]) == {'district_type', 'district_id', 'letters'}  # no names or addresses
+
+
+def test_town_picker_shows_state_results(page):
+    towns = json.loads((ROOT / 'data' / 'towns' / 'towns.json').read_text())
+    for slug in ['springfield', 'plymouth']:
+        page.select_option('#town', slug)
+        page.wait_for_timeout(1500)
+        page.screenshot(path=str(SHOTS / f'ui_{slug}.png'))
+        assert page.inner_text('[data-num="desert"]') == f"{towns[slug]['desert']:,}"
+        assert page.locator('path.bg').count() == towns[slug]['blocks']
+        assert page.is_hidden('#rank-list')
+    page.select_option('#town', 'boston')
+    page.wait_for_timeout(1200)
+    app = json.loads((ROOT / 'data' / 'app_data.json').read_text())
+    assert page.inner_text('[data-num="desert"]') == f"{app['headline']['state']['desert']:,}"
+    assert page.locator('path.bg').count() == 580

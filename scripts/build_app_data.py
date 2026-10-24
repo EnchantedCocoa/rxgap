@@ -16,6 +16,7 @@ PROV = {
     'officials': ('scripts/route.py:main', ['districts']),
     'block': ('scripts/analyze_bg.py:main', ['block_groups', 'acs']),
     'globe': ('Boston Globe, July 2024 (reported figure)', []),
+    'town': ('Massachusetts Health Policy Commission, DataPoints 31 public block-group dataset (scripts/build_towns.py)', ['hpc']),
     'low_access_share': ('scripts/build_app_data.py:main', ['block_groups', 'acs']),
 }
 

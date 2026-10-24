@@ -97,3 +97,8 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   URLs, mostly health-center and grocery pharmacies OSM was missing.
   Result: desert 173,050 -> 42,417; near-desert 89,889. Versus the HPC's own block
   data (June 2025): same status for 86% of residents. New test keeps it >= 80%.
+- 14:10 Town picker. Springfield (most at-risk large city: 29,506 desert + 23,007
+  near-desert) and Plymouth (most at-risk mostly-suburban town: 14,015 + 7,951) show the
+  HPC's own block-group results, with each block's area type (urban 1 mi / suburban
+  2 mi, halved for low-access). Closure simulation stays Boston-only until those towns
+  get a checked store list. UI test switches towns and checks the headline numbers.
