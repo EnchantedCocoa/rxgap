@@ -1,183 +1,354 @@
 {
  "1": {
-  "lost_pop": 20952,
-  "ring_mi": 1.0,
+  "lost_pop": 22970,
+  "ring_mi": 0.5,
   "top": [
    {
-    "name": "Greater Roslindale Medical & Dental Center",
+    "name": "South Boston Community Health Center \u2013 409 W Broadway",
     "kind": "health_center",
-    "address": "4199 Washington Street, Roslindale, MA, 02131",
-    "lat": 42.287148,
-    "lon": -71.127751,
-    "gain": 20952,
+    "address": "409 West Broadway, Boston, MA, 02127",
+    "lat": 42.336864,
+    "lon": -71.048218,
+    "gain": 22970,
     "restored": [
      {
-      "GEOID": "250251104033",
-      "pop": 731,
-      "share_before": 0.0,
-      "share_after": 99.9,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251106073",
-      "pop": 1586,
+      "GEOID": "250250610002",
+      "pop": 535,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251103012",
-      "pop": 1363,
+      "GEOID": "250250604002",
+      "pop": 1152,
       "share_before": 0.0,
-      "share_after": 99.7,
-      "limit_mi": 1.0
+      "share_after": 16.6,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251104011",
-      "pop": 1967,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251104031",
-      "pop": 945,
+      "GEOID": "250250607001",
+      "pop": 997,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251104034",
-      "pop": 1014,
+      "GEOID": "250250610001",
+      "pop": 1170,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251401061",
-      "pop": 1465,
+      "GEOID": "250250608003",
+      "pop": 1243,
       "share_before": 0.0,
-      "share_after": 51.6,
-      "limit_mi": 1.0
+      "share_after": 100.0,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251104035",
+      "GEOID": "250250608002",
+      "pop": 960,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605013",
+      "pop": 1162,
+      "share_before": 0.0,
+      "share_after": 91.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250606011",
+      "pop": 2006,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250610003",
+      "pop": 711,
+      "share_before": 0.0,
+      "share_after": 71.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605012",
       "pop": 936,
       "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
+      "share_after": 74.5,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251105021",
-      "pop": 1382,
+      "GEOID": "250250607002",
+      "pop": 692,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251105022",
-      "pop": 1861,
+      "GEOID": "250250604005",
+      "pop": 666,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251105023",
-      "pop": 757,
+      "GEOID": "250250612011",
+      "pop": 2013,
+      "share_before": 0.0,
+      "share_after": 23.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250603011",
+      "pop": 1491,
+      "share_before": 0.0,
+      "share_after": 15.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605015",
+      "pop": 909,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251404007",
-      "pop": 1163,
+      "GEOID": "250250604004",
+      "pop": 1224,
       "share_before": 0.0,
-      "share_after": 46.3,
-      "limit_mi": 1.0
+      "share_after": 96.9,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101041",
-      "pop": 820,
+      "GEOID": "250250603013",
+      "pop": 1308,
       "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
+      "share_after": 31.8,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251104012",
-      "pop": 1658,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251104032",
-      "pop": 811,
+      "GEOID": "250250604001",
+      "pop": 1139,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101061",
-      "pop": 662,
+      "GEOID": "250250608004",
+      "pop": 1923,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101062",
-      "pop": 694,
+      "GEOID": "250250608001",
+      "pop": 733,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251103011",
-      "pop": 1137,
-      "share_before": 0.0,
-      "share_after": 87.2,
       "limit_mi": 1.0
      }
     ]
    },
    {
-    "name": "Forest Hills (Orange)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.30078,
-    "lon": -71.114192,
-    "gain": 5506,
+    "name": "South Boston Community Health Center \u2013 386 W Broadway",
+    "kind": "health_center",
+    "address": "386 West Broadway, Boston, MA, 02127",
+    "lat": 42.337611,
+    "lon": -71.048519,
+    "gain": 20327,
     "restored": [
      {
-      "GEOID": "250251103012",
-      "pop": 1363,
+      "GEOID": "250250610002",
+      "pop": 535,
       "share_before": 0.0,
-      "share_after": 97.2,
-      "limit_mi": 1.0
+      "share_after": 96.1,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251104011",
-      "pop": 1967,
+      "GEOID": "250250607001",
+      "pop": 997,
       "share_before": 0.0,
-      "share_after": 78.2,
-      "limit_mi": 1.0
+      "share_after": 100.0,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101041",
-      "pop": 820,
+      "GEOID": "250250610001",
+      "pop": 1170,
       "share_before": 0.0,
-      "share_after": 93.7,
-      "limit_mi": 1.0
+      "share_after": 100.0,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101061",
-      "pop": 662,
+      "GEOID": "250250608003",
+      "pop": 1243,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608002",
+      "pop": 960,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605013",
+      "pop": 1162,
+      "share_before": 0.0,
+      "share_after": 88.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250606011",
+      "pop": 2006,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250610003",
+      "pop": 711,
+      "share_before": 0.0,
+      "share_after": 38.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605012",
+      "pop": 936,
+      "share_before": 0.0,
+      "share_after": 64.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250607002",
+      "pop": 692,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250604005",
+      "pop": 666,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250612011",
+      "pop": 2013,
+      "share_before": 0.0,
+      "share_after": 21.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250605015",
+      "pop": 909,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250604004",
+      "pop": 1224,
+      "share_before": 0.0,
+      "share_after": 68.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250603013",
+      "pop": 1308,
+      "share_before": 0.0,
+      "share_after": 23.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250604001",
+      "pop": 1139,
+      "share_before": 0.0,
+      "share_after": 98.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608004",
+      "pop": 1923,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608001",
+      "pop": 733,
       "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 1.0
+     }
+    ]
+   },
+   {
+    "name": "Andrew (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.330122,
+    "lon": -71.056978,
+    "gain": 8737,
+    "restored": [
+     {
+      "GEOID": "250250610002",
+      "pop": 535,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101062",
-      "pop": 694,
+      "GEOID": "250250610001",
+      "pop": 1170,
+      "share_before": 0.0,
+      "share_after": 77.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608002",
+      "pop": 960,
+      "share_before": 0.0,
+      "share_after": 83.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250610003",
+      "pop": 711,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250607002",
+      "pop": 692,
+      "share_before": 0.0,
+      "share_after": 18.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250612011",
+      "pop": 2013,
+      "share_before": 0.0,
+      "share_after": 97.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608004",
+      "pop": 1923,
+      "share_before": 0.0,
+      "share_after": 87.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250608001",
+      "pop": 733,
       "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 1.0
@@ -187,257 +358,29 @@
   ],
   "best_set": {
    "sites": [
-    "Greater Roslindale Medical & Dental Center",
-    "Forest Hills (Orange)"
+    "South Boston Community Health Center \u2013 409 W Broadway"
    ],
-   "gain": 20952,
+   "gain": 22970,
    "solver": "PuLP CBC"
   }
  },
  "2": {
-  "lost_pop": 20083,
+  "lost_pop": 21461,
   "ring_mi": 0.5,
   "top": [
    {
-    "name": "Whittier Street Health Center at Quincy Commons",
-    "kind": "health_center",
-    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
-    "lat": 42.314769,
-    "lon": -71.078458,
-    "gain": 10591,
+    "name": "Shawmut (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.293116,
+    "lon": -71.065829,
+    "gain": 11889,
     "restored": [
-     {
-      "GEOID": "250250820001",
-      "pop": 1498,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250820002",
-      "pop": 747,
-      "share_before": 0.0,
-      "share_after": 89.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903001",
-      "pop": 1033,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903002",
-      "pop": 1681,
-      "share_before": 0.0,
-      "share_after": 96.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903003",
-      "pop": 1081,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250904002",
-      "pop": 1462,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250819003",
-      "pop": 816,
-      "share_before": 8.2,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250820003",
-      "pop": 950,
-      "share_before": 0.0,
-      "share_after": 99.9,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250821001",
-      "pop": 1323,
-      "share_before": 0.0,
-      "share_after": 55.5,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Harvard Street Neighborhood Health Center",
-    "kind": "health_center",
-    "address": "632 Blue Hill Avenue, Boston, MA, 02121",
-    "lat": 42.30261,
-    "lon": -71.085068,
-    "gain": 8221,
-    "restored": [
-     {
-      "GEOID": "250250821002",
-      "pop": 1543,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901001",
-      "pop": 1610,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901002",
-      "pop": 645,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250901003",
-      "pop": 856,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250902001",
-      "pop": 712,
-      "share_before": 0.0,
-      "share_after": 53.3,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250902002",
-      "pop": 716,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250819003",
-      "pop": 816,
-      "share_before": 8.2,
-      "share_after": 92.1,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250821001",
-      "pop": 1323,
-      "share_before": 0.0,
-      "share_after": 56.1,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
-    "kind": "health_center",
-    "address": "415 Columbia Road, Boston, MA, 02125",
-    "lat": 42.311979,
-    "lon": -71.068585,
-    "gain": 7021,
-    "restored": [
-     {
-      "GEOID": "250250902001",
-      "pop": 712,
-      "share_before": 0.0,
-      "share_after": 25.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903001",
-      "pop": 1033,
-      "share_before": 0.0,
-      "share_after": 99.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903002",
-      "pop": 1681,
-      "share_before": 0.0,
-      "share_after": 47.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250903003",
-      "pop": 1081,
-      "share_before": 0.0,
-      "share_after": 64.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250904002",
-      "pop": 1462,
-      "share_before": 0.0,
-      "share_after": 62.5,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250918003",
-      "pop": 1052,
-      "share_before": 0.0,
-      "share_after": 62.9,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Whittier Street Health Center at Quincy Commons",
-    "Harvard Street Neighborhood Health Center",
-    "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd"
-   ],
-   "gain": 17725,
-   "solver": "PuLP CBC"
-  }
- },
- "3": {
-  "lost_pop": 16727,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Codman Square Health Center",
-    "kind": "health_center",
-    "address": "637 Washington Street, Boston, MA, 02124",
-    "lat": 42.289371,
-    "lon": -71.072014,
-    "gain": 10036,
-    "restored": [
-     {
-      "GEOID": "250251001007",
-      "pop": 827,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
      {
       "GEOID": "250250922002",
       "pop": 856,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922003",
-      "pop": 812,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922004",
-      "pop": 962,
-      "share_before": 0.0,
-      "share_after": 87.4,
       "limit_mi": 0.5
      },
      {
@@ -448,10 +391,132 @@
       "limit_mi": 0.5
      },
      {
+      "GEOID": "250250922004",
+      "pop": 962,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251005005",
+      "pop": 1429,
+      "share_before": 0.0,
+      "share_after": 42.7,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250251005003",
       "pop": 1418,
       "share_before": 0.0,
       "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250922003",
+      "pop": 812,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250923001",
+      "pop": 781,
+      "share_before": 0.0,
+      "share_after": 79.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250920002",
+      "pop": 1823,
+      "share_before": 0.0,
+      "share_after": 92.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250923003",
+      "pop": 1071,
+      "share_before": 0.0,
+      "share_after": 20.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250922001",
+      "pop": 972,
+      "share_before": 0.0,
+      "share_after": 95.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250920003",
+      "pop": 981,
+      "share_before": 0.0,
+      "share_after": 54.6,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Codman Square Health Center",
+    "kind": "health_center",
+    "address": "637 Washington Street, Boston, MA, 02124",
+    "lat": 42.289371,
+    "lon": -71.072014,
+    "gain": 11262,
+    "restored": [
+     {
+      "GEOID": "250250922002",
+      "pop": 856,
+      "share_before": 0.0,
+      "share_after": 36.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250923002",
+      "pop": 784,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251001007",
+      "pop": 827,
+      "share_before": 0.0,
+      "share_after": 64.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250922004",
+      "pop": 962,
+      "share_before": 0.0,
+      "share_after": 87.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251005005",
+      "pop": 1429,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251005003",
+      "pop": 1418,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250922003",
+      "pop": 812,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250923001",
+      "pop": 781,
+      "share_before": 0.0,
+      "share_after": 87.8,
       "limit_mi": 0.5
      },
      {
@@ -472,87 +537,7 @@
       "GEOID": "250250924001",
       "pop": 820,
       "share_before": 0.0,
-      "share_after": 37.4,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251001003",
-      "pop": 984,
-      "share_before": 0.0,
-      "share_after": 99.7,
-      "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "Shawmut (Red)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.293116,
-    "lon": -71.065829,
-    "gain": 8683,
-    "restored": [
-     {
-      "GEOID": "250251001007",
-      "pop": 827,
-      "share_before": 0.0,
-      "share_after": 93.1,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922001",
-      "pop": 972,
-      "share_before": 0.0,
-      "share_after": 94.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250922002",
-      "pop": 856,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922003",
-      "pop": 812,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922004",
-      "pop": 962,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250923002",
-      "pop": 784,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251005003",
-      "pop": 1418,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250923003",
-      "pop": 1071,
-      "share_before": 0.0,
-      "share_after": 20.3,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250920003",
-      "pop": 981,
-      "share_before": 0.0,
-      "share_after": 53.9,
+      "share_after": 37.9,
       "limit_mi": 0.5
      }
     ]
@@ -563,13 +548,41 @@
     "address": null,
     "lat": 42.30001,
     "lon": -71.061925,
-    "gain": 5605,
+    "gain": 7383,
     "restored": [
+     {
+      "GEOID": "250250922002",
+      "pop": 856,
+      "share_before": 0.0,
+      "share_after": 85.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250922004",
+      "pop": 962,
+      "share_before": 0.0,
+      "share_after": 37.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250917003",
+      "pop": 767,
+      "share_before": 0.0,
+      "share_after": 92.0,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250250920004",
       "pop": 1022,
       "share_before": 0.0,
-      "share_after": 80.7,
+      "share_after": 79.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250920002",
+      "pop": 1823,
+      "share_before": 0.0,
+      "share_after": 99.8,
       "limit_mi": 0.5
      },
      {
@@ -577,27 +590,6 @@
       "pop": 972,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250922002",
-      "pop": 856,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922003",
-      "pop": 812,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250250922004",
-      "pop": 962,
-      "share_before": 0.0,
-      "share_after": 36.6,
       "limit_mi": 0.5
      },
      {
@@ -616,12 +608,364 @@
     "Fields Corner (Red)",
     "Harvard Street Neighborhood Health Center"
    ],
-   "gain": 16727,
+   "gain": 21461,
+   "solver": "PuLP CBC"
+  }
+ },
+ "3": {
+  "lost_pop": 20251,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Whittier Street Health Center at Quincy Commons",
+    "kind": "health_center",
+    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
+    "lat": 42.314769,
+    "lon": -71.078458,
+    "gain": 10759,
+    "restored": [
+     {
+      "GEOID": "250250903001",
+      "pop": 1033,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902003",
+      "pop": 984,
+      "share_before": 0.0,
+      "share_after": 75.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250821001",
+      "pop": 1323,
+      "share_before": 0.0,
+      "share_after": 55.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250820003",
+      "pop": 950,
+      "share_before": 0.0,
+      "share_after": 99.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903003",
+      "pop": 1081,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903002",
+      "pop": 1681,
+      "share_before": 0.0,
+      "share_after": 96.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250904002",
+      "pop": 1462,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250820002",
+      "pop": 747,
+      "share_before": 0.0,
+      "share_after": 88.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250820001",
+      "pop": 1498,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Harvard Street Neighborhood Health Center",
+    "kind": "health_center",
+    "address": "632 Blue Hill Avenue, Boston, MA, 02121",
+    "lat": 42.30261,
+    "lon": -71.085068,
+    "gain": 8389,
+    "restored": [
+     {
+      "GEOID": "250250902003",
+      "pop": 984,
+      "share_before": 0.0,
+      "share_after": 52.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902001",
+      "pop": 712,
+      "share_before": 0.0,
+      "share_after": 51.7,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250821001",
+      "pop": 1323,
+      "share_before": 0.0,
+      "share_after": 55.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901003",
+      "pop": 856,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902002",
+      "pop": 716,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901001",
+      "pop": 1610,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250901002",
+      "pop": 645,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250821002",
+      "pop": 1543,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
+    "kind": "health_center",
+    "address": "415 Columbia Road, Boston, MA, 02125",
+    "lat": 42.311979,
+    "lon": -71.068585,
+    "gain": 7021,
+    "restored": [
+     {
+      "GEOID": "250250903001",
+      "pop": 1033,
+      "share_before": 0.0,
+      "share_after": 99.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250902001",
+      "pop": 712,
+      "share_before": 0.0,
+      "share_after": 25.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903003",
+      "pop": 1081,
+      "share_before": 0.0,
+      "share_after": 61.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250903002",
+      "pop": 1681,
+      "share_before": 0.0,
+      "share_after": 50.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250918003",
+      "pop": 1052,
+      "share_before": 0.0,
+      "share_after": 61.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250904002",
+      "pop": 1462,
+      "share_before": 0.0,
+      "share_after": 62.9,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Whittier Street Health Center at Quincy Commons",
+    "Harvard Street Neighborhood Health Center",
+    "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd"
+   ],
+   "gain": 17893,
    "solver": "PuLP CBC"
   }
  },
  "4": {
-  "lost_pop": 15871,
+  "lost_pop": 16757,
+  "ring_mi": 1.0,
+  "top": [
+   {
+    "name": "Greater Roslindale Medical & Dental Center",
+    "kind": "health_center",
+    "address": "4199 Washington Street, Roslindale, MA, 02131",
+    "lat": 42.287148,
+    "lon": -71.127751,
+    "gain": 16750,
+    "restored": [
+     {
+      "GEOID": "250251104012",
+      "pop": 1658,
+      "share_before": 0.0,
+      "share_after": 90.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251105023",
+      "pop": 757,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251104011",
+      "pop": 1967,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251105021",
+      "pop": 1382,
+      "share_before": 0.0,
+      "share_after": 99.7,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251106071",
+      "pop": 1017,
+      "share_before": 0.0,
+      "share_after": 48.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251104033",
+      "pop": 731,
+      "share_before": 0.0,
+      "share_after": 99.8,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251105022",
+      "pop": 1861,
+      "share_before": 0.0,
+      "share_after": 64.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251103011",
+      "pop": 1137,
+      "share_before": 0.0,
+      "share_after": 88.3,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251101041",
+      "pop": 820,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251106074",
+      "pop": 1073,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251104034",
+      "pop": 1014,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251104032",
+      "pop": 811,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251106073",
+      "pop": 1586,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251104035",
+      "pop": 936,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     }
+    ]
+   },
+   {
+    "name": "Forest Hills (Orange)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.30078,
+    "lon": -71.114192,
+    "gain": 1893,
+    "restored": [
+     {
+      "GEOID": "250251101041",
+      "pop": 820,
+      "share_before": 0.0,
+      "share_after": 93.5,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251106074",
+      "pop": 1073,
+      "share_before": 0.0,
+      "share_after": 29.8,
+      "limit_mi": 1.0
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Greater Roslindale Medical & Dental Center",
+    "Forest Hills (Orange)"
+   ],
+   "gain": 16750,
+   "solver": "PuLP CBC"
+  }
+ },
+ "5": {
+  "lost_pop": 12701,
   "ring_mi": 1.0,
   "top": [],
   "best_set": {
@@ -629,8 +973,8 @@
    "gain": 0
   }
  },
- "5": {
-  "lost_pop": 10802,
+ "6": {
+  "lost_pop": 11598,
   "ring_mi": 0.5,
   "top": [
    {
@@ -642,17 +986,24 @@
     "gain": 10136,
     "restored": [
      {
-      "GEOID": "250250912003",
-      "pop": 720,
+      "GEOID": "250250918001",
+      "pop": 1570,
       "share_before": 0.0,
-      "share_after": 91.6,
+      "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
       "GEOID": "250250910011",
       "pop": 645,
-      "share_before": 0.3,
-      "share_after": 31.0,
+      "share_before": 0.2,
+      "share_after": 35.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250912003",
+      "pop": 720,
+      "share_before": 0.0,
+      "share_after": 91.4,
       "limit_mi": 0.5
      },
      {
@@ -663,10 +1014,17 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250915002",
-      "pop": 1740,
+      "GEOID": "250250916002",
+      "pop": 1250,
       "share_before": 0.0,
-      "share_after": 100.0,
+      "share_after": 32.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250912002",
+      "pop": 1363,
+      "share_before": 4.1,
+      "share_after": 92.2,
       "limit_mi": 0.5
      },
      {
@@ -677,24 +1035,10 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250916002",
-      "pop": 1250,
+      "GEOID": "250250915002",
+      "pop": 1740,
       "share_before": 0.0,
-      "share_after": 34.3,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250918001",
-      "pop": 1570,
-      "share_before": 0.1,
       "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250912002",
-      "pop": 1363,
-      "share_before": 2.6,
-      "share_after": 94.9,
       "limit_mi": 0.5
      }
     ]
@@ -705,41 +1049,20 @@
     "address": "1353 Dorchester Avenue, Boston, MA, 02122",
     "lat": 42.304437,
     "lon": -71.05945,
-    "gain": 8719,
+    "gain": 9515,
     "restored": [
+     {
+      "GEOID": "250250918001",
+      "pop": 1570,
+      "share_before": 0.0,
+      "share_after": 32.2,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250250910011",
       "pop": 645,
-      "share_before": 0.3,
-      "share_after": 80.9,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250915001",
-      "pop": 1926,
-      "share_before": 0.0,
-      "share_after": 20.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250915002",
-      "pop": 1740,
-      "share_before": 0.0,
-      "share_after": 21.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250915003",
-      "pop": 922,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250916002",
-      "pop": 1250,
-      "share_before": 0.0,
-      "share_after": 100.0,
+      "share_before": 0.2,
+      "share_after": 81.2,
       "limit_mi": 0.5
      },
      {
@@ -750,10 +1073,38 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250918001",
-      "pop": 1570,
-      "share_before": 0.1,
-      "share_after": 31.8,
+      "GEOID": "250250910012",
+      "pop": 796,
+      "share_before": 5.4,
+      "share_after": 88.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250915001",
+      "pop": 1926,
+      "share_before": 0.0,
+      "share_after": 17.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250916002",
+      "pop": 1250,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250915003",
+      "pop": 922,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250915002",
+      "pop": 1740,
+      "share_before": 0.0,
+      "share_after": 25.3,
       "limit_mi": 0.5
      }
     ]
@@ -767,31 +1118,31 @@
     "gain": 8719,
     "restored": [
      {
+      "GEOID": "250250918001",
+      "pop": 1570,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250250910011",
       "pop": 645,
-      "share_before": 0.3,
-      "share_after": 36.7,
+      "share_before": 0.2,
+      "share_after": 34.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250916003",
+      "pop": 666,
+      "share_before": 0.0,
+      "share_after": 70.4,
       "limit_mi": 0.5
      },
      {
       "GEOID": "250250915001",
       "pop": 1926,
       "share_before": 0.0,
-      "share_after": 19.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250915002",
-      "pop": 1740,
-      "share_before": 0.0,
-      "share_after": 97.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250915003",
-      "pop": 922,
-      "share_before": 0.0,
-      "share_after": 100.0,
+      "share_after": 18.2,
       "limit_mi": 0.5
      },
      {
@@ -802,17 +1153,17 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250916003",
-      "pop": 666,
+      "GEOID": "250250915003",
+      "pop": 922,
       "share_before": 0.0,
-      "share_after": 67.7,
+      "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250918001",
-      "pop": 1570,
-      "share_before": 0.1,
-      "share_after": 100.0,
+      "GEOID": "250250915002",
+      "pop": 1740,
+      "share_before": 0.0,
+      "share_after": 97.3,
       "limit_mi": 0.5
      }
     ]
@@ -823,11 +1174,194 @@
     "Upham\u2019s Corner Health Center \u2013 415 Columbia Rd",
     "DotHouse Health"
    ],
-   "gain": 10802,
+   "gain": 11598,
    "solver": "PuLP CBC"
   }
  },
- "6": {
+ "7": {
+  "lost_pop": 9432,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "MGH Charlestown HealthCare Center",
+    "kind": "health_center",
+    "address": "73 High Street, Charlestown, MA, 02129",
+    "lat": 42.377166,
+    "lon": -71.064251,
+    "gain": 9432,
+    "restored": [
+     {
+      "GEOID": "250250408011",
+      "pop": 1190,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250404011",
+      "pop": 1957,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403005",
+      "pop": 827,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250406001",
+      "pop": 1760,
+      "share_before": 10.8,
+      "share_after": 33.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403003",
+      "pop": 739,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403004",
+      "pop": 699,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403002",
+      "pop": 1486,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403001",
+      "pop": 774,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "NEW Health \u2013 Charlestown",
+    "kind": "health_center",
+    "address": "15 Tufts Street, Boston, MA, 02129",
+    "lat": 42.377877,
+    "lon": -71.056808,
+    "gain": 7475,
+    "restored": [
+     {
+      "GEOID": "250250408011",
+      "pop": 1190,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403005",
+      "pop": 827,
+      "share_before": 0.0,
+      "share_after": 41.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250406001",
+      "pop": 1760,
+      "share_before": 10.8,
+      "share_after": 17.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403003",
+      "pop": 739,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403004",
+      "pop": 699,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403002",
+      "pop": 1486,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403001",
+      "pop": 774,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Community College (Orange)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.373917,
+    "lon": -71.070339,
+    "gain": 6769,
+    "restored": [
+     {
+      "GEOID": "250250404011",
+      "pop": 1957,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403005",
+      "pop": 827,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250406001",
+      "pop": 1760,
+      "share_before": 10.8,
+      "share_after": 24.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403003",
+      "pop": 739,
+      "share_before": 0.0,
+      "share_after": 53.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250403002",
+      "pop": 1486,
+      "share_before": 0.0,
+      "share_after": 65.8,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "MGH Charlestown HealthCare Center"
+   ],
+   "gain": 9432,
+   "solver": "PuLP CBC"
+  }
+ },
+ "8": {
   "lost_pop": 9237,
   "ring_mi": 0.5,
   "top": [
@@ -840,10 +1374,17 @@
     "gain": 9237,
     "restored": [
      {
+      "GEOID": "250250909012",
+      "pop": 2197,
+      "share_before": 0.0,
+      "share_after": 20.5,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250250909011",
       "pop": 1403,
       "share_before": 0.0,
-      "share_after": 79.0,
+      "share_after": 89.2,
       "limit_mi": 0.5
      },
      {
@@ -861,24 +1402,17 @@
       "limit_mi": 0.5
      },
      {
+      "GEOID": "250250611012",
+      "pop": 2028,
+      "share_before": 0.0,
+      "share_after": 98.3,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250250907002",
       "pop": 1260,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250909012",
-      "pop": 2197,
-      "share_before": 0.0,
-      "share_after": 17.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250611012",
-      "pop": 2028,
-      "share_before": 0.0,
-      "share_after": 98.0,
       "limit_mi": 0.5
      }
     ]
@@ -892,6 +1426,13 @@
     "gain": 6799,
     "restored": [
      {
+      "GEOID": "250250909012",
+      "pop": 2197,
+      "share_before": 0.0,
+      "share_after": 60.6,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250250909011",
       "pop": 1403,
       "share_before": 0.0,
@@ -902,21 +1443,14 @@
       "GEOID": "250250907001",
       "pop": 1171,
       "share_before": 0.0,
-      "share_after": 53.5,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250909012",
-      "pop": 2197,
-      "share_before": 0.0,
-      "share_after": 55.0,
+      "share_after": 54.5,
       "limit_mi": 0.5
      },
      {
       "GEOID": "250250611012",
       "pop": 2028,
       "share_before": 0.0,
-      "share_after": 17.8,
+      "share_after": 18.2,
       "limit_mi": 0.5
      }
     ]
@@ -933,21 +1467,21 @@
       "GEOID": "250250907001",
       "pop": 1171,
       "share_before": 0.0,
-      "share_after": 27.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250907002",
-      "pop": 1260,
-      "share_before": 0.0,
-      "share_after": 55.2,
+      "share_after": 24.7,
       "limit_mi": 0.5
      },
      {
       "GEOID": "250250611012",
       "pop": 2028,
       "share_before": 0.0,
-      "share_after": 91.3,
+      "share_after": 91.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250907002",
+      "pop": 1260,
+      "share_before": 0.0,
+      "share_after": 55.4,
       "limit_mi": 0.5
      }
     ]
@@ -961,244 +1495,9 @@
    "solver": "PuLP CBC"
   }
  },
- "7": {
-  "lost_pop": 6920,
-  "ring_mi": 1.0,
-  "top": [],
-  "best_set": {
-   "sites": [],
-   "gain": 0
-  }
- },
- "8": {
-  "lost_pop": 6612,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Massachusetts Ave (Orange, Silver)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.337971,
-    "lon": -71.079421,
-    "gain": 6612,
-    "restored": [
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 11.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 44.9,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Prudential (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.345777,
-    "lon": -71.0812,
-    "gain": 6612,
-    "restored": [
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 11.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 20.8,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Symphony (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.342729,
-    "lon": -71.084941,
-    "gain": 6612,
-    "restored": [
-     {
-      "GEOID": "250250708011",
-      "pop": 1056,
-      "share_before": 11.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250708021",
-      "pop": 1552,
-      "share_before": 5.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250104051",
-      "pop": 4004,
-      "share_before": 7.1,
-      "share_after": 79.6,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Northeastern (Green)"
-   ],
-   "gain": 6612,
-   "solver": "PuLP CBC"
-  }
- },
  "9": {
-  "lost_pop": 6108,
+  "lost_pop": 8191,
   "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Fenwood Road (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.333754,
-    "lon": -71.105646,
-    "gain": 6108,
-    "restored": [
-     {
-      "GEOID": "250250809002",
-      "pop": 1780,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250811011",
-      "pop": 372,
-      "share_before": 0.2,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250808011",
-      "pop": 2384,
-      "share_before": 10.5,
-      "share_after": 21.5,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250811021",
-      "pop": 1572,
-      "share_before": 0.0,
-      "share_after": 83.8,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Brigham Circle (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.33458,
-    "lon": -71.103725,
-    "gain": 6108,
-    "restored": [
-     {
-      "GEOID": "250250809002",
-      "pop": 1780,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250811011",
-      "pop": 372,
-      "share_before": 0.2,
-      "share_after": 37.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250808011",
-      "pop": 2384,
-      "share_before": 10.5,
-      "share_after": 60.7,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250811021",
-      "pop": 1572,
-      "share_before": 0.0,
-      "share_after": 68.1,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Roxbury Crossing (Orange)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.331218,
-    "lon": -71.095729,
-    "gain": 5736,
-    "restored": [
-     {
-      "GEOID": "250250809002",
-      "pop": 1780,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250808011",
-      "pop": 2384,
-      "share_before": 10.5,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250811021",
-      "pop": 1572,
-      "share_before": 0.0,
-      "share_after": 52.9,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Fenwood Road (Green)"
-   ],
-   "gain": 6108,
-   "solver": "PuLP CBC"
-  }
- },
- "10": {
-  "lost_pop": 5888,
-  "ring_mi": 1.0,
   "top": [
    {
     "name": "Harbor Health Services Inc",
@@ -1206,12 +1505,26 @@
     "address": "1135 Morton Street, Mattapan, MA, 02126",
     "lat": 42.275781,
     "lon": -71.074889,
-    "gain": 5888,
+    "gain": 7158,
     "restored": [
      {
       "GEOID": "250251009001",
       "pop": 730,
-      "share_before": 1.9,
+      "share_before": 0.0,
+      "share_after": 98.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251009004",
+      "pop": 1829,
+      "share_before": 0.0,
+      "share_after": 71.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251009003",
+      "pop": 1011,
+      "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 1.0
      },
@@ -1219,22 +1532,8 @@
       "GEOID": "250251008005",
       "pop": 907,
       "share_before": 0.0,
-      "share_after": 25.0,
+      "share_after": 24.8,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251004003",
-      "pop": 833,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251009004",
-      "pop": 1829,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
      },
      {
       "GEOID": "250251009002",
@@ -1244,11 +1543,18 @@
       "limit_mi": 1.0
      },
      {
-      "GEOID": "250251009003",
-      "pop": 1011,
+      "GEOID": "250251004003",
+      "pop": 833,
       "share_before": 0.0,
       "share_after": 100.0,
-      "limit_mi": 1.0
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251004002",
+      "pop": 1270,
+      "share_before": 0.0,
+      "share_after": 40.9,
+      "limit_mi": 0.5
      }
     ]
    },
@@ -1258,42 +1564,14 @@
     "address": null,
     "lat": 42.283892,
     "lon": -71.063431,
-    "gain": 5888,
+    "gain": 6362,
     "restored": [
      {
       "GEOID": "250251009001",
       "pop": 730,
-      "share_before": 1.9,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251008005",
-      "pop": 907,
       "share_before": 0.0,
-      "share_after": 52.6,
+      "share_after": 31.6,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251004003",
-      "pop": 833,
-      "share_before": 0.0,
-      "share_after": 18.6,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251009004",
-      "pop": 1829,
-      "share_before": 0.0,
-      "share_after": 31.2,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251009002",
-      "pop": 578,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 1.0
      },
      {
       "GEOID": "250251009003",
@@ -1301,37 +1579,13 @@
       "share_before": 0.0,
       "share_after": 99.9,
       "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "Cedar Grove (Red)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.279548,
-    "lon": -71.060318,
-    "gain": 5055,
-    "restored": [
-     {
-      "GEOID": "250251009001",
-      "pop": 730,
-      "share_before": 1.9,
-      "share_after": 100.0,
-      "limit_mi": 1.0
      },
      {
       "GEOID": "250251008005",
       "pop": 907,
       "share_before": 0.0,
-      "share_after": 90.9,
+      "share_after": 53.6,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251009004",
-      "pop": 1829,
-      "share_before": 0.0,
-      "share_after": 47.7,
-      "limit_mi": 1.0
      },
      {
       "GEOID": "250251009002",
@@ -1341,26 +1595,93 @@
       "limit_mi": 1.0
      },
      {
+      "GEOID": "250251004003",
+      "pop": 833,
+      "share_before": 0.0,
+      "share_after": 18.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251004002",
+      "pop": 1270,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251008004",
+      "pop": 1033,
+      "share_before": 3.3,
+      "share_after": 15.9,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Milton (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.270336,
+    "lon": -71.067242,
+    "gain": 6088,
+    "restored": [
+     {
+      "GEOID": "250251009001",
+      "pop": 730,
+      "share_before": 0.0,
+      "share_after": 45.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251009004",
+      "pop": 1829,
+      "share_before": 0.0,
+      "share_after": 44.6,
+      "limit_mi": 0.5
+     },
+     {
       "GEOID": "250251009003",
       "pop": 1011,
       "share_before": 0.0,
-      "share_after": 99.8,
+      "share_after": 100.0,
       "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251008005",
+      "pop": 907,
+      "share_before": 0.0,
+      "share_after": 49.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251009002",
+      "pop": 578,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251008004",
+      "pop": 1033,
+      "share_before": 3.3,
+      "share_after": 51.7,
+      "limit_mi": 0.5
      }
     ]
    }
   ],
   "best_set": {
    "sites": [
-    "Harbor Health Services Inc"
+    "Ashmont (Red)",
+    "Capen Street (Red)"
    ],
-   "gain": 5888,
+   "gain": 8191,
    "solver": "PuLP CBC"
   }
  },
- "11": {
-  "lost_pop": 5193,
-  "ring_mi": 1.0,
+ "10": {
+  "lost_pop": 7824,
+  "ring_mi": 0.5,
   "top": [
    {
     "name": "Southern Jamaica Plain Health Center",
@@ -1368,8 +1689,43 @@
     "address": "640 Centre Street, Jamaica Plain, MA, 02130",
     "lat": 42.313266,
     "lon": -71.113346,
-    "gain": 5193,
+    "gain": 7824,
     "restored": [
+     {
+      "GEOID": "250251202011",
+      "pop": 1287,
+      "share_before": 0.0,
+      "share_after": 21.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251201041",
+      "pop": 908,
+      "share_before": 0.0,
+      "share_after": 83.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
+      "share_after": 99.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251201051",
+      "pop": 766,
+      "share_before": 3.6,
+      "share_after": 27.4,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250251202012",
       "pop": 1872,
@@ -1378,49 +1734,11 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101051",
-      "pop": 2120,
-      "share_before": 2.3,
-      "share_after": 51.5,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251202013",
-      "pop": 1201,
-      "share_before": 7.8,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "Brookside Community Health Center",
-    "kind": "health_center",
-    "address": "3297 Washington Street, Jamaica Plain, MA, 02130",
-    "lat": 42.310818,
-    "lon": -71.103662,
-    "gain": 5193,
-    "restored": [
-     {
-      "GEOID": "250251202012",
-      "pop": 1872,
-      "share_before": 0.0,
-      "share_after": 97.5,
+      "GEOID": "250251203014",
+      "pop": 1365,
+      "share_before": 12.7,
+      "share_after": 56.0,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251101051",
-      "pop": 2120,
-      "share_before": 2.3,
-      "share_after": 71.6,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251202013",
-      "pop": 1201,
-      "share_before": 7.8,
-      "share_after": 100.0,
-      "limit_mi": 1.0
      }
     ]
    },
@@ -1430,8 +1748,36 @@
     "address": null,
     "lat": 42.309907,
     "lon": -71.10806,
-    "gain": 5193,
+    "gain": 7058,
     "restored": [
+     {
+      "GEOID": "250251202011",
+      "pop": 1287,
+      "share_before": 0.0,
+      "share_after": 73.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251201041",
+      "pop": 908,
+      "share_before": 0.0,
+      "share_after": 41.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250251202012",
       "pop": 1872,
@@ -1440,123 +1786,48 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250251101051",
-      "pop": 2120,
-      "share_before": 2.3,
-      "share_after": 94.7,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251202013",
-      "pop": 1201,
-      "share_before": 7.8,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Green Street (Orange)"
-   ],
-   "gain": 5193,
-   "solver": "PuLP CBC"
-  }
- },
- "12": {
-  "lost_pop": 4501,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "NeighborHealth \u2013 South End",
-    "kind": "health_center",
-    "address": "1601 Washington Street, Boston, MA, 02118",
-    "lat": 42.338295,
-    "lon": -71.074921,
-    "gain": 4501,
-    "restored": [
-     {
-      "GEOID": "250250709011",
-      "pop": 1165,
-      "share_before": 4.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250709021",
-      "pop": 1211,
-      "share_before": 0.4,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250801001",
-      "pop": 2125,
-      "share_before": 12.5,
-      "share_after": 27.0,
+      "GEOID": "250251203014",
+      "pop": 1365,
+      "share_before": 12.7,
+      "share_after": 99.5,
       "limit_mi": 0.5
      }
     ]
    },
    {
-    "name": "Boston Health Care for the Homeless Program",
+    "name": "Brookside Community Health Center",
     "kind": "health_center",
-    "address": "Jean Yawkey Place, Boston, MA, 02118",
-    "lat": 42.333568,
-    "lon": -71.072704,
-    "gain": 4501,
+    "address": "3297 Washington Street, Jamaica Plain, MA, 02130",
+    "lat": 42.310818,
+    "lon": -71.103662,
+    "gain": 4863,
     "restored": [
      {
-      "GEOID": "250250709011",
-      "pop": 1165,
-      "share_before": 4.0,
-      "share_after": 71.3,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250709021",
-      "pop": 1211,
-      "share_before": 0.4,
-      "share_after": 78.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250801001",
-      "pop": 2125,
-      "share_before": 12.5,
-      "share_after": 81.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Lenox St (Silver)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.335057,
-    "lon": -71.078802,
-    "gain": 4501,
-    "restored": [
-     {
-      "GEOID": "250250709011",
-      "pop": 1165,
-      "share_before": 4.0,
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250709021",
-      "pop": 1211,
-      "share_before": 0.4,
-      "share_after": 100.0,
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 39.9,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250801001",
-      "pop": 2125,
-      "share_before": 12.5,
-      "share_after": 26.3,
+      "GEOID": "250251202012",
+      "pop": 1872,
+      "share_before": 0.0,
+      "share_after": 97.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251203014",
+      "pop": 1365,
+      "share_before": 12.7,
+      "share_after": 100.0,
       "limit_mi": 0.5
      }
     ]
@@ -1564,113 +1835,14 @@
   ],
   "best_set": {
    "sites": [
-    "Melnea Cass Blvd (Silver)"
+    "Southern Jamaica Plain Health Center"
    ],
-   "gain": 4501,
+   "gain": 7824,
    "solver": "PuLP CBC"
   }
  },
- "13": {
-  "lost_pop": 3434,
-  "ring_mi": 1.0,
-  "top": [
-   {
-    "name": "Ashmont (Red)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.283892,
-    "lon": -71.063431,
-    "gain": 3434,
-    "restored": [
-     {
-      "GEOID": "250251008003",
-      "pop": 924,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251006031",
-      "pop": 1483,
-      "share_before": 0.0,
-      "share_after": 53.4,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251006011",
-      "pop": 1027,
-      "share_before": 11.2,
-      "share_after": 100.0,
-      "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "Cedar Grove (Red)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.279548,
-    "lon": -71.060318,
-    "gain": 3434,
-    "restored": [
-     {
-      "GEOID": "250251008003",
-      "pop": 924,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251006031",
-      "pop": 1483,
-      "share_before": 0.0,
-      "share_after": 40.6,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251006011",
-      "pop": 1027,
-      "share_before": 11.2,
-      "share_after": 78.7,
-      "limit_mi": 1.0
-     }
-    ]
-   },
-   {
-    "name": "DotHouse Health",
-    "kind": "health_center",
-    "address": "1353 Dorchester Avenue, Boston, MA, 02122",
-    "lat": 42.304437,
-    "lon": -71.05945,
-    "gain": 2510,
-    "restored": [
-     {
-      "GEOID": "250251006031",
-      "pop": 1483,
-      "share_before": 0.0,
-      "share_after": 17.4,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251006011",
-      "pop": 1027,
-      "share_before": 11.2,
-      "share_after": 59.4,
-      "limit_mi": 1.0
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Ashmont (Red)"
-   ],
-   "gain": 3434,
-   "solver": "PuLP CBC"
-  }
- },
- "14": {
-  "lost_pop": 3350,
+ "11": {
+  "lost_pop": 7788,
   "ring_mi": 0.5,
   "top": [
    {
@@ -1679,8 +1851,29 @@
     "address": null,
     "lat": 42.317255,
     "lon": -71.104358,
-    "gain": 3350,
+    "gain": 7788,
     "restored": [
+     {
+      "GEOID": "250251207001",
+      "pop": 1000,
+      "share_before": 12.8,
+      "share_after": 26.4,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251206001",
+      "pop": 910,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250812001",
+      "pop": 1393,
+      "share_before": 0.0,
+      "share_after": 60.5,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250251205003",
       "pop": 742,
@@ -1696,10 +1889,17 @@
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250251207001",
-      "pop": 1000,
-      "share_before": 12.3,
-      "share_after": 25.2,
+      "GEOID": "250251205001",
+      "pop": 923,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251203011",
+      "pop": 1212,
+      "share_before": 0.0,
+      "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
@@ -1717,8 +1917,29 @@
     "address": null,
     "lat": 42.32318,
     "lon": -71.099933,
-    "gain": 3350,
+    "gain": 7788,
     "restored": [
+     {
+      "GEOID": "250251207001",
+      "pop": 1000,
+      "share_before": 12.8,
+      "share_after": 43.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251206001",
+      "pop": 910,
+      "share_before": 0.0,
+      "share_after": 80.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250812001",
+      "pop": 1393,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250251205003",
       "pop": 742,
@@ -1730,14 +1951,21 @@
       "GEOID": "250251206002",
       "pop": 850,
       "share_before": 0.0,
-      "share_after": 19.6,
+      "share_after": 18.6,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250251207001",
-      "pop": 1000,
-      "share_before": 12.3,
-      "share_after": 41.4,
+      "GEOID": "250251205001",
+      "pop": 923,
+      "share_before": 0.0,
+      "share_after": 96.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251203011",
+      "pop": 1212,
+      "share_before": 0.0,
+      "share_after": 63.7,
       "limit_mi": 0.5
      },
      {
@@ -1755,8 +1983,22 @@
     "address": "55 Dimock Street, Boston, MA, 02119",
     "lat": 42.319791,
     "lon": -71.097655,
-    "gain": 2350,
+    "gain": 6788,
     "restored": [
+     {
+      "GEOID": "250251206001",
+      "pop": 910,
+      "share_before": 0.0,
+      "share_after": 36.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250812001",
+      "pop": 1393,
+      "share_before": 0.0,
+      "share_after": 29.5,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250251205003",
       "pop": 742,
@@ -1768,14 +2010,28 @@
       "GEOID": "250251206002",
       "pop": 850,
       "share_before": 0.0,
-      "share_after": 17.4,
+      "share_after": 17.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251205001",
+      "pop": 923,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251203011",
+      "pop": 1212,
+      "share_before": 0.0,
+      "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
       "GEOID": "250251205002",
       "pop": 758,
       "share_before": 0.0,
-      "share_after": 87.4,
+      "share_after": 86.6,
       "limit_mi": 0.5
      }
     ]
@@ -1785,116 +2041,540 @@
    "sites": [
     "Stony Brook (Orange)"
    ],
-   "gain": 3350,
+   "gain": 7788,
+   "solver": "PuLP CBC"
+  }
+ },
+ "12": {
+  "lost_pop": 7714,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Fenwood Road (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.333754,
+    "lon": -71.105646,
+    "gain": 7714,
+    "restored": [
+     {
+      "GEOID": "250250811011",
+      "pop": 372,
+      "share_before": 0.2,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250809002",
+      "pop": 1780,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250808011",
+      "pop": 2384,
+      "share_before": 10.4,
+      "share_after": 21.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250810011",
+      "pop": 1062,
+      "share_before": 4.6,
+      "share_after": 99.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250811021",
+      "pop": 1572,
+      "share_before": 0.0,
+      "share_after": 84.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250814004",
+      "pop": 544,
+      "share_before": 0.0,
+      "share_after": 30.5,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Brigham Circle (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.33458,
+    "lon": -71.103725,
+    "gain": 7714,
+    "restored": [
+     {
+      "GEOID": "250250811011",
+      "pop": 372,
+      "share_before": 0.2,
+      "share_after": 37.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250809002",
+      "pop": 1780,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250808011",
+      "pop": 2384,
+      "share_before": 10.4,
+      "share_after": 61.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250810011",
+      "pop": 1062,
+      "share_before": 4.6,
+      "share_after": 99.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250811021",
+      "pop": 1572,
+      "share_before": 0.0,
+      "share_after": 68.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250814004",
+      "pop": 544,
+      "share_before": 0.0,
+      "share_after": 55.8,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Roxbury Crossing (Orange)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.331218,
+    "lon": -71.095729,
+    "gain": 7342,
+    "restored": [
+     {
+      "GEOID": "250250809002",
+      "pop": 1780,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250808011",
+      "pop": 2384,
+      "share_before": 10.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250810011",
+      "pop": 1062,
+      "share_before": 4.6,
+      "share_after": 70.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250811021",
+      "pop": 1572,
+      "share_before": 0.0,
+      "share_after": 52.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250814004",
+      "pop": 544,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Fenwood Road (Green)"
+   ],
+   "gain": 7714,
+   "solver": "PuLP CBC"
+  }
+ },
+ "13": {
+  "lost_pop": 6612,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Massachusetts Ave (Orange, Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.337971,
+    "lon": -71.079421,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.8,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 6.9,
+      "share_after": 44.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.6,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Prudential (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.345777,
+    "lon": -71.0812,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.8,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 6.9,
+      "share_after": 20.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.6,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Symphony (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.342729,
+    "lon": -71.084941,
+    "gain": 6612,
+    "restored": [
+     {
+      "GEOID": "250250708011",
+      "pop": 1056,
+      "share_before": 11.8,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250104051",
+      "pop": 4004,
+      "share_before": 6.9,
+      "share_after": 79.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250708021",
+      "pop": 1552,
+      "share_before": 5.6,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Northeastern (Green)"
+   ],
+   "gain": 6612,
+   "solver": "PuLP CBC"
+  }
+ },
+ "14": {
+  "lost_pop": 6244,
+  "ring_mi": 1.0,
+  "top": [
+   {
+    "name": "Harbor Health: Daniel Driscoll \u2013 Neponset Health Center",
+    "kind": "health_center",
+    "address": "398 Neponset Avenue, Boston, MA, 02122",
+    "lat": 42.286716,
+    "lon": -71.044091,
+    "gain": 5320,
+    "restored": [
+     {
+      "GEOID": "250251006031",
+      "pop": 1483,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251006011",
+      "pop": 1027,
+      "share_before": 11.4,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251007003",
+      "pop": 724,
+      "share_before": 5.8,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251007002",
+      "pop": 1008,
+      "share_before": 0.0,
+      "share_after": 56.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251007001",
+      "pop": 1078,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     }
+    ]
+   },
+   {
+    "name": "Ashmont (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.283892,
+    "lon": -71.063431,
+    "gain": 5236,
+    "restored": [
+     {
+      "GEOID": "250251006031",
+      "pop": 1483,
+      "share_before": 0.0,
+      "share_after": 52.4,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251006011",
+      "pop": 1027,
+      "share_before": 11.4,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251007003",
+      "pop": 724,
+      "share_before": 5.8,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251008003",
+      "pop": 924,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251007001",
+      "pop": 1078,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     }
+    ]
+   },
+   {
+    "name": "Cedar Grove (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.279548,
+    "lon": -71.060318,
+    "gain": 5236,
+    "restored": [
+     {
+      "GEOID": "250251006031",
+      "pop": 1483,
+      "share_before": 0.0,
+      "share_after": 40.1,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251006011",
+      "pop": 1027,
+      "share_before": 11.4,
+      "share_after": 79.3,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251007003",
+      "pop": 724,
+      "share_before": 5.8,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250251008003",
+      "pop": 924,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251007001",
+      "pop": 1078,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 1.0
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Harbor Health: Daniel Driscoll \u2013 Neponset Health Center",
+    "Ashmont (Red)"
+   ],
+   "gain": 6244,
    "solver": "PuLP CBC"
   }
  },
  "15": {
-  "lost_pop": 2935,
+  "lost_pop": 6041,
   "ring_mi": 0.5,
   "top": [
    {
-    "name": "South Boston Community Health Center \u2013 409 W Broadway",
+    "name": "NeighborHealth \u2013 South End",
     "kind": "health_center",
-    "address": "409 West Broadway, Boston, MA, 02127",
-    "lat": 42.336864,
-    "lon": -71.048218,
-    "gain": 2935,
+    "address": "1601 Washington Street, Boston, MA, 02118",
+    "lat": 42.338295,
+    "lon": -71.074921,
+    "gain": 6041,
     "restored": [
      {
-      "GEOID": "250250607001",
-      "pop": 997,
+      "GEOID": "250250711011",
+      "pop": 1540,
       "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250607002",
-      "pop": 692,
-      "share_before": 0.0,
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 3.0,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610002",
-      "pop": 535,
-      "share_before": 0.0,
-      "share_after": 100.0,
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.3,
+      "share_after": 25.3,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610003",
-      "pop": 711,
-      "share_before": 0.0,
-      "share_after": 75.2,
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.3,
+      "share_after": 100.0,
       "limit_mi": 0.5
      }
     ]
    },
    {
-    "name": "South Boston Community Health Center \u2013 386 W Broadway",
+    "name": "Boston Health Care for the Homeless Program",
     "kind": "health_center",
-    "address": "386 West Broadway, Boston, MA, 02127",
-    "lat": 42.337611,
-    "lon": -71.048519,
-    "gain": 2935,
+    "address": "Jean Yawkey Place, Boston, MA, 02118",
+    "lat": 42.333568,
+    "lon": -71.072704,
+    "gain": 6041,
     "restored": [
      {
-      "GEOID": "250250607001",
-      "pop": 997,
+      "GEOID": "250250711011",
+      "pop": 1540,
       "share_before": 0.0,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250607002",
-      "pop": 692,
-      "share_before": 0.0,
-      "share_after": 100.0,
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 3.0,
+      "share_after": 73.2,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610002",
-      "pop": 535,
-      "share_before": 0.0,
-      "share_after": 97.9,
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.3,
+      "share_after": 80.2,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610003",
-      "pop": 711,
-      "share_before": 0.0,
-      "share_after": 43.6,
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.3,
+      "share_after": 78.6,
       "limit_mi": 0.5
      }
     ]
    },
    {
-    "name": "Andrew (Red)",
+    "name": "Lenox St (Silver)",
     "kind": "mbta_station",
     "address": null,
-    "lat": 42.330122,
-    "lon": -71.056978,
-    "gain": 1938,
+    "lat": 42.335057,
+    "lon": -71.078802,
+    "gain": 6041,
     "restored": [
      {
-      "GEOID": "250250607002",
-      "pop": 692,
+      "GEOID": "250250711011",
+      "pop": 1540,
       "share_before": 0.0,
-      "share_after": 20.0,
+      "share_after": 91.6,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610002",
-      "pop": 535,
-      "share_before": 0.0,
+      "GEOID": "250250709011",
+      "pop": 1165,
+      "share_before": 3.0,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
      {
-      "GEOID": "250250610003",
-      "pop": 711,
-      "share_before": 0.0,
+      "GEOID": "250250801001",
+      "pop": 2125,
+      "share_before": 12.3,
+      "share_after": 25.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250250709021",
+      "pop": 1211,
+      "share_before": 0.3,
       "share_after": 100.0,
       "limit_mi": 0.5
      }
@@ -1903,124 +2583,212 @@
   ],
   "best_set": {
    "sites": [
-    "South Boston Community Health Center \u2013 409 W Broadway"
+    "Melnea Cass Blvd (Silver)"
    ],
-   "gain": 2935,
+   "gain": 6041,
    "solver": "PuLP CBC"
   }
  },
  "16": {
-  "lost_pop": 1964,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "NEW Health \u2013 Charlestown",
-    "kind": "health_center",
-    "address": "15 Tufts Street, Boston, MA, 02129",
-    "lat": 42.377877,
-    "lon": -71.056808,
-    "gain": 1964,
-    "restored": [
-     {
-      "GEOID": "250250408011",
-      "pop": 1190,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250403001",
-      "pop": 774,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "MGH Charlestown HealthCare Center",
-    "kind": "health_center",
-    "address": "73 High Street, Charlestown, MA, 02129",
-    "lat": 42.377166,
-    "lon": -71.064251,
-    "gain": 1964,
-    "restored": [
-     {
-      "GEOID": "250250408011",
-      "pop": 1190,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250403001",
-      "pop": 774,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
+  "lost_pop": 3528,
+  "ring_mi": 1.0,
+  "top": [],
   "best_set": {
-   "sites": [
-    "NEW Health \u2013 Charlestown",
-    "MGH Charlestown HealthCare Center"
-   ],
-   "gain": 1964,
-   "solver": "PuLP CBC"
+   "sites": [],
+   "gain": 0
   }
  },
  "17": {
-  "lost_pop": 1769,
+  "lost_pop": 2124,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "18": {
+  "lost_pop": 1710,
   "ring_mi": 0.5,
   "top": [
    {
-    "name": "NeighborHealth \u2013 East Boston \u2013 Gove St",
-    "kind": "health_center",
-    "address": "10 Gove Street, East Boston, MA, 02128",
-    "lat": 42.372279,
-    "lon": -71.038178,
-    "gain": 1769,
-    "restored": [
-     {
-      "GEOID": "250250504002",
-      "pop": 1769,
-      "share_before": 14.9,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "NeighborHealth \u2013 East Boston \u2013 Maverick Square",
-    "kind": "health_center",
-    "address": "20 Maverick Square, Boston, MA, 02128",
-    "lat": 42.369606,
-    "lon": -71.03964,
-    "gain": 1769,
-    "restored": [
-     {
-      "GEOID": "250250504002",
-      "pop": 1769,
-      "share_before": 14.9,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Maverick (Blue)",
+    "name": "Chiswick Road (Green)",
     "kind": "mbta_station",
     "address": null,
-    "lat": 42.369002,
-    "lon": -71.03958,
-    "gain": 1769,
+    "lat": 42.340627,
+    "lon": -71.150952,
+    "gain": 1710,
     "restored": [
      {
-      "GEOID": "250250504002",
-      "pop": 1769,
-      "share_before": 14.9,
+      "GEOID": "250250005022",
+      "pop": 1710,
+      "share_before": 7.3,
+      "share_after": 39.8,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Chestnut Hill Avenue (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.338586,
+    "lon": -71.152656,
+    "gain": 1710,
+    "restored": [
+     {
+      "GEOID": "250250005022",
+      "pop": 1710,
+      "share_before": 7.3,
+      "share_after": 73.3,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "South Street (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.339463,
+    "lon": -71.157262,
+    "gain": 1710,
+    "restored": [
+     {
+      "GEOID": "250250005022",
+      "pop": 1710,
+      "share_before": 7.3,
+      "share_after": 95.7,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Chiswick Road (Green)",
+    "Chestnut Hill Avenue (Green)",
+    "South Street (Green)"
+   ],
+   "gain": 1710,
+   "solver": "PuLP CBC"
+  }
+ },
+ "19": {
+  "lost_pop": 1502,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "South Boston Health/Seaport",
+    "kind": "health_center",
+    "address": "505 Congress Street, Boston, MA, 02210",
+    "lat": 42.347952,
+    "lon": -71.041054,
+    "gain": 1502,
+    "restored": [
+     {
+      "GEOID": "250250606031",
+      "pop": 1502,
+      "share_before": 4.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Design Center (Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.344591,
+    "lon": -71.034608,
+    "gain": 1502,
+    "restored": [
+     {
+      "GEOID": "250250606031",
+      "pop": 1502,
+      "share_before": 4.0,
+      "share_after": 70.9,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Tide St (Silver)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.345226,
+    "lon": -71.032051,
+    "gain": 1502,
+    "restored": [
+     {
+      "GEOID": "250250606031",
+      "pop": 1502,
+      "share_before": 4.0,
+      "share_after": 56.3,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "South Boston Health/Seaport",
+    "Design Center (Silver)",
+    "Tide St (Silver)"
+   ],
+   "gain": 1502,
+   "solver": "PuLP CBC"
+  }
+ },
+ "20": {
+  "lost_pop": 1226,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Science Park/West End (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.366751,
+    "lon": -71.067745,
+    "gain": 1226,
+    "restored": [
+     {
+      "GEOID": "250250202003",
+      "pop": 1226,
+      "share_before": 2.1,
+      "share_after": 78.7,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Bowdoin (Blue)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.361169,
+    "lon": -71.061838,
+    "gain": 1226,
+    "restored": [
+     {
+      "GEOID": "250250202003",
+      "pop": 1226,
+      "share_before": 2.1,
+      "share_after": 78.2,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Charles/MGH (Red)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.361176,
+    "lon": -71.071081,
+    "gain": 1226,
+    "restored": [
+     {
+      "GEOID": "250250202003",
+      "pop": 1226,
+      "share_before": 2.1,
       "share_after": 100.0,
       "limit_mi": 0.5
      }
@@ -2029,15 +2797,129 @@
   ],
   "best_set": {
    "sites": [
-    "NeighborHealth \u2013 East Boston \u2013 Gove St",
-    "NeighborHealth \u2013 East Boston \u2013 Maverick Square",
-    "Maverick (Blue)"
+    "Science Park/West End (Green)",
+    "Bowdoin (Blue)",
+    "Charles/MGH (Red)"
    ],
-   "gain": 1769,
+   "gain": 1226,
    "solver": "PuLP CBC"
   }
  },
- "18": {
+ "21": {
+  "lost_pop": 1149,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "South Cove Community Health Center \u2013 Washington St",
+    "kind": "health_center",
+    "address": "885 Washington Street, Boston, MA, 02111",
+    "lat": 42.347979,
+    "lon": -71.064922,
+    "gain": 1149,
+    "restored": [
+     {
+      "GEOID": "250250705011",
+      "pop": 1149,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Fenway: South End",
+    "kind": "health_center",
+    "address": "142 Berkeley Street, Boston, MA, 02116",
+    "lat": 42.348834,
+    "lon": -71.072099,
+    "gain": 1149,
+    "restored": [
+     {
+      "GEOID": "250250705011",
+      "pop": 1149,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "NeighborHealth \u2013 South End",
+    "kind": "health_center",
+    "address": "1601 Washington Street, Boston, MA, 02118",
+    "lat": 42.338295,
+    "lon": -71.074921,
+    "gain": 1149,
+    "restored": [
+     {
+      "GEOID": "250250705011",
+      "pop": 1149,
+      "share_before": 0.0,
+      "share_after": 60.5,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "South Cove Community Health Center \u2013 Washington St",
+    "Fenway: South End",
+    "Worcester Street (Silver)"
+   ],
+   "gain": 1149,
+   "solver": "PuLP CBC"
+  }
+ },
+ "22": {
+  "lost_pop": 1016,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Charles River Community Health \u2013 Brighton",
+    "kind": "health_center",
+    "address": "495 Western Avenue, Brighton, MA, 02135",
+    "lat": 42.362028,
+    "lon": -71.144,
+    "gain": 1016,
+    "restored": [
+     {
+      "GEOID": "250250006014",
+      "pop": 1016,
+      "share_before": 4.6,
+      "share_after": 24.8,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Warren Street (Green)",
+    "kind": "mbta_station",
+    "address": null,
+    "lat": 42.348632,
+    "lon": -71.140241,
+    "gain": 1016,
+    "restored": [
+     {
+      "GEOID": "250250006014",
+      "pop": 1016,
+      "share_before": 4.6,
+      "share_after": 31.0,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Charles River Community Health \u2013 Brighton",
+    "Warren Street (Green)"
+   ],
+   "gain": 1016,
+   "solver": "PuLP CBC"
+  }
+ },
+ "23": {
   "lost_pop": 950,
   "ring_mi": 0.5,
   "top": [
@@ -2053,7 +2935,7 @@
       "GEOID": "250250817004",
       "pop": 950,
       "share_before": 0.0,
-      "share_after": 59.7,
+      "share_after": 57.6,
       "limit_mi": 0.5
      }
     ]
@@ -2067,40 +2949,57 @@
    "solver": "PuLP CBC"
   }
  },
- "19": {
-  "lost_pop": 934,
+ "24": {
+  "lost_pop": 79,
   "ring_mi": 1.0,
   "top": [
    {
-    "name": "South Street (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.339463,
-    "lon": -71.157262,
-    "gain": 934,
+    "name": "NeighborHealth \u2013 East Boston \u2013 Gove St",
+    "kind": "health_center",
+    "address": "10 Gove Street, East Boston, MA, 02128",
+    "lat": 42.372279,
+    "lon": -71.038178,
+    "gain": 79,
     "restored": [
      {
-      "GEOID": "250250003014",
-      "pop": 934,
-      "share_before": 0.5,
-      "share_after": 17.7,
+      "GEOID": "250259813001",
+      "pop": 79,
+      "share_before": 11.7,
+      "share_after": 18.3,
       "limit_mi": 1.0
      }
     ]
    },
    {
-    "name": "Boston College (Green)",
-    "kind": "mbta_station",
-    "address": null,
-    "lat": 42.340164,
-    "lon": -71.167026,
-    "gain": 934,
+    "name": "NeighorHealth \u2013 Winthrop",
+    "kind": "health_center",
+    "address": "17 Main Street, Winthrop, MA, 02152",
+    "lat": 42.382224,
+    "lon": -70.993255,
+    "gain": 79,
     "restored": [
      {
-      "GEOID": "250250003014",
-      "pop": 934,
-      "share_before": 0.5,
-      "share_after": 100.0,
+      "GEOID": "250259813001",
+      "pop": 79,
+      "share_before": 11.7,
+      "share_after": 24.2,
+      "limit_mi": 1.0
+     }
+    ]
+   },
+   {
+    "name": "NeighborHealth \u2013 East Boston \u2013 Maverick Square",
+    "kind": "health_center",
+    "address": "20 Maverick Square, Boston, MA, 02128",
+    "lat": 42.369606,
+    "lon": -71.03964,
+    "gain": 79,
+    "restored": [
+     {
+      "GEOID": "250259813001",
+      "pop": 79,
+      "share_before": 11.7,
+      "share_after": 17.1,
       "limit_mi": 1.0
      }
     ]
@@ -2108,20 +3007,12 @@
   ],
   "best_set": {
    "sites": [
-    "South Street (Green)",
-    "Boston College (Green)"
+    "NeighborHealth \u2013 East Boston \u2013 Gove St",
+    "NeighorHealth \u2013 Winthrop",
+    "Airport Terminal B1 (Silver)"
    ],
-   "gain": 934,
+   "gain": 79,
    "solver": "PuLP CBC"
-  }
- },
- "20": {
-  "lost_pop": 569,
-  "ring_mi": 1.0,
-  "top": [],
-  "best_set": {
-   "sites": [],
-   "gain": 0
   }
  }
 }

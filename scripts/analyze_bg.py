@@ -116,9 +116,9 @@ def prepare():
         bg['age65'] = [x.get('age65', 0) for x in a]
         bg['pov_pct'] = [x['pov'] / x['pov_hh'] if x.get('pov_hh') else 0 for x in a]
         bg['nocar_pct'] = [n / h if h else 0 for n, h in zip(bg['nocar'], bg['hh'])]
-        city_nocar = bg['nocar'].sum() / max(bg['hh'].sum(), 1)
-        # HPC: below-average vehicle ownership, or >20% of households below poverty
-        bg['low_access'] = (bg['nocar_pct'] > city_nocar) | (bg['pov_pct'] > 0.20)
+        # HPC: car ownership below the STATE average, or >20% of households below poverty
+        state_nocar = json.loads((DATA / 'raw' / 'acs_state.json').read_text())['nocar_share']
+        bg['low_access'] = (bg['nocar_pct'] > state_nocar) | (bg['pov_pct'] > 0.20)
     else:
         med = bg['BG_MHHI'][bg['BG_MHHI'] > 0].median()
         bg['low_access'] = (bg['BG_MHHI'] > 0) & (bg['BG_MHHI'] < med)

@@ -17,9 +17,13 @@ def main():
         out[m.name.removesuffix('.meta.json')] = json.loads(m.read_text())
     # Files fetched before the sidecar convention: pull date = file time.
     out['block_groups'] = {
-        'dataset': 'MassGIS EJ2020 block groups, MUNICIPALITY=Boston (2020 GEOIDs)',
-        'url': 'https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/EJ2020/MapServer/0',
-        'function': 'scripts/analyze_bg.py:prepare', 'pulled': mtime(RAW / 'boston_bg.geojson')}
+        'dataset': 'All 580 Boston 2020 block groups (Census TIGER cartographic), 2020 Census population (PL P1), ACS 2022 limited English (C16002) and income (B19013)',
+        'url': 'https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_25_bg_500k.zip',
+        'function': 'scripts/fetch_bg.py:main', 'pulled': mtime(RAW / 'boston_bg.geojson')}
+    out['acs_state'] = {
+        'dataset': 'Massachusetts share of households with no car (ACS 2022 B25044), the low-access benchmark',
+        'url': 'https://api.census.gov/data/2022/acs/acs5', 'function': 'scripts/fetch_bg.py:main',
+        'pulled': mtime(RAW / 'acs_state.json')}
     out['acs'] = {
         'dataset': 'ACS 2022 5-year, block group: B25044 (vehicles), B01001 (age 65+), B17017 (poverty)',
         'url': 'https://api.census.gov/data/2022/acs/acs5',

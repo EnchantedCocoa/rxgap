@@ -1,127 +1,7 @@
 {
-"250251008003": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251009001": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251008004": {
-"council": "3",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251008005": {
-"council": "3",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251204005": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250214163003": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Norfolk, Plymouth and Bristol"
-},
-"250259811003": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250259813001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250251006014": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251006031": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251006032": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251005005": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251104033": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251105013": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251106073": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251201041": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251006013": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251007002": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251008001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251008002": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251202012": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251203011": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251204001": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251204004": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250004014": {
-"council": "9",
-"house": "18th Suffolk",
+"250250102043": {
+"council": "8",
+"house": "2nd Suffolk",
 "senate": "Suffolk and Middlesex"
 },
 "250250004021": {
@@ -129,439 +9,39 @@
 "house": "17th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250250004022": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250001012": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002011": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002012": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002013": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002021": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006013": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006014": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250007011": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250007012": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250007013": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250007032": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005023": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005031": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005032": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005051": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250214001003": {
-"council": "8",
-"house": "15th Norfolk",
-"senate": "Norfolk and Middlesex"
-},
-"250250005061": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005062": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006011": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006012": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002022": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002023": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250003011": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250003014": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250004023": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005021": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005022": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250003021": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250003022": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250004011": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250004012": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250004013": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250509011": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250509012": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250821002": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250821003": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250901001": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001006": {
+"250250919004": {
 "council": "4",
 "house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001007": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251003002": {
-"council": "4",
-"house": "12th Suffolk",
 "senate": "First Suffolk"
 },
-"250250511012": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250912003": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250702012": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250921014": {
+"250250922002": {
 "council": "3",
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250250921015": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250921013": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250924005": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251002001": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250909011": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250910012": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250911002": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250910011": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250406001": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250702021": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250702022": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250703012": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250703021": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250704022": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250203042": {
-"council": "8",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250005053": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006041": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250304003": {
-"council": "1",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250006042": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250007014": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250501012": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250502001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250502002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250502004": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250503003": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250504002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250408011": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250901002": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250901003": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250701042": {
-"council": "1",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250701043": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250701021": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250913002": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250915001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250915002": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250915003": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250804011": {
+"250250708011": {
 "council": "7",
 "house": "9th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250804012": {
+"250250806012": {
 "council": "7",
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250806011": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250809001": {
+"250250102062": {
 "council": "8",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
+"house": "8th Suffolk",
+"senate": "Suffolk and Middlesex"
 },
-"250250814001": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
+"250251301012": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
 },
-"250250814002": {
-"council": "7",
-"house": "7th Suffolk",
+"250251201042": {
+"council": "6",
+"house": "15th Suffolk",
 "senate": "Second Suffolk"
 },
 "250250814003": {
@@ -569,67 +49,7 @@
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250814004": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250711013": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250703023": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250106001": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250106002": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250106003": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250107011": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250108011": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250913001": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250914002": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250914001": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250920004": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250921011": {
+"250251008001": {
 "council": "3",
 "house": "13th Suffolk",
 "senate": "First Suffolk"
@@ -639,47 +59,47 @@
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250250922001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250922002": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250922003": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250922004": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250923001": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250808012": {
-"council": "8",
-"house": "7th Suffolk",
+"250250804011": {
+"council": "7",
+"house": "9th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250512001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
+"250250921013": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
 },
-"250250512002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
+"250251301016": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
 },
-"250250512003": {
+"250250702012": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250810015": {
+"council": "8",
+"house": "7th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250102041": {
+"council": "8",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251009001": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251303002": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250502004": {
 "council": "1",
 "house": "1st Suffolk",
 "senate": "Third Suffolk"
@@ -689,179 +109,254 @@
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250202001": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
+"250250002014": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
 },
-"250250202002": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
+"250251401062": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
 },
-"250250510002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250510003": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250511011": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250906001": {
-"council": "7",
+"250250914001": {
+"council": "3",
 "house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250907001": {
-"council": "3",
-"house": "9th Suffolk",
 "senate": "First Suffolk"
 },
-"250250907003": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250907004": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250809002": {
-"council": "8",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250809003": {
-"council": "8",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250810011": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250810013": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250815001": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250511013": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250901004": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250901005": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250902001": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250705012": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250705021": {
+"250250703023": {
 "council": "2",
-"house": "9th Suffolk",
+"house": "3rd Suffolk",
 "senate": "First Suffolk"
 },
-"250250708011": {
-"council": "7",
-"house": "9th Suffolk",
+"250251401052": {
+"council": "5",
+"house": "14th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250708021": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250708022": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250709011": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250709022": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250007031": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250008042": {
+"250250005062": {
 "council": "9",
 "house": "18th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250250008051": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
+"250251202011": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
 },
-"250250008053": {
+"250250201014": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250923002": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250251003003": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250250903001": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251010016": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250904003": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250811011": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250817002": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250006013": {
 "council": "9",
 "house": "17th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250250007041": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
+"250251002002": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
 },
-"250250007042": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
+"250251009004": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
 },
-"250250007043": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
+"250250104041": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
 },
-"250250007044": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
+"250250817005": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251203012": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250259811001": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251303005": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
 },
 "250250008041": {
 "council": "9",
 "house": "17th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250250902002": {
+"250251002003": {
 "council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250509011": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250251101042": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250913002": {
+"council": "3",
 "house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250251101061": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250102052": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250108011": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250002011": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251304041": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250711011": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250509012": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250251004004": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250250606021": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251011022": {
+"council": "5",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250302001": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250506002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250803001": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250103001": {
+"council": "8",
+"house": "7th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250202002": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250251009003": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251206003": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251403002": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250408011": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250510003": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250610002": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250817003": {
+"council": "7",
+"house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
 "250250902003": {
@@ -869,27 +364,412 @@
 "house": "5th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250815002": {
-"council": "7",
-"house": "7th Suffolk",
+"250250920001": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251001007": {
+"council": "4",
+"house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250817003": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
+"250250002022": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
 },
-"250250820001": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
+"250250911001": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
 },
-"250250916001": {
+"250250918001": {
 "council": "3",
 "house": "5th Suffolk",
 "senate": "First Suffolk"
 },
-"250250916002": {
+"250250921011": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250102061": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250108022": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250251402023": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250259816001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250102042": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250906002": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251304061": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250259810001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250821003": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250910011": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250909012": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250910014": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251001001": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250259803001": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251401071": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251201041": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250606042": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250707001": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250819002": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250902001": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250922004": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250251005005": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250250003012": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251006032": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250401001": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251010023": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251207002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250601013": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250809002": {
+"council": "8",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251401051": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250006042": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250006041": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250008052": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250402002": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251006031": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250203011": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250104053": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250103002": {
+"council": "8",
+"house": "7th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250201013": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250202003": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250305001": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251005003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250251006013": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251006011": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251008005": {
+"council": "3",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251009002": {
+"council": "3",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251011021": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251104012": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251105013": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251105012": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251204002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251302001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251304042": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251401022": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251402025": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251403005": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250404011": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250502003": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250503002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250510001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250602002": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250604002": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250607001": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250610001": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250706001": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250801002": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250806013": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250812002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250817001": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250818003": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250821001": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250901003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250902002": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250904004": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250909011": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250916001": {
 "council": "3",
 "house": "5th Suffolk",
 "senate": "First Suffolk"
@@ -899,100 +779,430 @@
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250250917001": {
+"250250919003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250921015": {
 "council": "3",
-"house": "5th Suffolk",
+"house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250250917002": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250810012": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250810014": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250810015": {
-"council": "8",
-"house": "7th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250811011": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250923002": {
+"250250922003": {
 "council": "4",
 "house": "6th Suffolk",
 "senate": "First Suffolk"
 },
-"250250820002": {
-"council": "7",
-"house": "5th Suffolk",
+"250250923001": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250251001002": {
+"council": "4",
+"house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250904004": {
-"council": "7",
-"house": "5th Suffolk",
+"250251002001": {
+"council": "4",
+"house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250203011": {
+"250251004003": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251004001": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250250403005": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250004014": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250005021": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250007031": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250101032": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250003013": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250512001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250005032": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250107022": {
 "council": "8",
 "house": "8th Suffolk",
 "senate": "Third Suffolk"
+},
+"250251101051": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007032": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259819001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250910012": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251404005": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250101042": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251302005": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250601012": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250104081": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251105023": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250911005": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250606031": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250709011": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007011": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250904001": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250917003": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250608003": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250912003": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250251402012": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251007003": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250608002": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250612031": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251403001": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Second Suffolk"
 },
 "250250203041": {
 "council": "8",
 "house": "3rd Suffolk",
 "senate": "Third Suffolk"
 },
-"250251005002": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
+"250250003021": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
 },
-"250251005003": {
+"250250505001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250819003": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251001005": {
 "council": "4",
 "house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250506001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250102054": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250511011": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250251104031": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250504002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250605013": {
+"council": "2",
+"house": "4th Suffolk",
 "senate": "First Suffolk"
 },
-"250251005004": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251006011": {
+"250251008002": {
 "council": "3",
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250251006012": {
+"250251003002": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251404006": {
+"council": "5",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007042": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259813001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250251011023": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250901004": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250004011": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250819004": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250611011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250915001": {
 "council": "3",
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250250923003": {
+"250250106001": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250003022": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251204005": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250102053": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250703022": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250606011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251103012": {
 "council": "4",
 "house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250706002": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250005051": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259811004": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250005052": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250702022": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250712013": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250612021": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250809003": {
+"council": "8",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250507001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250304003": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250911003": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250920004": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250104031": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250007043": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250921014": {
+"council": "3",
+"house": "13th Suffolk",
 "senate": "First Suffolk"
 },
 "250250923004": {
 "council": "4",
 "house": "6th Suffolk",
 "senate": "First Suffolk"
-},
-"250250924001": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
 },
 "250250924002": {
 "council": "4",
@@ -1004,337 +1214,7 @@
 "house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250805001": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250203052": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250511014": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250606042": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250607001": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250607002": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250001011": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250008052": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250001021": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250006031": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250711011": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250805002": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250806013": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250808011": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250610002": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250903001": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250903002": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250903003": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250904001": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250711014": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250712012": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250712013": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250712014": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250917003": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250918001": {
-"council": "3",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250008062": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250008071": {
-"council": "8",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250101041": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250904002": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251004001": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251005001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251004002": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250251004003": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250250918002": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250918003": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "First Suffolk"
-},
-"250250919001": {
-"council": "4",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250704021": {
-"council": "3",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250705022": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250811012": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250811021": {
-"council": "8",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250811022": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250812001": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251004004": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
-"250250303021": {
-"council": "1",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250402001": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250402002": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250403001": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250707001": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250707002": {
-"council": "2",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250711012": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250709021": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250924004": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001001": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001002": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001003": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
 "250251001004": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251001005": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250612031": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250701022": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250701023": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250701031": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250001022": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250002014": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250101032": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250005052": {
-"council": "9",
-"house": "17th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250251002002": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251002003": {
 "council": "4",
 "house": "6th Suffolk",
 "senate": "Second Suffolk"
@@ -1344,39 +1224,74 @@
 "house": "6th Suffolk",
 "senate": "First Suffolk"
 },
-"250251003003": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "First Suffolk"
-},
 "250251003004": {
 "council": "4",
 "house": "12th Suffolk",
 "senate": "First Suffolk"
 },
-"250250702011": {
-"council": "2",
-"house": "3rd Suffolk",
+"250251004002": {
+"council": "4",
+"house": "12th Suffolk",
 "senate": "First Suffolk"
 },
-"250250904003": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250906002": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250907002": {
-"council": "3",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250909012": {
+"250251005001": {
 "council": "3",
 "house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250002012": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250507002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250004013": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250004023": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250005022": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251404007": {
+"council": "5",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007041": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250003014": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250305003": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250610003": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250712012": {
+"council": "3",
+"house": "9th Suffolk",
 "senate": "First Suffolk"
 },
 "250250801001": {
@@ -1384,373 +1299,18 @@
 "house": "9th Suffolk",
 "senate": "First Suffolk"
 },
-"250250801002": {
+"250250805001": {
 "council": "7",
 "house": "9th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250803001": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250803002": {
+"250250806011": {
 "council": "7",
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250101043": {
+"250250809001": {
 "council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250104042": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104043": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250203051": {
-"council": "8",
-"house": "3rd Suffolk",
-"senate": "Third Suffolk"
-},
-"250250404011": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250911003": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250911004": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250911005": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250912001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250912002": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250919003": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250919004": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250920001": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250250920002": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250920003": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "First Suffolk"
-},
-"250250812003": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250813011": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250813012": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250813021": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250813022": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251203012": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251403006": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251103012": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251203013": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251203014": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251205003": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251206001": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250102054": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250102061": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250102062": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250103001": {
-"council": "8",
-"house": "7th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250103002": {
-"council": "8",
-"house": "7th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250251104011": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251104031": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251104034": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251401061": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251401062": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250501011": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250501013": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250408012": {
-"council": "1",
-"house": "2nd Suffolk",
-"senate": "Middlesex and Suffolk"
-},
-"250250502003": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250503001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250503002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250504001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250251009004": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251010012": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251010013": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251010015": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251401071": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251401072": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251402011": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251402012": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250701041": {
-"council": "2",
-"house": "3rd Suffolk",
-"senate": "First Suffolk"
-},
-"250250104052": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250104053": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104081": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250251304063": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251401021": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251401023": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251206002": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251206003": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251207001": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251301011": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250105001": {
-"council": "8",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250105002": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250105003": {
-"council": "7",
-"house": "9th Suffolk",
-"senate": "First Suffolk"
-},
-"250250510001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250507003": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250251104035": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250817001": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250817002": {
-"council": "7",
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
@@ -1769,312 +1329,87 @@
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251105011": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251105012": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251105021": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251105022": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251402021": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250806012": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250606041": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250610003": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250611012": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250250611011": {
-"council": "2",
-"house": "4th Suffolk",
-"senate": "First Suffolk"
-},
-"250251010016": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251011011": {
-"council": "5",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251011021": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251011022": {
-"council": "5",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251011023": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251402022": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251402023": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251402024": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251010021": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250104031": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104032": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104033": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104041": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104044": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Third Suffolk"
-},
-"250250104051": {
-"council": "7",
-"house": "8th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250505001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250251304041": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251304042": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251010022": {
-"council": "4",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251010023": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250506001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250506002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250507001": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250507002": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250509013": {
-"council": "1",
-"house": "1st Suffolk",
-"senate": "Third Suffolk"
-},
-"250250818003": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250819002": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251105023": {
-"council": "5",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250250819003": {
-"council": "7",
-"house": "7th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250819004": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
 "250250820003": {
 "council": "7",
 "house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250821001": {
-"council": "7",
+"250250901005": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250901001": {
+"council": "4",
 "house": "5th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250910014": {
+"250250901002": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250903003": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250903002": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250907004": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250912001": {
 "council": "3",
 "house": "13th Suffolk",
 "senate": "First Suffolk"
 },
-"250251011024": {
-"council": "5",
-"house": "12th Suffolk",
+"250250913001": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250916002": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250918003": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250918002": {
+"council": "4",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250919001": {
+"council": "4",
+"house": "5th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251106072": {
+"250251204001": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251207001": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251302002": {
 "council": "6",
 "house": "10th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251201042": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251402025": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250259803001": {
-"council": "7",
-"house": "5th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251404006": {
-"council": "5",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251404007": {
-"council": "5",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251101041": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251101042": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251101051": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251304062": {
-"council": "6",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251403001": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251403002": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251403004": {
-"council": "5",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251404001": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251205001": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251205002": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251207002": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251303004": {
+"250251302003": {
 "council": "6",
 "house": "10th Suffolk",
 "senate": "Norfolk and Suffolk"
@@ -2084,14 +1419,149 @@
 "house": "10th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251401022": {
+"250251404001": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251402022": {
 "council": "5",
 "house": "14th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251011012": {
+"250251404003": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251403006": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251404004": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250920002": {
 "council": "4",
 "house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250250406001": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250502002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250504001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250510002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250512002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250604003": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250605012": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250607002": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250101031": {
+"council": "8",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259815011": {
+"council": "8",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250104032": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250105003": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250201011": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250203021": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250304001": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250401002": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250403003": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251006014": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251006012": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251007002": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251008006": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251008004": {
+"council": "3",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250251010014": {
+"council": "5",
+"house": "12th Suffolk",
 "senate": "Second Suffolk"
 },
 "250251011013": {
@@ -2099,114 +1569,284 @@
 "house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251104012": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251104032": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251403003": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251403005": {
-"council": "5",
-"house": "14th Suffolk",
-"senate": "Second Suffolk"
-},
-"250250008061": {
-"council": "9",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250101031": {
-"council": "8",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250101033": {
-"council": "8",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250101042": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250250102041": {
-"council": "8",
-"house": "18th Suffolk",
-"senate": "Suffolk and Middlesex"
-},
-"250251008006": {
-"council": "3",
-"house": "13th Suffolk",
-"senate": "First Suffolk"
-},
-"250251101061": {
-"council": "6",
-"house": "15th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251101062": {
+"250251011012": {
 "council": "4",
 "house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251201052": {
+"250251104011": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250259811003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251105021": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251106071": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251201051": {
 "council": "6",
 "house": "10th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251202011": {
+"250251204004": {
 "council": "6",
 "house": "15th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251202013": {
-"council": "6",
+"250250701031": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250259812022": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250203051": {
+"council": "8",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250702011": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250701023": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250810012": {
+"council": "8",
 "house": "15th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250102042": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
+"250250911004": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
 },
-"250250102043": {
-"council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
+"250250914002": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
 },
-"250250102051": {
+"250250106002": {
 "council": "8",
 "house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250251401024": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251104033": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250907001": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250004022": {
+"council": "9",
+"house": "18th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250250102052": {
+"250250810014": {
 "council": "8",
-"house": "2nd Suffolk",
-"senate": "Suffolk and Middlesex"
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
 },
-"250250102053": {
+"250250808012": {
 "council": "8",
-"house": "2nd Suffolk",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250503001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250511012": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250108023": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250251401061": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251304063": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250708022": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250907003": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250251010022": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251303003": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250705022": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250904002": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250808011": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250001022": {
+"council": "9",
+"house": "18th Suffolk",
 "senate": "Suffolk and Middlesex"
 },
-"250251009002": {
+"250250602001": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251206001": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250259809001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250910013": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250812001": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250701043": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251402021": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251007005": {
 "council": "3",
 "house": "12th Suffolk",
 "senate": "First Suffolk"
 },
-"250251009003": {
-"council": "4",
+"250250912002": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251201031": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250606041": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250917001": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250251205003": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251010015": {
+"council": "5",
 "house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251011024": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250501013": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250604005": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250302002": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251301013": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251304021": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250603012": {
+"council": "2",
+"house": "4th Suffolk",
 "senate": "First Suffolk"
 },
 "250251010011": {
@@ -2214,22 +1854,7 @@
 "house": "12th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251010014": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251102011": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251103011": {
-"council": "4",
-"house": "6th Suffolk",
-"senate": "Second Suffolk"
-},
-"250251401024": {
+"250251402011": {
 "council": "5",
 "house": "14th Suffolk",
 "senate": "Norfolk and Suffolk"
@@ -2239,34 +1864,264 @@
 "house": "12th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251404003": {
+"250251403004": {
 "council": "5",
-"house": "12th Suffolk",
+"house": "6th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251404004": {
-"council": "5",
-"house": "12th Suffolk",
+"250250815001": {
+"council": "7",
+"house": "7th Suffolk",
 "senate": "Second Suffolk"
 },
-"250251404005": {
-"council": "5",
-"house": "12th Suffolk",
-"senate": "Second Suffolk"
+"250250001012": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
 },
-"250250911001": {
-"council": "3",
-"house": "13th Suffolk",
+"250251302004": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251105022": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251005002": {
+"council": "4",
+"house": "12th Suffolk",
 "senate": "First Suffolk"
 },
-"250250812002": {
+"250250104052": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250612011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250603011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250003011": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250511013": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250259818001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250005061": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251301011": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250008062": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250008071": {
+"council": "8",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250304004": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250203042": {
+"council": "8",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250704022": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250701022": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250811022": {
 "council": "6",
 "house": "15th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250817005": {
+"250250803002": {
 "council": "7",
 "house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250008051": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250813022": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250703012": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250304002": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251304022": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250811012": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250008042": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250814002": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250104042": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250611012": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250810013": {
+"council": "8",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251103011": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251005004": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "First Suffolk"
+},
+"250250911002": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250709021": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250915003": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250251101041": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251011011": {
+"council": "5",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250501011": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250705011": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250001021": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250104051": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250924005": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250105002": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250251007004": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251106074": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251401023": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250502001": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250712014": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250810011": {
+"council": "8",
+"house": "15th Suffolk",
 "senate": "Second Suffolk"
 },
 "250250919002": {
@@ -2274,39 +2129,774 @@
 "house": "5th Suffolk",
 "senate": "Second Suffolk"
 },
-"250250712011": {
+"250251001003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250711013": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250812003": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007013": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251010021": {
+"council": "4",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250107023": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250605015": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250005024": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250102051": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250008063": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250104044": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250303011": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251301015": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250005053": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250106003": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250705012": {
 "council": "3",
 "house": "9th Suffolk",
 "senate": "First Suffolk"
 },
-"250251304021": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
-},
-"250251304022": {
-"council": "6",
-"house": "10th Suffolk",
-"senate": "Norfolk and Suffolk"
+"250250703021": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
 },
 "250251304023": {
 "council": "6",
 "house": "10th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251304061": {
+"250250008053": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250705021": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250203052": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250503003": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250813021": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251106011": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251010013": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250509013": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250804012": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250820002": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250906001": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250917002": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250250403004": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251008003": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250251104034": {
 "council": "5",
 "house": "14th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251401051": {
+"250251106072": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251303004": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250604004": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250303012": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250007014": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250702021": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250915002": {
+"council": "3",
+"house": "5th Suffolk",
+"senate": "First Suffolk"
+},
+"250259807001": {
 "council": "5",
 "house": "14th Suffolk",
 "senate": "Norfolk and Suffolk"
 },
-"250251401052": {
+"250250612041": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251204003": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250603013": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250814001": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250408013": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251303001": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250006014": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259812011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250923003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250250301001": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251101062": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251201053": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250101033": {
+"council": "8",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251201052": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250006031": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250402001": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251106012": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250604001": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251304062": {
+"council": "6",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250811021": {
+"council": "8",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250512003": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250813012": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251403003": {
 "council": "5",
 "house": "14th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250006011": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251010012": {
+"council": "5",
+"house": "12th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250001011": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250922001": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250303021": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250703011": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250814004": {
+"council": "8",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250259811002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250002023": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250601011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250002013": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250259801011": {
+"council": "3",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250501012": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250601014": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251102011": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250107011": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250201012": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250404012": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250259812021": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250251402024": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250101041": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250006012": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251104032": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250108021": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250815002": {
+"council": "7",
+"house": "7th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250008061": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251105011": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250251206002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250712011": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250709022": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250105001": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250007012": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250005023": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251301014": {
+"council": "6",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250301002": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250251202012": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250805002": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250907002": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250920003": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "First Suffolk"
+},
+"250251001006": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250007044": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250505002": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250005031": {
+"council": "9",
+"house": "18th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251106073": {
+"council": "5",
+"house": "10th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250107012": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250108013": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250107013": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250108012": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250605011": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250608004": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250704021": {
+"council": "3",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250605014": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250924004": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251401021": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250104043": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250104033": {
+"council": "7",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250101043": {
+"council": "8",
+"house": "2nd Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250251203013": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251202013": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251104035": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250408012": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250259817001": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250202001": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250250107021": {
+"council": "8",
+"house": "8th Suffolk",
+"senate": "Third Suffolk"
+},
+"250251205001": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250403002": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250821002": {
+"council": "7",
+"house": "5th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250701042": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250701041": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "First Suffolk"
+},
+"250250708021": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250250608001": {
+"council": "2",
+"house": "4th Suffolk",
+"senate": "First Suffolk"
+},
+"250250711014": {
+"council": "3",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250251203011": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250813011": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250707002": {
+"council": "2",
+"house": "9th Suffolk",
+"senate": "First Suffolk"
+},
+"250251007001": {
+"council": "3",
+"house": "13th Suffolk",
+"senate": "First Suffolk"
+},
+"250250511014": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250924001": {
+"council": "4",
+"house": "6th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251203014": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250701021": {
+"council": "2",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250305002": {
+"council": "1",
+"house": "3rd Suffolk",
+"senate": "Third Suffolk"
+},
+"250250711012": {
+"council": "7",
+"house": "9th Suffolk",
+"senate": "Second Suffolk"
+},
+"250251205002": {
+"council": "6",
+"house": "15th Suffolk",
+"senate": "Second Suffolk"
+},
+"250250002021": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250004012": {
+"council": "9",
+"house": "17th Suffolk",
+"senate": "Suffolk and Middlesex"
+},
+"250250403001": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250251401072": {
+"council": "5",
+"house": "14th Suffolk",
+"senate": "Norfolk and Suffolk"
+},
+"250250406002": {
+"council": "1",
+"house": "2nd Suffolk",
+"senate": "Middlesex and Suffolk"
+},
+"250250507003": {
+"council": "1",
+"house": "1st Suffolk",
+"senate": "Third Suffolk"
+},
+"250250820001": {
+"council": "7",
+"house": "5th Suffolk",
 "senate": "Second Suffolk"
 }
 }

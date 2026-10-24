@@ -80,3 +80,10 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   EJ block groups, so our Boston map has 462 of 580 block groups (571k of 676k people);
   (2) our Boston desert count (121,319) is ~4x HPC's (31,291), mainly because OSM lists
   far fewer pharmacies than the state license data HPC used.
+- 13:45 Fixes from the HPC comparison. (1) Low-access now compares no-car share to the
+  STATE average (11.9%, ACS), as the HPC does; we had used Boston's (~33%). Checked on
+  HPC's own block data: the state-average rule matches 97% of their low-access flags.
+  (2) Block groups now come from Census TIGER: all 580 Boston block groups (675,647
+  people), not the 462 EJ-only MassGIS layer. Result: desert 173,050, near-desert
+  188,091; 24 can't-lose stores. A test caught one 7-person block that depends on three
+  stores at once; the test was too strict and now counts each block group once.

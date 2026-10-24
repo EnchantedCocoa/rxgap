@@ -8,7 +8,7 @@ RULES = {'state': 's_state', 'half': 's_0.5', 'one': 's_1'}
 
 # Each on-screen number names the function that made it and the raw sources behind it.
 PROV = {
-    'headline': ('scripts/analyze_bg.py:main', ['block_groups', 'acs', 'pharmacies', 'closures', 'openings']),
+    'headline': ('scripts/analyze_bg.py:main', ['block_groups', 'acs', 'acs_state', 'pharmacies', 'closures', 'openings']),
     'store': ('scripts/rank.py:main', ['block_groups', 'acs', 'pharmacies', 'closures', 'openings']),
     'lim_eng_hh': ('scripts/build_app_data.py:store_rows', ['block_groups']),
     'walk': ('scripts/walk.py:nearest3', ['walk', 'pharmacies']),

@@ -59,7 +59,8 @@ def test_close_top_store_matches_analysis(page):
 
 
 def test_map_draws_every_block_group(page):
-    assert page.locator('path.bg').count() == 462
+    n_bg = len(json.loads((ROOT / 'data' / 'bg_out.geojson').read_text())['features'])
+    assert page.locator('path.bg').count() == n_bg == 580
     n = len(json.loads((ROOT / 'data' / 'cant_lose.json').read_text())['stores'])
     assert page.locator('.pin-rank').count() == n
 

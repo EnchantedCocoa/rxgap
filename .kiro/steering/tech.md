@@ -17,7 +17,9 @@ inclusion: always
 - Tests: `../.venv/bin/python -m pytest -q`
 
 ## Data facts (verified 2026-10-24)
-- Block groups: MassGIS EJ2020, `MUNICIPALITY='Boston'`, 462 rows, 2020 GEOIDs.
+- Block groups: all 580 Boston 2020 block groups from Census TIGER (`scripts/fetch_bg.py`).
+  Not MassGIS EJ2020: that layer holds only environmental-justice block groups (462).
+- Low-access compares each block group's no-car share to the STATE average (ACS), as HPC does.
 - ACS 2022 5-year block-group query needs `CENSUS_KEY` in `.env` (never commit it).
   A missing/new key returns an HTML page, not JSON. 460 of 462 GEOIDs match.
 - Pharmacies: OSM, 5 counties around Boston so stores across the city line count.
