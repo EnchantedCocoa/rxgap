@@ -1,11 +1,12 @@
-# 보스턴의 모든 2020 블록그룹(인구조사 TIGER)과 인구·제한적 영어·소득을 받아 boston_bg.geojson으로 저장하는 스크립트.
-import io, json, sys, warnings, zipfile
+# 선택한 장소의 모든 2020 블록그룹(인구조사 TIGER)과 인구·면적·제한적 영어·소득·ACS를 받아 저장하는 스크립트.
+import csv, io, json, sys, warnings, zipfile
 from pathlib import Path
 warnings.filterwarnings('ignore')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import geopandas as gpd
 import requests
-from analyze_bg import census_key
+from analyze_bg import census_key, fetch_acs
+from places import BG_FILE, PLACE
 
 RAW = Path(__file__).resolve().parent.parent / 'data' / 'raw'
 TIGER = 'https://www2.census.gov/geo/tiger/GENZ2020/shp/'
@@ -22,7 +23,7 @@ def tiger(name):
 
 def census(url, get):
     rows = requests.get(url, params={'get': ','.join(get), 'for': 'block group:*',
-                                     'in': 'state:25 county:025', 'key': census_key()}, timeout=60).json()
+                                     'in': f"state:25 county:{PLACE['county']}", 'key': census_key()}, timeout=60).json()
     head = rows[0]
     out = {}
     for r in rows[1:]:
@@ -34,8 +35,11 @@ def census(url, get):
 def main():
     bg = tiger('bg').to_crs(26986)
     towns = tiger('cousub').to_crs(26986)
-    boston = towns[towns.NAME == 'Boston'].geometry.iloc[0]
-    bg = bg[bg.representative_point().within(boston)][['GEOID', 'geometry']].copy()
+    town = towns[towns.NAME == PLACE['name']].geometry.iloc[0]
+    bg = bg[bg.representative_point().within(town)][['GEOID', 'ALAND', 'geometry']].copy()
+    # Rural flag: the HPC dataset carries the State Office of Rural Health designation per block group.
+    hpc = {r['GEOID']: r for r in csv.DictReader(open(RAW / 'hpc' / 'hpc_bg_with_town.csv'))}
+    bg['RURAL'] = bg.GEOID.map(lambda g: hpc.get(g, {}).get('Rurality') == 'Rural')
 
     pop = census('https://api.census.gov/data/2020/dec/pl', ['P1_001N'])
     acs = census('https://api.census.gov/data/2022/acs/acs5', ['C16002_001E', 'B19013_001E'] + LIMENG)
@@ -51,8 +55,9 @@ def main():
                      timeout=60).json()[1]
     (RAW / 'acs_state.json').write_text(json.dumps({'nocar_share': (int(s[1]) + int(s[2])) / int(s[0]),
                                                     'source': 'ACS 2022 5-year B25044, Massachusetts'}))
-    bg.to_crs(4326).to_file(RAW / 'boston_bg.geojson', driver='GeoJSON')
-    print(f'{len(bg)} Boston block groups, {bg.TOTAL_POP.sum()} people -> boston_bg.geojson')
+    bg.to_crs(4326).to_file(BG_FILE, driver='GeoJSON')
+    fetch_acs(census_key())
+    print(f"{len(bg)} {PLACE['name']} block groups, {bg.TOTAL_POP.sum()} people -> {BG_FILE.name}")
 
 
 if __name__ == '__main__':

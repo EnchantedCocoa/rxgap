@@ -1,5 +1,5 @@
-# 폐점을 반영해 보스턴 블록그룹별 약국 사막 상태를 계산하는 스크립트.
-import csv, json, os, warnings
+# 폐점을 반영해 선택한 장소(기본 보스턴)의 블록그룹별 약국 사막 상태를 계산하는 스크립트.
+import csv, json, os, sys, warnings
 from pathlib import Path
 warnings.filterwarnings('ignore')
 import geopandas as gpd
@@ -7,9 +7,13 @@ import requests
 from shapely.geometry import Point
 from shapely.ops import unary_union
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / 'data'
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from places import ACS_FILE, BG_FILE, MANUAL, OUT as DATA, PLACE, RAW, ROOT, SLUG
+
 MILE = 1609.344
+# HPC DataPoints 31: distance by block-group density (urban > 5,000 people per sq mi), halved for low-access.
+LIMIT_MI = {'urban': 1.0, 'suburban': 2.0, 'rural': 5.0}
+URBAN_DENSITY = 5000
 RADII = [0.25, 0.5, 0.75, 1.0, 1.5, 2.0]  # miles, for the map slider
 CLOSED_MATCH_M = 60
 
@@ -26,12 +30,12 @@ def census_key():
 
 
 def fetch_acs(key):
-    """Block-group no-car, poverty and 65+ counts for Suffolk County (Boston)."""
+    """Block-group no-car, poverty and 65+ counts for the place's county."""
     age = [f'B01001_0{n:02d}E' for n in list(range(20, 26)) + list(range(44, 50))]
     vars_ = ['B25044_001E', 'B25044_003E', 'B25044_010E', 'B17017_001E', 'B17017_002E'] + age
     r = requests.get('https://api.census.gov/data/2022/acs/acs5',
                      params={'get': ','.join(vars_), 'for': 'block group:*',
-                             'in': 'state:25 county:025', 'key': key}, timeout=60)
+                             'in': f"state:25 county:{PLACE['county']}", 'key': key}, timeout=60)
     rows = r.json()  # raises on the "Missing/Invalid Key" HTML page
     head, out = rows[0], {}
     for row in rows[1:]:
@@ -41,22 +45,34 @@ def fetch_acs(key):
         out[geoid] = {'hh': n('B25044_001E'), 'nocar': n('B25044_003E') + n('B25044_010E'),
                       'pov_hh': n('B17017_001E'), 'pov': n('B17017_002E'),
                       'age65': sum(n(v) for v in age)}
-    (DATA / 'raw' / 'acs_bg.json').write_text(json.dumps(out))
+    ACS_FILE.write_text(json.dumps(out))
     return out
 
 
+BRANDS = ['cvs', 'walgreen', 'stop & shop', 'stop and shop', 'shaw', 'osco', 'star market', 'walmart', 'wal-mart',
+          'big y', 'costco', "bj's", 'price chopper', 'market basket', 'hannaford', 'target', 'wegmans', 'kornfield']
+
+
+def brand(name):
+    """Brand key for de-duplication: chain name if one is in the name, else the first word."""
+    n = (name or '').lower().replace('stop and shop', 'stop & shop').replace('wal-mart', 'walmart').replace('star market', 'osco').replace('shaw', 'osco')
+    return next((b for b in BRANDS if b in n), n.split(' ')[0] if n else '')
+
+
 def load_pharmacies():
-    phs = json.loads((DATA / 'raw' / 'pharmacies.json').read_text())['pharmacies']
+    phs = json.loads((RAW / 'pharmacies.json').read_text())['pharmacies']
     for p in phs:
         p['source'] = 'OpenStreetMap'
     # Stores OSM is missing (new or unmapped), each with a source URL. Skipped if OSM already has one within 60 m.
-    opened = DATA / 'manual' / 'openings.csv'
+    opened = MANUAL / 'openings.csv'
     if opened.exists():
         with open(opened) as f:
             for row in csv.DictReader(f):
                 o = Point(float(row['lon']), float(row['lat']))
-                # degrees -> rough meters (longitude scale at 42°N)
-                if not any(o.distance(Point(p['lon'], p['lat'])) * 82000 <= CLOSED_MATCH_M for p in phs):
+                # Same store = within 60 m AND same brand; two brands in one plaza are two pharmacies.
+                # (degrees -> rough meters at 42°N)
+                if not any(o.distance(Point(p['lon'], p['lat'])) * 82000 <= CLOSED_MATCH_M and brand(p['name']) == brand(row['name'])
+                           for p in phs):
                     phs.append({'name': row['name'], 'lat': float(row['lat']), 'lon': float(row['lon']),
                                 'address': row['address'], 'source': 'manual (openings.csv)'})
                     print(f"opening '{row['name']}': added")
@@ -65,7 +81,7 @@ def load_pharmacies():
         if c in ph:
             ph[c] = ph[c].astype(object).where(ph[c].notna(), None)
     closed = []
-    with open(DATA / 'manual' / 'closures.csv') as f:
+    with open(MANUAL / 'closures.csv') as f:
         for row in csv.DictReader(f):
             closed.append(row)
     cl = gpd.GeoSeries([Point(float(c['lon']), float(c['lat'])) for c in closed], crs=4326).to_crs(26986)
@@ -94,12 +110,12 @@ def status_at(geom, ph, r):
 
 def prepare():
     """Block groups with low-access flag, walk radius, 65+/no-car counts and neighborhood."""
-    bg = gpd.read_file(DATA / 'raw' / 'boston_bg.geojson').to_crs(26986)
+    bg = gpd.read_file(BG_FILE).to_crs(26986)
     ph, closed = load_pharmacies()
 
     key = census_key()
     acs, rule = None, 'income'
-    cached = DATA / 'raw' / 'acs_bg.json'
+    cached = ACS_FILE
     if cached.exists():  # never pull at run time when a cache exists
         acs, rule = json.loads(cached.read_text()), 'state'
     elif key:
@@ -117,7 +133,7 @@ def prepare():
         bg['pov_pct'] = [x['pov'] / x['pov_hh'] if x.get('pov_hh') else 0 for x in a]
         bg['nocar_pct'] = [n / h if h else 0 for n, h in zip(bg['nocar'], bg['hh'])]
         # HPC: car ownership below the STATE average, or >20% of households below poverty
-        state_nocar = json.loads((DATA / 'raw' / 'acs_state.json').read_text())['nocar_share']
+        state_nocar = json.loads((RAW / 'acs_state.json').read_text())['nocar_share']
         bg['low_access'] = (bg['nocar_pct'] > state_nocar) | (bg['pov_pct'] > 0.20)
     else:
         med = bg['BG_MHHI'][bg['BG_MHHI'] > 0].median()
@@ -125,11 +141,17 @@ def prepare():
         bg['nocar_pct'] = None
         bg['age65'] = None
 
-    nb = gpd.read_file(DATA / 'raw' / 'neighborhoods.geojson').to_crs(26986)
-    ncol = [c for c in nb.columns if 'name' in c.lower()][0]
-    cent = gpd.GeoDataFrame(geometry=bg.geometry.representative_point(), crs=26986)
-    bg['hood'] = gpd.sjoin(cent, nb[[ncol, 'geometry']], how='left', predicate='within')[ncol].values
-    bg['radius_m'] = bg['low_access'].map({True: 0.5 * MILE, False: 1.0 * MILE})
+    if SLUG == 'boston':
+        nb = gpd.read_file(RAW / 'neighborhoods.geojson').to_crs(26986)
+        ncol = [c for c in nb.columns if 'name' in c.lower()][0]
+        cent = gpd.GeoDataFrame(geometry=bg.geometry.representative_point(), crs=26986)
+        bg['hood'] = gpd.sjoin(cent, nb[[ncol, 'geometry']], how='left', predicate='within')[ncol].values
+    else:
+        bg['hood'] = PLACE['name']
+    density = bg['TOTAL_POP'].fillna(0) / (bg['ALAND'] / 2589988.11).clip(lower=1e-6)  # people per land sq mi
+    bg['area_type'] = ['rural' if r else 'urban' if d > URBAN_DENSITY else 'suburban'
+                       for r, d in zip(bg['RURAL'], density)]
+    bg['radius_m'] = [LIMIT_MI[t] * (0.5 if low else 1) * MILE for t, low in zip(bg['area_type'], bg['low_access'])]
     return bg, ph, closed, rule
 
 
@@ -144,11 +166,11 @@ def main():
              'low_access': bool(b['low_access']),
              'lim_eng': round(float(b['LIMENGHHPCT'] or 0), 1),
              'nocar_pct': None if b['nocar_pct'] is None else round(float(b['nocar_pct']) * 100, 1),
-             'age65': None if b['age65'] is None else int(b['age65'])}
+             'age65': None if b['age65'] is None else int(b['age65']),
+             'area_type': b['area_type'], 'limit_mi': round(b['radius_m'] / MILE, 2)}
         for r in RADII:
             p[f's_{r:g}'] = status_at(b.geometry, ph, r * MILE)[1]
-        r_state = 0.5 if b['low_access'] else 1.0
-        p['s_state'] = p[f's_{r_state:g}']
+        p['s_state'] = status_at(b.geometry, ph, b['radius_m'])[1]
         p.update(districts.get(b['GEOID'], {}))
         props.append(p)
 

@@ -1,0 +1,68 @@
+{
+"sites": [
+{
+"name": "Caring Health Center \u2013 Forest Park at the \u201cX\u201d",
+"kind": "health_center",
+"lat": 42.08661,
+"lon": -72.557148,
+"address": "532 Sumner Avenue, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Baystate Mason Square Community Health Center",
+"kind": "health_center",
+"lat": 42.110982,
+"lon": -72.563291,
+"address": "11 Wilbraham Road, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Baystate Brightwood Health Center/Centro de Salud",
+"kind": "health_center",
+"lat": 42.117237,
+"lon": -72.614415,
+"address": "380 Plainfield Street, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Springfield Health Services for the Homeless Health Center",
+"kind": "health_center",
+"lat": 42.100569,
+"lon": -72.585957,
+"address": "1145 Main Street, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Caring Health Center \u2013 Richard E. Neal Complex",
+"kind": "health_center",
+"lat": 42.099714,
+"lon": -72.584783,
+"address": "1049 Main Street, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Caring Health Center",
+"kind": "health_center",
+"lat": 42.114366,
+"lon": -72.5853,
+"address": "417 Liberty Street, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Caring Health Center",
+"kind": "health_center",
+"lat": 42.137667,
+"lon": -72.515982,
+"address": "860 Boston Road, Springfield",
+"source": "MassGIS Community Health Centers"
+},
+{
+"name": "Chicopee Health Center",
+"kind": "health_center",
+"lat": 42.148706,
+"lon": -72.597573,
+"address": "505 Front Street, Chicopee",
+"source": "MassGIS Community Health Centers"
+}
+]
+}

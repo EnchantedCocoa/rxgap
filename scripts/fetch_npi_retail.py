@@ -1,22 +1,20 @@
-# 보스턴과 인접 우편번호의 NPI 소매 약국을 받아 주소를 좌표로 바꾸고 data/raw/npi_retail.json으로 저장하는 스크립트.
-import csv, io, json, time
+# 선택한 장소와 인접 우편번호의 NPI 소매 약국을 받아 주소를 좌표로 바꾸어 저장하는 스크립트.
+import csv, io, json, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from places import PLACE, SLUG
 
 RAW = Path(__file__).resolve().parent.parent / 'data' / 'raw'
-OUT = RAW / 'npi_retail.json'
+OUT = RAW / 'npi_retail.json' if SLUG == 'boston' else RAW / 'places' / f'{SLUG}_npi.json'
 NPI = 'https://npiregistry.cms.hhs.gov/api/'
 GEOCODER = 'https://geocoding.geo.census.gov/geocoder/locations/addressbatch'
 RETAIL = '3336C0003X'  # Community/Retail Pharmacy
 PHARMACY = '333600000X'  # generic 'Pharmacy': chains (CVS, Walgreens) use this as primary
 NOT_RETAIL = {'3336I0012X': 'institutional', '3336M0002X': 'mail order', '3336S0011X': 'specialty',
               '3336L0003X': 'long-term care', '3336H0001X': 'home infusion', '3336N0007X': 'nuclear'}
-# Boston ZIPs plus neighbors whose stores can sit within a mile of the city line.
-ZIPS = [f'021{n:02d}' for n in range(8, 38)] + ['02163', '02199', '02210', '02215'] + [
-    '02138', '02139', '02140', '02141', '02142', '02143', '02144', '02145', '02148', '02149', '02150',
-    '02151', '02152', '02169', '02170', '02171', '02186', '02026', '02445', '02446', '02447', '02458',
-    '02459', '02467', '02472', '02368', '02021', '02090', '02494']
+ZIPS = PLACE['npi_zips']  # the place's ZIPs plus neighbors whose stores can sit within reach
 
 
 def get(params, tries=4):
@@ -72,8 +70,8 @@ def main():
     rows = geocode([r for r in pull() if r['status'] == 'A' and r['retail']
                      and r['primary'] in (RETAIL, PHARMACY) and not r['other_kinds']])
     OUT.write_text(json.dumps({'pharmacies': rows}, indent=0))
-    (RAW / 'npi_retail.meta.json').write_text(json.dumps({
-        'dataset': 'NPI Registry, active organizations listing Community/Retail Pharmacy (3336C0003X), primary Retail or Pharmacy, no institutional/mail/specialty/LTC codes, Boston + neighboring ZIPs, geocoded with the US Census geocoder',
+    (OUT.with_suffix('.meta.json')).write_text(json.dumps({
+        'dataset': 'NPI Registry, active organizations listing Community/Retail Pharmacy (3336C0003X), primary Retail or Pharmacy, no institutional/mail/specialty/LTC codes, ' + PLACE['name'] + ' and neighboring ZIPs, geocoded with the US Census geocoder',
         'url': NPI, 'function': 'scripts/fetch_npi_retail.py:main', 'count': len(rows),
         'pulled': datetime.now(timezone.utc).isoformat(timespec='seconds')}, indent=2))
     ok = sum(r['lat'] is not None for r in rows)

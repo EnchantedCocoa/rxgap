@@ -117,3 +117,13 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   (2) A 5-stop opening tour (skippable, ends on any click, off under reduced motion) whose
   captions are fixed templates filled with app_data.json numbers. Store names from NPI are
   shown in display form ("CVS Pharmacy", not "CVS PHARMACY #05464"). 29 tests pass.
+- 15:20 Springfield and Plymouth are now full places (same pipeline as Boston), via
+  `scripts/places.py` + `RXGAP_PLACE` and `scripts/run_all.py`. Each block group now gets
+  the HPC area type from its density (urban 1 mi / suburban 2 mi / rural 5 mi, halved
+  for low-access), in Boston too. Overpass refused connections all afternoon, so
+  Springfield's store list is NPI-only and both new towns use straight-line x 1.3 walk
+  estimates (labeled). 7 parallel subagent checks verified 124 pharmacy addresses.
+  Found and fixed a de-duplication bug: two different brands within 60-120 m (e.g.
+  Stop & Shop next to Walgreens on Samoset St) were counted as one store; now same
+  store = close AND same brand. Agreement with the HPC by residents: Boston 88%,
+  Plymouth 79%, Springfield 73% (HPC excluded some provider-based pharmacies we count).

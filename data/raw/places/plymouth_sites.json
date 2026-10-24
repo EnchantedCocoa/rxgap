@@ -1,0 +1,12 @@
+{
+"sites": [
+{
+"name": "Harbor Health Plymouth",
+"kind": "health_center",
+"lat": 41.979375,
+"lon": -70.688196,
+"address": "10 Cordage Park Circle, Plymouth",
+"source": "MassGIS Community Health Centers"
+}
+]
+}

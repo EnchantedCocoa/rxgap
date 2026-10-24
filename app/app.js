@@ -6,17 +6,16 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const STATUS_LABEL = { desert: 'Desert', 'near-desert': 'One closure away', covered: 'Covered' };
 
 const state = { rule: 'state', selected: null, closed: null, timers: [], town: 'boston' };
-let D, BG, map, bgIndex, TOWNS, bostonLayer, townLayer, pinLayer;
-const townIndex = new Map();
+let D, BG, map, bgIndex, bostonLayer, pinLayer;
 
 // ---------- data ----------
-async function load() {
+const placeBase = (slug) => (slug === 'boston' ? '../data/' : `../data/places/${slug}/`);
+async function load(slug = 'boston') {
   const [d, bg] = await Promise.all([
-    fetch('../data/app_data.json').then((r) => r.json()),
-    fetch('../data/bg_out.geojson').then((r) => r.json()),
+    fetch(placeBase(slug) + 'app_data.json').then((r) => r.json()),
+    fetch(placeBase(slug) + 'bg_out.geojson').then((r) => r.json()),
   ]);
   D = d; BG = bg;
-  TOWNS = await fetch('../data/towns/towns.json').then((r) => r.json());
   bgIndex = new Map(bg.features.map((f) => [f.properties.GEOID, f]));
   for (const f of bg.features) f.properties._c = centroid(f.geometry);
 }
@@ -51,11 +50,15 @@ function renderHeadline() {
   countTo($('[data-num="atrisk"]'), h.desert + h.near);
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
     $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`; // gray remainder = everyone else
-  $('#hl-title').textContent = 'Boston residents in a pharmacy desert or one closure away';
-  const v = D.validation;
+  const v = D.validation, P = D.place;
+  $('#hl-title').textContent = `${P.name} residents in a pharmacy desert or one closure away`;
+  const types = Object.entries(P.area_types).filter(([, n]) => n > 0).sort((x, y) => y[1] - x[1]);
+  $('#town-note').hidden = P.slug === 'boston';
+  $('#rk-title').textContent = `Stores ${P.name} can’t afford to lose`;
+  $('#town-note').innerHTML = P.why ? `${esc(P.why)}. Walk limit by area: ${types.map(([t, n]) => `${t} ${fmt(n)} people`).join(', ')}. <button class="info" data-prov="headline" aria-label="How we got this">i</button>` : '';
   $('#at-risk').innerHTML = state.rule === 'state'
-    ? `<b>1 in ${fmt(v.one_in)}</b> Boston residents. Among them, <b>${fmt(v.at_risk_age65)}</b> are 65 or older and <b>${fmt(v.at_risk_nocar_hh)}</b> homes have no car.`
-    : `<b>1 in ${fmt(Math.round(h.total / (h.desert + h.near)))}</b> Boston residents at this walk limit.`;
+    ? `<b>1 in ${fmt(v.one_in)}</b> ${esc(P.name)} residents. Among them, <b>${fmt(v.at_risk_age65)}</b> are 65 or older and <b>${fmt(v.at_risk_nocar_hh)}</b> homes have no car.`
+    : `<b>1 in ${fmt(Math.round(h.total / (h.desert + h.near)))}</b> ${esc(P.name)} residents at this walk limit.`;
   $('#fallback-banner').hidden = D.rule === 'state';
   const manual = D.pharmacies.filter((p) => p.source && p.source !== 'OpenStreetMap').length;
   if (manual) $('#source-note').textContent = `Stores: OpenStreetMap (a floor, not the full list), plus ${fmt(manual)} added by hand with a source.`;
@@ -145,6 +148,12 @@ function initMap() {
   tiles('Base', 'tilePane').addTo(map);
   tiles('Reference', 'labels').addTo(map); // labels stay readable above the colored blocks
 
+  drawPlace();
+}
+
+function drawPlace() {
+  bostonLayer?.remove(); pinLayer?.remove(); clearRoute(); clearSiting();
+  layers.clear(); markers.clear();
   pinLayer = L.layerGroup().addTo(map);
   bostonLayer = L.geoJSON(BG, {
     style: () => ({ className: 'bg', weight: 0.6 }),
@@ -175,73 +184,14 @@ function initMap() {
 async function setTown(slug) {
   if (slug === state.town) return;
   if (state.closed) undo(true);
-  clearSiting();
-  ['#store-card', '#result-card', '#sheet'].forEach((s) => { $(s).hidden = true; });
+  ['#store-card', '#result-card', '#sheet'].forEach((x) => { $(x).hidden = true; });
   state.town = slug;
-  const boston = slug === 'boston';
-  document.querySelectorAll('.boston-only').forEach((el) => { el.hidden = !boston; });
-  document.querySelectorAll('.town-only').forEach((el) => { el.hidden = boston; });
-  $('#boston-compare').hidden = !boston;
-  $('#town-note').hidden = boston;
-  townLayer?.remove(); townLayer = null;
-  if (boston) {
-    bostonLayer.addTo(map); pinLayer.addTo(map); restyle();
-    map.flyTo([42.295, -71.085], 13, { animate: !reduced, duration: 1 });
-    renderHeadline();
-    return;
-  }
-  bostonLayer.remove(); pinLayer.remove();
-  const t = TOWNS[slug];
-  const gj = await fetch(`../data/towns/${slug}.geojson`).then((r) => r.json());
-  townIndex.clear();
-  townLayer = L.geoJSON(gj, {
-    style: () => ({ className: 'bg', weight: 0.6 }),
-    onEachFeature: (f, l) => { townIndex.set(f.properties.GEOID, f); l.on('click', () => openTownSheet(f.properties)); },
-  }).addTo(map);
-  townLayer.eachLayer((l) => {
-    const el = l.getElement();
-    el?.classList.add(`st-${l.feature.properties.s_state}`);
-    el?.classList.toggle('is-empty', l.feature.properties.pop < EMPTY_POP);
-  });
-  map.flyToBounds(t.bounds, { animate: !reduced, duration: 1.2 });
-  renderTownHeadline(t);
-}
-
-function renderTownHeadline(t) {
-  $('#at-risk').innerHTML = `<b>1 in ${fmt(Math.round(t.total / (t.desert + t.near)))}</b> ${esc(t.name)} residents.`;
-  $('#hl-title').textContent = `${t.name} residents in a pharmacy desert or one closure away`;
-  countTo($('[data-num="desert"]'), t.desert);
-  countTo($('[data-num="near"]'), t.near);
-  countTo($('[data-num="atrisk"]'), t.desert + t.near);
-  for (const [k, v] of [['desert', t.desert], ['near', t.near], ['covered', t.covered]])
-    $(`#seg-${k}`).style.width = `${(v / t.total) * 100}%`;
-  $('#town-note').innerHTML = `${esc(t.why)}. <button class="info" data-prov="town" aria-label="How we got this number">i</button>`;
-  const rows = Object.entries(t.types).sort((a, b) => b[1] - a[1]).map(([k, v]) =>
-    `<tr><td>${k[0].toUpperCase() + k.slice(1)}</td><td>${fmt(v)}</td><td>${k === 'urban' ? '1 mi (½ if low-access)' : k === 'suburban' ? '2 mi (1 if low-access)' : '5 mi (2½ if low-access)'}</td></tr>`).join('');
-  $('#town-panel').innerHTML = `
-    <div class="section-head"><h2 id="tp-title">How ${esc(t.name)} is measured</h2></div>
-    <p class="sub">The state sets the walk limit per block group by density: urban above 5,000 people per square mile, suburban below.</p>
-    <table class="town-panel-types"><thead><tr><th>Area type</th><th>Residents</th><th>Distance limit</th></tr></thead><tbody>${rows}</tbody></table>
-    <p class="sub">These are the state's published results. Closure simulation and the can't-lose ranking are for Boston only for now, because they need a checked store list.</p>`;
-}
-
-function openTownSheet(p) {
-  const sheet = $('#sheet');
-  sheet.innerHTML = `
-    <button class="close" aria-label="Close">×</button>
-    <span class="pill pill-${p.s_state}">${STATUS_LABEL[p.s_state]}</span>
-    <h3 id="sheet-title" style="margin:6px 0 0">${esc(TOWNS[state.town].name)} <small style="color:var(--muted);font-weight:400">block group ${esc(p.GEOID)}</small></h3>
-    <dl class="grid">
-      <div><dt>Residents</dt><dd>${fmt(p.pop)}</dd></div>
-      <div><dt>Age 65+</dt><dd>${p.age65_pct}%</dd></div>
-      <div><dt>Homes, no car</dt><dd>${p.nocar_pct}%</dd></div>
-      <div><dt>In poverty</dt><dd>${p.pov_pct}%</dd></div>
-    </dl>
-    <p style="margin:0;font-size:var(--fs-sm);color:var(--ink-2)">${p.type[0].toUpperCase() + p.type.slice(1)}${p.low_access ? ', low-access' : ''}: limit ${p.limit_mi} mi.
-      ${p.share_in_reach}% of the area is within reach (desert if under 15%).
-      <button class="info" data-prov="town" aria-label="How we got these numbers">i</button></p>`;
-  sheet.hidden = false;
-  $('.close', sheet).addEventListener('click', () => { sheet.hidden = true; });
+  await load(slug);
+  drawPlace();
+  renderHeadline();
+  renderRanking();
+  renderMethod();
+  map.flyTo(D.place.view.slice(0, 2), D.place.view[2], { animate: !reduced, duration: 1.2 });
 }
 
 // ---------- selection + simulation ----------
@@ -329,7 +279,7 @@ function renderResult(s) {
         <div><dt>Limited English</dt><dd id="r-eng">0</dd></div>
       </dl>
       <p class="walk-note" style="margin-top:-8px">Counts are homes, except age 65+. <button class="info" data-prov="lim_eng_hh" aria-label="How we got the limited English count">i</button></p>
-      <p class="walk-note">Next open pharmacy: up to <b>${fmt(s.next_walk_max)} min</b> on foot <button class="info" data-prov="walk" aria-label="How we got this number">i</button> · ${esc(s.hoods.join(', '))}</p>
+      <p class="walk-note">Next open pharmacy: up to <b>${fmt(s.next_walk_max)} min</b> on foot${D.place.walk_estimate ? ' (estimate: straight line × 1.3)' : ''} <button class="info" data-prov="walk" aria-label="How we got this number">i</button> · ${esc(s.hoods.join(', '))}</p>
       <h4>Officials for these residents <button class="info" data-prov="officials" aria-label="How we got this">i</button></h4>
       <ul class="offs">${offs}</ul>
     </div>
@@ -387,7 +337,7 @@ function drawRoute(s) {
     if (state.closed !== s) return;
     const m = L.marker(r.coords[r.coords.length - 1], { ...opts, zIndexOffset: 3000, icon: L.divIcon({
       className: 'route-tag', iconAnchor: [-8, 14],
-      html: `${fmt(r.minutes)} min walk <small>to ${esc(r.store)}</small>` }) }).addTo(map);
+      html: `${r.estimate ? 'about ' : ''}${fmt(r.minutes)} min walk <small>to ${esc(r.store)}</small>` }) }).addTo(map);
     routeLayers.push(m);
   };
   reduced ? tag() : state.timers.push(setTimeout(tag, 1800));
@@ -401,15 +351,15 @@ function tourStops() {
   const top = D.stores.slice(0, 3);
   const v = D.validation;
   return [
-    { text: `<b>1 in ${fmt(v.one_in)}</b> Boston residents lives in a pharmacy desert or one closure away from one.`,
-      view: () => map.flyTo([42.295, -71.085], 13, { duration: 1.6 }) },
+    { text: `<b>1 in ${fmt(v.one_in)}</b> ${esc(D.place.name)} residents lives in a pharmacy desert or one closure away from one.`,
+      view: () => map.flyTo(D.place.view.slice(0, 2), D.place.view[2], { duration: 1.6 }) },
     ...top.map((s) => ({
       text: `${esc(s.hoods.join(' & '))}: if the ${esc(s.name)} at ${esc(String(s.address).split(',')[0])} closes, <b>${fmt(s.people)}</b> residents lose walkable access.`
         + (s.route ? ` For some, the next pharmacy is a <b>${fmt(s.route.minutes)}-minute</b> walk.` : ''),
       view: () => { map.flyTo([s.lat, s.lon], 14, { duration: 1.6 }); highlight(s, true); },
       leave: () => highlight(s, false) })),
     { text: 'Pick any store on the list to see who would lose access, and the best place for a replacement.',
-      view: () => map.flyTo([42.295, -71.085], 13, { duration: 1.4 }) },
+      view: () => map.flyTo(D.place.view.slice(0, 2), D.place.view[2], { duration: 1.4 }) },
   ];
 }
 
@@ -431,7 +381,7 @@ function tourGo(i) {
 }
 
 function tourStart() {
-  if (state.town !== 'boston' || state.closed) return;
+  if (state.closed) return;
   tour.on = true; $('#tour').hidden = false; tourGo(0);
 }
 function tourEnd() {
@@ -548,7 +498,7 @@ function openSheet(geoid) {
       <div><dt>Homes, no car</dt><dd>${p.nocar_pct == null ? '—' : `${p.nocar_pct}%`}</dd></div>
       <div><dt>Limited English</dt><dd>${p.lim_eng}%</dd></div>
     </dl>
-    <p style="margin:0 0 8px;font-size:var(--fs-sm);color:var(--ink-2)">Council District ${esc(p.council)}${offName('council', p.council) ? ` (${esc(offName('council', p.council))})` : ''} · ${esc(p.house)} · ${esc(p.senate)}
+    <p style="margin:0 0 8px;font-size:var(--fs-sm);color:var(--ink-2)">${p.council ? `Council District ${esc(p.council)}${offName('council', p.council) ? ` (${esc(offName('council', p.council))})` : ''} · ` : ''}${esc(p.house)} · ${esc(p.senate)} · ${esc(p.area_type || '')} area, ${fmt(p.limit_mi)}-mile limit
       <button class="info" data-prov="block" aria-label="How we got these numbers">i</button></p>
     ${near ? `<h4 style="margin:8px 0 4px;font-size:var(--fs-sm)">Nearest open pharmacies <button class="info" data-prov="walk" aria-label="How we got this">i</button></h4><ol class="near-list">${near}</ol>` : ''}`;
   sheet.hidden = false;
@@ -557,7 +507,7 @@ function openSheet(geoid) {
 
 // ---------- method dialog ----------
 async function renderMethod() {
-  const tpl = await fetch('../data/templates/validation.en.md').then((r) => r.text());
+  const tpl = await fetch(`../data/templates/validation.${D.place.slug === 'boston' ? 'en' : 'place'}.md`).then((r) => r.text());
   const v = D.validation;
   const filled = tpl.replace(/\{(\w+)\}/g, (_, k) => esc(typeof v[k] === 'number' ? fmt(v[k]) : v[k]));
   const html = filled.split(/\n\n+/).map((block) => {

@@ -1,0 +1,7 @@
+{
+  "dataset": "NPI Registry, active organizations listing Community/Retail Pharmacy (3336C0003X), primary Retail or Pharmacy, no institutional/mail/specialty/LTC codes, Plymouth and neighboring ZIPs, geocoded with the US Census geocoder",
+  "url": "https://npiregistry.cms.hhs.gov/api/",
+  "function": "scripts/fetch_npi_retail.py:main",
+  "count": 40,
+  "pulled": "2026-10-24T18:37:11+00:00"
+}

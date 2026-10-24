@@ -91,17 +91,24 @@ def test_letter_counts_endpoint(page):
     assert set(rows[0]) == {'district_type', 'district_id', 'letters'}  # no names or addresses
 
 
-def test_town_picker_shows_state_results(page):
-    towns = json.loads((ROOT / 'data' / 'towns' / 'towns.json').read_text())
+def test_place_picker_loads_full_places(page):
     for slug in ['springfield', 'plymouth']:
+        app = json.loads((ROOT / 'data' / 'places' / slug / 'app_data.json').read_text())
         page.select_option('#town', slug)
-        page.wait_for_timeout(1500)
+        page.wait_for_timeout(2000)
         page.screenshot(path=str(SHOTS / f'ui_{slug}.png'))
-        assert page.inner_text('[data-num="desert"]') == f"{towns[slug]['desert']:,}"
-        assert page.locator('path.bg').count() == towns[slug]['blocks']
-        assert page.is_hidden('#rank-list')
+        h = app['headline']['state']
+        assert page.inner_text('[data-num="desert"]') == f"{h['desert']:,}"
+        assert page.locator('path.bg').count() == len(json.loads((ROOT / 'data' / 'places' / slug / 'bg_out.geojson').read_text())['features'])
+        assert page.locator('.rank-row').count() == len(app['stores'])
+        page.click('.rank-row[data-rank="1"]')
+        page.click('#simulate')
+        page.wait_for_timeout(1500)
+        assert page.inner_text('#r-people') == f"{app['stores'][0]['people']:,}"
+        page.screenshot(path=str(SHOTS / f'ui_{slug}_closure.png'))
+        page.click('#undo2')
     page.select_option('#town', 'boston')
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(1500)
     app = json.loads((ROOT / 'data' / 'app_data.json').read_text())
     assert page.inner_text('[data-num="desert"]') == f"{app['headline']['state']['desert']:,}"
     assert page.locator('path.bg').count() == 580

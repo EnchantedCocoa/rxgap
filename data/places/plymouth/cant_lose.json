@@ -1,0 +1,377 @@
+{
+ "rule": "state",
+ "stores": [
+  {
+   "name": "CVS Pharmacy",
+   "address": "517 State Road, Plymouth 02360",
+   "osm_id": "way/215724553",
+   "source": "OpenStreetMap",
+   "lat": 41.923349,
+   "lon": -70.569515,
+   "people": 6614,
+   "age65": 1670,
+   "nocar_hh": 73,
+   "block_groups": [
+    "250235308021",
+    "250235308012",
+    "250235308024",
+    "250235308025",
+    "250235307001"
+   ],
+   "hoods": [
+    "Plymouth"
+   ],
+   "lost": [
+    {
+     "GEOID": "250235308021",
+     "pop": 699,
+     "age65": 30,
+     "nocar_hh": 0,
+     "lim_eng": 10.1,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "BJ's Pharmacy (Plymouth club)",
+       "address": "105 SHOPS AT 5 WAY, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 9594,
+       "walk_min": 120
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "estimate": true,
+       "walk_m": 13821,
+       "walk_min": 173
+      },
+      {
+       "name": "Stop & Shop Pharmacy #469",
+       "address": "127 SAMOSET STREET RTE 44, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 13958,
+       "walk_min": 175
+      }
+     ]
+    },
+    {
+     "GEOID": "250235308012",
+     "pop": 2580,
+     "age65": 203,
+     "nocar_hh": 17,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "BJ's Pharmacy (Plymouth club)",
+       "address": "105 SHOPS AT 5 WAY, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 10205,
+       "walk_min": 128
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "2253 State Road",
+       "estimate": true,
+       "walk_m": 12077,
+       "walk_min": 151
+      },
+      {
+       "name": "Shaw's / Osco Pharmacy #2585",
+       "address": "2260 STATE RD, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 12175,
+       "walk_min": 153
+      }
+     ]
+    },
+    {
+     "GEOID": "250235308024",
+     "pop": 1181,
+     "age65": 326,
+     "nocar_hh": 9,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "BJ's Pharmacy (Plymouth club)",
+       "address": "105 SHOPS AT 5 WAY, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 11548,
+       "walk_min": 145
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "2253 State Road",
+       "estimate": true,
+       "walk_m": 12712,
+       "walk_min": 159
+      },
+      {
+       "name": "Shaw's / Osco Pharmacy #2585",
+       "address": "2260 STATE RD, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 12805,
+       "walk_min": 160
+      }
+     ]
+    },
+    {
+     "GEOID": "250235308025",
+     "pop": 953,
+     "age65": 239,
+     "nocar_hh": 33,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "BJ's Pharmacy (Plymouth club)",
+       "address": "105 SHOPS AT 5 WAY, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 10507,
+       "walk_min": 132
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "2253 State Road",
+       "estimate": true,
+       "walk_m": 14637,
+       "walk_min": 183
+      },
+      {
+       "name": "Shaw's / Osco Pharmacy #2585",
+       "address": "2260 STATE RD, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 14732,
+       "walk_min": 185
+      }
+     ]
+    },
+    {
+     "GEOID": "250235307001",
+     "pop": 1201,
+     "age65": 872,
+     "nocar_hh": 14,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "Balbonis Drug Store",
+       "address": "289 Court Street, Plymouth 02360",
+       "estimate": true,
+       "walk_m": 6698,
+       "walk_min": 84
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "330 Court Street, Plymouth 02360",
+       "estimate": true,
+       "walk_m": 6786,
+       "walk_min": 85
+      },
+      {
+       "name": "Harbor Community Health Center Plymouth Pharmacy",
+       "address": "10 CORDAGE PARK CIR STE 115, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 6884,
+       "walk_min": 86
+      }
+     ]
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "name": "BJ's Pharmacy (Plymouth club)",
+   "address": "105 SHOPS AT 5 WAY, PLYMOUTH MA 02360",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 41.928169,
+   "lon": -70.652851,
+   "people": 4027,
+   "age65": 1179,
+   "nocar_hh": 70,
+   "block_groups": [
+    "250235305003",
+    "250235305005",
+    "250235306001"
+   ],
+   "hoods": [
+    "Plymouth"
+   ],
+   "lost": [
+    {
+     "GEOID": "250235305003",
+     "pop": 1156,
+     "age65": 286,
+     "nocar_hh": 63,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "estimate": true,
+       "walk_m": 3048,
+       "walk_min": 38
+      },
+      {
+       "name": "Stop & Shop Pharmacy #469",
+       "address": "127 SAMOSET STREET RTE 44, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 3177,
+       "walk_min": 40
+      },
+      {
+       "name": "Walgreens #07734",
+       "address": "165 SAMOSET ST, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 3221,
+       "walk_min": 40
+      }
+     ]
+    },
+    {
+     "GEOID": "250235305005",
+     "pop": 2195,
+     "age65": 708,
+     "nocar_hh": 7,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "estimate": true,
+       "walk_m": 5276,
+       "walk_min": 66
+      },
+      {
+       "name": "Stop & Shop Pharmacy #469",
+       "address": "127 SAMOSET STREET RTE 44, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 5413,
+       "walk_min": 68
+      },
+      {
+       "name": "Walgreens #07734",
+       "address": "165 SAMOSET ST, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 5470,
+       "walk_min": 69
+      }
+     ]
+    },
+    {
+     "GEOID": "250235306001",
+     "pop": 676,
+     "age65": 185,
+     "nocar_hh": 0,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #07734",
+       "address": "165 SAMOSET ST, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 7962,
+       "walk_min": 100
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "estimate": true,
+       "walk_m": 7987,
+       "walk_min": 100
+      },
+      {
+       "name": "Stop & Shop Pharmacy #469",
+       "address": "127 SAMOSET STREET RTE 44, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 7996,
+       "walk_min": 100
+      }
+     ]
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "name": "CVS Pharmacy #01576",
+   "address": "6 HEAD OF THE BAY RD, BOURNE MA 02532",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 41.752841,
+   "lon": -70.598463,
+   "people": 2345,
+   "age65": 290,
+   "nocar_hh": 19,
+   "block_groups": [
+    "250235309041"
+   ],
+   "hoods": [
+    "Plymouth"
+   ],
+   "lost": [
+    {
+     "GEOID": "250235309041",
+     "pop": 2345,
+     "age65": 290,
+     "nocar_hh": 19,
+     "lim_eng": 3.7,
+     "districts": {
+      "house": "1st Plymouth",
+      "senate": "Plymouth and Barnstable"
+     },
+     "nearest": [
+      {
+       "name": "Shaw's / Osco Pharmacy #2585",
+       "address": "2260 STATE RD, PLYMOUTH MA 02360",
+       "estimate": true,
+       "walk_m": 7232,
+       "walk_min": 91
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": "2253 State Road",
+       "estimate": true,
+       "walk_m": 7266,
+       "walk_min": 91
+      },
+      {
+       "name": "CVS Pharmacy",
+       "address": null,
+       "estimate": true,
+       "walk_m": 7904,
+       "walk_min": 99
+      }
+     ]
+    }
+   ],
+   "rank": 3
+  }
+ ]
+}

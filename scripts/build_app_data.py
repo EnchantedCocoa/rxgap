@@ -2,8 +2,9 @@
 import csv, json, re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / 'data'
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from places import ACS_FILE, BG_FILE, MANUAL, OUT as DATA, PLACE, PLACES, RAW, ROOT, SLUG
 RULES = {'state': 's_state', 'half': 's_0.5', 'one': 's_1'}
 
 # Each on-screen number names the function that made it and the raw sources behind it.
@@ -42,7 +43,7 @@ def tidy_all(o):
 
 def officials():
     out = {}
-    with open(DATA / 'manual' / 'officials.csv') as f:
+    with open(MANUAL / 'officials.csv') as f:
         for r in csv.DictReader(f):
             out[(r['district_type'], r['district_id'])] = r
     return out
@@ -77,7 +78,7 @@ def store_rows(stores, raw_bg, offs):
 def main():
     bg = json.loads((DATA / 'bg_out.geojson').read_text())['features']
     raw_bg = {f['properties']['GEOID']: f['properties']
-              for f in json.loads((DATA / 'raw' / 'boston_bg.geojson').read_text())['features']}
+              for f in json.loads(BG_FILE.read_text())['features']}
     rank = json.loads((DATA / 'cant_lose.json').read_text())
     sites = json.loads((DATA / 'sites_out.json').read_text())
     routes = json.loads((DATA / 'routes.json').read_text())
@@ -92,15 +93,19 @@ def main():
                           'total': total, 'desert_pct': round(n['desert'] / total * 100)}
 
     low = sum(1 for f in bg if f['properties']['low_access'])
-    acs = json.loads((DATA / 'raw' / 'acs_bg.json').read_text())
-    hpc = {r['GEOID']: r for r in csv.DictReader(open(DATA / 'raw' / 'hpc' / 'hpc_bg_with_town.csv'))}
+    acs = json.loads(ACS_FILE.read_text())
+    hpc = {r['GEOID']: r for r in csv.DictReader(open(RAW / 'hpc' / 'hpc_bg_with_town.csv'))}
     hmap = {'Pharmacy deserts': 'desert', 'Near deserts': 'near-desert', 'Non-deserts': 'covered'}
     agree = sum(f['properties']['pop'] for f in bg
                 if hmap.get(hpc.get(f['properties']['GEOID'], {}).get('Category (HPC)')) == f['properties']['s_state'])
-    hpc_desert = sum(int(r['POP20']) for r in hpc.values() if r['town'] == 'Boston' and r['Category (HPC)'] == 'Pharmacy deserts')
+    hpc_desert = sum(int(r['POP20']) for r in hpc.values() if r['town'] == PLACE['name'] and r['Category (HPC)'] == 'Pharmacy deserts')
     added = sum(1 for p in meta['pharmacies'] if p.get('source') and p['source'] != 'OpenStreetMap')
     ranked = {(s['lat'], s['lon']): s['rank'] for s in rank['stores']}
     out = {
+        'place': {'slug': SLUG, 'name': PLACE['name'], 'view': PLACE['view'], 'why': PLACE.get('why'),
+                  'council': PLACE['council'], 'walk_estimate': not (RAW / 'walk.gpickle').exists() if SLUG == 'boston' else not (RAW / 'places' / f'{SLUG}_walk.gpickle').exists(),
+                  'area_types': {t: sum(f['properties']['pop'] for f in bg if f['properties'].get('area_type') == t) for t in ('urban', 'suburban', 'rural')}},
+        'places': {k: {'name': v['name'], 'why': v.get('why')} for k, v in PLACES.items()},
         'rule': rank['rule'],
         'rules': RULES,
         'headline': headline,
@@ -122,7 +127,7 @@ def main():
                     'lat': float(c['lat']), 'lon': float(c['lon']), 'source_url': c['source_url']}
                    for c in meta['closed']],
         'prov': {k: {'function': f, 'sources': s} for k, (f, s) in PROV.items()},
-        'sources': json.loads((DATA / 'provenance.json').read_text()),
+        'sources': json.loads((ROOT / 'data' / 'provenance.json').read_text()),
     }
     for k in ('stores', 'pharmacies'):
         out[k] = tidy_all(out[k])

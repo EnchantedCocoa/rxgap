@@ -281,7 +281,153 @@
   }
  },
  "3": {
-  "lost_pop": 6602,
+  "lost_pop": 5693,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Southern Jamaica Plain Health Center",
+    "kind": "health_center",
+    "address": "640 Centre Street, Jamaica Plain, MA, 02130",
+    "at_closed_store": false,
+    "lat": 42.313266,
+    "lon": -71.113346,
+    "gain": 5693,
+    "restored": [
+     {
+      "GEOID": "250251202011",
+      "pop": 1287,
+      "share_before": 0.0,
+      "share_after": 21.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251201041",
+      "pop": 908,
+      "share_before": 0.0,
+      "share_after": 83.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
+      "share_after": 99.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251202012",
+      "pop": 1872,
+      "share_before": 0.0,
+      "share_after": 23.1,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Green Street (Orange)",
+    "kind": "mbta_station",
+    "address": null,
+    "at_closed_store": false,
+    "lat": 42.309907,
+    "lon": -71.10806,
+    "gain": 5693,
+    "restored": [
+     {
+      "GEOID": "250251202011",
+      "pop": 1287,
+      "share_before": 0.0,
+      "share_after": 73.2,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251201041",
+      "pop": 908,
+      "share_before": 0.0,
+      "share_after": 41.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251202012",
+      "pop": 1872,
+      "share_before": 0.0,
+      "share_after": 99.2,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Brookside Community Health Center",
+    "kind": "health_center",
+    "address": "3297 Washington Street, Jamaica Plain, MA, 02130",
+    "at_closed_store": false,
+    "lat": 42.310818,
+    "lon": -71.103662,
+    "gain": 3498,
+    "restored": [
+     {
+      "GEOID": "250251204002",
+      "pop": 719,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251204003",
+      "pop": 907,
+      "share_before": 10.4,
+      "share_after": 39.9,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250251202012",
+      "pop": 1872,
+      "share_before": 0.0,
+      "share_after": 97.5,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Southern Jamaica Plain Health Center"
+   ],
+   "gain": 5693,
+   "solver": "PuLP CBC"
+  }
+ },
+ "4": {
+  "lost_pop": 5691,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "5": {
+  "lost_pop": 5569,
   "ring_mi": 0.5,
   "top": [
    {
@@ -337,7 +483,7 @@
     "at_closed_store": false,
     "lat": 42.283892,
     "lon": -71.063431,
-    "gain": 4773,
+    "gain": 3740,
     "restored": [
      {
       "GEOID": "250251009001",
@@ -366,13 +512,6 @@
       "share_before": 8.2,
       "share_after": 100.0,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251008004",
-      "pop": 1033,
-      "share_before": 3.3,
-      "share_after": 15.9,
-      "limit_mi": 0.5
      }
     ]
    },
@@ -383,7 +522,7 @@
     "at_closed_store": false,
     "lat": 42.272425,
     "lon": -71.062471,
-    "gain": 4499,
+    "gain": 3466,
     "restored": [
      {
       "GEOID": "250251009001",
@@ -405,203 +544,19 @@
       "share_before": 0.0,
       "share_after": 87.0,
       "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251008004",
-      "pop": 1033,
-      "share_before": 3.3,
-      "share_after": 87.7,
-      "limit_mi": 0.5
      }
     ]
    }
   ],
   "best_set": {
    "sites": [
-    "Harbor Health Services Inc",
-    "Butler (Red)"
+    "Harbor Health Services Inc"
    ],
-   "gain": 6602,
+   "gain": 5569,
    "solver": "PuLP CBC"
-  }
- },
- "4": {
-  "lost_pop": 6459,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Southern Jamaica Plain Health Center",
-    "kind": "health_center",
-    "address": "640 Centre Street, Jamaica Plain, MA, 02130",
-    "at_closed_store": false,
-    "lat": 42.313266,
-    "lon": -71.113346,
-    "gain": 6459,
-    "restored": [
-     {
-      "GEOID": "250251202011",
-      "pop": 1287,
-      "share_before": 0.0,
-      "share_after": 21.5,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201041",
-      "pop": 908,
-      "share_before": 0.0,
-      "share_after": 83.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251204002",
-      "pop": 719,
-      "share_before": 0.0,
-      "share_after": 99.1,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201051",
-      "pop": 766,
-      "share_before": 13.4,
-      "share_after": 37.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251204003",
-      "pop": 907,
-      "share_before": 10.4,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251202012",
-      "pop": 1872,
-      "share_before": 0.0,
-      "share_after": 23.1,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Green Street (Orange)",
-    "kind": "mbta_station",
-    "address": null,
-    "at_closed_store": false,
-    "lat": 42.309907,
-    "lon": -71.10806,
-    "gain": 6459,
-    "restored": [
-     {
-      "GEOID": "250251202011",
-      "pop": 1287,
-      "share_before": 0.0,
-      "share_after": 73.2,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201041",
-      "pop": 908,
-      "share_before": 0.0,
-      "share_after": 41.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251204002",
-      "pop": 719,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201051",
-      "pop": 766,
-      "share_before": 13.4,
-      "share_after": 16.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251204003",
-      "pop": 907,
-      "share_before": 10.4,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251202012",
-      "pop": 1872,
-      "share_before": 0.0,
-      "share_after": 99.2,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Forest Hills (Orange)",
-    "kind": "mbta_station",
-    "address": null,
-    "at_closed_store": false,
-    "lat": 42.30078,
-    "lon": -71.114192,
-    "gain": 3868,
-    "restored": [
-     {
-      "GEOID": "250251202011",
-      "pop": 1287,
-      "share_before": 0.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201041",
-      "pop": 908,
-      "share_before": 0.0,
-      "share_after": 34.4,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250251201051",
-      "pop": 766,
-      "share_before": 13.4,
-      "share_after": 57.0,
-      "limit_mi": 1.0
-     },
-     {
-      "GEOID": "250251204003",
-      "pop": 907,
-      "share_before": 10.4,
-      "share_after": 37.2,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Southern Jamaica Plain Health Center"
-   ],
-   "gain": 6459,
-   "solver": "PuLP CBC"
-  }
- },
- "5": {
-  "lost_pop": 5966,
-  "ring_mi": 0.5,
-  "top": [],
-  "best_set": {
-   "sites": [],
-   "gain": 0
   }
  },
  "6": {
-  "lost_pop": 5691,
-  "ring_mi": 0.5,
-  "top": [],
-  "best_set": {
-   "sites": [],
-   "gain": 0
-  }
- },
- "7": {
   "lost_pop": 4976,
   "ring_mi": 0.5,
   "top": [
@@ -612,8 +567,15 @@
     "at_closed_store": false,
     "lat": 42.30001,
     "lon": -71.061925,
-    "gain": 2590,
+    "gain": 3748,
     "restored": [
+     {
+      "GEOID": "250250921011",
+      "pop": 1158,
+      "share_before": 2.5,
+      "share_after": 15.4,
+      "limit_mi": 0.5
+     },
      {
       "GEOID": "250250921015",
       "pop": 2590,
@@ -665,122 +627,20 @@
     "Fields Corner (Red)",
     "Ashmont (Red)"
    ],
-   "gain": 3818,
+   "gain": 4976,
    "solver": "PuLP CBC"
+  }
+ },
+ "7": {
+  "lost_pop": 3927,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
   }
  },
  "8": {
-  "lost_pop": 4246,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "South Boston Community Health Center \u2013 409 W Broadway",
-    "kind": "health_center",
-    "address": "409 West Broadway, Boston, MA, 02127",
-    "at_closed_store": true,
-    "lat": 42.336864,
-    "lon": -71.048218,
-    "gain": 4246,
-    "restored": [
-     {
-      "GEOID": "250250607001",
-      "pop": 997,
-      "share_before": 2.3,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250608003",
-      "pop": 1243,
-      "share_before": 8.1,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250606011",
-      "pop": 2006,
-      "share_before": 0.1,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "South Boston Community Health Center \u2013 386 W Broadway",
-    "kind": "health_center",
-    "address": "386 West Broadway, Boston, MA, 02127",
-    "at_closed_store": true,
-    "lat": 42.337611,
-    "lon": -71.048519,
-    "gain": 4246,
-    "restored": [
-     {
-      "GEOID": "250250607001",
-      "pop": 997,
-      "share_before": 2.3,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250608003",
-      "pop": 1243,
-      "share_before": 8.1,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250606011",
-      "pop": 2006,
-      "share_before": 0.1,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "Broadway (Red)",
-    "kind": "mbta_station",
-    "address": null,
-    "at_closed_store": false,
-    "lat": 42.34259,
-    "lon": -71.057171,
-    "gain": 4246,
-    "restored": [
-     {
-      "GEOID": "250250607001",
-      "pop": 997,
-      "share_before": 2.3,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250608003",
-      "pop": 1243,
-      "share_before": 8.1,
-      "share_after": 44.7,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250606011",
-      "pop": 2006,
-      "share_before": 0.1,
-      "share_after": 55.9,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "South Boston Community Health Center \u2013 409 W Broadway",
-    "South Boston Community Health Center \u2013 386 W Broadway",
-    "Broadway (Red)"
-   ],
-   "gain": 4246,
-   "solver": "PuLP CBC"
-  }
- },
- "9": {
   "lost_pop": 3454,
   "ring_mi": 0.5,
   "top": [
@@ -889,7 +749,7 @@
    "solver": "PuLP CBC"
   }
  },
- "10": {
+ "9": {
   "lost_pop": 3203,
   "ring_mi": 0.5,
   "top": [],
@@ -898,7 +758,7 @@
    "gain": 0
   }
  },
- "11": {
+ "10": {
   "lost_pop": 2986,
   "ring_mi": 0.5,
   "top": [
@@ -972,7 +832,7 @@
    "solver": "PuLP CBC"
   }
  },
- "12": {
+ "11": {
   "lost_pop": 2957,
   "ring_mi": 0.5,
   "top": [
@@ -995,7 +855,7 @@
      {
       "GEOID": "250250904001",
       "pop": 921,
-      "share_before": 0.0,
+      "share_before": 0.7,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
@@ -1027,8 +887,8 @@
      {
       "GEOID": "250250904001",
       "pop": 921,
-      "share_before": 0.0,
-      "share_after": 76.6,
+      "share_before": 0.7,
+      "share_after": 77.1,
       "limit_mi": 0.5
      },
      {
@@ -1059,7 +919,7 @@
      {
       "GEOID": "250250904001",
       "pop": 921,
-      "share_before": 0.0,
+      "share_before": 0.7,
       "share_after": 100.0,
       "limit_mi": 0.5
      },
@@ -1081,7 +941,7 @@
    "solver": "PuLP CBC"
   }
  },
- "13": {
+ "12": {
   "lost_pop": 2902,
   "ring_mi": 0.5,
   "top": [
@@ -1145,7 +1005,7 @@
    "solver": "PuLP CBC"
   }
  },
- "14": {
+ "13": {
   "lost_pop": 2590,
   "ring_mi": 0.5,
   "top": [
@@ -1209,7 +1069,7 @@
    "solver": "PuLP CBC"
   }
  },
- "15": {
+ "14": {
   "lost_pop": 2284,
   "ring_mi": 0.5,
   "top": [],
@@ -1218,7 +1078,7 @@
    "gain": 0
   }
  },
- "16": {
+ "15": {
   "lost_pop": 2124,
   "ring_mi": 0.5,
   "top": [],
@@ -1227,7 +1087,7 @@
    "gain": 0
   }
  },
- "17": {
+ "16": {
   "lost_pop": 1957,
   "ring_mi": 0.5,
   "top": [
@@ -1296,7 +1156,7 @@
    "solver": "PuLP CBC"
   }
  },
- "18": {
+ "17": {
   "lost_pop": 1710,
   "ring_mi": 0.5,
   "top": [
@@ -1365,7 +1225,7 @@
    "solver": "PuLP CBC"
   }
  },
- "19": {
+ "18": {
   "lost_pop": 1527,
   "ring_mi": 0.5,
   "top": [
@@ -1434,133 +1294,7 @@
    "solver": "PuLP CBC"
   }
  },
- "20": {
-  "lost_pop": 1401,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "NEW Health \u2013 Charlestown",
-    "kind": "health_center",
-    "address": "15 Tufts Street, Boston, MA, 02129",
-    "at_closed_store": true,
-    "lat": 42.377877,
-    "lon": -71.056808,
-    "gain": 1401,
-    "restored": [
-     {
-      "GEOID": "250250402001",
-      "pop": 636,
-      "share_before": 4.7,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250408012",
-      "pop": 765,
-      "share_before": 13.2,
-      "share_after": 65.8,
-      "limit_mi": 0.5
-     }
-    ]
-   },
-   {
-    "name": "MGH Charlestown HealthCare Center",
-    "kind": "health_center",
-    "address": "73 High Street, Charlestown, MA, 02129",
-    "at_closed_store": false,
-    "lat": 42.377166,
-    "lon": -71.064251,
-    "gain": 1401,
-    "restored": [
-     {
-      "GEOID": "250250402001",
-      "pop": 636,
-      "share_before": 4.7,
-      "share_after": 67.8,
-      "limit_mi": 0.5
-     },
-     {
-      "GEOID": "250250408012",
-      "pop": 765,
-      "share_before": 13.2,
-      "share_after": 23.4,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "NEW Health \u2013 Charlestown",
-    "MGH Charlestown HealthCare Center"
-   ],
-   "gain": 1401,
-   "solver": "PuLP CBC"
-  }
- },
- "21": {
-  "lost_pop": 1248,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Whittier Street Health Center at Quincy Commons",
-    "kind": "health_center",
-    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
-    "at_closed_store": false,
-    "lat": 42.314769,
-    "lon": -71.078458,
-    "gain": 1248,
-    "restored": [
-     {
-      "GEOID": "250250818003",
-      "pop": 1248,
-      "share_before": 12.0,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Whittier Street Health Center at Quincy Commons"
-   ],
-   "gain": 1248,
-   "solver": "PuLP CBC"
-  }
- },
- "22": {
-  "lost_pop": 1248,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Whittier Street Health Center at Quincy Commons",
-    "kind": "health_center",
-    "address": "278 Blue Hill Avenue, Boston, MA, 02119",
-    "at_closed_store": false,
-    "lat": 42.314769,
-    "lon": -71.078458,
-    "gain": 1248,
-    "restored": [
-     {
-      "GEOID": "250250818003",
-      "pop": 1248,
-      "share_before": 12.4,
-      "share_after": 100.0,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Whittier Street Health Center at Quincy Commons"
-   ],
-   "gain": 1248,
-   "solver": "PuLP CBC"
-  }
- },
- "23": {
+ "19": {
   "lost_pop": 1233,
   "ring_mi": 0.5,
   "top": [],
@@ -1569,7 +1303,7 @@
    "gain": 0
   }
  },
- "24": {
+ "20": {
   "lost_pop": 1223,
   "ring_mi": 0.5,
   "top": [
@@ -1619,38 +1353,7 @@
    "solver": "PuLP CBC"
   }
  },
- "25": {
-  "lost_pop": 1008,
-  "ring_mi": 0.5,
-  "top": [
-   {
-    "name": "Harbor Health: Daniel Driscoll \u2013 Neponset Health Center",
-    "kind": "health_center",
-    "address": "398 Neponset Avenue, Boston, MA, 02122",
-    "at_closed_store": false,
-    "lat": 42.286716,
-    "lon": -71.044091,
-    "gain": 1008,
-    "restored": [
-     {
-      "GEOID": "250251007002",
-      "pop": 1008,
-      "share_before": 0.0,
-      "share_after": 56.1,
-      "limit_mi": 0.5
-     }
-    ]
-   }
-  ],
-  "best_set": {
-   "sites": [
-    "Harbor Health: Daniel Driscoll \u2013 Neponset Health Center"
-   ],
-   "gain": 1008,
-   "solver": "PuLP CBC"
-  }
- },
- "26": {
+ "21": {
   "lost_pop": 961,
   "ring_mi": 0.5,
   "top": [
@@ -1700,53 +1403,62 @@
    "solver": "PuLP CBC"
   }
  },
- "27": {
-  "lost_pop": 785,
-  "ring_mi": 1.0,
+ "22": {
+  "lost_pop": 694,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "23": {
+  "lost_pop": 636,
+  "ring_mi": 0.5,
   "top": [
    {
-    "name": "Harvard Street Adolescent Child Life Center",
+    "name": "NEW Health \u2013 Charlestown",
     "kind": "health_center",
-    "address": "895 Blue Hill Avenue, Boston, MA, 02121",
-    "at_closed_store": false,
-    "lat": 42.294123,
-    "lon": -71.088569,
-    "gain": 91,
+    "address": "15 Tufts Street, Boston, MA, 02129",
+    "at_closed_store": true,
+    "lat": 42.377877,
+    "lon": -71.056808,
+    "gain": 636,
     "restored": [
      {
-      "GEOID": "250259811003",
-      "pop": 91,
-      "share_before": 10.1,
-      "share_after": 98.4,
-      "limit_mi": 1.0
+      "GEOID": "250250402001",
+      "pop": 636,
+      "share_before": 4.7,
+      "share_after": 100.0,
+      "limit_mi": 0.5
      }
     ]
    },
    {
-    "name": "Forest Hills (Orange)",
-    "kind": "mbta_station",
-    "address": null,
+    "name": "MGH Charlestown HealthCare Center",
+    "kind": "health_center",
+    "address": "73 High Street, Charlestown, MA, 02129",
     "at_closed_store": false,
-    "lat": 42.30078,
-    "lon": -71.114192,
-    "gain": 91,
+    "lat": 42.377166,
+    "lon": -71.064251,
+    "gain": 636,
     "restored": [
      {
-      "GEOID": "250259811003",
-      "pop": 91,
-      "share_before": 10.1,
-      "share_after": 42.9,
-      "limit_mi": 1.0
+      "GEOID": "250250402001",
+      "pop": 636,
+      "share_before": 4.7,
+      "share_after": 67.8,
+      "limit_mi": 0.5
      }
     ]
    }
   ],
   "best_set": {
    "sites": [
-    "Harvard Street Adolescent Child Life Center",
-    "Forest Hills (Orange)"
+    "NEW Health \u2013 Charlestown",
+    "MGH Charlestown HealthCare Center"
    ],
-   "gain": 91,
+   "gain": 636,
    "solver": "PuLP CBC"
   }
  }

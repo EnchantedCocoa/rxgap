@@ -1,0 +1,337 @@
+{
+ "1": {
+  "lost_pop": 8544,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Baystate Mason Square Community Health Center",
+    "kind": "health_center",
+    "address": "11 Wilbraham Road, Springfield",
+    "at_closed_store": true,
+    "lat": 42.110982,
+    "lon": -72.563291,
+    "gain": 8544,
+    "restored": [
+     {
+      "GEOID": "250138017001",
+      "pop": 960,
+      "share_before": 4.9,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138014022",
+      "pop": 1079,
+      "share_before": 0.0,
+      "share_after": 32.1,
+      "limit_mi": 1.0
+     },
+     {
+      "GEOID": "250138017003",
+      "pop": 1294,
+      "share_before": 0.0,
+      "share_after": 50.6,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138014012",
+      "pop": 2259,
+      "share_before": 0.0,
+      "share_after": 38.8,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138018005",
+      "pop": 876,
+      "share_before": 12.5,
+      "share_after": 31.3,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138013001",
+      "pop": 1289,
+      "share_before": 5.0,
+      "share_after": 47.7,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138018003",
+      "pop": 787,
+      "share_before": 12.4,
+      "share_after": 25.7,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Baystate Mason Square Community Health Center"
+   ],
+   "gain": 8544,
+   "solver": "PuLP CBC"
+  }
+ },
+ "2": {
+  "lost_pop": 4091,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Caring Health Center \u2013 Richard E. Neal Complex",
+    "kind": "health_center",
+    "address": "1049 Main Street, Springfield",
+    "at_closed_store": true,
+    "lat": 42.099714,
+    "lon": -72.584783,
+    "gain": 4091,
+    "restored": [
+     {
+      "GEOID": "250138012003",
+      "pop": 619,
+      "share_before": 0.0,
+      "share_after": 68.7,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138011021",
+      "pop": 783,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138020001",
+      "pop": 731,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138020002",
+      "pop": 1291,
+      "share_before": 0.0,
+      "share_after": 37.1,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138019023",
+      "pop": 667,
+      "share_before": 0.0,
+      "share_after": 19.3,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Springfield Health Services for the Homeless Health Center",
+    "kind": "health_center",
+    "address": "1145 Main Street, Springfield",
+    "at_closed_store": false,
+    "lat": 42.100569,
+    "lon": -72.585957,
+    "gain": 3424,
+    "restored": [
+     {
+      "GEOID": "250138012003",
+      "pop": 619,
+      "share_before": 0.0,
+      "share_after": 86.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138011021",
+      "pop": 783,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138020001",
+      "pop": 731,
+      "share_before": 0.0,
+      "share_after": 100.0,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138020002",
+      "pop": 1291,
+      "share_before": 0.0,
+      "share_after": 16.2,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Caring Health Center \u2013 Richard E. Neal Complex",
+    "Springfield Health Services for the Homeless Health Center"
+   ],
+   "gain": 4091,
+   "solver": "PuLP CBC"
+  }
+ },
+ "3": {
+  "lost_pop": 3648,
+  "ring_mi": 1.0,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "4": {
+  "lost_pop": 3535,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "5": {
+  "lost_pop": 2925,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Caring Health Center",
+    "kind": "health_center",
+    "address": "417 Liberty Street, Springfield",
+    "at_closed_store": false,
+    "lat": 42.114366,
+    "lon": -72.5853,
+    "gain": 1808,
+    "restored": [
+     {
+      "GEOID": "250138004005",
+      "pop": 1808,
+      "share_before": 2.0,
+      "share_after": 42.6,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Caring Health Center"
+   ],
+   "gain": 1808,
+   "solver": "PuLP CBC"
+  }
+ },
+ "6": {
+  "lost_pop": 2433,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "7": {
+  "lost_pop": 2291,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Baystate Brightwood Health Center/Centro de Salud",
+    "kind": "health_center",
+    "address": "380 Plainfield Street, Springfield",
+    "at_closed_store": false,
+    "lat": 42.117237,
+    "lon": -72.614415,
+    "gain": 2291,
+    "restored": [
+     {
+      "GEOID": "250138007002",
+      "pop": 2291,
+      "share_before": 8.7,
+      "share_after": 98.9,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Baystate Brightwood Health Center/Centro de Salud"
+   ],
+   "gain": 2291,
+   "solver": "PuLP CBC"
+  }
+ },
+ "8": {
+  "lost_pop": 2218,
+  "ring_mi": 0.5,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "9": {
+  "lost_pop": 2153,
+  "ring_mi": 1.0,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "10": {
+  "lost_pop": 2107,
+  "ring_mi": 0.5,
+  "top": [
+   {
+    "name": "Caring Health Center",
+    "kind": "health_center",
+    "address": "417 Liberty Street, Springfield",
+    "at_closed_store": false,
+    "lat": 42.114366,
+    "lon": -72.5853,
+    "gain": 2107,
+    "restored": [
+     {
+      "GEOID": "250138012001",
+      "pop": 772,
+      "share_before": 0.9,
+      "share_after": 98.5,
+      "limit_mi": 0.5
+     },
+     {
+      "GEOID": "250138012002",
+      "pop": 1335,
+      "share_before": 4.8,
+      "share_after": 75.5,
+      "limit_mi": 0.5
+     }
+    ]
+   },
+   {
+    "name": "Springfield Health Services for the Homeless Health Center",
+    "kind": "health_center",
+    "address": "1145 Main Street, Springfield",
+    "at_closed_store": false,
+    "lat": 42.100569,
+    "lon": -72.585957,
+    "gain": 1335,
+    "restored": [
+     {
+      "GEOID": "250138012002",
+      "pop": 1335,
+      "share_before": 4.8,
+      "share_after": 18.9,
+      "limit_mi": 0.5
+     }
+    ]
+   }
+  ],
+  "best_set": {
+   "sites": [
+    "Caring Health Center"
+   ],
+   "gain": 2107,
+   "solver": "PuLP CBC"
+  }
+ }
+}

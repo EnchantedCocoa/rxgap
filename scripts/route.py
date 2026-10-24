@@ -5,16 +5,18 @@ warnings.filterwarnings('ignore')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import geopandas as gpd
 from fetch_districts import assign_by_area, council_id, house_id, senate_id
+from places import BG_FILE, OUT as PLACE_OUT, PLACE
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / 'data' / 'raw'
-OUT = ROOT / 'data' / 'bg_districts.json'
+OUT = PLACE_OUT / 'bg_districts.json'
 
 
 def main():
-    bg = gpd.read_file(RAW / 'boston_bg.geojson')
+    bg = gpd.read_file(BG_FILE)
     out = {g: {} for g in bg['GEOID']}
-    for kind, fn in [('council', council_id), ('house', house_id), ('senate', senate_id)]:
+    kinds = [('council', council_id)] if PLACE['council'] else []
+    for kind, fn in kinds + [('house', house_id), ('senate', senate_id)]:
         d = gpd.read_file(RAW / f'{kind}.geojson')
         assign = assign_by_area(bg, d, fn, kind)[0]
         for g, v in assign.items():

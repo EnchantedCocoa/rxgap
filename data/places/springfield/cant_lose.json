@@ -1,0 +1,1210 @@
+{
+ "rule": "state",
+ "stores": [
+  {
+   "name": "Baystate Pharmacy - Mason Square",
+   "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.111199,
+   "lon": -72.563224,
+   "people": 8544,
+   "age65": 1197,
+   "nocar_hh": 808,
+   "block_groups": [
+    "250138017001",
+    "250138014022",
+    "250138017003",
+    "250138014012",
+    "250138018005",
+    "250138013001",
+    "250138018003"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138017001",
+     "pop": 960,
+     "age65": 97,
+     "nocar_hh": 181,
+     "lim_eng": 16.1,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1347,
+       "walk_min": 17
+      },
+      {
+       "name": "Walgreens",
+       "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+       "estimate": true,
+       "walk_m": 1973,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 2967,
+       "walk_min": 37
+      }
+     ]
+    },
+    {
+     "GEOID": "250138014022",
+     "pop": 1079,
+     "age65": 309,
+     "nocar_hh": 105,
+     "lim_eng": 15.9,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #00488",
+       "address": "970 SAINT JAMES AVE, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2887,
+       "walk_min": 36
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 3216,
+       "walk_min": 40
+      },
+      {
+       "name": "CVS Pharmacy #01291",
+       "address": "770 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 3693,
+       "walk_min": 46
+      }
+     ]
+    },
+    {
+     "GEOID": "250138017003",
+     "pop": 1294,
+     "age65": 167,
+     "nocar_hh": 60,
+     "lim_eng": 12.4,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1962,
+       "walk_min": 25
+      },
+      {
+       "name": "Walgreens",
+       "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+       "estimate": true,
+       "walk_m": 2157,
+       "walk_min": 27
+      },
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 3631,
+       "walk_min": 45
+      }
+     ]
+    },
+    {
+     "GEOID": "250138014012",
+     "pop": 2259,
+     "age65": 167,
+     "nocar_hh": 80,
+     "lim_eng": 38.9,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 2004,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #00488",
+       "address": "970 SAINT JAMES AVE, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2849,
+       "walk_min": 36
+      },
+      {
+       "name": "Walgreens",
+       "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+       "estimate": true,
+       "walk_m": 3014,
+       "walk_min": 38
+      }
+     ]
+    },
+    {
+     "GEOID": "250138018005",
+     "pop": 876,
+     "age65": 77,
+     "nocar_hh": 50,
+     "lim_eng": 25.8,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1305,
+       "walk_min": 16
+      },
+      {
+       "name": "Walgreens",
+       "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+       "estimate": true,
+       "walk_m": 1742,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 2136,
+       "walk_min": 27
+      }
+     ]
+    },
+    {
+     "GEOID": "250138013001",
+     "pop": 1289,
+     "age65": 292,
+     "nocar_hh": 298,
+     "lim_eng": 37.6,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1300,
+       "walk_min": 16
+      },
+      {
+       "name": "CVS Pharmacy #00488",
+       "address": "970 SAINT JAMES AVE, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2622,
+       "walk_min": 33
+      },
+      {
+       "name": "Walgreens #10127",
+       "address": "625 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2638,
+       "walk_min": 33
+      }
+     ]
+    },
+    {
+     "GEOID": "250138018003",
+     "pop": 787,
+     "age65": 88,
+     "nocar_hh": 34,
+     "lim_eng": 26.5,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens",
+       "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+       "estimate": true,
+       "walk_m": 1448,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1537,
+       "walk_min": 19
+      },
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 2331,
+       "walk_min": 29
+      }
+     ]
+    }
+   ],
+   "rank": 1
+  },
+  {
+   "name": "CVS Pharmacy #01026",
+   "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.099027,
+   "lon": -72.584153,
+   "people": 4091,
+   "age65": 465,
+   "nocar_hh": 929,
+   "block_groups": [
+    "250138012003",
+    "250138011021",
+    "250138020001",
+    "250138020002",
+    "250138019023"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138012003",
+     "pop": 619,
+     "age65": 26,
+     "nocar_hh": 222,
+     "lim_eng": 6.8,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Springfield Pharmacy",
+       "address": "2155 MAIN ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1631,
+       "walk_min": 20
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1636,
+       "walk_min": 21
+      },
+      {
+       "name": "The Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1918,
+       "walk_min": 24
+      }
+     ]
+    },
+    {
+     "GEOID": "250138011021",
+     "pop": 783,
+     "age65": 36,
+     "nocar_hh": 139,
+     "lim_eng": 10.0,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1805,
+       "walk_min": 23
+      },
+      {
+       "name": "Springfield Pharmacy",
+       "address": "2155 MAIN ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2355,
+       "walk_min": 30
+      },
+      {
+       "name": "Baystate Pharmacy - Mason Square",
+       "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 2628,
+       "walk_min": 33
+      }
+     ]
+    },
+    {
+     "GEOID": "250138020001",
+     "pop": 731,
+     "age65": 113,
+     "nocar_hh": 116,
+     "lim_eng": 23.1,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1959,
+       "walk_min": 25
+      },
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 2270,
+       "walk_min": 28
+      },
+      {
+       "name": "Baystate Pharmacy - Mason Square",
+       "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 2669,
+       "walk_min": 33
+      }
+     ]
+    },
+    {
+     "GEOID": "250138020002",
+     "pop": 1291,
+     "age65": 141,
+     "nocar_hh": 390,
+     "lim_eng": 35.6,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1751,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 2198,
+       "walk_min": 28
+      },
+      {
+       "name": "Walgreens #03736",
+       "address": "501 SUMNER AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 2377,
+       "walk_min": 30
+      }
+     ]
+    },
+    {
+     "GEOID": "250138019023",
+     "pop": 667,
+     "age65": 149,
+     "nocar_hh": 62,
+     "lim_eng": 35.8,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1419,
+       "walk_min": 18
+      },
+      {
+       "name": "Baystate Pharmacy - Mason Square",
+       "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1834,
+       "walk_min": 23
+      },
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1988,
+       "walk_min": 25
+      }
+     ]
+    }
+   ],
+   "rank": 2
+  },
+  {
+   "name": "CVS Pharmacy #00488",
+   "address": "970 SAINT JAMES AVE, SPRINGFIELD MA 01104",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.134751,
+   "lon": -72.568086,
+   "people": 3648,
+   "age65": 243,
+   "nocar_hh": 291,
+   "block_groups": [
+    "250138002013",
+    "250138002012",
+    "250138002011"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138002013",
+     "pop": 639,
+     "age65": 17,
+     "nocar_hh": 89,
+     "lim_eng": 11.0,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Stop & Shop Pharmacy #81",
+       "address": "1277 LIBERTY ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2681,
+       "walk_min": 34
+      },
+      {
+       "name": "Baystate Pharmacy - Mason Square",
+       "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 3567,
+       "walk_min": 45
+      },
+      {
+       "name": "Walgreens #10127",
+       "address": "625 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 3659,
+       "walk_min": 46
+      }
+     ]
+    },
+    {
+     "GEOID": "250138002012",
+     "pop": 1600,
+     "age65": 91,
+     "nocar_hh": 67,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Stop & Shop Pharmacy #81",
+       "address": "1277 LIBERTY ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 3350,
+       "walk_min": 42
+      },
+      {
+       "name": "CVS Pharmacy #01291",
+       "address": "770 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 4155,
+       "walk_min": 52
+      },
+      {
+       "name": "Walmart Pharmacy 10-5278",
+       "address": "591 MEMORIAL DR, CHICOPEE MA 01020",
+       "estimate": true,
+       "walk_m": 4409,
+       "walk_min": 55
+      }
+     ]
+    },
+    {
+     "GEOID": "250138002011",
+     "pop": 1409,
+     "age65": 135,
+     "nocar_hh": 135,
+     "lim_eng": 1.2,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Stop & Shop Pharmacy #81",
+       "address": "1277 LIBERTY ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1586,
+       "walk_min": 20
+      },
+      {
+       "name": "Chicopee Health Center Pharmacy",
+       "address": "505 FRONT ST, CHICOPEE MA 01013",
+       "estimate": true,
+       "walk_m": 3104,
+       "walk_min": 39
+      },
+      {
+       "name": "Walgreens #10127",
+       "address": "625 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 3360,
+       "walk_min": 42
+      }
+     ]
+    }
+   ],
+   "rank": 3
+  },
+  {
+   "name": "Caring Pharmacy",
+   "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.087365,
+   "lon": -72.564041,
+   "people": 3535,
+   "age65": 554,
+   "nocar_hh": 283,
+   "block_groups": [
+    "250138022002",
+    "250138021012",
+    "250138021011"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138022002",
+     "pop": 1133,
+     "age65": 88,
+     "nocar_hh": 161,
+     "lim_eng": 32.3,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #03736",
+       "address": "501 SUMNER AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1374,
+       "walk_min": 17
+      },
+      {
+       "name": "CVS Pharmacy #01130",
+       "address": "615 621BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1750,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 2006,
+       "walk_min": 25
+      }
+     ]
+    },
+    {
+     "GEOID": "250138021012",
+     "pop": 788,
+     "age65": 170,
+     "nocar_hh": 26,
+     "lim_eng": 7.7,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden, Hampshire and Worcester"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #03736",
+       "address": "501 SUMNER AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1448,
+       "walk_min": 18
+      },
+      {
+       "name": "CVS Pharmacy #01130",
+       "address": "615 621BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1827,
+       "walk_min": 23
+      },
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 2523,
+       "walk_min": 32
+      }
+     ]
+    },
+    {
+     "GEOID": "250138021011",
+     "pop": 1614,
+     "age65": 296,
+     "nocar_hh": 96,
+     "lim_eng": 16.3,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Walgreens #03736",
+       "address": "501 SUMNER AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1878,
+       "walk_min": 24
+      },
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 1990,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #01130",
+       "address": "615 621BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 2271,
+       "walk_min": 28
+      }
+     ]
+    }
+   ],
+   "rank": 4
+  },
+  {
+   "name": "Walgreens #10127",
+   "address": "625 CAREW ST, SPRINGFIELD MA 01104",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.12256,
+   "lon": -72.587761,
+   "people": 2925,
+   "age65": 333,
+   "nocar_hh": 319,
+   "block_groups": [
+    "250138004005",
+    "250138004004"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138004005",
+     "pop": 1808,
+     "age65": 198,
+     "nocar_hh": 227,
+     "lim_eng": 25.1,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "The Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1265,
+       "walk_min": 16
+      },
+      {
+       "name": "Louis & Clark Drug / Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1265,
+       "walk_min": 16
+      },
+      {
+       "name": "Baystate Pharmacy",
+       "address": "759 CHESTNUT ST, SPRINGFIELD MA 01199",
+       "estimate": true,
+       "walk_m": 2087,
+       "walk_min": 26
+      }
+     ]
+    },
+    {
+     "GEOID": "250138004004",
+     "pop": 1117,
+     "age65": 135,
+     "nocar_hh": 92,
+     "lim_eng": 6.0,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #00488",
+       "address": "970 SAINT JAMES AVE, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1919,
+       "walk_min": 24
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 2011,
+       "walk_min": 25
+      },
+      {
+       "name": "Stop & Shop Pharmacy #81",
+       "address": "1277 LIBERTY ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 2095,
+       "walk_min": 26
+      }
+     ]
+    }
+   ],
+   "rank": 5
+  },
+  {
+   "name": "Walgreens #02699",
+   "address": "54 EAST ST, LUDLOW MA 01056",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.156742,
+   "lon": -72.482399,
+   "people": 2433,
+   "age65": 170,
+   "nocar_hh": 196,
+   "block_groups": [
+    "250138001023",
+    "250138001022"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138001023",
+     "pop": 1449,
+     "age65": 112,
+     "nocar_hh": 107,
+     "lim_eng": 19.7,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Stop & Shop Pharmacy #404",
+       "address": "1600 BOSTON POST ROAD, SPRINGFIELD MA 01129",
+       "estimate": true,
+       "walk_m": 1972,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #02566",
+       "address": "1990 BOSTON RD, WILBRAHAM MA 01095",
+       "estimate": true,
+       "walk_m": 1982,
+       "walk_min": 25
+      },
+      {
+       "name": "Walgreens #05445",
+       "address": "1440 BOSTON RD, SPRINGFIELD MA 01129",
+       "estimate": true,
+       "walk_m": 2108,
+       "walk_min": 26
+      }
+     ]
+    },
+    {
+     "GEOID": "250138001022",
+     "pop": 984,
+     "age65": 58,
+     "nocar_hh": 89,
+     "lim_eng": 25.2,
+     "districts": {
+      "house": "9th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Big Y Pharmacy #19",
+       "address": "425 CENTER ST, LUDLOW MA 01056",
+       "estimate": true,
+       "walk_m": 1718,
+       "walk_min": 22
+      },
+      {
+       "name": "CVS Pharmacy #00315",
+       "address": "451 CENTER ST, LUDLOW MA 01056",
+       "estimate": true,
+       "walk_m": 1978,
+       "walk_min": 25
+      },
+      {
+       "name": "CVS Pharmacy #02566",
+       "address": "1990 BOSTON RD, WILBRAHAM MA 01095",
+       "estimate": true,
+       "walk_m": 2030,
+       "walk_min": 25
+      }
+     ]
+    }
+   ],
+   "rank": 6
+  },
+  {
+   "name": "Baystate Pharmacy (Mason Square)",
+   "address": "50 WASON AVE, SPRINGFIELD MA 01107",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.124509,
+   "lon": -72.614826,
+   "people": 2291,
+   "age65": 464,
+   "nocar_hh": 495,
+   "block_groups": [
+    "250138007002"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138007002",
+     "pop": 2291,
+     "age65": 464,
+     "nocar_hh": 495,
+     "lim_eng": 31.7,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Baystate Pharmacy",
+       "address": "759 CHESTNUT ST, SPRINGFIELD MA 01199",
+       "estimate": true,
+       "walk_m": 1498,
+       "walk_min": 19
+      },
+      {
+       "name": "CVS Pharmacy #01972",
+       "address": "152 ELM ST, W SPRINGFIELD MA 01089",
+       "estimate": true,
+       "walk_m": 1704,
+       "walk_min": 21
+      },
+      {
+       "name": "Stop & Shop Pharmacy #094",
+       "address": "935 RIVERDALE ST, W SPRINGFIELD MA 01089",
+       "estimate": true,
+       "walk_m": 1711,
+       "walk_min": 21
+      }
+     ]
+    }
+   ],
+   "rank": 7
+  },
+  {
+   "name": "Walgreens",
+   "address": "126 ISLAND POND RD, SPRINGFIELD MA 01118",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.096626,
+   "lon": -72.550781,
+   "people": 2218,
+   "age65": 235,
+   "nocar_hh": 59,
+   "block_groups": [
+    "250138025006",
+    "250138018003"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138025006",
+     "pop": 1431,
+     "age65": 147,
+     "nocar_hh": 25,
+     "lim_eng": 0.5,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #01130",
+       "address": "615 621BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1589,
+       "walk_min": 20
+      },
+      {
+       "name": "Walgreens #03736",
+       "address": "501 SUMNER AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 1942,
+       "walk_min": 24
+      },
+      {
+       "name": "Stop & Shop Pharmacy #061",
+       "address": "470 N MAIN ST, E LONGMEADOW MA 01028",
+       "estimate": true,
+       "walk_m": 2063,
+       "walk_min": 26
+      }
+     ]
+    },
+    {
+     "GEOID": "250138018003",
+     "pop": 787,
+     "age65": 88,
+     "nocar_hh": 34,
+     "lim_eng": 26.5,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Baystate Pharmacy - Mason Square",
+       "address": "11 WILBRAHAM RD, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1166,
+       "walk_min": 15
+      },
+      {
+       "name": "CVS Pharmacy #04471",
+       "address": "600 STATE ST, SPRINGFIELD MA 01109",
+       "estimate": true,
+       "walk_m": 1537,
+       "walk_min": 19
+      },
+      {
+       "name": "Caring Pharmacy",
+       "address": "377 BELMONT AVE, SPRINGFIELD MA 01108",
+       "estimate": true,
+       "walk_m": 2331,
+       "walk_min": 29
+      }
+     ]
+    }
+   ],
+   "rank": 8
+  },
+  {
+   "name": "CVS Pharmacy #01291",
+   "address": "770 BOSTON RD, SPRINGFIELD MA 01119",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.136872,
+   "lon": -72.519115,
+   "people": 2153,
+   "age65": 129,
+   "nocar_hh": 0,
+   "block_groups": [
+    "250138015012",
+    "250138015013"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138015012",
+     "pop": 843,
+     "age65": 19,
+     "nocar_hh": 0,
+     "lim_eng": 0.0,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #17949",
+       "address": "1655 BOSTON RD STE 100, SPRINGFIELD MA 01129",
+       "estimate": true,
+       "walk_m": 3022,
+       "walk_min": 38
+      },
+      {
+       "name": "Caring Health Center Pharmacy",
+       "address": "1235 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 3025,
+       "walk_min": 38
+      },
+      {
+       "name": "Walmart Pharmacy 10-1967",
+       "address": "1105 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 3164,
+       "walk_min": 40
+      }
+     ]
+    },
+    {
+     "GEOID": "250138015013",
+     "pop": 1310,
+     "age65": 110,
+     "nocar_hh": 0,
+     "lim_eng": 4.5,
+     "districts": {
+      "house": "11th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "Walmart Pharmacy 10-1967",
+       "address": "1105 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 3272,
+       "walk_min": 41
+      },
+      {
+       "name": "CVS Pharmacy #17949",
+       "address": "1655 BOSTON RD STE 100, SPRINGFIELD MA 01129",
+       "estimate": true,
+       "walk_m": 3547,
+       "walk_min": 44
+      },
+      {
+       "name": "Caring Health Center Pharmacy",
+       "address": "1235 BOSTON RD, SPRINGFIELD MA 01119",
+       "estimate": true,
+       "walk_m": 3656,
+       "walk_min": 46
+      }
+     ]
+    }
+   ],
+   "rank": 9
+  },
+  {
+   "name": "CVS Pharmacy #04471",
+   "address": "600 STATE ST, SPRINGFIELD MA 01109",
+   "osm_id": null,
+   "source": "manual (openings.csv)",
+   "lat": 42.109826,
+   "lon": -72.572122,
+   "people": 2107,
+   "age65": 221,
+   "nocar_hh": 448,
+   "block_groups": [
+    "250138012001",
+    "250138012002"
+   ],
+   "hoods": [
+    "Springfield"
+   ],
+   "lost": [
+    {
+     "GEOID": "250138012001",
+     "pop": 772,
+     "age65": 95,
+     "nocar_hh": 204,
+     "lim_eng": 33.3,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "The Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1276,
+       "walk_min": 16
+      },
+      {
+       "name": "Louis & Clark Drug / Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1276,
+       "walk_min": 16
+      },
+      {
+       "name": "Springfield Pharmacy",
+       "address": "2155 MAIN ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1602,
+       "walk_min": 20
+      }
+     ]
+    },
+    {
+     "GEOID": "250138012002",
+     "pop": 1335,
+     "age65": 126,
+     "nocar_hh": 244,
+     "lim_eng": 23.3,
+     "districts": {
+      "house": "10th Hampden",
+      "senate": "Hampden"
+     },
+     "nearest": [
+      {
+       "name": "CVS Pharmacy #01026",
+       "address": "991 MAIN ST, SPRINGFIELD MA 01103",
+       "estimate": true,
+       "walk_m": 1518,
+       "walk_min": 19
+      },
+      {
+       "name": "The Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1716,
+       "walk_min": 22
+      },
+      {
+       "name": "Louis & Clark Drug / Community Pharmacy at Mercy Medical Center",
+       "address": "299 CAREW ST, SPRINGFIELD MA 01104",
+       "estimate": true,
+       "walk_m": 1716,
+       "walk_min": 22
+      }
+     ]
+    }
+   ],
+   "rank": 10
+  }
+ ]
+}

@@ -32,9 +32,19 @@ def route(G, point, rest):
             'store_latlon': [store['lat'], store['lon']], 'coords': coords[::2] + coords[-1:]}
 
 
+def straight(point, rest):
+    """No walk graph cached: a straight line to the nearest store, labeled as an estimate."""
+    near = rest.assign(d=rest.distance(point)).nsmallest(1, 'd').iloc[0]
+    lon, lat = TO_LATLON.transform(point.x, point.y)
+    m = near['d'] * walk.DETOUR
+    return {'meters': round(m), 'minutes': round(m / walk.WALK_MPS / 60), 'estimate': True,
+            'store': near['name'] or 'Pharmacy', 'address': near.get('address'),
+            'store_latlon': [near['lat'], near['lon']], 'coords': [[round(lat, 6), round(lon, 6)], [near['lat'], near['lon']]]}
+
+
 def main():
     bg, ph, _, _ = prepare()
-    G = walk.graph()
+    G = walk.graph() if walk.has_graph() else None
     stores = json.loads((DATA / 'cant_lose.json').read_text())['stores']
     out = {}
     for s in stores:
@@ -43,7 +53,7 @@ def main():
             continue
         rest = ph[~((ph.lat == s['lat']) & (ph.lon == s['lon']))]
         p = bg.loc[bg.GEOID == far['GEOID']].geometry.iloc[0].representative_point()
-        r = route(G, p, rest)
+        r = route(G, p, rest) if G is not None else straight(p, rest)
         if r:
             out[s['rank']] = {'GEOID': far['GEOID'], **r}
             print(f"#{s['rank']:>2} {s['name'][:24]:24} worst block {far['GEOID']}: {r['minutes']} min to {r['store'][:28]}")

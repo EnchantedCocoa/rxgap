@@ -1,0 +1,29 @@
+{
+ "1": {
+  "lost_pop": 6614,
+  "ring_mi": 2.0,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "2": {
+  "lost_pop": 4027,
+  "ring_mi": 2.0,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ },
+ "3": {
+  "lost_pop": 2345,
+  "ring_mi": 2.0,
+  "top": [],
+  "best_set": {
+   "sites": [],
+   "gain": 0
+  }
+ }
+}

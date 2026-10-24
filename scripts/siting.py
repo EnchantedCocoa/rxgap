@@ -8,6 +8,7 @@ import geopandas as gpd
 from shapely.geometry import Point
 from shapely.ops import unary_union
 from analyze_bg import DATA, MILE, prepare
+from places import SITES_FILE
 
 DESERT_SHARE = 0.15
 SEARCH_M = 2 * MILE   # candidates this close to a lost block group
@@ -15,7 +16,7 @@ TOP, K = 3, 3         # sites shown, sites in the best set
 
 
 def candidates():
-    s = json.loads((DATA / 'raw' / 'sites.json').read_text())['sites']
+    s = json.loads(SITES_FILE.read_text())['sites']
     g = gpd.GeoDataFrame(s, geometry=[Point(x['lon'], x['lat']) for x in s], crs=4326).to_crs(26986)
     g['address'] = g['address'].astype(object).where(g['address'].notna(), None)  # NaN breaks JSON
     return g
