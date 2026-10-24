@@ -21,7 +21,7 @@ def candidates():
     return g
 
 
-def score(lost, rest, cands):
+def score(lost, rest, cands, closed_pt=None):
     """Per candidate: which lost block groups stop being deserts if a pharmacy opens there."""
     base = {}  # GEOID -> (geometry, radius, union of remaining stores' walk areas, share before)
     for _, b in lost.iterrows():
@@ -43,6 +43,7 @@ def score(lost, rest, cands):
                                  'share_after': round(after * 100, 1), 'limit_mi': round(r / MILE, 2)})
         if restored:
             out.append({'name': c['name'], 'kind': c['kind'], 'address': c.get('address'),
+                        'at_closed_store': bool(closed_pt is not None and c.geometry.distance(closed_pt) <= 150),
                         'lat': c['lat'], 'lon': c['lon'], 'gain': sum(x['pop'] for x in restored),
                         'restored': restored})
     return sorted(out, key=lambda x: -x['gain'])
@@ -91,7 +92,8 @@ def main():
     for s in stores:
         rest = ph[~((ph.lat == s['lat']) & (ph.lon == s['lon']))]
         lost = bg[bg.GEOID.isin(s['block_groups'])]
-        scored = score(lost, rest, cands)
+        closed_pt = ph[(ph.lat == s['lat']) & (ph.lon == s['lon'])].geometry.iloc[0]
+        scored = score(lost, rest, cands, closed_pt)
         lost_pop = dict(zip(lost.GEOID, lost.TOTAL_POP.fillna(0).astype(int)))
         best = best_set(scored, lost_pop) or nearest_health_center(lost, cands, scored)
         ring = Counter(round(r / MILE, 2) for r in lost.radius_m).most_common(1)[0][0]

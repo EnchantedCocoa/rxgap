@@ -70,6 +70,8 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
   letter-spacing: -0.03em; line-height: 1.05; color: var(--desert);
   display: flex; align-items: flex-start; gap: var(--s2);
 }
+.at-risk { margin: 0 0 var(--s3); font-size: var(--fs-md); color: var(--ink-2); }
+.at-risk b { color: var(--ink); }
 .split { display: flex; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); }
 .seg { height: 100%; transition: width var(--t-slow) var(--ease); }
 .seg-desert { background: var(--desert); }
@@ -214,7 +216,8 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
 .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; flex: none; }
 .sw-desert { background: var(--desert); }
 .sw-near { background: repeating-linear-gradient(135deg, var(--near) 0 3px, var(--near-hatch) 3px 4px); }
-.sw-covered { background: var(--covered); opacity: 0.35; }
+.sw-covered { background: var(--covered); opacity: 0.25; }
+.sw-empty { background: var(--closed); opacity: 0.3; }
 .sw-store { background: var(--store); border-radius: 50%; border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--store); }
 .sw-closed { background: transparent; border-radius: 50%; border: 2px solid var(--closed); }
 .source { margin: var(--s2) 0 0; color: var(--muted); }
@@ -236,13 +239,14 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
 /* map: block groups (SVG paths; colors only from tokens) */
 .leaflet-container { background: var(--map-blank); font: inherit; }
 .bg {
-  fill: var(--covered); fill-opacity: 0.16;
+  fill: var(--covered); fill-opacity: 0.07;
   stroke: var(--block-line); stroke-opacity: 0.8;
   transition: fill-opacity var(--t-slow) var(--ease), stroke var(--t-fast);
 }
 .bg.st-desert { fill: var(--desert); fill-opacity: 0.62; }
 .bg.st-near-desert { fill: url(#hatch); fill-opacity: 0.66; }
 .bg.is-sim { fill: var(--desert); fill-opacity: 0.82; animation: flip var(--t-slow) var(--ease); }
+.bg.is-empty, .bg.is-empty.st-desert, .bg.is-empty.st-near-desert { fill: var(--closed); fill-opacity: 0.12; }
 .bg.is-hl { stroke: var(--ink); stroke-width: 2.2px; stroke-opacity: 1; }
 @keyframes flip { from { fill-opacity: 0.1; } to { fill-opacity: 0.82; } }
 .hatch-bg { fill: var(--near); }

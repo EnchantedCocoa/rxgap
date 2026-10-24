@@ -1,19 +1,22 @@
-We count {desert_pop} Boston residents in pharmacy deserts. The Boston Globe reported
-about {globe_pop} ({globe_date}). We did not tune our method to match.
+We count {desert_pop} Boston residents in pharmacy deserts. The state (Health Policy
+Commission) counted {hpc_pop} with pharmacy licenses from {hpc_date}. The Boston Globe
+reported about {globe_pop} ({globe_date}). We did not tune our method to match either.
 
 Why the numbers differ:
 
-- **Different rule.** The Globe counted areas where a drugstore is at least a half-mile
-  away and most people do not have a car. We use the state's rule ({hpc_report}): less
-  than {area_pct} of a block group's area within walking distance. That can flag a
-  place where many people own cars.
-- **Half-mile limit applies widely.** The state uses the half-mile limit when a block
-  group has below-average car ownership or high poverty. In Boston that is
-  {low_access_share} of block groups.
-- **Closures since then.** Every Rite Aid in the state has closed, and so has the
-  Codman Square Walgreens. Our store list removes them.
-- **Different store list.** OpenStreetMap misses some independent pharmacies. Where it
-  does, our desert count is too high, not too low.
+- **Closures since the state's count.** Every Rite Aid in the state has closed, and so
+  have the Walgreens stores at Codman Square and Gallivan Blvd. Our store list removes
+  them.
+- **Different store lists.** We start from OpenStreetMap and add {added_stores} pharmacies
+  it was missing (mostly health-center and grocery pharmacies), each checked on the web
+  with a source link. The state uses license records, which can keep a closed store
+  listed until its license runs out.
+- **Same rule, same blocks as the state.** For {hpc_agree} of Boston residents, we and
+  the state give the same status.
+- **The Globe used a different rule.** It counted areas where a drugstore is at least a
+  half-mile away and most people do not have a car. The state's rule ({hpc_report}) uses
+  the share of a block group's area within reach and a half-mile limit for
+  {low_access_share} of Boston block groups.
 
-Sources: Boston Globe ({globe_date}); Tufts University School of Medicine summary
-({tufts_date}); Massachusetts Health Policy Commission, {hpc_report}.
+Sources: Boston Globe ({globe_date}); Massachusetts Health Policy Commission,
+{hpc_report} and its public block-group dataset.

@@ -102,3 +102,8 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   HPC's own block-group results, with each block's area type (urban 1 mi / suburban
   2 mi, halved for low-access). Closure simulation stays Boston-only until those towns
   get a checked store list. UI test switches towns and checks the headline numbers.
+- 14:15 Demo review fixes. Landing view opens on Dorchester/Mattapan/Roxbury at zoom 13,
+  covered blocks are fainter so red/amber stand out, and a code-made line reads "20% of
+  Boston residents live in a desert or one closure away". Blocks under 50 residents
+  (parks, harbor islands) are gray. Method page now shows the state's 31,291 and our
+  86% agreement. A replacement site next to the closed store is labeled as such.

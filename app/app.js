@@ -53,6 +53,7 @@ function renderHeadline() {
   for (const [k, v] of [['desert', h.desert], ['near', h.near], ['covered', h.covered]])
     $(`#seg-${k}`).style.width = `${(v / h.total) * 100}%`;
   $('#hl-title').textContent = 'Boston residents in a pharmacy desert';
+  $('#at-risk').innerHTML = `<b>${fmt(D.validation.at_risk_pct)}%</b> of Boston residents live in a desert or one closure away from one.`;
   $('#fallback-banner').hidden = D.rule === 'state';
   const manual = D.pharmacies.filter((p) => p.source && p.source !== 'OpenStreetMap').length;
   if (manual) $('#source-note').textContent = `Stores: OpenStreetMap (a floor, not the full list), plus ${fmt(manual)} added by hand with a source.`;
@@ -115,19 +116,22 @@ const statusProp = () => D.rules[state.rule];
 const layers = new Map();   // GEOID -> Leaflet path
 const markers = new Map();  // pharmacy id -> Leaflet marker
 const STATUS_CLASSES = ['st-desert', 'st-near-desert', 'st-covered'];
+const EMPTY_POP = 50;
 
 function restyle() {
   const prop = statusProp();
   for (const [g, l] of layers) {
     const el = l.getElement();
     el.classList.remove(...STATUS_CLASSES);
-    el.classList.add(`st-${bgIndex.get(g).properties[prop]}`);
+    const p = bgIndex.get(g).properties;
+    el.classList.add(`st-${p[prop]}`);
+    el.classList.toggle('is-empty', p.pop < EMPTY_POP); // parks, harbor islands: few or no residents
   }
 }
 
 function initMap() {
   map = L.map('map', { zoomSnap: 1, zoomControl: false, attributionControl: false })
-    .setView([42.315, -71.075], 12);
+    .setView([42.295, -71.085], 13); // open on Dorchester, Mattapan, Roxbury, where access is thinnest
   L.control.zoom({ position: 'topright' }).addTo(map);
   L.control.attribution({ prefix: false }).addTo(map);
   map.createPane('labels').style.zIndex = 450;
@@ -180,7 +184,7 @@ async function setTown(slug) {
   townLayer?.remove(); townLayer = null;
   if (boston) {
     bostonLayer.addTo(map); pinLayer.addTo(map); restyle();
-    map.flyToBounds(bostonLayer.getBounds(), { animate: !reduced, duration: 1 });
+    map.flyTo([42.295, -71.085], 13, { animate: !reduced, duration: 1 });
     renderHeadline();
     return;
   }
@@ -192,12 +196,17 @@ async function setTown(slug) {
     style: () => ({ className: 'bg', weight: 0.6 }),
     onEachFeature: (f, l) => { townIndex.set(f.properties.GEOID, f); l.on('click', () => openTownSheet(f.properties)); },
   }).addTo(map);
-  townLayer.eachLayer((l) => l.getElement()?.classList.add(`st-${l.feature.properties.s_state}`));
+  townLayer.eachLayer((l) => {
+    const el = l.getElement();
+    el?.classList.add(`st-${l.feature.properties.s_state}`);
+    el?.classList.toggle('is-empty', l.feature.properties.pop < EMPTY_POP);
+  });
   map.flyToBounds(t.bounds, { animate: !reduced, duration: 1.2 });
   renderTownHeadline(t);
 }
 
 function renderTownHeadline(t) {
+  $('#at-risk').innerHTML = `<b>${fmt(Math.round((t.desert + t.near) / t.total * 100))}%</b> of ${esc(t.name)} residents live in a desert or one closure away from one.`;
   $('#hl-title').textContent = `${t.name} residents in a pharmacy desert`;
   countTo($('[data-num="desert"]'), t.desert);
   countTo($('[data-num="near"]'), t.near);
@@ -373,7 +382,7 @@ function renderSites(s) {
   const rows = S.top.map((c, i) => `
     <li><button class="site-row" data-i="${i}">
       <span class="site-n">${i + 1}</span>
-      <span><b>${esc(c.name)}</b><br><small>${esc(c.kind === 'health_center' ? 'Health center' : c.kind === 'mbta_station' ? 'T station' : 'Storefront')}${best.sites.includes(c.name) ? ' · in best set' : ''}</small></span>
+      <span><b>${esc(c.name)}</b><br><small>${esc(c.kind === 'health_center' ? 'Health center' : c.kind === 'mbta_station' ? 'T station' : 'Storefront')}${c.at_closed_store ? ' · next to the closed store' : ''}${best.sites.includes(c.name) ? ' · in best set' : ''}</small></span>
       <span class="site-gain">+${fmt(c.gain)}</span>
     </button></li>`).join('');
   card.innerHTML = `
@@ -425,6 +434,7 @@ function pickSite(s, i) {
   const hood = (g) => esc(bgIndex.get(g)?.properties.hood || '');
   $('#site-math').innerHTML = `
     <h4>Why #${i + 1} ranks here</h4>
+    ${c.at_closed_store ? `<p class="walk-note"><b>Same spot as the closed store.</b> Reopening a pharmacy here, for example inside ${esc(c.name)}, restores everyone who lost access.</p>` : ''}
     <p class="walk-note">A pharmacy at ${esc(c.address || c.name)} would put these blocks back above the ${esc(D.validation.area_pct)} line.
       The ring shows the ${fmt(S.ring_mi)}-mile walk limit.</p>
     <table class="math"><thead><tr><th>Block</th><th>Residents</th><th>Area in reach</th></tr></thead><tbody>

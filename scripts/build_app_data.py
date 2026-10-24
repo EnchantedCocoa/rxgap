@@ -72,6 +72,12 @@ def main():
                           'total': total, 'desert_pct': round(n['desert'] / total * 100)}
 
     low = sum(1 for f in bg if f['properties']['low_access'])
+    hpc = {r['GEOID']: r for r in csv.DictReader(open(DATA / 'raw' / 'hpc' / 'hpc_bg_with_town.csv'))}
+    hmap = {'Pharmacy deserts': 'desert', 'Near deserts': 'near-desert', 'Non-deserts': 'covered'}
+    agree = sum(f['properties']['pop'] for f in bg
+                if hmap.get(hpc.get(f['properties']['GEOID'], {}).get('Category (HPC)')) == f['properties']['s_state'])
+    hpc_desert = sum(int(r['POP20']) for r in hpc.values() if r['town'] == 'Boston' and r['Category (HPC)'] == 'Pharmacy deserts')
+    added = sum(1 for p in meta['pharmacies'] if p.get('source') and p['source'] != 'OpenStreetMap')
     ranked = {(s['lat'], s['lon']): s['rank'] for s in rank['stores']}
     out = {
         'rule': rank['rule'],
@@ -80,6 +86,9 @@ def main():
         'validation': {'desert_pop': headline['state']['desert'], 'globe_pop': 15000,
                        'globe_date': 'July 2024', 'tufts_date': 'October 2025',
                        'hpc_report': 'DataPoints 31, October 2025', 'area_pct': '15%',
+                       'hpc_pop': hpc_desert, 'hpc_date': 'June 2025', 'added_stores': added,
+                       'hpc_agree': f'{round(agree / total * 100)}%',
+                       'at_risk_pct': round((headline['state']['desert'] + headline['state']['near']) / total * 100),
                        'low_access_share': f'{round(low / len(bg) * 100)}%'},
         'stores': [{**r, 'sites': sites[str(r['rank'])]} for r in store_rows(rank['stores'], raw_bg, officials())],
         'pharmacies': [{'id': i, 'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'], 'source': p.get('source'),
