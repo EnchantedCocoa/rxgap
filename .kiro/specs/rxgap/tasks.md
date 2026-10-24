@@ -68,17 +68,18 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 ## Phase 5 — Briefs and letters
 
-- [ ] 5.1 Digit-free templates: `brief.en`, `letter.en`, `letter.es`, `letter.ht` + test that templates contain no digits — _Req 8_
-- [ ] 5.2 `render(template, facts)` and facts builder from `cant_lose.json` / `sites.json` — _Req 8_
-- [ ] 5.3 Brief page per official with print stylesheet and folium mini-map — _Req 4.2, 4.3_
-- [ ] 5.4 Letter flow: address → Census geocoder → confirm officials → language + own sentence → letter + English copy, Copy and mailto, no send — _Req 6_
+- [x] 5.1 Digit-free templates: `brief.en.html`, `letter.{en,es,ht}.md` (one template for desert and near-desert blocks) + test that templates contain no digits — _Req 8_
+- [x] 5.2 `render(template, facts)` in `rxgap/text.py` and `app/text.js` (same output, tested), facts builder `scripts/build_facts.py` → `facts.json` — _Req 8_
+- [x] 5.3 Brief per official (Officials tab, Open brief) with a one-page print stylesheet and letter count — _Req 4.2, 4.3_
+  - Left out: the mini-map
+- [x] 5.4 Letter flow: address → Census geocoder → confirm officials → language + own sentence → letter + English copy, Copy and mailto, no send — _Req 6_
   - Extra languages (pt, zh, vi) only if time allows
-- [ ] 5.5 Integrity test: every number in every rendered brief and letter is in the facts, and facts match analysis output — _Req 8_
-- [ ] 5.6 [P] `data/manual/policy.json`: sourced policy facts with `confirmed` dates, plus the MassHealth letter recipient — _Req 13, 14_
+- [x] 5.5 Integrity test: every number in every rendered brief and letter is in the facts, and facts match analysis output — _Req 8_
+- [x] 5.6 [P] `data/manual/policy.json`: sourced policy facts with `confirmed` dates, plus the MassHealth letter recipient — _Req 13, 14_
   - Done: every row has a URL; a test fails on a row without one
-- [ ] 5.7 "Get medicine delivered" panel from the block sheet and closure card; `help.{en,es,ht}.md`; nearest stores; Print — _Req 13_
+- [x] 5.7 "Get medicine delivered" panel from the block sheet and closure card; `help.{en,es,ht}.md`; nearest stores; Print — _Req 13_
   - Done: UI test opens it for the top store's block, finds no input fields, and sees no request carrying page data
-- [ ] 5.8 MassHealth letter as a second topic in the letter flow; `letter_masshealth.{en,es,ht}.md`; copy line to own rep and senator — _Req 14_
+- [x] 5.8 MassHealth letter as a second topic in the letter flow; `letter_masshealth.{en,es,ht}.md`; copy line to own rep and senator — _Req 14_
   - Done: integrity test renders it in all three languages; no send path
 
 ## Phase 6 — Crew, write-up, video

@@ -112,7 +112,7 @@ the same way.
 
 One rule: **text comes from templates, numbers come from a facts dict.**
 
-- `data/templates/brief.en.md`, `data/templates/letter.{en,es,ht}.md`, more languages if
+- `data/templates/brief.en.html`, `data/templates/letter.{en,es,ht}.md`, more languages if
   time allows. Written and reviewed once at build time. Placeholders only, like
   `{people_lost}`, `{site_1_name}`, `{walk_min_1}`. A template may not contain a digit;
   a test enforces it.
@@ -124,7 +124,9 @@ One rule: **text comes from templates, numbers come from a facts dict.**
   show their officials to confirm (Req 6.1). Resident must type one sentence before the
   letter appears (Req 6.3). Output: chosen language + English copy, a Copy button and a
   `mailto:` link the resident opens themselves. Nothing is sent by the app (Req 6.4).
-- Geocoding: the US Census geocoder (free, no key). Fallback: pick your block on the map.
+- Geocoding: the US Census geocoder (free, no key), through `GET /geocode` on the local server because
+  the Census API sends no CORS header. The server passes the address on and never stores or logs it.
+  Fallback: pick your block on the map, then "Write a letter".
 - Footer on every brief and letter: "AI tool built at Hackachusetts. Not the City of
   Boston."
 
