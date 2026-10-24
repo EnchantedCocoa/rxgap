@@ -1,0 +1,59 @@
+/* RxGap 디자인 토큰: 색·글꼴·간격·움직임은 이 파일에만 둔다. */
+:root {
+  /* surfaces + text */
+  --paper: #F6F5F1;
+  --surface: #FFFFFF;
+  --surface-2: #FBFAF7;
+  --ink: #15181C;
+  --ink-2: #3B434C;
+  --muted: #69737D;
+  --line: #E4E1D9;
+  --scrim: rgba(21, 24, 28, 0.32);
+
+  /* brand + interaction */
+  --brand: #1E3A5C;
+  --brand-ink: #FFFFFF;
+  --brand-soft: #E8EEF5;
+  --focus: #2F6FEB;
+
+  /* status (also differ by pattern + opacity, not only hue) */
+  --desert: #B42318;
+  --desert-soft: #FBEAE8;
+  --near: #D88A05;
+  --near-hatch: #8A5A00;
+  --near-soft: #FDF3E1;
+  --covered: #2A9D8F;
+  --covered-soft: #E5F4F1;
+  --closed: #9AA3AB;
+  --store: #1E3A5C;
+  --store-minor: #7C8A99;
+  --block-line: #FFFFFF;
+  --map-blank: #EEEDE8;
+
+  /* type */
+  --font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 15px;
+  --fs-lg: 18px;
+  --fs-xl: 24px;
+  --fs-hero: 44px;
+
+  /* space + shape */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgba(21, 24, 28, 0.06), 0 8px 24px rgba(21, 24, 28, 0.10);
+  --panel-w: 384px;
+
+  /* motion */
+  --t-fast: 150ms;
+  --t-med: 300ms;
+  --t-slow: 600ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

@@ -41,16 +41,16 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 ## Phase 3 — App: map and closure (biggest block)
 
-- [ ] 3.1 `app/tokens.css` (colors, type, spacing, motion) and page layout: top bar, left panel, map — _UI_
-- [ ] 3.2 Map layers: blocks with status color + pattern, store dots sized by rank, legend with source label — _Req 1, UI_
-- [ ] 3.3 Closure moment: gray store, red wave, camera fit, results card, Undo — _Req 3_
+- [x] 3.1 `app/tokens.css` (colors, type, spacing, motion) and page layout: top bar, left panel, map — _UI_
+- [x] 3.2 Map layers: blocks with status color + pattern, store dots sized by rank, legend with source label — _Req 1, UI_
+- [x] 3.3 Closure moment: gray store, red wave, camera fit, results card, Undo — _Req 3_
   - Done: closing the top store shows 24,080 people, matching `cant_lose.json`, under 1 s
-- [ ] 3.4 Ranked list with hover-to-highlight and keyboard support — _Req 2.3_
-- [ ] 3.5 Block bottom sheet: people, 65+, no car, limited English, 3 nearest with walk times — _Req 3.2, 3.3_
-- [ ] 3.6 "How we got this" (i) popovers on every number — _Req 12_
-- [ ] 3.7 Banner when the income fallback rule is in use — _Req 1.2_
-- [ ] 3.8 Method page with HPC rule and Globe comparison — _Req 9_
-- [ ] 3.9 UI smoke test in a headless browser (close top store, check card number) — _Req 3, 8_
+- [x] 3.4 Ranked list with hover-to-highlight and keyboard support — _Req 2.3_
+- [x] 3.5 Block bottom sheet: people, 65+, no car, limited English, 3 nearest with walk times — _Req 3.2, 3.3_
+- [x] 3.6 "How we got this" (i) popovers on every number — _Req 12_
+- [x] 3.7 Banner when the income fallback rule is in use — _Req 1.2_
+- [x] 3.8 Method page with HPC rule and Globe comparison — _Req 9_
+- [x] 3.9 UI smoke test in a headless browser (close top store, check card number) — _Req 3, 8_
 
 ## Phase 4 — Siting and letter-count server
 

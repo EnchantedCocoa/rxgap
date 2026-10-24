@@ -45,3 +45,10 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   pipeline re-pulled ACS every run (now cache-first) and wrote NaN into JSON.
   Globe gap text written before comparing: the Globe counted half-mile + mostly no car;
   the state rule is area-share and halves the limit for poverty too. 11 tests pass.
+- 13:05 Phase 3: MapLibre app in `app/` (tokens.css holds every color). Closure moment:
+  store grays out, its block groups fade to red in a wave outward, camera fits, a results
+  card counts up to the code-made numbers and lists the officials. Every number has a
+  "how we got this" popover. Local server serves only `app/` and `data/` on 127.0.0.1.
+  Kiro drove a headless Chromium (Playwright) to close the #1 CVS and check the card reads
+  24,080, matching `cant_lose.json`; it also caught two layout bugs from screenshots
+  (Undo scrolled out of view, card covering the legend). 14 tests pass.

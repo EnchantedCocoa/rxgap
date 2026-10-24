@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- RxGap 지도 앱: 위험 지도, 꼭 지켜야 할 약국 순위, 폐점 시뮬레이션. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RxGap — Boston pharmacy access</title>
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <span class="name">RxGap</span>
+      <span class="tag">When a pharmacy closes, who loses access?</span>
+    </div>
+    <nav class="tabs" aria-label="Screens">
+      <button class="tab is-active" aria-current="page">Risk map</button>
+      <button class="tab" disabled title="Coming next">Officials</button>
+      <button class="tab" disabled title="Coming next">Write a letter</button>
+    </nav>
+    <button class="ghost" id="open-method">Method &amp; sources</button>
+  </header>
+
+  <div class="banner" id="fallback-banner" hidden role="status">
+    Census car data is unavailable, so “low-access” uses income below the Boston median instead of the state rule.
+  </div>
+
+  <main class="layout">
+    <aside class="panel" aria-label="Summary and ranking">
+      <section class="headline" aria-labelledby="hl-title">
+        <p class="eyebrow" id="hl-title">Boston residents in a pharmacy desert</p>
+        <p class="hero"><span data-num="desert">—</span><button class="info" data-prov="headline" aria-label="How we got this number">i</button></p>
+        <div class="split" aria-hidden="true">
+          <span class="seg seg-desert" id="seg-desert"></span><span class="seg seg-near" id="seg-near"></span><span class="seg seg-covered" id="seg-covered"></span>
+        </div>
+        <dl class="stats">
+          <div><dt><i class="dot dot-near"></i>One closure away</dt><dd data-num="near">—</dd></div>
+          <div><dt><i class="dot dot-covered"></i>Covered</dt><dd data-num="covered">—</dd></div>
+        </dl>
+        <p class="compare">The Boston Globe counted about <span data-num="globe">—</span><button class="info" data-prov="globe" aria-label="How we got this number">i</button>. <button class="link" id="why-differ">Why we differ</button></p>
+      </section>
+
+      <section class="ranking" aria-labelledby="rk-title">
+        <div class="section-head">
+          <h2 id="rk-title">Stores Boston can’t afford to lose</h2>
+          <button class="info" data-prov="store" aria-label="How we got this ranking">i</button>
+        </div>
+        <p class="sub">If one closes, these residents land in a desert. Pick one to simulate.</p>
+        <ol class="rank-list" id="rank-list"></ol>
+      </section>
+
+      <footer class="disclaimer">AI tool built at Hackachusetts. Not the City of Boston.</footer>
+    </aside>
+
+    <section class="mapwrap" aria-label="Map">
+      <div id="map"></div>
+
+      <div class="card store-card" id="store-card" hidden></div>
+      <div class="card result-card" id="result-card" hidden aria-live="polite"></div>
+      <div class="sheet" id="sheet" hidden role="dialog" aria-labelledby="sheet-title"></div>
+
+      <div class="legend" aria-label="Legend">
+        <div class="rules" role="radiogroup" aria-label="Walk limit">
+          <button role="radio" aria-checked="true" data-rule="state">State rule</button>
+          <button role="radio" aria-checked="false" data-rule="half">½ mile</button>
+          <button role="radio" aria-checked="false" data-rule="one">1 mile</button>
+        </div>
+        <ul class="keys">
+          <li><i class="sw sw-desert"></i>Desert</li>
+          <li><i class="sw sw-near"></i>One closure away</li>
+          <li><i class="sw sw-covered"></i>Covered</li>
+          <li><i class="sw sw-store"></i>Pharmacy</li>
+          <li><i class="sw sw-closed"></i>Closed</li>
+        </ul>
+        <p class="source">Stores: OpenStreetMap, a floor, not the full list.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="method" id="method" aria-labelledby="method-title">
+    <form method="dialog"><button class="close" aria-label="Close">×</button></form>
+    <h2 id="method-title">How RxGap decides</h2>
+    <p>We use the Massachusetts Health Policy Commission’s method (DataPoints 31, October 2025), on census block groups.</p>
+    <ul>
+      <li><b>Desert:</b> less than 15% of the block group’s area is within the walk limit of an open pharmacy.</li>
+      <li><b>Walk limit:</b> 1 mile, or ½ mile for low-access block groups (car ownership below the Boston average, or more than 20% of households in poverty).</li>
+      <li><b>One closure away:</b> covered today, but losing one specific pharmacy makes it a desert.</li>
+    </ul>
+    <h3>Compared with the Boston Globe</h3>
+    <div id="validation"></div>
+    <h3>Sources</h3>
+    <table class="sources"><thead><tr><th>Data</th><th>Pulled</th></tr></thead><tbody id="sources"></tbody></table>
+  </dialog>
+
+  <div class="pop" id="pop" popover></div>
+
+  <script src="vendor/maplibre-gl.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
