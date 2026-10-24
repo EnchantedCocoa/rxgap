@@ -27,3 +27,5 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
 - 12:18 Design updated for polish: MapLibre GL instead of Leaflet, one tokens file,
   an animated closure moment, print-ready brief, 3-step phone-first letter flow.
   Census key re-checked: 681 Suffolk block groups returned.
+- 12:20 Design approved. Kiro wrote `tasks.md`: 6 phases, parallel tasks marked [P],
+  each tied to requirements with a done check; cut order written at the top.
