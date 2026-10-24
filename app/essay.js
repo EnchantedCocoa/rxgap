@@ -120,7 +120,7 @@ export async function openEssay(D, { reduced = false } = {}) {
   let anim = 0, goal = -1;
   const glide = (to) => {
     cancelAnimationFrame(anim);
-    const from = root.scrollTop, t0 = performance.now(), ms = reduced ? 0 : 900;
+    const from = root.scrollTop, t0 = performance.now(), ms = reduced ? 0 : 1400;
     const tick = (now) => {
       const k = ms ? Math.min(1, (now - t0) / ms) : 1;
       root.scrollTop = from + (to - from) * (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2);

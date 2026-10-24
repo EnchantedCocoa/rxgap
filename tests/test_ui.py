@@ -179,13 +179,13 @@ def test_story_one_arrow_press_moves_one_scene(page):
       return Math.max(0, Math.min(r.scrollHeight - r.clientHeight, s.offsetTop + (s.offsetHeight - r.clientHeight) / 2)); }"""
     top = lambda: page.evaluate("document.querySelector('#essay').scrollTop")
     page.keyboard.press('ArrowDown')
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(1700)
     assert abs(top() - page.evaluate(spot, 1)) < 2
     page.keyboard.press('ArrowDown')
     page.keyboard.press('ArrowDown')  # a quick second press queues the next scene
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(1700)
     assert abs(top() - page.evaluate(spot, 3)) < 2
     page.keyboard.press('ArrowUp')
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(1700)
     assert abs(top() - page.evaluate(spot, 2)) < 2
     assert [e for e in page.errors if 'arcgisonline' not in e] == []
