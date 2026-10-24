@@ -37,3 +37,11 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   it moved 10,856 people into deserts (desert total now 142,943).
 - NPI cross-check: about 41 Boston retail pharmacies in NPI look missing from OSM, mostly
   in Dorchester and Roxbury. Not added yet; needs checking.
+- 12:45 Phase 2. Each can't-lose store now carries, per lost block group: 65+, no-car,
+  limited English, council/House/Senate district, and the 3 nearest remaining stores
+  with walking minutes from the cached osmnx graph (top CVS: next store 25 min walk).
+  `python -m rxgap.check` tested live: closing the top CVS flagged 30 block groups,
+  undo restored them. `verify_numbers.py` matches the screen. Found and fixed: the
+  pipeline re-pulled ACS every run (now cache-first) and wrote NaN into JSON.
+  Globe gap text written before comparing: the Globe counted half-mile + mostly no car;
+  the state rule is area-share and halves the limit for poverty too. 11 tests pass.

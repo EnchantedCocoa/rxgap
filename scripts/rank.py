@@ -4,6 +4,7 @@ from pathlib import Path
 warnings.filterwarnings('ignore')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import geopandas as gpd
+import walk
 from analyze_bg import DATA, prepare, status_at
 
 TOP = 20
@@ -11,6 +12,7 @@ TOP = 20
 
 def main():
     bg, ph, _, rule = prepare()
+    districts = json.loads((DATA / 'bg_districts.json').read_text())
     base = {i: status_at(b.geometry, ph, b.radius_m)[1] for i, b in bg.iterrows()}
     names = gpd.GeoDataFrame(ph.copy(), geometry=ph.geometry, crs=26986)
 
@@ -26,13 +28,26 @@ def main():
         if not lost:
             continue
         L = bg.loc[lost]
+        detail = []
+        for bi in lost:
+            b = bg.loc[bi]
+            detail.append({
+                'GEOID': b['GEOID'], 'pop': int(b['TOTAL_POP'] or 0),
+                'age65': int(b['age65'] or 0) if rule == 'state' else None,
+                'nocar_hh': int(b['nocar'] or 0) if rule == 'state' else None,
+                'lim_eng': round(float(b['LIMENGHHPCT'] or 0), 1),
+                'districts': districts.get(b['GEOID'], {}),
+                'nearest': walk.nearest3(b.geometry.representative_point(), rest),
+            })
         rows.append({
-            'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'],
+            'name': p['name'] or 'Pharmacy', 'address': p.get('address') or 'address not in OSM',
+            'osm_id': p.get('osm_id'), 'lat': p['lat'], 'lon': p['lon'],
             'people': int(L.TOTAL_POP.fillna(0).sum()),
             'age65': int(L.age65.fillna(0).sum()) if rule == 'state' else None,
             'nocar_hh': int(L.nocar.fillna(0).sum()) if rule == 'state' else None,
             'block_groups': [bg.at[i, 'GEOID'] for i in lost],
             'hoods': sorted({h for h in L.hood.dropna()}),
+            'lost': detail,
         })
 
     rows.sort(key=lambda r: r['people'], reverse=True)

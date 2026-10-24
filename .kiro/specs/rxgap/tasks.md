@@ -31,13 +31,13 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 - [x] 2.1 Coverage and status per block group (`analyze_bg.py`) — _Req 1_
 - [x] 2.2 Per-store impact ranking (`rank.py`) + sum test — _Req 2_
-- [ ] 2.3 Unit tests for `status_at` on synthetic squares — _Req 1_
-- [ ] 2.4 Add address, districts to each store and lost block group (`route.py`) — _Req 2.3, 4.1_
-- [ ] 2.5 [P] Three nearest remaining stores with walk minutes per lost block group (`walk.py`) — _Req 3.3_
-- [ ] 2.6 [P] Simulation test: for top 3 stores, precomputed lost set = full rerun with that store closed — _Req 3_
-- [ ] 2.7 `python -m rxgap.check`: rerun, diff against `data/last_status.json`, print changes — _Req 10_
-- [ ] 2.8 [P] `scripts/verify_numbers.py` recomputes headline from `data/raw/` only — _Req 11_
-- [ ] 2.9 [P] Validation text: write the Globe gap explanation first, then read the Globe's method and fill the comparison — _Req 9_
+- [x] 2.3 Unit tests for `status_at` on synthetic squares — _Req 1_
+- [x] 2.4 Add address, districts to each store and lost block group (`route.py`) — _Req 2.3, 4.1_
+- [x] 2.5 [P] Three nearest remaining stores with walk minutes per lost block group (`walk.py`) — _Req 3.3_
+- [x] 2.6 [P] Simulation test: for top 3 stores, precomputed lost set = full rerun with that store closed — _Req 3_
+- [x] 2.7 `python -m rxgap.check`: rerun, diff against `data/last_status.json`, print changes — _Req 10_
+- [x] 2.8 [P] `scripts/verify_numbers.py` recomputes headline from `data/raw/` only — _Req 11_
+- [x] 2.9 [P] Validation text: write the Globe gap explanation first, then read the Globe's method and fill the comparison — _Req 9_
 
 ## Phase 3 — App: map and closure (biggest block)
 

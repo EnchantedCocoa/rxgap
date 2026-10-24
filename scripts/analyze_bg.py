@@ -48,6 +48,9 @@ def fetch_acs(key):
 def load_pharmacies():
     phs = json.loads((DATA / 'raw' / 'pharmacies.json').read_text())['pharmacies']
     ph = gpd.GeoDataFrame(phs, geometry=[Point(p['lon'], p['lat']) for p in phs], crs=4326).to_crs(26986)
+    for c in ['name', 'address', 'osm_id', 'brand']:  # NaN -> None, so JSON stays valid
+        if c in ph:
+            ph[c] = ph[c].astype(object).where(ph[c].notna(), None)
     closed = []
     with open(DATA / 'manual' / 'closures.csv') as f:
         for row in csv.DictReader(f):
@@ -83,7 +86,10 @@ def prepare():
 
     key = census_key()
     acs, rule = None, 'income'
-    if key:
+    cached = DATA / 'raw' / 'acs_bg.json'
+    if cached.exists():  # never pull at run time when a cache exists
+        acs, rule = json.loads(cached.read_text()), 'state'
+    elif key:
         try:
             acs = fetch_acs(key)
             rule = 'state'
@@ -116,6 +122,8 @@ def prepare():
 
 def main():
     bg, ph, closed, rule = prepare()
+    dpath = DATA / 'bg_districts.json'
+    districts = json.loads(dpath.read_text()) if dpath.exists() else {}
 
     props = []
     for _, b in bg.iterrows():
@@ -128,6 +136,7 @@ def main():
             p[f's_{r:g}'] = status_at(b.geometry, ph, r * MILE)[1]
         r_state = 0.5 if b['low_access'] else 1.0
         p['s_state'] = p[f's_{r_state:g}']
+        p.update(districts.get(b['GEOID'], {}))
         props.append(p)
 
     out = gpd.GeoDataFrame(props, geometry=bg.geometry.simplify(8), crs=26986).to_crs(4326)

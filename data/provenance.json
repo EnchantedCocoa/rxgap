@@ -81,7 +81,7 @@
   "dataset": "ACS 2022 5-year, block group: B25044 (vehicles), B01001 (age 65+), B17017 (poverty)",
   "url": "https://api.census.gov/data/2022/acs/acs5",
   "function": "scripts/analyze_bg.py:fetch_acs",
-  "pulled": "2026-10-24T16:04:22+00:00"
+  "pulled": "2026-10-24T16:28:31+00:00"
  },
  "neighborhoods": {
   "dataset": "Boston neighborhood boundaries (Analyze Boston)",
