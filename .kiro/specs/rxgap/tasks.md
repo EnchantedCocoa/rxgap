@@ -54,11 +54,11 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 ## Phase 4 — Siting and letter-count server
 
-- [ ] 4.1 `rxgap/serve.py`: serves `app/`, `POST /count`, `GET /counts`, DuckDB, 127.0.0.1 only — _Req 7_
-- [ ] 4.2 Siting gain per candidate by rerunning `status_at` on lost block groups (`site.py`) — _Req 5.1, 5.2_
-- [ ] 4.3 PuLP max-coverage for best set of up to 3 — _Req 5.1_
-- [ ] 4.4 Fallback: nearest health center with the same gain math — _Req 5.3_
-- [ ] 4.5 Siting view: numbered pins, walk ring, restored blocks, before/after table — _Req 5.2_
+- [x] 4.1 `rxgap/serve.py`: serves `app/`, `POST /count`, `GET /counts`, DuckDB, 127.0.0.1 only — _Req 7_
+- [x] 4.2 Siting gain per candidate by rerunning `status_at` on lost block groups (`siting.py`) — _Req 5.1, 5.2_
+- [x] 4.3 PuLP max-coverage for best set of up to 3 — _Req 5.1_
+- [x] 4.4 Fallback: nearest health center with the same gain math — _Req 5.3_
+- [x] 4.5 Siting view: numbered pins, walk ring, restored blocks, before/after table — _Req 5.2_
 
 ## Phase 5 — Briefs and letters
 

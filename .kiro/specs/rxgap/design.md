@@ -95,7 +95,7 @@ in the browser is out of scope; the page says so.
 holds the largest share of its area. The brief lists block groups that split across
 districts, so no one is silently dropped.
 
-**Replacement siting** (`site.py`, Req 5).
+**Replacement siting** (`siting.py`, Req 5).
 1. Candidates within 2 mi of the lost block groups.
 2. For each candidate, add it as a pharmacy and rerun `status_at` on the lost block groups.
    A block group is restored when it is no longer a desert. Gain = people restored.

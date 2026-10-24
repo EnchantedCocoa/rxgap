@@ -247,12 +247,13 @@ function renderResult(s) {
       <ul class="offs">${offs}</ul>
     </div>
     <div class="row actions">
-      <button class="btn" disabled title="Coming in the next phase">Open brief</button>
-      <button class="btn btn-quiet" disabled title="Coming in the next phase">Best replacement site</button>
-      <button class="btn btn-quiet" id="undo2">Undo</button>
+        <button class="btn" disabled title="Coming in the next phase">Open brief</button>
+        <button class="btn btn-quiet" id="sites-btn">Best replacement site</button>
+        <button class="btn btn-quiet" id="undo2">Undo</button>
     </div>`;
   card.hidden = false;
   $('#undo2').addEventListener('click', () => undo());
+  $('#sites-btn').addEventListener('click', () => renderSites(s));
   countTo($('#r-people'), s.people);
   countTo($('#r-65'), s.age65);
   countTo($('#r-car'), s.nocar_hh);
@@ -263,6 +264,7 @@ function undo(silent = false) {
   const s = state.closed;
   if (!s) return;
   clearTimers();
+  clearSiting();
   wave(s, false);
   const p = pharmacyFor(s);
   if (p) markers.get(p.id).getElement().classList.remove('is-closed');
@@ -270,6 +272,92 @@ function undo(silent = false) {
   state.closed = null;
   $('#result-card').hidden = true;
   if (!silent) select(s);
+}
+
+// ---------- replacement siting ----------
+const MILE_M = 1609.344;
+const siting = { pins: [], ring: null, restored: [] };
+
+function clearSiting() {
+  siting.pins.forEach((m) => m.remove());
+  siting.ring?.remove();
+  for (const g of siting.restored) layers.get(g)?.getElement()?.classList.remove('is-restored');
+  Object.assign(siting, { pins: [], ring: null, restored: [] });
+}
+
+function showRestored(geoids) {
+  for (const g of siting.restored) layers.get(g)?.getElement()?.classList.remove('is-restored');
+  siting.restored = geoids;
+  geoids.forEach((g, i) => state.timers.push(setTimeout(
+    () => layers.get(g)?.getElement()?.classList.add('is-restored'), reduced ? 0 : i * 40)));
+}
+
+function renderSites(s) {
+  const S = s.sites, card = $('#result-card');
+  clearSiting();
+  const best = S.best_set;
+  const rows = S.top.map((c, i) => `
+    <li><button class="site-row" data-i="${i}">
+      <span class="site-n">${i + 1}</span>
+      <span><b>${esc(c.name)}</b><br><small>${esc(c.kind === 'health_center' ? 'Health center' : c.kind === 'mbta_station' ? 'T station' : 'Storefront')}${best.sites.includes(c.name) ? ' · in best set' : ''}</small></span>
+      <span class="site-gain">+${fmt(c.gain)}</span>
+    </button></li>`).join('');
+  card.innerHTML = `
+    <div class="result-head good">
+      <p class="eyebrow">Replacement sites · ${esc(s.name)} closed</p>
+      <div class="result-big"><span id="r-best">0</span><button class="info" data-prov="siting" aria-label="How we got this number">i</button></div>
+      <div>of ${fmt(S.lost_pop)} residents regain access if pharmacies open at the best ${fmt(best.sites.length)} site${best.sites.length === 1 ? '' : 's'}</div>
+    </div>
+    <div class="result-body">
+      ${S.top.length ? `
+      <h4>Best single sites <small>(residents brought back)</small></h4>
+      <ol class="sites">${rows}</ol>
+      <div id="site-math"></div>` : `
+      <p class="walk-note">No health center, T station or listed storefront within reach brings these blocks back.
+        Add a storefront to <code>data/manual/candidate_sites.csv</code> to test it.</p>`}
+    </div>
+    <div class="row actions">
+      <button class="btn btn-quiet" id="back">← Who lost access</button>
+      ${best.sites.length > 1 ? '<button class="btn btn-quiet" id="show-best">Show best set together</button>' : ''}
+      <button class="btn btn-quiet" id="undo3">Undo</button>
+    </div>`;
+  countTo($('#r-best'), best.gain);
+  $('#back').addEventListener('click', () => { clearSiting(); renderResult(s); });
+  $('#undo3').addEventListener('click', () => undo());
+  $('#show-best')?.addEventListener('click', () => {
+    siting.ring?.remove(); siting.ring = null;
+    const picked = S.top.filter((c) => best.sites.includes(c.name));
+    showRestored([...new Set(picked.flatMap((c) => c.restored.map((r) => r.GEOID)))]);
+    $('#site-math').innerHTML = `<p class="walk-note">Together, the best set brings back <b>${fmt(best.gain)}</b> residents (${esc(best.solver || 'PuLP')}).</p>`;
+    document.querySelectorAll('.site-row').forEach((r) => r.classList.toggle('is-selected', best.sites.includes(S.top[r.dataset.i].name)));
+  });
+  S.top.forEach((c, i) => {
+    const m = L.marker([c.lat, c.lon], { keyboard: false, title: c.name, zIndexOffset: 2000,
+      icon: L.divIcon({ className: 'pin pin-site', iconSize: [24, 24], html: `<span>${i + 1}</span>` }) }).addTo(map);
+    m.on('click', () => pickSite(s, i));
+    siting.pins.push(m);
+  });
+  document.querySelectorAll('.site-row').forEach((r) => r.addEventListener('click', () => pickSite(s, Number(r.dataset.i))));
+  if (S.top.length) pickSite(s, 0);
+}
+
+function pickSite(s, i) {
+  const S = s.sites, c = S.top[i];
+  document.querySelectorAll('.site-row').forEach((r) => r.classList.toggle('is-selected', Number(r.dataset.i) === i));
+  siting.ring?.remove();
+  siting.ring = L.circle([c.lat, c.lon], { radius: S.ring_mi * MILE_M, className: 'ring', interactive: false }).addTo(map);
+  showRestored(c.restored.map((r) => r.GEOID));
+  map.flyToBounds(siting.ring.getBounds(), { paddingTopLeft: [40, 60], paddingBottomRight: [400, 60], maxZoom: 14, animate: !reduced, duration: 0.8 });
+  const hood = (g) => esc(bgIndex.get(g)?.properties.hood || '');
+  $('#site-math').innerHTML = `
+    <h4>Why #${i + 1} ranks here</h4>
+    <p class="walk-note">A pharmacy at ${esc(c.address || c.name)} would put these blocks back above the ${esc(D.validation.area_pct)} line.
+      The ring shows the ${fmt(S.ring_mi)}-mile walk limit.</p>
+    <table class="math"><thead><tr><th>Block</th><th>Residents</th><th>Area in reach</th></tr></thead><tbody>
+      ${c.restored.map((r) => `<tr><td>${hood(r.GEOID)} <small>${esc(r.GEOID.slice(-7))}</small></td><td>${fmt(r.pop)}</td>
+        <td>${r.share_before}% → <b>${r.share_after}%</b></td></tr>`).join('')}
+      <tr class="sum"><td>Total</td><td>${fmt(c.gain)}</td><td></td></tr>
+    </tbody></table>`;
 }
 
 // ---------- block sheet ----------

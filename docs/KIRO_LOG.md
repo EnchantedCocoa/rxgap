@@ -57,3 +57,12 @@ How Kiro was used to build RxGap. Append as you go; the submission is written fr
   map from MapLibre GL (WebGL) to Leaflet (SVG), kept every interaction, moved map colors
   into CSS classes. CARTO tiles now show an "API key required" watermark, so the base map
   is Esri Light Gray. UI test now runs in real Chrome and checks all 462 blocks draw.
+- 13:40 Phase 4. `scripts/siting.py` scores 198 candidate sites (52 health centers, 146 T
+  stations, manual storefronts) per can't-lose store by how many cut-off residents they
+  bring back above the 15% line, then PuLP (CBC) picks the best set of 3. Top CVS: best
+  single site Whittier Street Health Center +14,588; best 3 together +21,722 of 24,080.
+  Hyde Park Walgreens (#4): no listed site helps; the app says so. Map shows numbered
+  sites, the walk ring, restored blocks turning green, and a before/after table.
+  `rxgap.serve` now keeps letter counts in DuckDB (district + day only). Bugs caught by
+  tests: a script named `site.py` shadowed Python's stdlib `site`; NaN in JSON broke the
+  page (new strict-JSON test). 25 tests pass.

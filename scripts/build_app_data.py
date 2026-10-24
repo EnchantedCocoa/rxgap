@@ -12,6 +12,7 @@ PROV = {
     'store': ('scripts/rank.py:main', ['block_groups', 'acs', 'pharmacies', 'closures']),
     'lim_eng_hh': ('scripts/build_app_data.py:store_rows', ['block_groups']),
     'walk': ('scripts/walk.py:nearest3', ['walk', 'pharmacies']),
+    'siting': ('scripts/siting.py:score + best_set (PuLP max-coverage)', ['sites', 'pharmacies', 'block_groups', 'acs']),
     'officials': ('scripts/route.py:main', ['districts']),
     'block': ('scripts/analyze_bg.py:main', ['block_groups', 'acs']),
     'globe': ('Boston Globe, July 2024 (reported figure)', []),
@@ -58,6 +59,7 @@ def main():
     raw_bg = {f['properties']['GEOID']: f['properties']
               for f in json.loads((DATA / 'raw' / 'boston_bg.geojson').read_text())['features']}
     rank = json.loads((DATA / 'cant_lose.json').read_text())
+    sites = json.loads((DATA / 'sites_out.json').read_text())
     meta = json.loads((DATA / 'map_meta.json').read_text())
 
     total = sum(f['properties']['pop'] for f in bg)
@@ -78,7 +80,7 @@ def main():
                        'globe_date': 'July 2024', 'tufts_date': 'October 2025',
                        'hpc_report': 'DataPoints 31, October 2025', 'area_pct': '15%',
                        'low_access_share': f'{round(low / len(bg) * 100)}%'},
-        'stores': store_rows(rank['stores'], raw_bg, officials()),
+        'stores': [{**r, 'sites': sites[str(r['rank'])]} for r in store_rows(rank['stores'], raw_bg, officials())],
         'pharmacies': [{'id': i, 'name': p['name'] or 'Pharmacy', 'lat': p['lat'], 'lon': p['lon'],
                         'rank': ranked.get((p['lat'], p['lon']))}
                        for i, p in enumerate(meta['pharmacies'])],

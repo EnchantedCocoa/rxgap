@@ -17,7 +17,9 @@ def free_port():
 @pytest.fixture(scope='module')
 def page():
     port = free_port()
+    db = SHOTS / f'letters_test_{port}.duckdb'
     srv = subprocess.Popen([sys.executable, '-m', 'rxgap.serve', str(port)], cwd=ROOT,
+                           env={**os.environ, 'RXGAP_DB': str(db)},
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(0.8)
     with pw.sync_playwright() as p:
@@ -35,6 +37,8 @@ def page():
         yield pg
         b.close()
     srv.terminate()
+    srv.wait()
+    db.unlink(missing_ok=True)
 
 
 def test_server_blocks_secrets(page):
@@ -62,3 +66,24 @@ def test_map_draws_every_block_group(page):
 def test_undo_restores(page):
     page.click('#undo2')
     assert page.is_hidden('#result-card')
+
+
+def test_siting_view_matches_analysis(page):
+    sites = json.loads((ROOT / 'data' / 'sites_out.json').read_text())['1']
+    page.click('#simulate')
+    page.wait_for_timeout(900)
+    page.click('#sites-btn')
+    page.wait_for_timeout(1500)
+    page.screenshot(path=str(SHOTS / 'ui_sites.png'))
+    assert page.inner_text('#r-best') == f"{sites['best_set']['gain']:,}"
+    assert page.locator('.pin-site').count() == len(sites['top'])
+    assert page.locator('path.is-restored').count() == len(sites['top'][0]['restored'])
+
+
+def test_letter_counts_endpoint(page):
+    base = page.url.split('/app/')[0]
+    assert page.request.post(f'{base}/count', data={'district_type': 'council', 'district_id': '7'}).ok
+    assert page.request.post(f'{base}/count', data={'district_type': 'council', 'district_id': 'x'}).status == 400
+    rows = page.request.get(f'{base}/counts').json()
+    assert any(r['district_type'] == 'council' and r['district_id'] == '7' and r['letters'] >= 1 for r in rows)
+    assert set(rows[0]) == {'district_type', 'district_id', 'letters'}  # no names or addresses

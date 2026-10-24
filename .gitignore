@@ -5,3 +5,4 @@ __pycache__/
 data/raw/walk.graphml
 data/raw/walk.gpickle
 data/last_status.json
+data/letters.duckdb*
