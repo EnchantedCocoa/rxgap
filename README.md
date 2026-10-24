@@ -107,6 +107,10 @@ straight line × 1.3, labeled as an estimate. The routes already computed live i
 | Empty Rite Aid, Los Angeles | Downtowngal (Wikimedia Commons) | CC BY-SA 4.0 |
 | Closed Rite Aid, Waterford, CT | jjbers (Flickr) | CC BY 2.0 |
 | Mattapan Square, Boston | 4300streetcar (Wikimedia Commons) | CC BY 4.0 |
-| Pharmacy access rally | Pharmacists United for Truth and Transparency (PUTT) | Courtesy photo |
+| Pharmacy access rally | Pharmacists United for Truth and Transparency (PUTT) | Used with permission |
 
 Full captions and source links: `data/manual/photos.json`.
+
+## License
+
+Code: MIT (see `LICENSE`). Data, photos and quoted sources keep their own licenses, listed above.
