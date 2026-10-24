@@ -13,7 +13,7 @@ Each task names the requirements it serves and its done check. Cut order if behi
 
 ## Phase 1 — Data (all [P], each caches to `data/raw/`)
 
-- [x] 1.1 Block groups from MassGIS EJ2020 (462 rows) — _Req 1_
+- [x] 1.1 Block groups: all 580 from Census TIGER (MassGIS EJ2020 had only 462) — _Req 1_
 - [x] 1.2 ACS 2022 block-group no-car, poverty, 65+ (key works) — _Req 1_
 - [x] 1.3 [P] Pharmacies: add `healthcare=pharmacy` tag, keep `addr:*` tags, save fetch time — _Req 1, 2.3, 12_
   - Done: `raw/pharmacies.json` has an address or "not in OSM" for each store; 10 known stores spot-checked

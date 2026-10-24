@@ -15,7 +15,7 @@ Status: APPROVED 2026-10-24. Requirements 1–2 already have working code
 ## Glossary
 
 - **Walk limit**: 1 mile, or 0.5 mile for a low-access block group.
-- **Low-access**: no-car household share above the Boston average, or more than 20% of
+- **Low-access**: no-car household share above the state average, or more than 20% of
   households below poverty (ACS 2022 B25044, B17017).
 - **Desert**: less than 15% of the block group's area is within the walk limit of an open pharmacy.
 - **Near-desert**: not a desert, but removing one specific pharmacy makes it a desert.

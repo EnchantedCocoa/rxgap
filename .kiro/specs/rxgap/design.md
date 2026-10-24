@@ -305,7 +305,7 @@ No API is called at page load. Every fetch result is cached first.
 - **Unit**: `status_at` on synthetic squares (0 stores, one store, two overlapping
   stores) gives desert / near-desert / covered as expected.
 - **Consistency** (exists): ranking sums to near-desert population; each near-desert block
-  group belongs to exactly one store; 462 block groups.
+  group is claimed by at least one store; 580 block groups.
 - **Simulation**: for the top 3 stores, the precomputed lost set equals a full rerun of
   `analyze_bg` with that store added to closures.
 - **Siting**: a candidate placed at a lost block group's center restores it.
