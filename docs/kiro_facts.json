@@ -1,0 +1,13 @@
+{
+ "_about": "Counts about how RxGap was built. Each one is taken from docs/KIRO_LOG.md at the time shown, so the write-up never types a number by hand.",
+ "challenge": {"value": "Civic action: V2 (who an alert misses) and community readiness", "source": "Hackachusetts challenge brief, .kiro/steering/product.md"},
+ "phase1_subagents": {"value": 6, "source": "docs/KIRO_LOG.md 12:23"},
+ "npi_subagents": {"value": 4, "source": "docs/KIRO_LOG.md 14:00"},
+ "npi_checked": {"value": 75, "source": "docs/KIRO_LOG.md 14:00"},
+ "npi_added": {"value": 54, "source": "docs/KIRO_LOG.md 14:00"},
+ "address_subagents": {"value": 7, "source": "docs/KIRO_LOG.md 15:20"},
+ "addresses_checked": {"value": 124, "source": "docs/KIRO_LOG.md 15:20"},
+ "essay_subagents": {"value": 2, "source": "docs/KIRO_LOG.md 15:55"},
+ "ej_blocks": {"value": 462, "source": "docs/KIRO_LOG.md 13:25"},
+ "tiger_blocks": {"value": 580, "source": "docs/KIRO_LOG.md 13:45"}
+}

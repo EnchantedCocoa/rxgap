@@ -86,6 +86,7 @@ straight line × 1.3, labeled as an estimate. The routes already computed live i
 | `tests/` | pytest, including real-Chrome UI tests |
 | `.kiro/` | Kiro spec (requirements, design, tasks), steering and hooks |
 | `docs/KIRO_LOG.md` | How Kiro was used, step by step |
+| `docs/SUBMISSION.md` | The write-up, filled from the data by `scripts/build_submission.py` |
 
 ## Data sources
 

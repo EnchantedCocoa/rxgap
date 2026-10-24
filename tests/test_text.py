@@ -136,3 +136,14 @@ def test_sample_address_is_in_a_desert(slug):
     except OSError:
         pytest.skip('Census geocoder not reachable')
     assert hit and hit['geoid'] == pl['sample_geoid'], hit
+
+
+def test_submission_numbers_come_from_data():
+    import sys
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    import build_submission as bs
+    tpl = bs.TEMPLATE.read_text()
+    assert not re.search(r'\d', re.sub(r'\{[#?^/]?\w+\}', '', tpl))
+    out = bs.build()
+    assert bs.OUT.read_text() == out, 'run scripts/build_submission.py'
+    only_fact_numbers(out, bs.facts())
