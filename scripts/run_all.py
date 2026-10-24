@@ -3,7 +3,7 @@ import os, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STEPS = ['route.py', 'analyze_bg.py', 'rank.py', 'siting.py', 'routes.py', 'build_app_data.py']
+STEPS = ['route.py', 'analyze_bg.py', 'rank.py', 'siting.py', 'routes.py', 'build_app_data.py', 'build_facts.py']
 
 
 def main():

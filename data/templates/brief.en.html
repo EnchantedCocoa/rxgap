@@ -1,0 +1,32 @@
+<article class="brief">
+<header>
+<p class="brief-kicker">Pharmacy closure brief · {place}</p>
+<h1>If the {store_name} closes</h1>
+<p class="brief-for">For {official_title} {official_name}, {official_district}{?store_address} · Store at {store_address}{/store_address}</p>
+</header>
+<p class="brief-lead"><b>{official_people}</b> residents of your district would lose walkable pharmacy access.</p>
+<p>Across {place}, this closure would put {store_people} residents in a pharmacy desert. Of them, {store_age65} are {age_cut} or older and {store_nocar_hh} households have no car. About {store_lim_eng_hh} households speak limited English.</p>
+<h2>Blocks in your district that would become deserts</h2>
+<table>
+<thead><tr><th>Block group</th><th>Neighborhood</th><th class="num">Residents</th><th>Nearest open pharmacy after closure</th></tr></thead>
+<tbody>
+{#blocks}<tr><td>{geoid}</td><td>{hood}</td><td class="num">{pop}</td><td>{?near_name}{near_name}, {near_min} min walk{?walk_estimate} (estimate){/walk_estimate}{/near_name}{^near_name}None found{/near_name}</td></tr>
+{/blocks}</tbody>
+</table>
+<h2>Best replacement sites</h2>
+{?sites}<table>
+<thead><tr><th>Site</th><th>Address</th><th class="num">Residents brought back</th></tr></thead>
+<tbody>
+{#sites}<tr><td>{name}</td><td>{address}</td><td class="num">{gain}</td></tr>
+{/sites}</tbody>
+</table>{/sites}
+{^sites}<p>No candidate site within reach brings these blocks back. Home delivery and a search for a new pharmacy are the options.</p>{/sites}
+<h2>What you can do</h2>
+<ul>
+<li>Ask the owner about the store's plans now. A closing pharmacy must try to tell recent patients only {closure_notice_days} days ahead ({closure_notice_cite}).</li>
+<li>Support a pharmacy at the top site above, or a health center pharmacy nearby.</li>
+<li>Ask MassHealth to pay for pharmacy rides or home delivery for these blocks. Today it does not pay for rides to pick up medicine ({pickup_rides_cite}).</li>
+</ul>
+<p class="brief-letters">Letters from residents of your district through RxGap so far: <b>{letters}</b></p>
+<footer>Method: Massachusetts Health Policy Commission, {hpc_report}. A block group is a desert when less than {desert_share} of its area is within the walk limit. Numbers by RxGap, an AI tool built at Hackachusetts. Not {place_gov} or any government office.</footer>
+</article>

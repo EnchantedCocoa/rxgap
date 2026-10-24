@@ -189,3 +189,19 @@ def test_story_one_arrow_press_moves_one_scene(page):
     page.wait_for_timeout(1700)
     assert abs(top() - page.evaluate(spot, 2)) < 2
     assert [e for e in page.errors if 'arcgisonline' not in e] == []
+
+
+def test_browser_renders_text_like_python(page):
+    from rxgap.text import render
+    F = json.loads((ROOT / 'data' / 'facts.json').read_text())
+    picks = [next(b for b in F['blocks'].values() if b['is_near']),
+             next(b for b in F['blocks'].values() if b['is_desert'] and 'site_name' in b),
+             next(b for b in F['blocks'].values() if not (b['is_near'] or b['is_desert']))]
+    cases = [(f'{k}.{l}.md', {**F['place'], **b, 'own_sentence': "It's far & I'm <tired>."}, False)
+             for b in picks for k in ('letter', 'letter_masshealth', 'help') for l in ('en', 'es', 'ht')
+             if k != 'letter' or b['is_near'] or b['is_desert']]
+    cases += [('brief.en.html', {**F['place'], **r, 'letters': 3}, True) for r in F['briefs']['1']]
+    for name, facts, html in cases:
+        tpl = (ROOT / 'data' / 'templates' / name).read_text()
+        js = page.evaluate("async ([t, f, h]) => (await import('/app/text.js')).render(t, f, h)", [tpl, facts, html])
+        assert js == render(tpl, facts, html), name
